@@ -6,13 +6,13 @@ data:extend({
     {
         type = "item",
         name = "mirandite",
-        icon = "__planet-machina__/graphics/icons/mirandite-ore.png",
+        icon = "__planet-machina__/graphics/icons/mirandite.png",
         pictures =
         {
-          {size = 64, filename = "__planet-machina__/graphics/icons/mirandite-ore.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__planet-machina__/graphics/icons/mirandite-ore-1.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__planet-machina__/graphics/icons/mirandite-ore-2.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__planet-machina__/graphics/icons/mirandite-ore-3.png", scale = 0.5, mipmap_count = 4}
+          {size = 64, filename = "__planet-machina__/graphics/icons/mirandite.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__planet-machina__/graphics/icons/mirandite-1.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__planet-machina__/graphics/icons/mirandite-2.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__planet-machina__/graphics/icons/mirandite-3.png", scale = 0.5, mipmap_count = 4}
         },
         subgroup = "raw-resource",
         order = "d[mirandite]",

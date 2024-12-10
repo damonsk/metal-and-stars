@@ -277,7 +277,7 @@ data:extend
           main =
           {
             {
-              picture = "__planet-machina__/graphics/tile/sulfuric-acid.png",
+              picture = "__planet-machina__/graphics/terrain/grass-1.png",
               count = 1,
               scale = 0.5,
               size = 1
