@@ -31,8 +31,6 @@ shipyard = function()
         },
         autoplace_controls =
         {
-            ["gleba_plants"] = {},
-            ["gleba_water"] = {},
             ["rocks"] = {},
         },
         autoplace_settings =
@@ -43,7 +41,7 @@ shipyard = function()
                 {
                     ["space-platform-foundation-shipyard"] = {},
                     ["empty-space-shipyard"] = {},
-                    ["grey-goo-tile"] = {}
+                    ["gray-goo-tile"] = {}
                 }
 
             },

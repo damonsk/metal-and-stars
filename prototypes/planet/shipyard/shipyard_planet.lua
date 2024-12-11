@@ -21,10 +21,10 @@ local machina = {
     solar_power_in_space = 60,
     surface_properties =
     {
-        ["day-night-cycle"] = 20 * 60,
+        ["day-night-cycle"] = 20 * hour,
         ["magnetic-field"] = meld.delete(),
         pressure = 3000,
-        ["solar-power"] = 0,
+        ["solar-power"] = 40000,
         gravity = 30
     },
     surface_render_parameters =
@@ -34,7 +34,7 @@ local machina = {
     ticks_between_player_effects = 2
 }
 
-machina = meld(table.deepcopy(data.raw["planet"]["gleba"]), machina)
+machina = meld(table.deepcopy(data.raw["planet"]["nauvis"]), machina)
 
 data:extend({
     machina,

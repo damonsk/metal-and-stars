@@ -2,8 +2,8 @@ data:extend(
 {
   {
     type = "fluid",
-    name = "grey-goo",
-    icon = "__space-age__/graphics/icons/fluid/ammoniacal-solution.png",
+    name = "gray-goo",
+    icon = "__planet-machina__/graphics/icons/gray-goo.png",
     subgroup = "fluid",
     order = "b[new-fluid]-e[shipyard]-a[grey-goo]",
     default_temperature = -50,
