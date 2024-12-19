@@ -252,4 +252,107 @@ data:extend({
     allow_productivity = true,
     allow_decomposition = false,
   },
+  --NIX RECIPES
+  {
+    type = "recipe",
+    name = "crude-slush-processing",
+    icon = "__planet-machina__/graphics/icons/crude-slush.png",
+    category = "oil-processing",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 6.4,
+    ingredients = {
+      {type = "fluid", name = "crude-slush", amount = 10},
+    },
+    results = {
+      {type="fluid", name="crude-oil", amount=1},
+      {type="item", name="ice", amount=1}
+    },
+    allow_productivity = true,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "dark-matter-chunks",
+    icon = "__planet-machina__/graphics/icons/dark-matter-chunk-1.png",
+    category = "compression",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 6.4,
+    ingredients = {
+      {type = "fluid", name = "dark-matter-fluid", amount = 10},
+    },
+    results = {
+      {type="item", name="dark-matter-chunk", amount=1},
+      {type="item", name="antimatter", amount=1, probability=.0001}
+    },
+    allow_productivity = true,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "dark-matter-compressed",
+    icon = "__planet-machina__/graphics/icons/dark-matter-compressed-1.png",
+    category = "compression",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "dark-matter-chunk", amount = 10},
+    },
+    results = {{type="item", name="dark-matter-compressed", amount=1}},
+    allow_productivity = true,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "charcoal",
+    icon = "__base__/graphics/icons/coal-1.png",
+    category = "compression",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "wood", amount = 2},
+    },
+    results = {{type="item", name="coal", amount=1}},
+    allow_productivity = true,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "manufactured-diamond",
+    icon = "__planet-machina__/graphics/icons/diamond.png",
+    category = "compression",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "coal", amount = 100},
+    },
+    results = {{type="item", name="diamond", amount=1}},
+    allow_productivity = true,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "ice-compression",
+    icon = "__planet-machina__/graphics/icons/dense-ice-cube.png",
+    category = "compression",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "ice", amount = 50},
+    },
+    results = {{type="item", name="ice-xv", amount=1}},
+    allow_productivity = true,
+    enabled = true
+  },
 })

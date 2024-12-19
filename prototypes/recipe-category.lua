@@ -8,6 +8,10 @@ data:extend({
       name = "quantum"
     },
     {
+      type = "recipe-category",
+      name = "compression"
+    },
+    {
       type = "item-subgroup",
       name = "quantum-processing",
       group = "intermediate-products",

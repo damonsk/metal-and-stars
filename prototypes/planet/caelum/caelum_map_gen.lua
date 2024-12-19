@@ -29,24 +29,13 @@ shipyard = function()
         {
           settings =
           {
-            ["leaf-cover"] = {},            --["volcanic-folds"] = {},
-            ["leaf-cover-dark"] = {},       --["volcanic-folds-flat"] = {},
-            ["teal-grass-3"] = {}, --["volcanic-pumice-stones"] = {},
-            ["leaf-cover-light"] = {},        --["volcanic-jagged-ground"] = {},
-            ["teal-grass-3-dark"] = {}, --["volcanic-smooth-stone"] = {},
-            ["teal-grass-3-light"] = {}, --["volcanic-ash-cracks"] = {},
-            --nauvis tiles
-            ["blue-grass-1-dark"] = {},
-            ["blue-grass-1-light"] = {},
-            ["blue-grass-1"] = {},
-            --end of nauvis tiles
-            ["blue-grass-2-dark"] = {},
-            ["blue-grass-2-light"] = {},
-            ["blue-grass-2"] = {},
-            --["volcanic-cracks"] = {},
-            ["crater-water"] = {},
-            ["crater-water-deep"] = {},
-            ["testb-range-tiles"] = {},
+            ["sand-1"] = {},
+            ["sand-2"] = {},
+            ["sand-3"] = {},
+            -- ["brash-ice"] = {},
+            -- ["ammoniacal-ocean"] = {},
+            -- ["ammoniacal-ocean-2"] = {}
+
           }
         },
         ["decorative"] =
