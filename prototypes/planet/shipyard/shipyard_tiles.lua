@@ -11,10 +11,75 @@ local tile_spritesheet_layout = tile_graphics.tile_spritesheet_layout
 
 local patch_for_inner_corner_of_transition_between_transition = tile_graphics.patch_for_inner_corner_of_transition_between_transition
 
-
 data:extend
 {
-    {
+      {
+        type = "noise-expression",
+        name = "shipyard_starting_tile",
+        expression = "(x>-25)*(x<25)*(y>-25)*(y<25)"
+      },
+      {
+        type = "noise-expression",
+        name = "shipyard_starting_machine",
+        expression = "(x==20)*(y==20)"
+      },
+      {
+        type = "noise-expression",
+        name = "shipyard_starting_conduit",
+        expression = "(x==-20)*(y==-20)"
+      },
+      {
+        type = "noise-expression",
+        name = "shipyard_starting_goo",
+        expression = "(x==20)*(y==-20)"
+      },
+      {
+        type = "noise-expression",
+        name = "shipyard_tiles_mask",
+        expression = "((x-65)%115<100) * ((y-65)%115<100)"
+      },
+      {
+        type = "noise-expression",
+        name = "shipyard_destruction_mask",
+        expression = [[
+          1 - multioctave_noise{
+              x = x,
+              y = y,
+              persistence = 0.5,
+              seed0 = map_seed,
+              seed1 = 12387,
+              octaves = 2,
+              input_scale = 1/8,
+              output_scale = 1
+          }
+      ]]
+      },
+      {
+        type = "noise-expression",
+        name = "shipyard_valid_mask",
+        expression = "(shipyard_tiles_mask * shipyard_destruction_mask) - shipyard_starting_tile"
+      },
+      {
+        type = "noise-expression",
+        name = "shipyard_invalid_mask",
+        expression = "1 - shipyard_valid_mask"
+      },
+      {
+        type = "noise-expression",
+        name = "grey_goo_noise",
+        expression = "(vulcanus_sulfuric_acid_region_patchy*shipyard_valid_mask) - shipyard_starting_tile"
+      },
+      {
+        type = "noise-expression",
+        name = "shipyard_crafting_machine_noise",
+        expression = "max((((x%80==0)*(y%50==0)) * shipyard_valid_mask), shipyard_starting_machine)"
+      },
+      {
+        type = "noise-expression",
+        name = "shipyard_conduit_noise",
+        expression = "max((((x%60==0)*(y%90==0)) * shipyard_valid_mask), shipyard_starting_conduit)"
+      },
+      {
         type = "tile-effect",
         name = "space",
         shader = "space",
@@ -72,7 +137,7 @@ data:extend
         name = "space-platform-foundation-shipyard",
         order = "a[shipyard]-d[utility]-b[space-platform-foundation]",
         subgroup = "artificial-tiles",
-        autoplace = {probability_expression = "max(max(vulcanus_ashlands_raw, vulcanus_basalts_raw),vulcanus_mountains_start)"},
+        autoplace = {probability_expression = "max((shipyard_tiles_mask * shipyard_destruction_mask), shipyard_starting_tile)"},
         minable = {mining_time = 0.5, result = "space-platform-foundation"},
         mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg", volume = 0.8}, -- sound?
         is_foundation = true,
@@ -267,7 +332,7 @@ data:extend
     order = "a[oil]-b[deep]",
     subgroup = "fulgora-tiles",
     collision_mask = tile_collision_masks.oil_ocean_deep(),
-    autoplace = {probability_expression = "min(fulgora_tile_ruin_paving, max(max(vulcanus_ashlands_raw, vulcanus_basalts_raw),vulcanus_mountains_start))"},
+    autoplace = {probability_expression = "grey_goo_noise"},
     layer = 3,
     layer_group = "water",
     map_color = { 49*1.15, 31*1.15, 35*1.15},

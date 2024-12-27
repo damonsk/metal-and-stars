@@ -24,58 +24,6 @@ local oil_driving_sound =
 
   data:extend({
       {
-        type = "resource",
-        name = "mirandite",
-        icon = "__planet-machina__/graphics/icons/" .. "mirandite" .. ".png",
-        flags = {"placeable-neutral"},
-        order="a-b-".."b",
-        tree_removal_probability = 1,
-        tree_removal_max_distance = 32 * 32,
-        minable =
-        {
-          -- mining_particle = "mirandite" .. "-particle",
-          mining_time = 1,
-          result = "mirandite"
-        },
-        category = "basic-solid",
-        subgroup = "raw-resource",
-        walking_sound = sounds.ore,
-        driving_sound = stone_driving_sound,
-        collision_mask = nil,
-        collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
-        selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-        autoplace = resource_autoplace.resource_autoplace_settings
-        {
-          name = "ostendus-mirandite",
-          order = "a-b-".."b",
-          base_density = 100,
-          -- base_spots_per_km = autoplace_parameters.base_spots_per_km2,
-          has_starting_area_placement = true,
-          regular_rq_factor_multiplier = 1.10,
-          starting_rq_factor_multiplier = 1.5,
-          random_spot_size_minimum = .1,
-          random_spot_size_maximum = .2,
-          candidate_spot_count = 22,
-          -- tile_restriction = autoplace_parameters.tile_restriction
-        },
-        stage_counts = {15000, 9500, 5500, 2900, 1300, 400, 150, 80},
-        stages =
-        {
-          sheet =
-          {
-            filename = "__planet-machina__/graphics/entity/" .. "mirandite" .. "/" .. "mirandite" .. ".png",
-            priority = "extra-high",
-            size = 128,
-            frame_count = 8,
-            variation_count = 8,
-            scale = 0.5
-          }
-        },
-        map_color = {0.715, 0.725, 0.780},
-        mining_visualisation_tint = {r = 0.895, g = 0.965, b = 1.000, a = 1.000}, -- #e4f6ffff
-        -- factoriopedia_simulation = resource_parameters.factoriopedia_simulation
-      },
-      {
         type = "autoplace-control",
         name = "ostendus-mirandite",
         localised_name = {"", "[entity=mirandite] ", {"entity-name.mirandite"}},
@@ -377,5 +325,280 @@ local oil_driving_sound =
         draw_stateless_visualisation_under_building = false,
         map_color = {0.78, 0.2, 0.77},
         map_grid = false
+      },
+      {
+        type = "resource",
+        name = "heavy-water-vent",
+        icon = "__planet-machina__/graphics/entity/geysers/geyser-vent-snow.png",
+        flags = {"placeable-neutral"},
+        category = "basic-fluid",
+        subgroup = "mineable-fluids",
+        order="b",
+        infinite = true,
+        highlight = true,
+        minimum = 20000,
+        normal = 100000,
+        infinite_depletion_amount = 10,
+        resource_patch_search_radius = 16,
+        tree_removal_probability = 0.7,
+        tree_removal_max_distance = 32 * 32,
+        minable =
+        {
+          mining_time = 1,
+          results =
+          {
+            {
+              type = "fluid",
+              name = "water",
+              amount_min = 1,
+              amount_max = 1,
+              probability = 1
+            }
+          }
+        },
+        walking_sound = sounds.oil,
+        collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
+        selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+        autoplace = {
+          --control = "fluorine-vent",
+          order="a[resources]-a[dark-matter-fluid]",
+          --default_enabled = false,
+          probability_expression = "aquilo_flourine_vent_probability",
+          richness_expression = "aquilo_flourine_vent_richness"
+        },
+        stage_counts = {0},
+        stages =
+        {
+          layers =
+          {
+            {
+                filename = "__planet-machina__/graphics/entity/geysers/geyser-vent-greystone.png",
+                priority = "extra-high",
+                frame_count = 4,
+                scale = 0.5,
+                width = 194,
+                height = 136,
+                shift = util.by_pixel( -0.5, -3.0),
+                line_length = 4,  
+            },
+          }
+        },
+        draw_stateless_visualisation_under_building = false,
+        stateless_visualisation =
+        {
+          {
+            count = 1,
+            render_layer = "decorative",
+            animation = util.sprite_load("__planet-machina__/graphics/entity/geysers/boiling-water-animation",
+            {
+              priority = "extra-high",
+              scale = 0.5,
+              frame_count = 32,
+              animation_speed = 0.2,
+              blend_mode = "additive",
+            })
+          },
+        },
+        map_color = {0.0, 0.8, 1.0},
+        map_grid = false,
+        --created_effect = create_tiles("snow-patchy")
+      },
+      {
+        type = "resource",
+        name = "gold-sands",
+        icon = "__planet-machina__/graphics/icons/autoplace-icons/coal-stone-icon.png",
+        flags = {"placeable-neutral"},
+        order="a-b-".."b",
+        tree_removal_probability = 1,
+        tree_removal_max_distance = 32 * 32,
+        minable =
+        {
+          -- mining_particle = "mirandite" .. "-particle",
+          mining_time = 1,
+          results =
+          {
+            {
+              type = "item",
+              name = "stone",
+              probability = 0.5,
+              amount = 1
+            },
+            {
+              type = "item",
+              name = "coal",
+              probability = 0.5,
+              amount = 1
+            }
+          },
+        },
+        category = "basic-solid",
+        subgroup = "raw-resource",
+        walking_sound = sounds.ore,
+        driving_sound = stone_driving_sound,
+        collision_mask = nil,
+        collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
+        selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+        autoplace = resource_autoplace.resource_autoplace_settings
+        {
+          name = "ostendus-mirandite",
+          order = "a-b-".."b",
+          base_density = 100,
+          -- base_spots_per_km = autoplace_parameters.base_spots_per_km2,
+          has_starting_area_placement = true,
+          regular_rq_factor_multiplier = 1.10,
+          starting_rq_factor_multiplier = 1.5,
+          random_spot_size_minimum = .1,
+          random_spot_size_maximum = .2,
+          candidate_spot_count = 22,
+          -- tile_restriction = autoplace_parameters.tile_restriction
+        },
+        stage_counts = {15000, 2000},
+        stages =
+        {
+          sheet =
+          {
+            filename = "__planet-machina__/graphics/entity/ores/gold-ore.png",
+            priority = "extra-high",
+            size = 128,
+            frame_count = 8,
+            variation_count = 2,
+            scale = 0.5
+          }
+        },
+        map_color = {0.715, 0.725, 0.780},
+        mining_visualisation_tint = {r = 0.895, g = 0.965, b = 1.000, a = 1.000}, -- #e4f6ffff
+        -- factoriopedia_simulation = resource_parameters.factoriopedia_simulation
+      },
+      {
+        type = "resource",
+        name = "military-scrap",
+        icon = "__planet-machina__/graphics/icons/autoplace-icons/coal-stone-icon.png",
+        flags = {"placeable-neutral"},
+        order="a-b-".."b",
+        tree_removal_probability = 1,
+        tree_removal_max_distance = 32 * 32,
+        minable =
+        {
+          -- mining_particle = "mirandite" .. "-particle",
+          mining_time = 1,
+          results =
+          {
+            {
+              type = "item",
+              name = "stone",
+              probability = 0.5,
+              amount = 1
+            },
+            {
+              type = "item",
+              name = "coal",
+              probability = 0.5,
+              amount = 1
+            }
+          },
+        },
+        category = "basic-solid",
+        subgroup = "raw-resource",
+        walking_sound = sounds.ore,
+        driving_sound = stone_driving_sound,
+        collision_mask = nil,
+        collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
+        selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+        autoplace = resource_autoplace.resource_autoplace_settings
+        {
+          name = "ostendus-mirandite",
+          order = "a-b-".."b",
+          base_density = 100,
+          -- base_spots_per_km = autoplace_parameters.base_spots_per_km2,
+          has_starting_area_placement = true,
+          regular_rq_factor_multiplier = 1.10,
+          starting_rq_factor_multiplier = 1.5,
+          random_spot_size_minimum = .1,
+          random_spot_size_maximum = .2,
+          candidate_spot_count = 22,
+          -- tile_restriction = autoplace_parameters.tile_restriction
+        },
+        stage_counts = {15000, 9500, 5500, 2900, 1300, 400, 150, 80},
+        stages =
+        {
+          sheet =
+          {
+            filename = "__planet-machina__/graphics/entity/ores/military-scrap.png",
+            priority = "extra-high",
+            size = 128,
+            frame_count = 8,
+            variation_count = 8,
+            scale = 0.5
+          }
+        },
+        map_color = {0.715, 0.725, 0.780},
+        mining_visualisation_tint = {r = 0.895, g = 0.965, b = 1.000, a = 1.000}, -- #e4f6ffff
+        -- factoriopedia_simulation = resource_parameters.factoriopedia_simulation
+      },
+      {
+        type = "resource",
+        name = "ringworld-detritus",
+        icon = "__planet-machina__/graphics/icons/autoplace-icons/coal-stone-icon.png",
+        flags = {"placeable-neutral"},
+        order="a-b-".."b",
+        tree_removal_probability = 1,
+        tree_removal_max_distance = 32 * 32,
+        minable =
+        {
+          -- mining_particle = "mirandite" .. "-particle",
+          mining_time = 1,
+          results =
+          {
+            {
+              type = "item",
+              name = "stone",
+              probability = 0.5,
+              amount = 1
+            },
+            {
+              type = "item",
+              name = "coal",
+              probability = 0.5,
+              amount = 1
+            }
+          },
+        },
+        category = "basic-solid",
+        subgroup = "raw-resource",
+        walking_sound = sounds.ore,
+        driving_sound = stone_driving_sound,
+        collision_mask = nil,
+        collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
+        selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+        autoplace = resource_autoplace.resource_autoplace_settings
+        {
+          name = "ostendus-mirandite",
+          order = "a-b-".."b",
+          base_density = 100,
+          -- base_spots_per_km = autoplace_parameters.base_spots_per_km2,
+          has_starting_area_placement = true,
+          regular_rq_factor_multiplier = 1.10,
+          starting_rq_factor_multiplier = 1.5,
+          random_spot_size_minimum = .1,
+          random_spot_size_maximum = .2,
+          candidate_spot_count = 22,
+          -- tile_restriction = autoplace_parameters.tile_restriction
+        },
+        stage_counts = {15000, 9500, 5500, 2900, 1300, 400, 150, 80},
+        stages =
+        {
+          sheet =
+          {
+            filename = "__planet-machina__/graphics/entity/ores/detritus.png",
+            priority = "extra-high",
+            size = 128,
+            frame_count = 8,
+            variation_count = 8,
+            scale = 0.5
+          }
+        },
+        map_color = {0.715, 0.725, 0.780},
+        mining_visualisation_tint = {r = 0.895, g = 0.965, b = 1.000, a = 1.000}, -- #e4f6ffff
+        -- factoriopedia_simulation = resource_parameters.factoriopedia_simulation
       },
   })

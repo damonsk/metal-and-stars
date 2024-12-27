@@ -70,7 +70,6 @@ shipyard = function()
         {
           settings =
           {
-            ["mirandite"] = {},
             -- ["coal"] = {},
             -- ["calcite"] = {},
             -- ["sulfuric-acid-geyser"] = {},

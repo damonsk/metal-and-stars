@@ -37,7 +37,7 @@ local machina = {
     ticks_between_player_effects = 2
 }
 
-machina = meld(table.deepcopy(data.raw["planet"]["aquilo"]), machina)
+machina = meld(table.deepcopy(data.raw["planet"]["nauvis"]), machina)
 
 data:extend({
     machina,

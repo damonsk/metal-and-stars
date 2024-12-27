@@ -154,7 +154,7 @@ data:extend({
     order = "b[uranium-products]-c[thorium-enrichment-process]",
     ingredients =
     {
-      {type = "item", name = "mirandite", amount = 120},
+      {type = "item", name = "mirandite-asteroid-chunk", amount = 120},
       {type = "fluid", name = "water", amount = 90, ignored_by_stats = 90}
     },
     results =
@@ -175,7 +175,7 @@ data:extend({
     category = "crafting-with-fluid-or-metallurgy",
     ingredients = {{type = "fluid", name = "mirandite-sludge", amount = 100}},
     
-    icon = "__planet-machina__/graphics/icons/mirandite.png",
+    icon = "__planet-machina__/graphics/icons/mirandite-asteroid-chunk.png",
     subgroup = "uranium-processing",
     order = "a[uranium-processing]-a[uranium-processing]",
     auto_recycle = false,
@@ -252,7 +252,7 @@ data:extend({
     allow_productivity = true,
     allow_decomposition = false,
   },
-  --NIX RECIPES
+  --/////////////////////////////////////////////////   NIX RECIPES
   {
     type = "recipe",
     name = "crude-slush-processing",
@@ -354,5 +354,218 @@ data:extend({
     results = {{type="item", name="ice-xv", amount=1}},
     allow_productivity = true,
     enabled = true
+  },
+  {
+    type = "recipe",
+    name = "anomaly-science-pack",
+    icon = "__planet-machina__/graphics/icons/anomaly-science-pack.png",
+    enabled = true,
+    category = "compression",
+    energy_required = 5,
+    ingredients =
+    {
+      {type = "item", name = "dark-matter-chunk", amount = 10},
+      {type = "item", name = "ice-xv", amount = 1},
+      {type = "item", name = "antimatter", amount = 1}
+    },
+    results = {
+      {type="item", name = "antimatter", amount = 1},
+      {type="item", name="anomaly-science-pack", amount=2}
+    },
+    crafting_machine_tint =
+    {
+      primary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
+      secondary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
+    },
+    allow_productivity = true
+  },
+  -- SHIPYARD RECIPES
+  {
+    type = "recipe",
+    name = "nanites",
+    icon = "__planet-machina__/graphics/icons/nanites.png",
+    category = "nanotech",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 6.4,
+    ingredients = {
+      {type = "fluid", name = "gray-goo", amount = 50},
+    },
+    results = {
+      {type="item", name="nanites", amount=5},
+      {type="fluid", name="lubricant", amount=5}
+    },
+    allow_productivity = true,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "nanothruster",
+    icon = "__space-age__/graphics/icons/thruster.png",
+    category = "nanotech",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "nanites", amount = 50},
+    },
+    results = {
+      {type="item", name="thruster", amount=1}
+    },
+    allow_productivity = true,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "nanograbber",
+    icon = "__space-age__/graphics/icons/asteroid-collector.png",
+    category = "nanotech",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "nanites", amount = 50},
+    },
+    results = {
+      {type="item", name="asteroid-collector", amount=1}
+    },
+    allow_productivity = true,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "nanocrusher",
+    icon = "__space-age__/graphics/icons/crusher.png",
+    category = "nanotech",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "nanites", amount = 50},
+    },
+    results = {
+      {type="item", name="crusher", amount=1}
+    },
+    allow_productivity = true,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "nanite-science-pack",
+    enabled = true,
+    category = "nanotech",
+    energy_required = 5,
+    ingredients =
+    {
+      {type = "item", name = "nanites", amount = 10},
+      {type = "fluid", name = "lubricant", amount = 50}
+    },
+    results = {{type="item", name="nanite-science-pack", amount=2}},
+    crafting_machine_tint =
+    {
+      primary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
+      secondary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
+    },
+    allow_productivity = true
+  },
+  {
+    type = "recipe",
+    name = "space-platform-foundation",
+    category = "nanotech",
+    energy_required = 10,
+    enabled = true,
+    ingredients =
+    {
+      {type = "fluid", name = "gray-goo", amount = 50},
+    },
+    results = {{type="item", name="space-platform-foundation", amount=1}}
+  },
+  {
+    type = "recipe",
+    name = "space-platform-starter-pack",
+    energy_required = 60,
+    category = "nanotech",
+    enabled = true,
+    ingredients =
+    {
+      {type = "fluid", name = "gray-goo", amount = 50},
+    },
+    results = {{type="item", name="space-platform-starter-pack", amount=1}}
+  },
+  {
+    type = "recipe",
+    name = "rocket-part",
+    energy_required = 3,
+    enabled = true,
+    hide_from_player_crafting = true,
+    category = "rocket-building",
+    ingredients =
+    {
+      {type = "item", name = "nanites", amount = 10},
+    },
+    results = {{type="item", name="rocket-part", amount=1}},
+    allow_productivity = true
+  },
+  {
+    type = "recipe",
+    name = "carbonic-asteroid-refined-crushing",
+    icon = "__space-age__/graphics/icons/carbonic-asteroid-crushing.png",
+    category = "crushing",
+    subgroup="space-crushing",
+    order = "b-a-b",
+    auto_recycle = false,
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "carbonic-asteroid-chunk", amount = 1},
+    },
+    energy_required = 2,
+    results =
+    {
+      {type = "item", name = "coal", amount = 4},
+      {type = "item", name = "stone", amount = 3},
+      {type = "item", name = "uranium-238", amount = 1, probability = 0.1}
+    },
+    allow_productivity = true,
+    allow_decomposition = false
+  },
+  {
+    type = "recipe",
+    name = "sloppy-asteroid-smelting",
+    icon = "__space-age__/graphics/icons/metallic-asteroid-crushing.png",
+    category = "metallurgy",
+    subgroup="space-crushing",
+    order = "b-a-a",
+    auto_recycle = false,
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "metallic-asteroid-chunk", amount = 1},
+    },
+    energy_required = 2,
+    results =
+    {
+      {type = "item", name = "stone", amount = 20},
+      {type = "fluid", name = "molten-iron", amount = 10, probability = 0.5},
+      {type = "fluid", name = "molten-copper", amount = 10, probability = 0.5}
+    },
+    allow_productivity = true,
+    allow_decomposition = false
+  },
+  {
+    type = "recipe",
+    name = "gravity-assembler",
+    energy_required = 60,
+    category = "nanotech",
+    enabled = true,
+    ingredients =
+    {
+      {type = "item", name = "nanites", amount = 300},
+    },
+    results = {{type="item", name="gravity-assembler", amount=1}}
   },
 })

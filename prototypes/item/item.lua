@@ -632,18 +632,38 @@ data:extend({
         type = "tool",
         name = "nanite-science-pack",
         localised_description = {"item-description.science-pack"},
-        icon = "__planet-machina__/graphics/icons/anomaly-science-pack.png",
+        icon = "__planet-machina__/graphics/icons/nanite-science-pack.png",
+        pictures =
+        {
+          {
+            layers =
+            {
+              {
+                size = 64,
+                filename = "__planet-machina__/graphics/icons/nanite-science-pack.png",
+                scale = 0.5,
+                mipmap_count = 4
+              },
+              {
+                draw_as_light = true,
+                blend_mode = "additive",
+                size = 64,
+                filename = "__planet-machina__/graphics/icons/nanite-science-emission.png",
+                scale = 0.5,
+                tint = {0.3, 0.0, 0.0, .3}
+              }
+            }
+          },
+        },
         subgroup = "science-pack",
         color_hint = { text = "L" },
-        order = "b[quantum-science-pack]",
+        order = "b[nanite-science-pack]",
         inventory_move_sound = item_sounds.science_inventory_move,
         pick_sound = item_sounds.science_inventory_pickup,
         drop_sound = item_sounds.science_inventory_move,
         stack_size = 200,
         weight = 1 * kg,
         durability = 1,
-        spoil_ticks = 1 * hour,
-        spoil_result = "quantum-science-pack",
         durability_description_key = "description.science-pack-remaining-amount-key",
         factoriopedia_durability_description_key = "description.factoriopedia-science-pack-remaining-amount-key",
         durability_description_value = "description.science-pack-remaining-amount-value",

@@ -46,7 +46,6 @@ shipyard = function()
             --["volcanic-cracks"] = {},
             ["crater-water"] = {},
             ["crater-water-deep"] = {},
-            ["testb-range-tiles"] = {},
           }
         },
         ["decorative"] =
@@ -81,7 +80,6 @@ shipyard = function()
         {
           settings =
           {
-            ["mirandite"] = {},
             -- ["coal"] = {},
             -- ["calcite"] = {},
             -- ["sulfuric-acid-geyser"] = {},
