@@ -40,5 +40,37 @@ data:extend(
     order = "m-n",
     category = "resource"
   },
+  {
+    type = "autoplace-control",
+    name = "heavy-water",
+    localised_name = {"", "[entity=dark-matter-vent] ", {"entity-name.dark-matter-vent"}},
+    richness = true,
+    order = "m-n",
+    category = "resource"
+  },
+  {
+    type = "autoplace-control",
+    name = "gold-sand",
+    localised_name = {"", "[entity=dark-matter-vent] ", {"entity-name.dark-matter-vent"}},
+    richness = true,
+    order = "m-n",
+    category = "resource"
+  },
+  {
+    type = "autoplace-control",
+    name = "detritus",
+    localised_name = {"", "[entity=dark-matter-vent] ", {"entity-name.dark-matter-vent"}},
+    richness = true,
+    order = "m-n",
+    category = "resource"
+  },
+  {
+    type = "autoplace-control",
+    name = "military-scrap",
+    localised_name = {"", "[entity=dark-matter-vent] ", {"entity-name.dark-matter-vent"}},
+    richness = true,
+    order = "m-n",
+    category = "resource"
+  },
 
 })

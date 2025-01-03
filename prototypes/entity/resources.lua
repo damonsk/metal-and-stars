@@ -360,7 +360,7 @@ local oil_driving_sound =
         collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         autoplace = {
-          --control = "fluorine-vent",
+          control = "heavy-water",
           order="a[resources]-a[dark-matter-fluid]",
           --default_enabled = false,
           probability_expression = "aquilo_flourine_vent_probability",
@@ -372,7 +372,7 @@ local oil_driving_sound =
           layers =
           {
             {
-                filename = "__planet-machina__/graphics/entity/geysers/geyser-vent-greystone.png",
+                filename = "__planet-machina__/graphics/entity/geysers/geyser-vent-sandstone.png",
                 priority = "extra-high",
                 frame_count = 4,
                 scale = 0.5,
@@ -394,6 +394,7 @@ local oil_driving_sound =
               priority = "extra-high",
               scale = 0.5,
               frame_count = 32,
+              shift = util.by_pixel( -0.5, -3.0),
               animation_speed = 0.2,
               blend_mode = "additive",
             })
@@ -415,8 +416,16 @@ local oil_driving_sound =
         {
           -- mining_particle = "mirandite" .. "-particle",
           mining_time = 1,
+          fluid_amount = 10,
+          required_fluid = "water",
           results =
           {
+            {
+              type = "item",
+              name = "gold-ore",
+              probability = 0.5,
+              amount = 1
+            },
             {
               type = "item",
               name = "stone",
@@ -425,7 +434,7 @@ local oil_driving_sound =
             },
             {
               type = "item",
-              name = "coal",
+              name = "silica-sand",
               probability = 0.5,
               amount = 1
             }
@@ -440,7 +449,7 @@ local oil_driving_sound =
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         autoplace = resource_autoplace.resource_autoplace_settings
         {
-          name = "ostendus-mirandite",
+          name = "gold-sand",
           order = "a-b-".."b",
           base_density = 100,
           -- base_spots_per_km = autoplace_parameters.base_spots_per_km2,
@@ -506,7 +515,7 @@ local oil_driving_sound =
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         autoplace = resource_autoplace.resource_autoplace_settings
         {
-          name = "ostendus-mirandite",
+          name = "military-scrap",
           order = "a-b-".."b",
           base_density = 100,
           -- base_spots_per_km = autoplace_parameters.base_spots_per_km2,
@@ -572,7 +581,7 @@ local oil_driving_sound =
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         autoplace = resource_autoplace.resource_autoplace_settings
         {
-          name = "ostendus-mirandite",
+          name = "detritus",
           order = "a-b-".."b",
           base_density = 100,
           -- base_spots_per_km = autoplace_parameters.base_spots_per_km2,

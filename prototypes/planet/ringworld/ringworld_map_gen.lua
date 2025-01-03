@@ -14,7 +14,10 @@ shipyard = function()
       },
       autoplace_controls =
       {
-        ["trees"] = {},
+        ["heavy-water"] = {},
+        ["gold-sand"] = {},
+        ["detritus"] = {},
+        ["military-scrap"] = {},
         --["rocks"] = {}, -- can't add the rocks control otherwise nauvis rocks spawn
       },
       autoplace_settings =
@@ -24,11 +27,19 @@ shipyard = function()
           settings =
           {
             ["empty-space-shipyard"] = {},
+            --safe center
+            ["blue-grass-2-dark"] = {},
+            ["blue-grass-2-light"] = {},
+            ["blue-grass-2"] = {},
+            --vines left
             ["undergrowth-thin"] = {},
-            ["sand-1-ringworld"] = {},
+            ["undergrowth-thin-dark"] = {},
+            ["undergrowth-thick"] = {},
+            ["undergrowth-thick-dark"] = {},
+            --desert right
+            ["sand-1-ringworld"] = {},   
             ["sand-2-ringworld"] = {},
-            
-            ["ringworld-water"] = {},
+       
           }
         },
         ["decorative"] =
@@ -43,11 +54,10 @@ shipyard = function()
         {
           settings =
           {
-            -- ["coal"] = {},
-            -- ["calcite"] = {},
-            -- ["sulfuric-acid-geyser"] = {},
-            -- ["tungsten-ore"] = {},
-            ["big-volcanic-rock"] = {},
+            ["heavy-water-vent"] = {},
+            ["gold-sands"] = {},
+            ["military-scrap"] = {},
+            ["ringworld-detritus"] = {},
           }
         }
       }

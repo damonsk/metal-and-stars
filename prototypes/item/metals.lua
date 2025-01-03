@@ -92,14 +92,13 @@ data:extend({
       },
       {
         type = "item",
-        name = "thoriumb",
-        icon = "__base__/graphics/icons/stone.png",
+        name = "gold-ore",
+        icon = "__planet-machina__/graphics/icons/gold-ore-1.png",
         pictures =
         {
-          {size = 64, filename = "__base__/graphics/icons/stone.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__base__/graphics/icons/stone-1.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__base__/graphics/icons/stone-2.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__base__/graphics/icons/stone-3.png", scale = 0.5, mipmap_count = 4}
+          {size = 64, filename = "__planet-machina__/graphics/icons/gold-ore-1.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__planet-machina__/graphics/icons/gold-ore-2.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__planet-machina__/graphics/icons/gold-ore-3.png", scale = 0.5, mipmap_count = 4},
         },
         subgroup = "raw-resource",
         order = "d[stone]",
@@ -111,15 +110,8 @@ data:extend({
       },
       {
         type = "item",
-        name = "thoriumc",
-        icon = "__base__/graphics/icons/stone.png",
-        pictures =
-        {
-          {size = 64, filename = "__base__/graphics/icons/stone.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__base__/graphics/icons/stone-1.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__base__/graphics/icons/stone-2.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__base__/graphics/icons/stone-3.png", scale = 0.5, mipmap_count = 4}
-        },
+        name = "gold-plate",
+        icon = "__planet-machina__/graphics/icons/gold-ingot.png",
         subgroup = "raw-resource",
         order = "d[stone]d",
         inventory_move_sound = item_sounds.resource_inventory_move,

@@ -669,4 +669,184 @@ data:extend({
         durability_description_value = "description.science-pack-remaining-amount-value",
         random_tint_color = item_tints.bluish_science
       },
+      --ringworld items
+      {
+        type = "item",
+        name = "gold-cable",
+        icon = "__planet-machina__/graphics/icons/gold-wire.png",
+        subgroup = "intermediate-product",
+        order = "a[basic-intermediates]-c[gold-cable]",
+        inventory_move_sound = item_sounds.wire_inventory_move,
+        pick_sound = item_sounds.wire_inventory_pickup,
+        drop_sound = item_sounds.wire_inventory_move,
+        stack_size = 200,
+        weight = 0.25 * kg,
+        ingredient_to_weight_coefficient = 0.25
+      },
+      {
+        type = "item",
+        name = "multilayer-insulation",
+        icon = "__planet-machina__/graphics/icons/multilayer-insulation.png",
+        subgroup = "intermediate-product",
+        order = "a[basic-intermediates]-c[gold-cable]",
+        inventory_move_sound = item_sounds.wire_inventory_move,
+        pick_sound = item_sounds.wire_inventory_pickup,
+        drop_sound = item_sounds.wire_inventory_move,
+        stack_size = 200,
+        weight = 0.25 * kg,
+        ingredient_to_weight_coefficient = 0.25
+      },
+      {
+        type = "item",
+        name = "gold-foil",
+        icon = "__planet-machina__/graphics/icons/gold-foil-1.png",
+        pictures =
+        {
+          {size = 64, filename = "__planet-machina__/graphics/icons/gold-foil-1.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__planet-machina__/graphics/icons/gold-foil-2.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__planet-machina__/graphics/icons/gold-foil-3.png", scale = 0.5, mipmap_count = 4},
+        },
+        subgroup = "intermediate-product",
+        order = "a[basic-intermediates]-c[gold-cable]",
+        inventory_move_sound = item_sounds.wire_inventory_move,
+        pick_sound = item_sounds.wire_inventory_pickup,
+        drop_sound = item_sounds.wire_inventory_move,
+        stack_size = 200,
+        weight = 0.25 * kg,
+        ingredient_to_weight_coefficient = 0.25
+      },
+      {
+        type = "item",
+        name = "silica-sand",
+        icon = "__planet-machina__/graphics/icons/silica-sand-1.png",
+        pictures =
+        {
+          {size = 64, filename = "__planet-machina__/graphics/icons/silica-sand-1.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__planet-machina__/graphics/icons/silica-sand-2.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__planet-machina__/graphics/icons/silica-sand-3.png", scale = 0.5, mipmap_count = 4},
+        },
+        subgroup = "intermediate-product",
+        order = "a[basic-intermediates]-c[gold-cable]",
+        inventory_move_sound = item_sounds.wire_inventory_move,
+        pick_sound = item_sounds.wire_inventory_pickup,
+        drop_sound = item_sounds.wire_inventory_move,
+        stack_size = 200,
+        weight = 0.25 * kg,
+        ingredient_to_weight_coefficient = 0.25
+      },
+      {
+        type = "item",
+        name = "glass-plate",
+        icon = "__planet-machina__/graphics/icons/glass-plate-1.png",
+        pictures =
+        {
+          {size = 64, filename = "__planet-machina__/graphics/icons/glass-plate-1.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__planet-machina__/graphics/icons/glass-plate-2.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__planet-machina__/graphics/icons/glass-plate-3.png", scale = 0.5, mipmap_count = 4},
+        },
+        subgroup = "intermediate-product",
+        order = "a[basic-intermediates]-c[gold-cable]",
+        inventory_move_sound = item_sounds.wire_inventory_move,
+        pick_sound = item_sounds.wire_inventory_pickup,
+        drop_sound = item_sounds.wire_inventory_move,
+        stack_size = 200,
+        weight = 0.25 * kg,
+        ingredient_to_weight_coefficient = 0.25
+      },
+      {
+        type = "item",
+        name = "glass-billet",
+        icon = "__planet-machina__/graphics/icons/glass-billet-1.png",
+        pictures =
+        {
+          {size = 64, filename = "__planet-machina__/graphics/icons/glass-billet-1.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__planet-machina__/graphics/icons/glass-billet-2.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__planet-machina__/graphics/icons/glass-billet-3.png", scale = 0.5, mipmap_count = 4},
+        },
+        subgroup = "intermediate-product",
+        order = "a[basic-intermediates]-c[gold-cable]",
+        inventory_move_sound = item_sounds.wire_inventory_move,
+        pick_sound = item_sounds.wire_inventory_pickup,
+        drop_sound = item_sounds.wire_inventory_move,
+        stack_size = 200,
+        weight = 0.25 * kg,
+        ingredient_to_weight_coefficient = 0.25
+      },
+      {
+        type = "item",
+        name = "aspheric-lens",
+        icon = "__planet-machina__/graphics/icons/glass-lens.png",
+        subgroup = "intermediate-product",
+        order = "a[basic-intermediates]-c[gold-cable]",
+        inventory_move_sound = item_sounds.wire_inventory_move,
+        pick_sound = item_sounds.wire_inventory_pickup,
+        drop_sound = item_sounds.wire_inventory_move,
+        stack_size = 200,
+        weight = 0.25 * kg,
+        ingredient_to_weight_coefficient = 0.25
+      },
+      {
+        type = "item",
+        name = "high-speed-processor",
+        icon = "__planet-machina__/graphics/icons/high-speed-processor.png",
+        subgroup = "intermediate-product",
+        order = "a[basic-intermediates]-c[gold-cable]",
+        inventory_move_sound = item_sounds.wire_inventory_move,
+        pick_sound = item_sounds.wire_inventory_pickup,
+        drop_sound = item_sounds.wire_inventory_move,
+        stack_size = 200,
+        weight = 0.25 * kg,
+        ingredient_to_weight_coefficient = 0.25
+      },
+      {
+        type = "item",
+        name = "optical-resonator",
+        icon = "__planet-machina__/graphics/icons/optical-resonator.png",
+        subgroup = "intermediate-product",
+        order = "a[basic-intermediates]-c[gold-cable]",
+        inventory_move_sound = item_sounds.wire_inventory_move,
+        pick_sound = item_sounds.wire_inventory_pickup,
+        drop_sound = item_sounds.wire_inventory_move,
+        stack_size = 200,
+        weight = 0.25 * kg,
+        ingredient_to_weight_coefficient = 0.25
+      },
+      {
+        type = "item",
+        name = "bone-fragments",
+        icon = "__planet-machina__/graphics/icons/bone-fragments-1.png",
+        pictures =
+        {
+          {size = 64, filename = "__planet-machina__/graphics/icons/bone-fragments-1.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__planet-machina__/graphics/icons/bone-fragments-2.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__planet-machina__/graphics/icons/bone-fragments-3.png", scale = 0.5, mipmap_count = 4},
+        },
+        subgroup = "intermediate-product",
+        order = "a[basic-intermediates]-c[gold-cable]",
+        inventory_move_sound = item_sounds.wire_inventory_move,
+        pick_sound = item_sounds.wire_inventory_pickup,
+        drop_sound = item_sounds.wire_inventory_move,
+        stack_size = 200,
+        weight = 0.25 * kg,
+        ingredient_to_weight_coefficient = 0.25
+      },
+      {
+        type = "item",
+        name = "bitumen",
+        icon = "__planet-machina__/graphics/icons/tar-1.png",
+        pictures =
+        {
+          {size = 64, filename = "__planet-machina__/graphics/icons/tar-1.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__planet-machina__/graphics/icons/tar-2.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__planet-machina__/graphics/icons/tar-3.png", scale = 0.5, mipmap_count = 4},
+        },
+        subgroup = "intermediate-product",
+        order = "a[basic-intermediates]-c[gold-cable]",
+        inventory_move_sound = item_sounds.wire_inventory_move,
+        pick_sound = item_sounds.wire_inventory_pickup,
+        drop_sound = item_sounds.wire_inventory_move,
+        stack_size = 200,
+        weight = 0.25 * kg,
+        ingredient_to_weight_coefficient = 0.25
+      },
 })

@@ -181,7 +181,7 @@ data:extend({
     scorch_mark_color = {r = 0.318, g = 0.222, b = 0.152, a = 1.000},
     absorptions_per_second = tile_pollution.ice,
     vehicle_friction_modifier = snow_vehicle_speed_modifier,
-    thawed_variant = "dust-patchy",
+    thawed_variant = "blue-grass-2",
     decorative_removal_probability = 1,
     trigger_effect = tile_trigger_effects.grass_1_trigger_effect()
   },

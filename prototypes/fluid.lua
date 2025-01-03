@@ -65,4 +65,43 @@ data:extend(
     flow_color = {0.7, 0.7, 0.75},
     auto_barrel = false
   },
+  {
+    type = "fluid",
+    name = "heavy-water",
+    icon = "__planet-machina__/graphics/icons/heavy-water.png",
+    subgroup = "fluid",
+    order = "b[new-fluid]-e[shipyard]-a[heavy-water]",
+    default_temperature = 15,
+    max_temperature = 100,
+    heat_capacity = "0.2kJ",
+    base_color = {0.2, 0.2, 0.25},
+    flow_color = {0.7, 0.7, 0.75},
+    auto_barrel = false
+  },
+  {
+    type = "fluid",
+    name = "molten-gold",
+    icon = "__planet-machina__/graphics/icons/molten-gold.png",
+    subgroup = "fluid",
+    order = "b[new-fluid]-e[shipyard]-a[heavy-water]",
+    default_temperature = 15,
+    max_temperature = 100,
+    heat_capacity = "0.2kJ",
+    base_color = {0.2, 0.2, 0.25},
+    flow_color = {0.7, 0.7, 0.75},
+    auto_barrel = false
+  },
+  {
+    type = "fluid",
+    name = "molten-glass",
+    icon = "__planet-machina__/graphics/icons/molten-glass.png",
+    subgroup = "fluid",
+    order = "b[new-fluid]-e[shipyard]-a[heavy-water]",
+    default_temperature = 15,
+    max_temperature = 100,
+    heat_capacity = "0.2kJ",
+    base_color = {0.2, 0.2, 0.25},
+    flow_color = {0.7, 0.7, 0.75},
+    auto_barrel = false
+  },
 })

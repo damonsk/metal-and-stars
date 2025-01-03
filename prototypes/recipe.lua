@@ -568,4 +568,263 @@ data:extend({
     },
     results = {{type="item", name="gravity-assembler", amount=1}}
   },
+  -- SHIPYARD RECIPES
+  {
+    type = "recipe",
+    name = "heavy-water-processing",
+    icon = "__planet-machina__/graphics/icons/heavy-water.png",
+    category = "chemistry",
+    subgroup="space-crushing",
+    order = "b-a-a",
+    auto_recycle = false,
+    enabled = true,
+    ingredients =
+    {
+      {type = "fluid", name = "heavy-water", amount = 10},
+    },
+    energy_required = .5,
+    results =
+    {
+      {type = "fluid", name = "water", amount = 10, ignored_by_productivity = 10},
+      {type = "item", name = "iron-ore", amount = 1, probability = 0.5},
+      {type = "item", name = "copper-ore", amount = 1, probability = 0.5}
+    },
+    allow_productivity = true,
+    allow_decomposition = false
+  },
+  {
+    type = "recipe",
+    name = "gold-plate",
+    icon = "__planet-machina__/graphics/icons/gold-ingot.png",
+    category = "smelting",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "gold-ore", amount = 1},
+    },
+    results = {{type="item", name="gold-plate", amount=1}},
+    allow_productivity = true,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "molten-gold",
+    icon = "__planet-machina__/graphics/icons/molten-gold.png",
+    category = "metallurgy",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "gold-ore", amount = 50},
+      {type = "item", name = "calcite", amount = 1},
+    },
+    results = {{type="fluid", name="molten-gold", amount=500}},
+    allow_productivity = true,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "gold-cable",
+    icon = "__planet-machina__/graphics/icons/gold-wire.png",
+    category = "electronics",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "gold-plate", amount = 1},
+    },
+    results = {{type="item", name="gold-cable", amount=2}},
+    allow_productivity = true,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "casting-gold-cable",
+    category = "metallurgy",
+    subgroup = "vulcanus-processes",
+    order = "b[casting]-h[casting-copper-cable]",
+    icon = "__planet-machina__/graphics/icons/casting-gold-cable.png",
+    enabled = false,
+    ingredients =
+    {
+      {type = "fluid", name = "molten-gold", amount = 5, fluidbox_multiplier = 5},
+    },
+    energy_required = 1,
+    allow_decomposition = false,
+    results = {{type = "item", name = "gold-cable", amount = 2}},
+    allow_productivity = true
+  },
+  {
+    type = "recipe",
+    name = "casting-gold-plate",
+    category = "metallurgy",
+    subgroup = "vulcanus-processes",
+    order = "b[casting]-h[casting-copper-cable]",
+    icon = "__planet-machina__/graphics/icons/casting-gold-plate.png",
+    enabled = false,
+    ingredients =
+    {
+      {type = "fluid", name = "molten-gold", amount = 20, fluidbox_multiplier = 5},
+    },
+    energy_required = 1,
+    allow_decomposition = false,
+    results = {{type = "item", name = "copper-cable", amount = 2}},
+    allow_productivity = true
+  },
+  {
+    type = "recipe",
+    name = "gold-foil",
+    icon = "__planet-machina__/graphics/icons/gold-foil-1.png",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "gold-plate", amount = 1},
+    },
+    results = {{type="item", name="gold-foil", amount=10}},
+    allow_productivity = true,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "multilayer-insulation",
+    icon = "__planet-machina__/graphics/icons/multilayer-insulation.png",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "gold-plate", amount = 6},
+      {type = "item", name = "plastic-bar", amount = 4},
+    },
+    results = {{type="item", name="multilayer-insulation", amount=1}},
+    allow_productivity = true,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "glass-plate",
+    icon = "__planet-machina__/graphics/icons/glass-plate-1.png",
+    category = "smelting",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "silica-sand", amount = 1},
+    },
+    results = {{type="item", name="glass-plate", amount=1}},
+    allow_productivity = true,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "glass-recycling",
+    icon = "__planet-machina__/graphics/icons/glass-plate-1.png",
+    category = "smelting",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "glass-billet", amount = 10},
+    },
+    results = {{type="item", name="glass-plate", amount=1}},
+    allow_productivity = true,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "molten-glass",
+    icon = "__planet-machina__/graphics/icons/molten-glass.png",
+    category = "metallurgy",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "silica-sand", amount = 40},
+      {type = "item", name = "glass-billet", amount = 10},
+    },
+    results = {{type="fluid", name="molten-glass", amount=500}},
+    allow_productivity = true,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "casting-glass-plate",
+    category = "metallurgy",
+    subgroup = "vulcanus-processes",
+    order = "b[casting]-h[casting-copper-cable]",
+    icon = "__planet-machina__/graphics/icons/casting-glass-plate.png",
+    enabled = false,
+    ingredients =
+    {
+      {type = "fluid", name = "molten-glass", amount = 20, fluidbox_multiplier = 5},
+    },
+    energy_required = 1,
+    allow_decomposition = false,
+    results = {{type = "item", name = "glass-plate", amount = 2}},
+    allow_productivity = true
+  },
+  {
+    type = "recipe",
+    name = "aspheric-lens",
+    category = "crafting-with-fluid",
+    icon = "__planet-machina__/graphics/icons/glass-lens.png",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "glass-plate", amount = 1},
+      {type = "item", name = "silica-sand", amount = 2},
+      {type = "fluid", name = "lubricant", amount = 5},
+    },
+    results = {
+      {type = "item", name = "aspheric-lens", amount = 1},
+      {type = "item", name = "glass-billet", amount = 3},
+    },
+    allow_productivity = true,
+    allow_decomposition = false,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "process-bitumen",
+    category = "oil-processing",
+    icon = "__planet-machina__/graphics/icons/tar-1.png",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "bitumen", amount = 10},
+    },
+    results =
+    {
+      {type = "fluid", name = "crude-oil", amount = 30},
+      {type = "item", name = "bone-fragments", amount = 1, probability = 0.05},
+      {type = "item", name = "coal", amount = 1, probability = 0.05},
+    },
+    allow_productivity = true,
+    allow_decomposition = false,
+    enabled = true
+  },
+  {
+    type = "recipe",
+    name = "bone-to-calcite",
+    category = "smelting",
+    icon = "__planet-machina__/graphics/icons/bone-fragments-1.png",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "bone-fragments", amount = 10},
+    },
+    results = {{type="item", name="calcite", amount=1}},
+    allow_productivity = true,
+    allow_decomposition = false,
+    enabled = true
+  },
 })
