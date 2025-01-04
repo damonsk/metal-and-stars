@@ -14,10 +14,10 @@ shipyard = function()
       },
       autoplace_controls =
       {
-        ["heavy-water"] = {},
-        ["gold-sand"] = {},
-        ["detritus"] = {},
-        ["military-scrap"] = {},
+        ["ringworld_heavy_water"] = {},
+        ["ringworld_gold_sand"] = {},
+        ["ringworld_detritus"] = {},
+        ["ringworld_military_scrap"] = {},
         --["rocks"] = {}, -- can't add the rocks control otherwise nauvis rocks spawn
       },
       autoplace_settings =

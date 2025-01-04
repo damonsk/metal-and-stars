@@ -13,10 +13,10 @@ shipyard = function()
       },
       autoplace_controls =
       {
-        ["copper-iron-ore"] = {},
-        ["coal-stone-ore"] = {},
-        ["crude-slush"] = {},
-        ["dark-matter"] = {},
+        ["nix_copper_iron_ore"] = {},
+        ["nix_coal_stone_ore"] = {},
+        ["nix_crude_slush"] = {},
+        ["nix_dark_matter"] = {},
         ["nix_enemy_base"] = {},
         --["rocks"] = {}, -- can't add the rocks control otherwise nauvis rocks spawn
       },

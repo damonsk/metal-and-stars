@@ -38,14 +38,4 @@ machina = meld(table.deepcopy(data.raw["planet"]["vulcanus"]), machina)
 
 data:extend({
     machina,
-    {
-        type = "space-connection",
-        name = "nauvis-ostendus",
-        subgroup = "planet-connections",
-        from = "nauvis",
-        to = "ostendus",
-        order = "b",
-        length = 5000,
-        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_gleba)
-    }
 })

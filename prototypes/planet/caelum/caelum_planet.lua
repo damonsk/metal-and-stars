@@ -41,14 +41,4 @@ machina = meld(table.deepcopy(data.raw["planet"]["aquilo"]), machina)
 
 data:extend({
     machina,
-    {
-        type = "space-connection",
-        name = "nauvis-caelum",
-        subgroup = "planet-connections",
-        from = "nauvis",
-        to = "caelum",
-        order = "b",
-        length = 5000,
-        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_gleba)
-    }
 })

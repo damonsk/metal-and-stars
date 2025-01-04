@@ -1,56 +1,103 @@
-autoplace = resource_autoplace.resource_autoplace_settings
-{
-  name = resource_parameters.name,
-  order = resource_parameters.order,
-  base_density = autoplace_parameters.base_density,
-  base_spots_per_km = autoplace_parameters.base_spots_per_km2,
-  has_starting_area_placement = true,
-  regular_rq_factor_multiplier = autoplace_parameters.regular_rq_factor_multiplier,
-  starting_rq_factor_multiplier = autoplace_parameters.starting_rq_factor_multiplier,
-  candidate_spot_count = autoplace_parameters.candidate_spot_count,
-  tile_restriction = autoplace_parameters.tile_restriction
-}
-
 
 data:extend({
+    -- math
+    {
+        type = "noise-expression",
+        name = "ringworld_spot_size",
+        expression = 16
+    },
+    {
+        type = "noise-function",
+        name = "ringworld_spot_noise",
+        parameters = {"seed", "count", "skip_offset", "region_size", "density", "radius", "favorability", "max_y_bound"},
+        expression = "spot_noise{x = x,\z
+                                y = y,\z
+                                seed0 = map_seed,\z
+                                seed1 = seed,\z
+                                candidate_spot_count = count,\z
+                                suggested_minimum_candidate_point_spacing = 128,\z
+                                skip_span = 3,\z
+                                skip_offset = skip_offset,\z
+                                region_size = region_size,\z
+                                density_expression = density * (1 - min(1, max(0, ((y * y)^0.5 - max_y_bound) / max_y_bound))),\z
+                                spot_quantity_expression = radius * radius,\z
+                                spot_radius_expression = radius,\z
+                                hard_region_target_quantity = 0,\z
+                                spot_favorability_expression = favorability * (1 - min(1, max(0, ((y * y)^0.5 - max_y_bound) / max_y_bound))),\z
+                                basement_value = -1,\z
+                                maximum_spot_basement_radius = radius * 2}"
+    },
     -- //left resources
     {
         type = "noise-expression",
-        name = "ringworld_heavy_geyser",
-        expression = "ringworld_left_mask"
+        name = "ringworld_heavy_water_spots",
+        expression = "ringworld_left_mask * ringworld_spot_noise{\z
+            seed = 12345,\z
+            count = 50,\z
+            skip_offset = 0,\z
+            region_size = 600 + 400 / control:ringworld_heavy_water:frequency,\z
+            density = 1,\z
+            radius = ringworld_spot_size * sqrt(control:ringworld_heavy_water:size),\z
+            favorability = 1,\z
+            max_y_bound = 34\z
+        }"
     },
     {
         type = "noise-expression",
+        name = "ringworld_heavy_water_probability",
+        expression = "(control:ringworld_heavy_water:size > 0)\z
+                      * (max(aquilo_starting_crude_oil * 0.02,\z
+                             min(aquilo_starting_mask, ringworld_heavy_water_spots) * 0.015))"
+      },
+      {
+        type = "noise-expression",
+        name = "ringworld_heavy_water_richness",
+        expression = "max(aquilo_starting_crude_oil * 1800000,\z
+                          ringworld_heavy_water_spots * 1440000) * control:ringworld_heavy_water:richness"
+      },
+    {
+        type = "noise-expression",
         name = "ringworld_detritus",
-        expression = "ringworld_left_mask"
+        expression = "ringworld_left_mask * ringworld_spot_noise{\z
+            seed = 54321,\z
+            count = 50,\z
+            skip_offset = 0,\z
+            region_size = 1024,\z
+            density = 1,\z
+            radius = 16,\z
+            favorability = 1,\z
+            max_y_bound = 34\z
+        }"
     },
     -- //right resources
     {
         type = "noise-expression",
-        name = "ringworld_coalstone",
-        expression = "ringworld_right_mask"
-    },
-    {
-        type = "noise-expression",
         name = "ringworld_gold",
-        expression = "ringworld_right_mask"
+        expression = "ringworld_right_mask * ringworld_spot_noise{\z
+            seed = 12345,\z
+            count = 50,\z
+            skip_offset = 0,\z
+            region_size = 1024,\z
+            density = 1,\z
+            radius = 16,\z
+            favorability = 1,\z
+            max_y_bound = 34\z
+        }"
     },
     {
         type = "noise-expression",
         name = "ringworld_weaponry",
-        expression = "ringworld_right_mask"
+        expression = "ringworld_right_mask * ringworld_spot_noise{\z
+            seed = 54321,\z
+            count = 50,\z
+            skip_offset = 0,\z
+            region_size = 1024,\z
+            density = 1,\z
+            radius = 16,\z
+            favorability = 1,\z
+            max_y_bound = 34\z
+        }"
     },
-})
 
-autoplace = resource_autoplace.resource_autoplace_settings
-{
-  name = resource_parameters.name,
-  order = resource_parameters.order,
-  base_density = autoplace_parameters.base_density,
-  base_spots_per_km = autoplace_parameters.base_spots_per_km2,
-  has_starting_area_placement = true,
-  regular_rq_factor_multiplier = autoplace_parameters.regular_rq_factor_multiplier,
-  starting_rq_factor_multiplier = autoplace_parameters.starting_rq_factor_multiplier,
-  candidate_spot_count = autoplace_parameters.candidate_spot_count,
-  tile_restriction = autoplace_parameters.tile_restriction
-}
+    
+})

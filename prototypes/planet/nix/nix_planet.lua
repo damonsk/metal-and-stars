@@ -11,8 +11,8 @@ local machina = {
     starmap_icon_size = 512,
     map_gen_settings = meld.overwrite(nix_map_gen()),
     gravity_pull = 10,
-    distance = 20,
-    orientation = 0.400,
+    distance = 30,
+    orientation = 0.380,
     magnitude = 1.0,
     label_orientation = 0.15,
     order = "e[machina]",
@@ -52,16 +52,6 @@ machina = meld(table.deepcopy(data.raw["planet"]["aquilo"]), machina)
 
 data:extend({
     machina,
-    {
-        type = "space-connection",
-        name = "nauvis-nix",
-        subgroup = "planet-connections",
-        from = "nauvis",
-        to = "nix",
-        order = "b",
-        length = 5000,
-        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_gleba)
-    },
     {
         type = "noise-expression",
         name = "nix_enemy_base_radius",

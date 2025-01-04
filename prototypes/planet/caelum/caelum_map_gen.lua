@@ -19,7 +19,6 @@ shipyard = function()
       },
       autoplace_controls =
       {
-        ["ostendus-mirandite"] = {},
         ["trees"] = {},
         --["rocks"] = {}, -- can't add the rocks control otherwise nauvis rocks spawn
       },

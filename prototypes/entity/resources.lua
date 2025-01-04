@@ -24,14 +24,6 @@ local oil_driving_sound =
 
   data:extend({
       {
-        type = "autoplace-control",
-        name = "ostendus-mirandite",
-        localised_name = {"", "[entity=mirandite] ", {"entity-name.mirandite"}},
-        richness = true,
-        order = "z-a",
-        category = "resource"
-      },
-      {
         type = "resource",
         name = "iron-copper-ore",
         icon = "__planet-machina__/graphics/icons/autoplace-icons/copper-iron-icon.png",
@@ -68,7 +60,7 @@ local oil_driving_sound =
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         autoplace = resource_autoplace.resource_autoplace_settings
         {
-          name = "ostendus-mirandite",
+          name = "nix_copper_iron_ore",
           order = "a-b-".."b",
           base_density = 100,
           -- base_spots_per_km = autoplace_parameters.base_spots_per_km2,
@@ -134,7 +126,7 @@ local oil_driving_sound =
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         autoplace = resource_autoplace.resource_autoplace_settings
         {
-          name = "ostendus-mirandite",
+          name = "nix_coal_stone_ore",
           order = "a-b-".."b",
           base_density = 100,
           -- base_spots_per_km = autoplace_parameters.base_spots_per_km2,
@@ -166,7 +158,7 @@ local oil_driving_sound =
       {
         type = "resource",
         name = "dark-matter-vent",
-        icon = "__planet-machina__/graphics/entity/geysers/geyser-vent-snow.png",
+        icon = "__planet-machina__/graphics/icons/autoplace-icons/dark-matter-vent.png",
         flags = {"placeable-neutral"},
         category = "basic-fluid",
         subgroup = "mineable-fluids",
@@ -197,7 +189,7 @@ local oil_driving_sound =
         collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         autoplace = {
-          --control = "fluorine-vent",
+          control = "nix_dark_matter",
           order="a[resources]-a[dark-matter-fluid]",
           --default_enabled = false,
           probability_expression = "aquilo_flourine_vent_probability",
@@ -291,7 +283,7 @@ local oil_driving_sound =
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         autoplace = resource_autoplace.resource_autoplace_settings
         {
-          name = "crude-oil",
+          name = "nix_crude_slush",
           order = "c", -- Other resources are "b"; oil won't get placed if something else is already there.
           base_density = 8.2,
           base_spots_per_km2 = 1.8,
@@ -329,7 +321,7 @@ local oil_driving_sound =
       {
         type = "resource",
         name = "heavy-water-vent",
-        icon = "__planet-machina__/graphics/entity/geysers/geyser-vent-snow.png",
+        icon = "__planet-machina__/graphics/icons/autoplace-icons/heavy-water-vent.png",
         flags = {"placeable-neutral"},
         category = "basic-fluid",
         subgroup = "mineable-fluids",
@@ -349,7 +341,7 @@ local oil_driving_sound =
           {
             {
               type = "fluid",
-              name = "water",
+              name = "heavy-water",
               amount_min = 1,
               amount_max = 1,
               probability = 1
@@ -359,12 +351,12 @@ local oil_driving_sound =
         walking_sound = sounds.oil,
         collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-        autoplace = {
-          control = "heavy-water",
-          order="a[resources]-a[dark-matter-fluid]",
-          --default_enabled = false,
-          probability_expression = "aquilo_flourine_vent_probability",
-          richness_expression = "aquilo_flourine_vent_richness"
+        autoplace =
+        {
+          order="a[resources]-a[heavy-water]",
+          probability_expression = 'ringworld_heavy_water_probability',
+          tile_restriction = {"undergrowth-thin", "undergrowth-thin-dark", "undergrowth-thick", "undergrowth-thick-dark"},
+          richness_expression = "ringworld_heavy_water_richness"
         },
         stage_counts = {0},
         stages =
@@ -407,7 +399,7 @@ local oil_driving_sound =
       {
         type = "resource",
         name = "gold-sands",
-        icon = "__planet-machina__/graphics/icons/autoplace-icons/coal-stone-icon.png",
+        icon = "__planet-machina__/graphics/icons/autoplace-icons/gold-sand-icon.png",
         flags = {"placeable-neutral"},
         order="a-b-".."b",
         tree_removal_probability = 1,
@@ -423,19 +415,13 @@ local oil_driving_sound =
             {
               type = "item",
               name = "gold-ore",
-              probability = 0.5,
-              amount = 1
-            },
-            {
-              type = "item",
-              name = "stone",
-              probability = 0.5,
+              probability = 0.2,
               amount = 1
             },
             {
               type = "item",
               name = "silica-sand",
-              probability = 0.5,
+              probability = 0.8,
               amount = 1
             }
           },
@@ -447,19 +433,10 @@ local oil_driving_sound =
         collision_mask = nil,
         collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-        autoplace = resource_autoplace.resource_autoplace_settings
+        autoplace =
         {
-          name = "gold-sand",
-          order = "a-b-".."b",
-          base_density = 100,
-          -- base_spots_per_km = autoplace_parameters.base_spots_per_km2,
-          has_starting_area_placement = true,
-          regular_rq_factor_multiplier = 1.10,
-          starting_rq_factor_multiplier = 1.5,
-          random_spot_size_minimum = .1,
-          random_spot_size_maximum = .2,
-          candidate_spot_count = 22,
-          -- tile_restriction = autoplace_parameters.tile_restriction
+          probability_expression = 'ringworld_gold',
+          tile_restriction = {"sand-1-ringworld", "sand-2-ringworld"}
         },
         stage_counts = {15000, 2000},
         stages =
@@ -474,14 +451,14 @@ local oil_driving_sound =
             scale = 0.5
           }
         },
-        map_color = {0.715, 0.725, 0.780},
-        mining_visualisation_tint = {r = 0.895, g = 0.965, b = 1.000, a = 1.000}, -- #e4f6ffff
+        map_color = {1, 0.85, 0},
+        mining_visualisation_tint = {r = 1, g = 0.85, b = 0, a = 1.000},
         -- factoriopedia_simulation = resource_parameters.factoriopedia_simulation
       },
       {
         type = "resource",
         name = "military-scrap",
-        icon = "__planet-machina__/graphics/icons/autoplace-icons/coal-stone-icon.png",
+        icon = "__planet-machina__/graphics/icons/autoplace-icons/military-scrap-icon.png",
         flags = {"placeable-neutral"},
         order="a-b-".."b",
         tree_removal_probability = 1,
@@ -495,15 +472,57 @@ local oil_driving_sound =
             {
               type = "item",
               name = "stone",
-              probability = 0.5,
+              probability = 0.8,
               amount = 1
             },
             {
               type = "item",
-              name = "coal",
-              probability = 0.5,
+              name = "stone-wall",
+              probability = 0.3,
               amount = 1
-            }
+            },
+            {
+              type = "item",
+              name = "tank",
+              probability = 0.001,
+              amount = 1
+            },
+            {
+              type = "item",
+              name = "tesla-ammo",
+              probability = 0.03,
+              amount = 1
+            },
+            {
+              type = "item",
+              name = "solar-panel-equipment",
+              probability = 0.05,
+              amount = 1
+            },
+            {
+              type = "item",
+              name = "toolbelt-equipment",
+              probability = 0.02,
+              amount = 1
+            },
+            {
+              type = "item",
+              name = "rail",
+              probability = 0.1,
+              amount = 1
+            },
+            {
+              type = "item",
+              name = "rocket-launcher",
+              probability = 0.05,
+              amount = 1
+            },
+            {
+              type = "item",
+              name = "piercing-rounds-magazine",
+              probability = 0.1,
+              amount = 1
+            },
           },
         },
         category = "basic-solid",
@@ -513,19 +532,10 @@ local oil_driving_sound =
         collision_mask = nil,
         collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-        autoplace = resource_autoplace.resource_autoplace_settings
+        autoplace =
         {
-          name = "military-scrap",
-          order = "a-b-".."b",
-          base_density = 100,
-          -- base_spots_per_km = autoplace_parameters.base_spots_per_km2,
-          has_starting_area_placement = true,
-          regular_rq_factor_multiplier = 1.10,
-          starting_rq_factor_multiplier = 1.5,
-          random_spot_size_minimum = .1,
-          random_spot_size_maximum = .2,
-          candidate_spot_count = 22,
-          -- tile_restriction = autoplace_parameters.tile_restriction
+          probability_expression = 'ringworld_weaponry',
+          tile_restriction = {"sand-1-ringworld", "sand-2-ringworld"}
         },
         stage_counts = {15000, 9500, 5500, 2900, 1300, 400, 150, 80},
         stages =
@@ -540,14 +550,14 @@ local oil_driving_sound =
             scale = 0.5
           }
         },
-        map_color = {0.715, 0.725, 0.780},
+        map_color = {0.11, 0.4, 0.3},
         mining_visualisation_tint = {r = 0.895, g = 0.965, b = 1.000, a = 1.000}, -- #e4f6ffff
         -- factoriopedia_simulation = resource_parameters.factoriopedia_simulation
       },
       {
         type = "resource",
         name = "ringworld-detritus",
-        icon = "__planet-machina__/graphics/icons/autoplace-icons/coal-stone-icon.png",
+        icon = "__planet-machina__/graphics/icons/autoplace-icons/detritus-icon.png",
         flags = {"placeable-neutral"},
         order="a-b-".."b",
         tree_removal_probability = 1,
@@ -560,16 +570,10 @@ local oil_driving_sound =
           {
             {
               type = "item",
-              name = "stone",
-              probability = 0.5,
+              name = "bitumen",
+              probability = 1,
               amount = 1
             },
-            {
-              type = "item",
-              name = "coal",
-              probability = 0.5,
-              amount = 1
-            }
           },
         },
         category = "basic-solid",
@@ -579,19 +583,10 @@ local oil_driving_sound =
         collision_mask = nil,
         collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-        autoplace = resource_autoplace.resource_autoplace_settings
+        autoplace =
         {
-          name = "detritus",
-          order = "a-b-".."b",
-          base_density = 100,
-          -- base_spots_per_km = autoplace_parameters.base_spots_per_km2,
-          has_starting_area_placement = true,
-          regular_rq_factor_multiplier = 1.10,
-          starting_rq_factor_multiplier = 1.5,
-          random_spot_size_minimum = .1,
-          random_spot_size_maximum = .2,
-          candidate_spot_count = 22,
-          -- tile_restriction = autoplace_parameters.tile_restriction
+          probability_expression = 'ringworld_detritus',
+          tile_restriction = {"undergrowth-thin", "undergrowth-thin-dark", "undergrowth-thick", "undergrowth-thick-dark"}
         },
         stage_counts = {15000, 9500, 5500, 2900, 1300, 400, 150, 80},
         stages =
@@ -606,7 +601,7 @@ local oil_driving_sound =
             scale = 0.5
           }
         },
-        map_color = {0.715, 0.725, 0.780},
+        map_color = {0.3, 0.05, 0.05},
         mining_visualisation_tint = {r = 0.895, g = 0.965, b = 1.000, a = 1.000}, -- #e4f6ffff
         -- factoriopedia_simulation = resource_parameters.factoriopedia_simulation
       },

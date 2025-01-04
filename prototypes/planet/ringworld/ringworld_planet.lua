@@ -11,8 +11,8 @@ local machina = {
     starmap_icon_size = 512,
     map_gen_settings = meld.overwrite(ringworld_map_gen()),
     gravity_pull = 10,
-    distance = 20,
-    orientation = 0.400,
+    distance = 17,
+    orientation = 0.50,
     magnitude = 1.0,
     label_orientation = 0.15,
     order = "e[machina]",
@@ -21,7 +21,7 @@ local machina = {
     solar_power_in_space = 60,
     surface_properties =
     {
-        ["day-night-cycle"] = meld.delete(),
+        ["day-night-cycle"] = 0,
         ["magnetic-field"] = meld.delete(),
         pressure = 3000,
         ["solar-power"] = 4000,
@@ -41,14 +41,4 @@ machina = meld(table.deepcopy(data.raw["planet"]["nauvis"]), machina)
 
 data:extend({
     machina,
-    {
-        type = "space-connection",
-        name = "nauvis-ringworld",
-        subgroup = "planet-connections",
-        from = "nauvis",
-        to = "ringworld",
-        order = "b",
-        length = 5000,
-        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_gleba)
-    }
 })
