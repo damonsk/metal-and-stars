@@ -555,7 +555,7 @@ data:extend({
         stack_size = 1,
         weight = 100*kg
       },
-      -- NEUMANN ITEMS
+      -- RINGWORLD ITEMS
       {
         type = "item",
         name = "nanites",
@@ -848,5 +848,24 @@ data:extend({
         stack_size = 200,
         weight = 0.25 * kg,
         ingredient_to_weight_coefficient = 0.25
+      },
+      {
+        type = "tool",
+        name = "ring-science-pack",
+        localised_description = {"item-description.science-pack"},
+        icon = "__planet-machina__/graphics/icons/ring-science-pack.png",
+        subgroup = "science-pack",
+        color_hint = { text = "L" },
+        order = "b[quantum-science-pack]",
+        inventory_move_sound = item_sounds.science_inventory_move,
+        pick_sound = item_sounds.science_inventory_pickup,
+        drop_sound = item_sounds.science_inventory_move,
+        stack_size = 200,
+        weight = 1 * kg,
+        durability = 1,
+        durability_description_key = "description.science-pack-remaining-amount-key",
+        factoriopedia_durability_description_key = "description.factoriopedia-science-pack-remaining-amount-key",
+        durability_description_value = "description.science-pack-remaining-amount-value",
+        random_tint_color = item_tints.bluish_science
       },
 })

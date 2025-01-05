@@ -274,7 +274,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "dark-matter-chunks",
+    name = "dark-matter-compression",
     icon = "__planet-machina__/graphics/icons/dark-matter-chunk-1.png",
     category = "compression",
     subgroup = "aquilo-processes",
@@ -349,15 +349,40 @@ data:extend({
     auto_recycle = false,
     energy_required = 6.4,
     ingredients = {
+      {type = "fluid", name = "dark-matter-fluid", amount = 5},
       {type = "item", name = "ice", amount = 50},
     },
     results = {{type="item", name="ice-xv", amount=1}},
     allow_productivity = true,
+    allow_decomposition = false,
     enabled = true
   },
   {
     type = "recipe",
     name = "anomaly-science-pack",
+    icon = "__planet-machina__/graphics/icons/anomaly-science-pack.png",
+    enabled = true,
+    category = "compression",
+    energy_required = 15,
+    ingredients =
+    {
+      {type = "item", name = "dark-matter-chunk", amount = 100},
+      {type = "item", name = "ice-xv", amount = 10},
+    },
+    results = {
+      {type="item", name="anomaly-science-pack", amount=2}
+    },
+    crafting_machine_tint =
+    {
+      primary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
+      secondary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
+    },
+    allow_decomposition = false,
+    allow_productivity = true
+  },
+  {
+    type = "recipe",
+    name = "catalyzed-anomaly-science-pack",
     icon = "__planet-machina__/graphics/icons/anomaly-science-pack.png",
     enabled = true,
     category = "compression",
@@ -369,7 +394,7 @@ data:extend({
       {type = "item", name = "antimatter", amount = 1}
     },
     results = {
-      {type="item", name = "antimatter", amount = 1},
+      {type="item", name = "antimatter", amount = 1, ignored_by_productivity = 1, ignored_by_stats = 1},
       {type="item", name="anomaly-science-pack", amount=2}
     },
     crafting_machine_tint =
@@ -377,7 +402,9 @@ data:extend({
       primary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
       secondary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
     },
-    allow_productivity = true
+    allow_decomposition = false,
+    allow_productivity = true,
+    allow_quality = false -- catalyst would be also bumped on quality
   },
   -- SHIPYARD RECIPES
   {
@@ -393,9 +420,10 @@ data:extend({
       {type = "fluid", name = "gray-goo", amount = 50},
     },
     results = {
-      {type="item", name="nanites", amount=5},
+      {type="item", name="nanites", amount=50},
       {type="fluid", name="lubricant", amount=5}
     },
+    allow_decomposition = false,
     allow_productivity = true,
     enabled = true
   },
@@ -414,6 +442,7 @@ data:extend({
     results = {
       {type="item", name="thruster", amount=1}
     },
+    allow_decomposition = false,
     allow_productivity = true,
     enabled = true
   },
@@ -432,6 +461,7 @@ data:extend({
     results = {
       {type="item", name="asteroid-collector", amount=1}
     },
+    allow_decomposition = false,
     allow_productivity = true,
     enabled = true
   },
@@ -450,6 +480,7 @@ data:extend({
     results = {
       {type="item", name="crusher", amount=1}
     },
+    allow_decomposition = false,
     allow_productivity = true,
     enabled = true
   },
@@ -462,7 +493,8 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "nanites", amount = 10},
-      {type = "fluid", name = "lubricant", amount = 50}
+      {type = "item", name = "thruster", amount = 1},
+      {type = "item", name = "space-platform-starter-pack", amount = 1},
     },
     results = {{type="item", name="nanite-science-pack", amount=2}},
     crafting_machine_tint =
@@ -474,7 +506,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "space-platform-foundation",
+    name = "nanite-platform-foundation",
     category = "nanotech",
     energy_required = 10,
     enabled = true,
@@ -482,19 +514,24 @@ data:extend({
     {
       {type = "fluid", name = "gray-goo", amount = 50},
     },
-    results = {{type="item", name="space-platform-foundation", amount=1}}
+    results = {{type="item", name="space-platform-foundation", amount=1}},
+    allow_decomposition = false,
+    allow_productivity = true
   },
   {
     type = "recipe",
-    name = "space-platform-starter-pack",
+    name = "nanite-platform-starter-pack",
     energy_required = 60,
     category = "nanotech",
     enabled = true,
     ingredients =
     {
-      {type = "fluid", name = "gray-goo", amount = 50},
+      {type = "item", name = "space-platform-foundation", amount = 50},
+      {type = "item", name = "nanites", amount = 10},
     },
-    results = {{type="item", name="space-platform-starter-pack", amount=1}}
+    results = {{type="item", name="space-platform-starter-pack", amount=1}},
+    allow_decomposition = false,
+    allow_productivity = true
   },
   {
     type = "recipe",
@@ -508,7 +545,8 @@ data:extend({
       {type = "item", name = "nanites", amount = 10},
     },
     results = {{type="item", name="rocket-part", amount=1}},
-    allow_productivity = true
+    allow_productivity = true,
+    allow_decomposition = false,
   },
   {
     type = "recipe",
@@ -568,7 +606,7 @@ data:extend({
     },
     results = {{type="item", name="gravity-assembler", amount=1}}
   },
-  -- SHIPYARD RECIPES
+  -- MIRANDUS RECIPES
   {
     type = "recipe",
     name = "heavy-water-processing",
@@ -696,7 +734,7 @@ data:extend({
     order = "c[lithium]-b[lithium-plate]",
     energy_required = 6.4,
     ingredients = {
-      {type = "item", name = "gold-plate", amount = 6},
+      {type = "item", name = "gold-foil", amount = 6},
       {type = "item", name = "plastic-bar", amount = 4},
     },
     results = {{type="item", name="multilayer-insulation", amount=1}},
@@ -717,11 +755,11 @@ data:extend({
     },
     results = {{type="item", name="glass-plate", amount=1}},
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
-    name = "glass-recycling",
+    name = "glass-billet-reuse",
     icon = "__planet-machina__/graphics/icons/glass-plate-1.png",
     category = "smelting",
     subgroup = "aquilo-processes",
@@ -750,7 +788,7 @@ data:extend({
     },
     results = {{type="fluid", name="molten-glass", amount=500}},
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
@@ -809,7 +847,7 @@ data:extend({
     },
     allow_productivity = true,
     allow_decomposition = false,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
@@ -825,6 +863,26 @@ data:extend({
     results = {{type="item", name="calcite", amount=1}},
     allow_productivity = true,
     allow_decomposition = false,
-    enabled = true
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "ring-science-pack",
+    category = "crafting-with-fluid",
+    icon = "__planet-machina__/graphics/icons/bone-fragments-1.png",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "aspheric-lens", amount = 10},
+      {type = "item", name = "multilayer-insulation", amount = 10},
+      {type = "fluid", name = "heavy-water", amount = 10},
+    },
+    results = {
+      {type="item", name="ring-science-pack", amount=1},
+      {type="fluid", name="water", amount=10},
+    },
+    allow_productivity = true,
+    enabled = false
   },
 })
