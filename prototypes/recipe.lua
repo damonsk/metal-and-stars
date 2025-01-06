@@ -8,11 +8,11 @@ data:extend({
     auto_recycle = false,
     energy_required = 6.4,
     ingredients = {
-      {type = "item", name = "neodymium-ore", amount = 2},
+      {type = "item", name = "neodymium-ore", amount = 1},
     },
     results = {{type="item", name="neodymium-plate", amount=1}},
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
@@ -26,9 +26,9 @@ data:extend({
       {type = "item", name = "neodymium-ore", amount = 1},
       {type = "fluid", name = "molten-iron", amount = 20}
     },
-    results = {{type="item", name="neodymium-plate", amount=1}},
+    results = {{type="item", name="neodymium-plate", amount=2}},
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
@@ -44,7 +44,7 @@ data:extend({
     },
     results = {{type="item", name="quantum-shard-a", amount=1}},
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
@@ -60,7 +60,7 @@ data:extend({
     },
     results = {{type="item", name="quantum-shard-b", amount=1}},
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
@@ -76,12 +76,12 @@ data:extend({
     },
     results = {{type="item", name="quantum-shard-c", amount=1}},
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
     name = "volatile-quantum-science-pack",
-    enabled = true,
+    enabled = false,
     category = "quantum",
     energy_required = 5,
     ingredients =
@@ -101,7 +101,7 @@ data:extend({
   {
     type = "recipe",
     name = "quantum-science-pack",
-    enabled = true,
+    enabled = false,
     category = "quantum",
     energy_required = 5,
     ingredients =
@@ -122,7 +122,7 @@ data:extend({
     type = "recipe",
     name = "thorium-enrichment-process",
     energy_required = 60,
-    enabled = true,
+    enabled = false,
     category = "centrifuging",
     icon = "__planet-machina__/graphics/icons/thorium-enrichment-process.png",
     subgroup = "uranium-processing",
@@ -138,7 +138,7 @@ data:extend({
       {type = "item", name = "uranium-233", amount = 5}
     },
     main_product = "uranium-233",
-    allow_decomposition = false,
+    auto_recycle = false,
     allow_productivity = true,
     allow_quality = false -- catalyst would be also bumped on quality
   },
@@ -147,7 +147,7 @@ data:extend({
     type = "recipe",
     name = "mirandite-sludge",
     energy_required = 3,
-    enabled = true,
+    enabled = false,
     category = "chemistry",
     icon = "__planet-machina__/graphics/icons/mirandite-sludge.png",
     subgroup = "uranium-processing",
@@ -162,7 +162,7 @@ data:extend({
       {type = "fluid", name = "mirandite-sludge", amount = 100}
     },
     main_product = "mirandite-sludge",
-    allow_decomposition = false,
+    auto_recycle = false,
     allow_productivity = true,
   },
 
@@ -171,14 +171,12 @@ data:extend({
     type = "recipe",
     name = "mirandite-processing",
     energy_required = 2,
-    enabled = true,
     category = "crafting-with-fluid-or-metallurgy",
     ingredients = {{type = "fluid", name = "mirandite-sludge", amount = 100}},
     
     icon = "__planet-machina__/graphics/icons/mirandite-asteroid-chunk.png",
     subgroup = "uranium-processing",
     order = "a[uranium-processing]-a[uranium-processing]",
-    auto_recycle = false,
     results =
     {
       {type = "fluid", name = "water", amount = 30, ignored_by_stats = 30, ignored_by_productivity = 30},
@@ -250,7 +248,8 @@ data:extend({
       },
     },
     allow_productivity = true,
-    allow_decomposition = false,
+    auto_recycle = false,
+    enabled = false
   },
   --/////////////////////////////////////////////////   NIX RECIPES
   {
@@ -270,7 +269,7 @@ data:extend({
       {type="item", name="ice", amount=1}
     },
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
@@ -289,7 +288,7 @@ data:extend({
       {type="item", name="antimatter", amount=1, probability=.0001}
     },
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
@@ -305,23 +304,57 @@ data:extend({
     },
     results = {{type="item", name="dark-matter-compressed", amount=1}},
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
-    name = "charcoal",
-    icon = "__base__/graphics/icons/coal-1.png",
-    category = "compression",
+    name = "dark-matter-fuel",
+    icon = "__planet-machina__/graphics/icons/dark-matter-fuel.png",
+    category = "chemistry",
     subgroup = "aquilo-processes",
     order = "c[lithium]-b[lithium-plate]",
     auto_recycle = false,
     energy_required = 6.4,
     ingredients = {
-      {type = "item", name = "wood", amount = 2},
+      {type = "item", name = "dark-matter-chunk", amount = 1},
+      {type = "item", name = "rocket-fuel", amount = 1},
+    },
+    results = {{type="item", name="dark-matter-fuel", amount=1}},
+    allow_productivity = true,
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "dark-matter-fuel-cell",
+    icon = "__planet-machina__/graphics/icons/dark-matter-fuel-cell.png",
+    category = "chemistry",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "dark-matter-chunk", amount = 5},
+      {type = "item", name = "iron-plate", amount = 10},
+    },
+    results = {{type="item", name="dark-matter-fuel-cell", amount=1}},
+    allow_productivity = true,
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "charcoal",
+    icon = "__base__/graphics/icons/coal-1.png",
+    category = "chemistry",
+    subgroup = "aquilo-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "wood", amount = 1},
     },
     results = {{type="item", name="coal", amount=1}},
     allow_productivity = true,
-    enabled = true
+    auto_recycle = false,
+    enabled = false
   },
   {
     type = "recipe",
@@ -337,7 +370,7 @@ data:extend({
     },
     results = {{type="item", name="diamond", amount=1}},
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
@@ -346,7 +379,6 @@ data:extend({
     category = "compression",
     subgroup = "aquilo-processes",
     order = "c[lithium]-b[lithium-plate]",
-    auto_recycle = false,
     energy_required = 6.4,
     ingredients = {
       {type = "fluid", name = "dark-matter-fluid", amount = 5},
@@ -354,14 +386,14 @@ data:extend({
     },
     results = {{type="item", name="ice-xv", amount=1}},
     allow_productivity = true,
-    allow_decomposition = false,
-    enabled = true
+    auto_recycle = false,
+    enabled = false
   },
   {
     type = "recipe",
     name = "anomaly-science-pack",
     icon = "__planet-machina__/graphics/icons/anomaly-science-pack.png",
-    enabled = true,
+    enabled = false,
     category = "compression",
     energy_required = 15,
     ingredients =
@@ -377,14 +409,14 @@ data:extend({
       primary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
       secondary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
     },
-    allow_decomposition = false,
+    auto_recycle = false,
     allow_productivity = true
   },
   {
     type = "recipe",
     name = "catalyzed-anomaly-science-pack",
     icon = "__planet-machina__/graphics/icons/anomaly-science-pack.png",
-    enabled = true,
+    enabled = false,
     category = "compression",
     energy_required = 5,
     ingredients =
@@ -402,7 +434,7 @@ data:extend({
       primary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
       secondary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
     },
-    allow_decomposition = false,
+    auto_recycle = false,
     allow_productivity = true,
     allow_quality = false -- catalyst would be also bumped on quality
   },
@@ -414,7 +446,6 @@ data:extend({
     category = "nanotech",
     subgroup = "aquilo-processes",
     order = "c[lithium]-b[lithium-plate]",
-    auto_recycle = false,
     energy_required = 6.4,
     ingredients = {
       {type = "fluid", name = "gray-goo", amount = 50},
@@ -423,9 +454,9 @@ data:extend({
       {type="item", name="nanites", amount=50},
       {type="fluid", name="lubricant", amount=5}
     },
-    allow_decomposition = false,
+    auto_recycle = false,
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
@@ -434,7 +465,6 @@ data:extend({
     category = "nanotech",
     subgroup = "aquilo-processes",
     order = "c[lithium]-b[lithium-plate]",
-    auto_recycle = false,
     energy_required = 6.4,
     ingredients = {
       {type = "item", name = "nanites", amount = 50},
@@ -442,9 +472,9 @@ data:extend({
     results = {
       {type="item", name="thruster", amount=1}
     },
-    allow_decomposition = false,
+    auto_recycle = false,
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
@@ -453,7 +483,6 @@ data:extend({
     category = "nanotech",
     subgroup = "aquilo-processes",
     order = "c[lithium]-b[lithium-plate]",
-    auto_recycle = false,
     energy_required = 6.4,
     ingredients = {
       {type = "item", name = "nanites", amount = 50},
@@ -461,9 +490,9 @@ data:extend({
     results = {
       {type="item", name="asteroid-collector", amount=1}
     },
-    allow_decomposition = false,
+    auto_recycle = false,
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
@@ -472,7 +501,6 @@ data:extend({
     category = "nanotech",
     subgroup = "aquilo-processes",
     order = "c[lithium]-b[lithium-plate]",
-    auto_recycle = false,
     energy_required = 6.4,
     ingredients = {
       {type = "item", name = "nanites", amount = 50},
@@ -480,14 +508,14 @@ data:extend({
     results = {
       {type="item", name="crusher", amount=1}
     },
-    allow_decomposition = false,
+    auto_recycle = false,
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
     name = "nanite-science-pack",
-    enabled = true,
+    enabled = false,
     category = "nanotech",
     energy_required = 5,
     ingredients =
@@ -509,13 +537,13 @@ data:extend({
     name = "nanite-platform-foundation",
     category = "nanotech",
     energy_required = 10,
-    enabled = true,
+    enabled = false,
     ingredients =
     {
       {type = "fluid", name = "gray-goo", amount = 50},
     },
     results = {{type="item", name="space-platform-foundation", amount=1}},
-    allow_decomposition = false,
+    auto_recycle = false,
     allow_productivity = true
   },
   {
@@ -523,21 +551,21 @@ data:extend({
     name = "nanite-platform-starter-pack",
     energy_required = 60,
     category = "nanotech",
-    enabled = true,
+    enabled = false,
     ingredients =
     {
       {type = "item", name = "space-platform-foundation", amount = 50},
       {type = "item", name = "nanites", amount = 10},
     },
     results = {{type="item", name="space-platform-starter-pack", amount=1}},
-    allow_decomposition = false,
+    auto_recycle = false,
     allow_productivity = true
   },
   {
     type = "recipe",
-    name = "rocket-part",
+    name = "nano-rocket-part",
     energy_required = 3,
-    enabled = true,
+    enabled = false,
     hide_from_player_crafting = true,
     category = "rocket-building",
     ingredients =
@@ -546,7 +574,7 @@ data:extend({
     },
     results = {{type="item", name="rocket-part", amount=1}},
     allow_productivity = true,
-    allow_decomposition = false,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -599,7 +627,7 @@ data:extend({
     name = "gravity-assembler",
     energy_required = 60,
     category = "nanotech",
-    enabled = true,
+    enabled = false,
     ingredients =
     {
       {type = "item", name = "nanites", amount = 300},
@@ -615,7 +643,7 @@ data:extend({
     subgroup="space-crushing",
     order = "b-a-a",
     auto_recycle = false,
-    enabled = true,
+    enabled = false,
     ingredients =
     {
       {type = "fluid", name = "heavy-water", amount = 10},
@@ -644,7 +672,7 @@ data:extend({
     },
     results = {{type="item", name="gold-plate", amount=1}},
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
@@ -661,7 +689,7 @@ data:extend({
     },
     results = {{type="fluid", name="molten-gold", amount=500}},
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
@@ -676,7 +704,7 @@ data:extend({
     },
     results = {{type="item", name="gold-cable", amount=2}},
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
@@ -691,7 +719,7 @@ data:extend({
       {type = "fluid", name = "molten-gold", amount = 5, fluidbox_multiplier = 5},
     },
     energy_required = 1,
-    allow_decomposition = false,
+    auto_recycle = false,
     results = {{type = "item", name = "gold-cable", amount = 2}},
     allow_productivity = true
   },
@@ -708,7 +736,7 @@ data:extend({
       {type = "fluid", name = "molten-gold", amount = 20, fluidbox_multiplier = 5},
     },
     energy_required = 1,
-    allow_decomposition = false,
+    auto_recycle = false,
     results = {{type = "item", name = "copper-cable", amount = 2}},
     allow_productivity = true
   },
@@ -724,7 +752,7 @@ data:extend({
     },
     results = {{type="item", name="gold-foil", amount=10}},
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
@@ -739,7 +767,7 @@ data:extend({
     },
     results = {{type="item", name="multilayer-insulation", amount=1}},
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
@@ -771,7 +799,7 @@ data:extend({
     },
     results = {{type="item", name="glass-plate", amount=1}},
     allow_productivity = true,
-    enabled = true
+    enabled = false
   },
   {
     type = "recipe",
@@ -803,7 +831,7 @@ data:extend({
       {type = "fluid", name = "molten-glass", amount = 20, fluidbox_multiplier = 5},
     },
     energy_required = 1,
-    allow_decomposition = false,
+    auto_recycle = false,
     results = {{type = "item", name = "glass-plate", amount = 2}},
     allow_productivity = true
   },
@@ -825,8 +853,8 @@ data:extend({
       {type = "item", name = "glass-billet", amount = 3},
     },
     allow_productivity = true,
-    allow_decomposition = false,
-    enabled = true
+    auto_recycle = false,
+    enabled = false
   },
   {
     type = "recipe",
@@ -846,7 +874,7 @@ data:extend({
       {type = "item", name = "coal", amount = 1, probability = 0.05},
     },
     allow_productivity = true,
-    allow_decomposition = false,
+    auto_recycle = false,
     enabled = false
   },
   {
@@ -862,7 +890,7 @@ data:extend({
     },
     results = {{type="item", name="calcite", amount=1}},
     allow_productivity = true,
-    allow_decomposition = false,
+    auto_recycle = false,
     enabled = false
   },
   {

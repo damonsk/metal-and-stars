@@ -82,4 +82,32 @@ data:extend({
       },
       enabled = false
     },
+    {
+      type = "recipe",
+      name = "depleted-fuel-cell-recycling",
+      category = "recycling",
+      icons = {
+          {
+            icon = "__quality__/graphics/icons/recycling.png"
+          },
+          {
+            icon = "__planet-machina__/graphics/icons/empty-fuel-cell.png",
+            scale = 0.4
+          },
+          {
+            icon = "__quality__/graphics/icons/recycling-top.png"
+          }
+        },
+      subgroup = "aquilo-processes",
+      order = "c[lithium]-b[lithium-plate]",
+      energy_required = 6.4,
+      ingredients = {
+        {type = "item", name = "depleted-fuel-cell", amount = 1},
+      },
+      results = {
+        {type = "item", name = "stone", amount = 1},
+        {type = "item", name = "iron-plate", amount = 1},
+      },
+      enabled = false
+    },
 })

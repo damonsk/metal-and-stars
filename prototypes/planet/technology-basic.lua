@@ -234,8 +234,8 @@ data:extend({
         prerequisites = {"crude-slush-processing"},
         research_trigger =
         {
-          type = "mine-entity",
-          entity = "crude-slush"
+          type = "craft-item",
+          item = "ice-xv"
         }
     },
     --//////////////////////////// ringworld

@@ -100,7 +100,9 @@ data:extend({
           "cryogenic-science-pack",
           "promethium-science-pack",
           "nanite-science-pack",
-          "ring-science-pack"
+          "ring-science-pack",
+          "anomaly-science-pack",
+          "quantum-science-pack",
         },
         science_pack_drain_rate_percent = 50,
         energy_source =

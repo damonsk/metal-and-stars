@@ -105,4 +105,21 @@ data:extend({
         },
         results = {{type="item", name="uranium-cannon-shell", amount=1}}
       },
+      {
+        type = "recipe",
+        name = "gauss-rocket-casting",
+        icon = "__planet-machina__/graphics/icons/molten-gold.png",
+        category = "metallurgy",
+        subgroup = "aquilo-processes",
+        order = "c[lithium]-b[lithium-plate]",
+        auto_recycle = false,
+        energy_required = 6.4,
+        ingredients = {
+          {type = "item", name = "gold-ore", amount = 50},
+          {type = "item", name = "calcite", amount = 1},
+        },
+        results = {{type="fluid", name="molten-gold", amount=500}},
+        allow_productivity = true,
+        enabled = false
+      },
 })
