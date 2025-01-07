@@ -72,7 +72,11 @@ return {
                     },
                   },
                 },
-                {
+              }
+            },
+            working_visualisations = {
+              {
+                animation = {
                   priority = "high",
                   width = 320,
                   height = 320,
@@ -97,7 +101,7 @@ return {
                   },
                 },
               }
-            },
+            }
           }
     },
 }

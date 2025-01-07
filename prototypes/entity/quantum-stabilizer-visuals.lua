@@ -16,21 +16,45 @@ return {
         circuit_wire_connection_points = circuit_connector_definitions["electric-mining-drill"].points,
         circuit_connector_sprites = circuit_connector_definitions["electric-mining-drill"].sprites,
 
-        input_fluid_box = {
-            base_area = 1,
-            base_level = -1,
-            height = 2,
-            volume = 200,
+        fluid_boxes_off_when_no_fluid_recipe = true,
+        fluid_boxes =
+        {
+          {
+            production_type = "input",
+            pipe_picture = require("__space-age__.prototypes.entity.electromagnetic-plant-pictures").pipe_pictures,
+            pipe_picture_frozen = require("__space-age__.prototypes.entity.electromagnetic-plant-pictures").pipe_pictures_frozen,
             pipe_covers = pipecoverspictures(),
-            pipe_picture = assembler3pipepictures(),  -- TODO does nothing
-            pipe_connections =
-            {
-                { direction = defines.direction.west, position = {-2.88, 0} },
-                { direction = defines.direction.east, position = {2.88, 0} },
-                { direction = defines.direction.south, position = {0, -2.88} },
-                { direction = defines.direction.south, position = {0, 2.88} }
-            },
-            production_type = "input-output",
+            volume = 200,
+            secondary_draw_orders = { north = -1 },
+            pipe_connections = {{ flow_direction="input-output", direction = defines.direction.west, position = {-2.5, .5} }}
+          },
+          {
+            production_type = "input",
+            pipe_picture = require("__space-age__.prototypes.entity.electromagnetic-plant-pictures").pipe_pictures,
+            pipe_picture_frozen = require("__space-age__.prototypes.entity.electromagnetic-plant-pictures").pipe_pictures_frozen,
+            pipe_covers = pipecoverspictures(),
+            volume = 200,
+            secondary_draw_orders = { north = -1 },
+            pipe_connections = {{ flow_direction="input-output", direction = defines.direction.east, position = {2.5, -.5} }}
+          },
+          {
+            production_type = "output",
+            pipe_picture = require("__space-age__.prototypes.entity.electromagnetic-plant-pictures").pipe_pictures,
+            pipe_picture_frozen = require("__space-age__.prototypes.entity.electromagnetic-plant-pictures").pipe_pictures_frozen,
+            pipe_covers = pipecoverspictures(),
+            volume = 100,
+            secondary_draw_orders = { north = -1 },
+            pipe_connections = {{ flow_direction="input-output", direction = defines.direction.south, position = {.5, 2.5} }}
+          },
+          {
+            production_type = "output",
+            pipe_picture = require("__space-age__.prototypes.entity.electromagnetic-plant-pictures").pipe_pictures,
+            pipe_picture_frozen = require("__space-age__.prototypes.entity.electromagnetic-plant-pictures").pipe_pictures_frozen,
+            pipe_covers = pipecoverspictures(),
+            volume = 100,
+            secondary_draw_orders = { north = -1 },
+            pipe_connections = {{ flow_direction="input-output", direction = defines.direction.north, position = {-.5, -2.5} }}
+          }
         },
 
         graphics_set = {
@@ -72,32 +96,41 @@ return {
                     },
                   },
                 },
-                {
-                  priority = "high",
-                  width = 410,
-                  height = 410,
-                  frame_count = 100,
-                  animation_speed = 0.5,
-                  --shift = {0, -8/32},
-                  scale = 0.5,
-                  draw_as_glow = true,
-                  blend_mode = "additive",
-                  stripes =
-                  {
-                    {
-                      filename = "__planet-machina__/graphics/entity/quantum-stabilizer/quantum-stabilizer-hr-animation-emission-1.png",
-                      width_in_frames = 8,
-                      height_in_frames = 8,
-                    },
-                    {
-                      filename = "__planet-machina__/graphics/entity/quantum-stabilizer/quantum-stabilizer-hr-animation-emission-2.png",
-                      width_in_frames = 8,
-                      height_in_frames = 8,
-                    },
-                  },
-                },
               }
             },
+            working_visualisations = {
+              {
+                fadeout = true,
+                animation = {
+                  layers = {
+                    {
+                      priority = "high",
+                      width = 410,
+                      height = 410,
+                      frame_count = 100,
+                      animation_speed = 0.5,
+                      --shift = {0, -8/32},
+                      scale = 0.5,
+                      draw_as_glow = true,
+                      blend_mode = "additive",
+                      stripes =
+                      {
+                        {
+                          filename = "__planet-machina__/graphics/entity/quantum-stabilizer/quantum-stabilizer-hr-animation-emission-1.png",
+                          width_in_frames = 8,
+                          height_in_frames = 8,
+                        },
+                        {
+                          filename = "__planet-machina__/graphics/entity/quantum-stabilizer/quantum-stabilizer-hr-animation-emission-2.png",
+                          width_in_frames = 8,
+                          height_in_frames = 8,
+                        },
+                      },
+                    },
+                  }
+                }
+              }
+            }
           }
     },
 }

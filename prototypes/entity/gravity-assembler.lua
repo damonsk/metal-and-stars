@@ -35,7 +35,7 @@ local building_entity =
       pipe_covers = pipecoverspictures(),
       volume = 200,
       secondary_draw_orders = { north = -1 },
-      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.west, position = {-1.5, 0.5} }}
+      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.west, position = {-2, 1} }}
     },
     {
       production_type = "input",
@@ -44,7 +44,7 @@ local building_entity =
       pipe_covers = pipecoverspictures(),
       volume = 200,
       secondary_draw_orders = { north = -1 },
-      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.east, position = {1.5, -0.5} }}
+      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.east, position = {2, -1} }}
     },
     {
       production_type = "output",
@@ -53,7 +53,7 @@ local building_entity =
       pipe_covers = pipecoverspictures(),
       volume = 100,
       secondary_draw_orders = { north = -1 },
-      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.south, position = {0.5, 1.5} }}
+      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.south, position = {1, 2} }}
     },
     {
       production_type = "output",
@@ -62,7 +62,7 @@ local building_entity =
       pipe_covers = pipecoverspictures(),
       volume = 100,
       secondary_draw_orders = { north = -1 },
-      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.north, position = {-0.5, -1.5} }}
+      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.north, position = {-1, -2} }}
     }
   },
   damaged_trigger_effect = hit_effects.entity(),
@@ -82,6 +82,7 @@ local building_entity =
     probability_expression = "shipyard_crafting_machine_noise"
   },
   energy_usage = "75kW",
+  forced_symmetry = "horizontal",
   open_sound = sounds.machine_open,
   close_sound = sounds.machine_close,
   allowed_effects = {"speed", "consumption", "pollution"},

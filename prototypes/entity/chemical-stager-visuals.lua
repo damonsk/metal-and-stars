@@ -50,7 +50,11 @@ return {
                     },
                   },
                 },
-                {
+              }
+            },
+            working_visualisations = {
+              {
+                animation = {
                   priority = "high",
                   width = 400,
                   height = 400,
@@ -69,8 +73,29 @@ return {
                     },
                   },
                 },
+              },
+              {
+                animation = {
+                  priority = "high",
+                  width = 400,
+                  height = 400,
+                  frame_count = 60,
+                  animation_speed = 0.5,
+                  --shift = {0, -8/32},
+                  scale = 0.5,
+                  draw_as_glow = true,
+                  blend_mode = "additive",
+                  stripes =
+                  {
+                    {
+                      filename = "__planet-machina__/graphics/entity/chemical-stager/chemical-stager-hr-animation-emission-2.png",
+                      width_in_frames = 8,
+                      height_in_frames = 8,
+                    },
+                  },
+                },
               }
-            },
+            }
           }
     },
 }

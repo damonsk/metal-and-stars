@@ -33,7 +33,7 @@ local building_entity =
       pipe_covers = pipecoverspictures(),
       volume = 200,
       secondary_draw_orders = { north = -1 },
-      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.west, position = {-2.88, 1} }}
+      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.west, position = {-2.5, .5} }}
     },
     {
       production_type = "input",
@@ -42,7 +42,7 @@ local building_entity =
       pipe_covers = pipecoverspictures(),
       volume = 200,
       secondary_draw_orders = { north = -1 },
-      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.east, position = {2.88, -1} }}
+      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.east, position = {2.5, -.5} }}
     },
     {
       production_type = "output",
@@ -51,7 +51,7 @@ local building_entity =
       pipe_covers = pipecoverspictures(),
       volume = 100,
       secondary_draw_orders = { north = -1 },
-      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.south, position = {1, 2.88} }}
+      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.south, position = {.5, 2.5} }}
     },
     {
       production_type = "output",
@@ -60,7 +60,7 @@ local building_entity =
       pipe_covers = pipecoverspictures(),
       volume = 100,
       secondary_draw_orders = { north = -1 },
-      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.north, position = {-1, -2.88} }}
+      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.north, position = {-.5, -2.5} }}
     }
   },
   damaged_trigger_effect = hit_effects.entity(),
@@ -80,6 +80,7 @@ local building_entity =
     probability_expression = "shipyard_crafting_machine_noise"
   },
   energy_usage = "75kW",
+  forced_symmetry = "horizontal",
   open_sound = sounds.machine_open,
   close_sound = sounds.machine_close,
   allowed_effects = {"speed", "consumption", "pollution"},
