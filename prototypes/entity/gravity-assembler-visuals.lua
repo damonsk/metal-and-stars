@@ -16,23 +16,6 @@ return {
         circuit_wire_connection_points = circuit_connector_definitions["electric-mining-drill"].points,
         circuit_connector_sprites = circuit_connector_definitions["electric-mining-drill"].sprites,
 
-        input_fluid_box = {
-            base_area = 1,
-            base_level = -1,
-            height = 2,
-            volume = 200,
-            pipe_covers = pipecoverspictures(),
-            pipe_picture = assembler3pipepictures(),  -- TODO does nothing
-            pipe_connections =
-            {
-                { direction = defines.direction.west, position = {-2.4, 0} },
-                { direction = defines.direction.east, position = {2.4, 0} },
-                { direction = defines.direction.south, position = {0, -2.4} },
-                { direction = defines.direction.south, position = {0, 2.4} }
-            },
-            production_type = "input-output",
-        },
-
         graphics_set = {
             circuit_connector_layer = "object",
                 circuit_connector_secondary_draw_order = { north = 14, east = 30, south = 30, west = 30 },

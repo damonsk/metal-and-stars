@@ -185,6 +185,60 @@ data:extend({
     decorative_removal_probability = 1,
     trigger_effect = tile_trigger_effects.grass_1_trigger_effect()
   },
+  {
+    type = "tile",
+    name = "ice-rough-nix",
+    order = "b[natural]-i[ice]-a[rough]",
+    collision_mask = tile_collision_masks.ground(),
+    autoplace = {probability_expression = "ice_rough"},
+    layer = aquilo_tile_offset_frozen + 1,
+    variants = tile_variations_template(
+      "__space-age__/graphics/terrain/aquilo/ice-rough.png", "__base__/graphics/terrain/masks/transition-4.png",
+      {
+        max_size = 4,
+        [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
+        [2] = { probability = 1, weights = {0.018, 0.020, 0.015, 0.025, 0.015, 0.020, 0.025, 0.015, 0.025, 0.025, 0.010, 0.025, 0.020, 0.025, 0.025, 0.010 }, },
+        [4] = { probability = 0.1, weights = {0.018, 0.020, 0.015, 0.025, 0.015, 0.020, 0.025, 0.015, 0.025, 0.025, 0.010, 0.025, 0.020, 0.025, 0.025, 0.010 }, },
+        --[8] = { probability = 1.00, weights = {0.090, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.025, 0.125, 0.005, 0.010, 0.100, 0.100, 0.010, 0.020, 0.020} }
+      }
+    ),
+    subgroup = "aquilo-tiles",
+
+    transitions = ice_transitions,
+    transitions_between_transitions = ice_transitions_between_transitions,
+
+    walking_sound = ice_sounds,
+    landing_steps_sound = tile_sounds.landing.ice,
+    driving_sound = ice_driving_sound,
+    map_color = {100, 135, 177},
+    scorch_mark_color = {r = 0.318, g = 0.222, b = 0.152, a = 1.000},
+    absorptions_per_second = tile_pollution.ice,
+    vehicle_friction_modifier = ice_vehicle_speed_modifier,
+    trigger_effect = tile_trigger_effects.grass_1_trigger_effect()
+  },
+  {
+    type = "tile",
+    name = "ice-smooth-nix",
+    subgroup = "aquilo-tiles",
+    order = "b[natural]-i[ice]-c[smooth]",
+    --minable = {mining_time = 0.1, result = "iceblock"},
+    collision_mask = tile_collision_masks.ground(),
+    autoplace = {probability_expression = "ice_smooth"},
+    layer = aquilo_tile_offset_frozen,
+    variants = material_background("__space-age__/graphics/terrain/aquilo/ice-smooth.png", 4),
+
+    transitions = ice_transitions,
+    transitions_between_transitions = ice_transitions_between_transitions,
+
+    walking_sound = smooth_ice_sounds,
+    landing_steps_sound = tile_sounds.landing.ice,
+    driving_sound = ice_driving_sound,
+    map_color = {100, 135, 177},
+    scorch_mark_color = {r = 0.318, g = 0.222, b = 0.152, a = 1.000},
+    absorptions_per_second = tile_pollution.ice,
+    vehicle_friction_modifier = smooth_ice_vehicle_speed_modifier,
+    trigger_effect = tile_trigger_effects.grass_1_trigger_effect()
+  },
 })
 
 

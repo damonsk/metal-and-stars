@@ -62,7 +62,8 @@ return {
                   animation_speed = 0.5,
                   --shift = {0, -8/32},
                   scale = 0.5,
-                  draw_as_glow = true,
+                  draw_as_light = true,
+                  apply_recipe_tint = "secondary",
                   blend_mode = "additive",
                   stripes =
                   {
@@ -80,6 +81,7 @@ return {
                   width = 400,
                   height = 400,
                   frame_count = 60,
+                  apply_recipe_tint = "primary",
                   animation_speed = 0.5,
                   --shift = {0, -8/32},
                   scale = 0.5,

@@ -174,7 +174,7 @@ data:extend({
         research_trigger =
         {
           type = "mine-entity",
-          entity = "heavy-water-vent"
+          entity = "dark-matter-vent"
         }
     },
     {
@@ -191,6 +191,10 @@ data:extend({
           {
             type = "unlock-recipe",
             recipe = "ice-compression"
+          },
+          {
+            type = "unlock-recipe",
+            recipe = "liquid-fuel-heating-tower"
           },
         },
         prerequisites = {"planet-discovery-nix"},

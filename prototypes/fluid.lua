@@ -104,4 +104,47 @@ data:extend(
     flow_color = {0.7, 0.7, 0.75},
     auto_barrel = false
   },
+  --/////refined liquid fuels
+  {
+    type = "fluid",
+    name = "liquid-rocket-fuel",
+    icon = "__planet-machina__/graphics/icons/molten-glass.png",
+    subgroup = "fluid",
+    order = "a[fluid]-b[refined-fuel]-c[rocket-fuel]",
+    default_temperature = 15,
+    max_temperature = 100,
+    heat_capacity = "0.2kJ",
+    fuel_value = "11MJ",
+    base_color = {0.2, 0.2, 0.25},
+    flow_color = {0.7, 0.7, 0.75},
+    auto_barrel = false
+  },
+  {
+    type = "fluid",
+    name = "liquid-nuclear-fuel",
+    icon = "__planet-machina__/graphics/icons/molten-glass.png",
+    subgroup = "fluid",
+    order = "a[fluid]-b[refined-fuel]-c[nuclear-fuel]",
+    default_temperature = 15,
+    max_temperature = 100,
+    heat_capacity = "0.2kJ",
+    fuel_value = "133MJ",
+    base_color = {0.2, 0.2, 0.25},
+    flow_color = {0.7, 0.7, 0.75},
+    auto_barrel = false
+  },
+  {
+    type = "fluid",
+    name = "liquid-dark-matter-fuel",
+    icon = "__planet-machina__/graphics/icons/molten-glass.png",
+    subgroup = "fluid",
+    order = "a[fluid]-b[refined-fuel]-c[dark-matter-fuel]",
+    default_temperature = 15,
+    max_temperature = 100,
+    heat_capacity = "0.2kJ",
+    fuel_value = "72MJ",
+    base_color = {0.2, 0.2, 0.25},
+    flow_color = {0.7, 0.7, 0.75},
+    auto_barrel = false
+  },
 })

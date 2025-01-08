@@ -30,12 +30,8 @@ shipyard = function()
             ["snow-crests"] = {},
             ["snow-lumpy"] = {},
             ["snow-patchy-grass"] = {},
-            ["ice-rough"] = {},
-            ["ice-smooth"] = {},
-            -- ["brash-ice"] = {},
-            -- ["ammoniacal-ocean"] = {},
-            -- ["ammoniacal-ocean-2"] = {}
-
+            ["ice-rough-nix"] = {},
+            ["ice-smooth-nix"] = {},
           }
         },
         ["decorative"] =

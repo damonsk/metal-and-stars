@@ -572,6 +572,19 @@ data:extend({
         random_tint_color = item_tints.ice_blue
       },
       {
+        type = "item",
+        name = "liquid-fuel-heating-tower",
+        icon = "__planet-machina__/graphics/icons/liquid-fuel-heating-tower.png",
+        subgroup = "environmental-protection",
+        order = "c[liquid-fuel-heating-tower]",
+        inventory_move_sound = item_sounds.steam_inventory_move,
+        pick_sound = item_sounds.steam_inventory_pickup,
+        drop_sound = item_sounds.steam_inventory_move,
+        place_result = "liquid-fuel-heating-tower",
+        stack_size = 20,
+        weight = 100*kg
+      },
+      {
         type = "tool",
         name = "anomaly-science-pack",
         localised_description = {"item-description.science-pack"},
@@ -585,8 +598,6 @@ data:extend({
         stack_size = 200,
         weight = 1 * kg,
         durability = 1,
-        spoil_ticks = 1 * hour,
-        spoil_result = "quantum-science-pack",
         durability_description_key = "description.science-pack-remaining-amount-key",
         factoriopedia_durability_description_key = "description.factoriopedia-science-pack-remaining-amount-key",
         durability_description_value = "description.science-pack-remaining-amount-value",
@@ -621,7 +632,7 @@ data:extend({
         drop_sound = item_sounds.nuclear_inventory_move,
         fuel_category = "nuclear",
         burnt_result = "depleted-fuel-cell",
-        fuel_value = "8GJ",
+        fuel_value = "4GJ",
         stack_size = 50,
         weight = 100*kg
       },
@@ -660,7 +671,7 @@ data:extend({
           }
         },
         fuel_category = "chemical",
-        fuel_value = "1.21GJ",
+        fuel_value = "655MJ",
         fuel_acceleration_multiplier = 2.5,
         fuel_top_speed_multiplier = 1.15,
         -- fuel_glow_color = {r = 0.1, g = 1, b = 0.1},

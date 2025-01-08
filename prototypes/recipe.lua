@@ -898,4 +898,18 @@ data:extend({
     allow_productivity = true,
     enabled = false
   },
+  {
+    type = "recipe",
+    name = "liquid-fuel-heating-tower",
+    energy_required = 10,
+    ingredients =
+    {
+      {type = "item", name = "flamethrower", amount = 1},
+      {type = "item", name = "heat-pipe", amount = 5},
+      {type = "item", name = "storage-tank", amount = 2},
+      {type = "item", name = "pipe", amount = 6},
+    },
+    results = {{type="item", name="liquid-fuel-heating-tower", amount=1}},
+    enabled = false
+  },
 })
