@@ -38,28 +38,12 @@ shipyard = function()
         {
           settings =
           {
-            -- nauvis decoratives
-            -- ["v-brown-carpet-grass"] = {},
-            -- ["v-green-hairy-grass"] = {},
-            -- ["v-brown-hairy-grass"] = {},
-            -- ["v-red-pita"] = {},
-            -- end of nauvis
-            -- ["vulcanus-crack-decal-large"] = {},
-            -- ["vulcanus-dune-decal"] = {},
-            -- ["vulcanus-sand-decal"] = {},
-            -- ["calcite-stain"] = {},
-            -- ["calcite-stain-small"] = {},
-            -- ["sulfur-stain"] = {},
-            -- ["sulfur-stain-small"] = {},
-            -- ["sulfuric-acid-puddle"] = {},
-            -- ["sulfuric-acid-puddle-small"] = {},
-            -- ["crater-small"] = {},
-            -- ["crater-large"] = {},
-            -- ["pumice-relief-decal"] = {},
-            -- ["small-sulfur-rock"] = {},
-            -- ["tiny-sulfur-rock"] = {},
-            -- ["sulfur-rock-cluster"] = {},
-            -- ["waves-decal"] = {},
+            ["carbon-iceberg-medium"] = {},
+            ["carbon-iceberg-small"] = {},
+            ["carbon-iceberg-tiny"] = {},
+            ["aqulio-ice-decal-blue"] = {},
+            ["aqulio-snowy-decal"] = {},
+            ["snow-drift-decal"] = {}
           }
         },
         ["entity"] =
@@ -71,13 +55,9 @@ shipyard = function()
             ["crude-slush"] = {},
             ["iron-copper-ore"] = {},
             ["coal-stone-ore"] = {},
-            -- ["big-volcanic-rock"] = {},
-            -- ["crater-cliff"] = {},
-            -- ["vulcanus-chimney"] = {},
-            -- ["vulcanus-chimney-faded"] = {},
-            -- ["vulcanus-chimney-cold"] = {},
-            -- ["vulcanus-chimney-short"] = {},
-            -- ["vulcanus-chimney-truncated"] = {},
+            ["carbon-iceberg-huge"] = {},
+            ["carbon-iceberg-big"] = {}
+
           }
         }
       }

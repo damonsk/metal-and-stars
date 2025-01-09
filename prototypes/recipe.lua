@@ -100,6 +100,34 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "inert-science-pack-salvage",
+    category = "quantum",
+    subgroup = "aquilo-processes",
+    icons = {
+        {
+          icon = "__quality__/graphics/icons/recycling.png"
+        },
+        {
+          icon = "__planet-machina__/graphics/icons/inert-quantum-science.png",
+          scale = 0.4
+        },
+        {
+          icon = "__quality__/graphics/icons/recycling-top.png"
+        }
+      },
+    order = "c[lithium]-b[lithium-plate]",
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "inert-quantum-science-pack", amount = 1, ignored_by_stats = 1},
+    },
+    results = {
+      {type = "item", name = "quantum-shard-a", amount = 1, probability = 0.1, ignored_by_stats = 1},
+      {type = "item", name = "quantum-shard-b", amount = 1, probability = 0.1, ignored_by_stats = 1},
+      {type = "item", name = "quantum-shard-c", amount = 1, probability = 0.1, ignored_by_stats = 1},
+    },
+  },
+  {
+    type = "recipe",
     name = "quantum-science-pack",
     enabled = false,
     category = "quantum",
@@ -722,7 +750,7 @@ data:extend({
     },
     energy_required = 1,
     auto_recycle = false,
-    results = {{type = "item", name = "copper-cable", amount = 2}},
+    results = {{type = "item", name = "gold-plate", amount = 2}},
     allow_productivity = true
   },
   {
@@ -835,7 +863,7 @@ data:extend({
     },
     results = {
       {type = "item", name = "aspheric-lens", amount = 1},
-      {type = "item", name = "glass-billet", amount = 3},
+      {type = "item", name = "glass-billet", amount_min = 2, amount_max = 3, ignored_by_productivity = 3},
     },
     allow_productivity = true,
     auto_recycle = false,

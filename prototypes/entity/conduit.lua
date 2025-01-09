@@ -41,6 +41,7 @@ local building_entity =
   collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
   selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
   gui_mode = "none",
+  continuous_animation = true,
   allow_copy_paste = true,
   open_sound = sounds.machine_open,
   close_sound = sounds.machine_close,

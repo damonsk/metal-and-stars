@@ -368,14 +368,6 @@ data:extend({
             type = "unlock-recipe",
             recipe = "casting-glass-plate"
           },
-          {
-            type = "unlock-recipe",
-            recipe = "glass-plate-recycling"
-          },
-          {
-            type = "unlock-recipe",
-            recipe = "aspheric-lens-recycling"
-          },
         },
         prerequisites = {"basic-glass-processing"},
         unit =
@@ -613,7 +605,7 @@ data:extend({
           },
           {
             type = "unlock-recipe",
-            recipe = "inert-science-pack-recycling"
+            recipe = "inert-science-pack-salvage"
           },
         },
         prerequisites = {"quantum-refinement"},
