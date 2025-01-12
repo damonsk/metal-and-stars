@@ -9,8 +9,8 @@ data:extend(
     default_temperature = -50,
     max_temperature = 100,
     heat_capacity = "0.2kJ",
-    base_color = {0, 0.15, 0.4},
-    flow_color = {0, 0.35, 0.7},
+    base_color = {125, 125, 125},
+    flow_color = {125, 125, 125},
     auto_barrel = false
   },
   {
@@ -22,8 +22,8 @@ data:extend(
     default_temperature = 15,
     max_temperature = 100,
     heat_capacity = "0.2kJ",
-    base_color = {0, 0.15, 0.4},
-    flow_color = {0, 0.35, 0.7},
+    base_color = {61, 37, 61},
+    flow_color = {61, 37, 61},
     auto_barrel = false
   },
   {
@@ -35,21 +35,9 @@ data:extend(
     default_temperature = 15,
     max_temperature = 100,
     heat_capacity = "0.2kJ",
-    base_color = {0.15, 0, 0.4},
-    flow_color = {0.35, 0, 0.7},
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
-    name = "helium",
-    icon = "__metal-and-stars__/graphics/icons/helium.png",
-    subgroup = "fluid",
-    order = "b[new-fluid]-e[shipyard]-a[helium]",
-    default_temperature = 15,
-    max_temperature = 100,
-    heat_capacity = "0.2kJ",
-    base_color = {0, 0.15, 0.4},
-    flow_color = {0, 0.35, 0.7},
+    gas_temperature = 15,
+    base_color = {182, 99, 255},
+    flow_color = {182, 99, 255},
     auto_barrel = false
   },
   {
@@ -61,8 +49,8 @@ data:extend(
     default_temperature = 15,
     max_temperature = 100,
     heat_capacity = "0.2kJ",
-    base_color = {0.2, 0.2, 0.25},
-    flow_color = {0.7, 0.7, 0.75},
+    base_color = {54, 63, 64},
+    flow_color = {54, 63, 64},
     auto_barrel = false
   },
   {
@@ -74,8 +62,8 @@ data:extend(
     default_temperature = 15,
     max_temperature = 100,
     heat_capacity = "0.2kJ",
-    base_color = {0.2, 0.2, 0.25},
-    flow_color = {0.7, 0.7, 0.75},
+    base_color = {0.36, 0.54, 0.66},
+    flow_color = {0.36, 0.54, 0.66},
     auto_barrel = false
   },
   {
@@ -87,8 +75,8 @@ data:extend(
     default_temperature = 15,
     max_temperature = 100,
     heat_capacity = "0.2kJ",
-    base_color = {0.2, 0.2, 0.25},
-    flow_color = {0.7, 0.7, 0.75},
+    base_color = {189, 180, 64},
+    flow_color = {189, 180, 64},
     auto_barrel = false
   },
   {
@@ -100,8 +88,8 @@ data:extend(
     default_temperature = 15,
     max_temperature = 100,
     heat_capacity = "0.2kJ",
-    base_color = {0.2, 0.2, 0.25},
-    flow_color = {0.7, 0.7, 0.75},
+    base_color = {123, 209, 188},
+    flow_color = {123, 209, 188},
     auto_barrel = false
   },
   --/////refined liquid fuels
@@ -115,8 +103,8 @@ data:extend(
     max_temperature = 100,
     heat_capacity = "0.2kJ",
     fuel_value = "11MJ",
-    base_color = {0.2, 0.2, 0.25},
-    flow_color = {0.7, 0.7, 0.75},
+    base_color = {224, 165, 45},
+    flow_color = {224, 165, 45},
     auto_barrel = false
   },
   {
@@ -129,8 +117,8 @@ data:extend(
     max_temperature = 100,
     heat_capacity = "0.2kJ",
     fuel_value = "133MJ",
-    base_color = {0.2, 0.2, 0.25},
-    flow_color = {0.7, 0.7, 0.75},
+    base_color = {0, 255, 47},
+    flow_color = {0, 255, 47},
     auto_barrel = false
   },
   {
@@ -143,8 +131,8 @@ data:extend(
     max_temperature = 100,
     heat_capacity = "0.2kJ",
     fuel_value = "72MJ",
-    base_color = {0.2, 0.2, 0.25},
-    flow_color = {0.7, 0.7, 0.75},
+    base_color = {187, 0, 255},
+    flow_color = {187, 0, 255},
     auto_barrel = false
   },
 })

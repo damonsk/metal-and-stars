@@ -1,13 +1,17 @@
 {
     "name": "metal-and-stars",
-    "version": "0.1.0",
-    "title": "metal-and-stars",
+    "version": "0.0.1",
+    "title": "Metal and Stars",
     "author": "5forSilver",
-    "description": "This is a teeeest.",
-    "space_travel_required": true,
+    "description": "It's a big universe out there, and there are other ways to leave the solar system. Several new destinations with new machines, technologies, and unique processes",
     "factorio_version": "2.0",
     "dependencies": [
-        "space-age >= 2.0",
-        "base >= 2.0"
-    ]
+        "space-age >= 2.0.28",
+        "base >= 2.0.28"
+    ],
+    "space_travel_required": true,
+    "spoiling_required": true,
+    "freezing_required": true,
+    "segmented_units_required": true,
+    "expansion_shaders_required": true
 }

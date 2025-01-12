@@ -2,7 +2,7 @@ data:extend({
     {
         type = "technology",
         name = "planet-discovery-shipyard",
-        icons = util.technology_icon_constant_planet("__metal-and-stars__/graphics/icons/technology/shipyard-tech.png"),
+        icons = util.technology_icon_constant_planet("__metal-and-stars__/graphics/technology/shipyard-tech.png"),
         icon_size = 256,
         essential = true,
         effects =
@@ -30,7 +30,7 @@ data:extend({
     {
         type = "technology",
         name = "basic-low-gravity-assembly",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/gravity-assembler-grabber.png",
         icon_size = 256,
         effects =
         {
@@ -49,7 +49,7 @@ data:extend({
     {
         type = "technology",
         name = "platform-power-pylons",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/conduit-crusher.png",
         icon_size = 256,
         effects =
         {
@@ -68,7 +68,7 @@ data:extend({
     {
         type = "technology",
         name = "nanite-extraction",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/nanite-extraction.png",
         icon_size = 256,
         effects =
         {
@@ -87,7 +87,7 @@ data:extend({
     {
         type = "technology",
         name = "nanite-platform-assembly",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/nanite-platform-assembly.png",
         icon_size = 256,
         effects =
         {
@@ -135,7 +135,7 @@ data:extend({
     {
         type = "technology",
         name = "planet-discovery-nix",
-        icons = util.technology_icon_constant_planet("__metal-and-stars__/graphics/icons/technology/nix-tech.png"),
+        icons = util.technology_icon_constant_planet("__metal-and-stars__/graphics/technology/nix-tech.png"),
         icon_size = 256,
         essential = true,
         effects =
@@ -196,7 +196,7 @@ data:extend({
     {
         type = "technology",
         name = "crude-slush-processing",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/crude-slush-processing.png",
         icon_size = 256,
         effects =
         {
@@ -223,7 +223,7 @@ data:extend({
     {
       type = "technology",
       name = "high-pressure-manufacturing",
-      icon = "__space-age__/graphics/technology/calcite-processing.png",
+      icon = "__metal-and-stars__/graphics/technology/high-pressure-manufacturing.png",
       icon_size = 256,
       effects =
       {
@@ -250,7 +250,7 @@ data:extend({
     {
       type = "technology",
       name = "dark-matter-processing",
-      icon = "__space-age__/graphics/technology/calcite-processing.png",
+      icon = "__metal-and-stars__/graphics/technology/dark-matter-processing.png",
       icon_size = 256,
       effects =
       {
@@ -269,7 +269,7 @@ data:extend({
     {
         type = "technology",
         name = "antimatter-catalyst",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/antimatter.png",
         icon_size = 256,
         effects =
         {
@@ -288,7 +288,7 @@ data:extend({
     {
       type = "technology",
       name = "dark-matter-crystal",
-      icon = "__space-age__/graphics/technology/calcite-processing.png",
+      icon = "__metal-and-stars__/graphics/technology/dark-matter-crystal.png",
       icon_size = 256,
       effects =
       {
@@ -332,7 +332,7 @@ data:extend({
     {
         type = "technology",
         name = "planet-discovery-ringworld",
-        icons = util.technology_icon_constant_planet("__metal-and-stars__/graphics/icons/technology/ringworld-tech.png"),
+        icons = util.technology_icon_constant_planet("__metal-and-stars__/graphics/technology/ringworld-tech.png"),
         icon_size = 256,
         essential = true,
         effects =
@@ -358,7 +358,7 @@ data:extend({
     {
         type = "technology",
         name = "bitumen-processing",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/bitumen-processing.png",
         icon_size = 256,
         effects =
         {
@@ -381,7 +381,7 @@ data:extend({
     {
         type = "technology",
         name = "heavy-water-processing",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/heavy-water-processing.png",
         icon_size = 256,
         effects =
         {
@@ -400,7 +400,7 @@ data:extend({
     {
         type = "technology",
         name = "basic-glass-processing",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/glass-processing.png",
         icon_size = 256,
         effects =
         {
@@ -419,7 +419,7 @@ data:extend({
     {
         type = "technology",
         name = "lenscrafting",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/lenscrafting.png",
         icon_size = 256,
         effects =
         {
@@ -438,7 +438,7 @@ data:extend({
     {
         type = "technology",
         name = "glass-recycling",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/glass-recycling.png",
         icon_size = 256,
         effects =
         {
@@ -471,7 +471,7 @@ data:extend({
     {
         type = "technology",
         name = "gold-processing",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/gold-processing.png",
         icon_size = 256,
         effects =
         {
@@ -498,7 +498,7 @@ data:extend({
     {
         type = "technology",
         name = "advanced-insulative-material",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/multilayer-insulation.png",
         icon_size = 256,
         effects =
         {
@@ -521,7 +521,7 @@ data:extend({
     {
         type = "technology",
         name = "ring-science-pack",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/ring-science-pack.png",
         icon_size = 256,
         effects =
         {
@@ -545,7 +545,7 @@ data:extend({
     {
         type = "technology",
         name = "gold-wired-electronics",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/gold-wired-electronics.png",
         icon_size = 256,
         effects =
         {
@@ -557,20 +557,8 @@ data:extend({
             type = "unlock-recipe",
             recipe = "casting-gold-cable"
           },
-          {
-            type = "unlock-recipe",
-            recipe = "casting-glass-plate"
-          },
-          {
-            type = "unlock-recipe",
-            recipe = "glass-plate-recycling"
-          },
-          {
-            type = "unlock-recipe",
-            recipe = "aspheric-lens-recycling"
-          },
         },
-        prerequisites = {"basic-glass-processing"},
+        prerequisites = {"ring-science-pack","gold-processing"},
         unit =
         {
             count = 500,
@@ -587,7 +575,7 @@ data:extend({
     {
         type = "technology",
         name = "planet-discovery-mirandus",
-        icons = util.technology_icon_constant_planet("__metal-and-stars__/graphics/icons/technology/mirandus-tech.png"),
+        icons = util.technology_icon_constant_planet("__metal-and-stars__/graphics/technology/mirandus-tech.png"),
         icon_size = 256,
         essential = true,
         effects =
@@ -617,7 +605,7 @@ data:extend({
     {
         type = "technology",
         name = "mirandite-processing",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/mirandite-processing.png",
         icon_size = 256,
         effects =
         {
@@ -636,7 +624,7 @@ data:extend({
     {
         type = "technology",
         name = "neodymium-processing",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/neodymium-processing.png",
         icon_size = 256,
         effects =
         {
@@ -655,7 +643,7 @@ data:extend({
     {
         type = "technology",
         name = "quantum-stabilization",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/quantum-stabilizer.png",
         icon_size = 256,
         effects =
         {

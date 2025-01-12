@@ -49,8 +49,8 @@ data:extend({
     category = "compression",
     ingredients =
     {
-      {type = "item", name = "dark-matter-chunk", amount = 1},
-      {type = "fluid", name = "liquid-rocket-fuel", amount = 10}
+      {type = "fluid", name = "dark-matter-fluid", amount = 5},
+      {type = "fluid", name = "liquid-rocket-fuel", amount = 5}
     },
     results = {{type="fluid", name="liquid-dark-matter-fuel", amount=10}},
     crafting_machine_tint =
