@@ -160,6 +160,32 @@ data:extend({
  },
  {
     type = "technology",
+    name = "high-speed-processor",
+    icon = "__space-age__/graphics/technology/calcite-processing.png",
+    icon_size = 256,
+    effects =
+    {
+        {
+            type = "unlock-recipe",
+            recipe = "high-speed-processor"
+        },
+    },
+    prerequisites = {"ring-science-pack", "quantum-science-pack"},
+    unit =
+    {
+        count = 1000,
+        ingredients =
+        {
+          {"space-science-pack", 1},
+          {"nanite-science-pack", 1},
+          {"ring-science-pack", 1},
+          {"quantum-science-pack", 1},
+        },
+        time = 60
+    }
+ },
+ {
+    type = "technology",
     name = "quantum-ore-conversion-1",
     icon = "__space-age__/graphics/technology/calcite-processing.png",
     icon_size = 256,
