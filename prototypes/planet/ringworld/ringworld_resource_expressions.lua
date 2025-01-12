@@ -32,7 +32,7 @@ data:extend({
         type = "noise-expression",
         name = "ringworld_heavy_water_spots",
         expression = "ringworld_left_mask * ringworld_spot_noise{\z
-            seed = 12345,\z
+            seed = 16875,\z
             count = 50,\z
             skip_offset = 0,\z
             region_size = 600 + 400 / control:ringworld_heavy_water:frequency,\z
@@ -46,15 +46,14 @@ data:extend({
         type = "noise-expression",
         name = "ringworld_heavy_water_probability",
         expression = "(control:ringworld_heavy_water:size > 0)\z
-                      * (max(aquilo_starting_crude_oil * 0.02,\z
-                             min(aquilo_starting_mask, ringworld_heavy_water_spots) * 0.015))"
-      },
-      {
+                        * (max(aquilo_starting_crude_oil * 0.02,\z
+                                min(aquilo_starting_mask, ringworld_heavy_water_spots) * 0.015))"
+    },
+    {
         type = "noise-expression",
         name = "ringworld_heavy_water_richness",
-        expression = "max(aquilo_starting_crude_oil * 1800000,\z
-                          ringworld_heavy_water_spots * 1440000) * control:ringworld_heavy_water:richness"
-      },
+        expression = "random_penalty(x, y, 9232 + (sqrt(x*x + y*y) / 10), 99, 1000) * control:ringworld_heavy_water:richness"
+    },
     {
         type = "noise-expression",
         name = "ringworld_detritus",
@@ -62,12 +61,17 @@ data:extend({
             seed = 54321,\z
             count = 50,\z
             skip_offset = 0,\z
-            region_size = 1024,\z
+            region_size = 600 + 400 / control:ringworld_detritus:frequency,\z
             density = 1,\z
-            radius = 16,\z
+            radius = ringworld_spot_size * sqrt(control:ringworld_detritus:size),\z
             favorability = 1,\z
             max_y_bound = 34\z
         }"
+    },
+    {
+        type = "noise-expression",
+        name = "ringworld_detritus_richness",
+        expression = "random_penalty(x, y, 9232 + (sqrt(x*x + y*y) / 10), 99, 1000) * control:ringworld_detritus:richness"
     },
     -- //right resources
     {
@@ -77,26 +81,36 @@ data:extend({
             seed = 12345,\z
             count = 50,\z
             skip_offset = 0,\z
-            region_size = 1024,\z
+            region_size = 600 + 400 / control:ringworld_gold_sand:frequency,\z
             density = 1,\z
-            radius = 16,\z
+            radius = ringworld_spot_size * sqrt(control:ringworld_gold_sand:size),\z
             favorability = 1,\z
             max_y_bound = 34\z
         }"
     },
     {
         type = "noise-expression",
+        name = "ringworld_gold_richness",
+        expression = "random_penalty(x, y, 9232 + (sqrt(x*x + y*y) / 10), 99, 1000) * control:ringworld_gold_sand:richness"
+    },
+    {
+        type = "noise-expression",
         name = "ringworld_weaponry",
         expression = "ringworld_right_mask * ringworld_spot_noise{\z
-            seed = 54321,\z
+            seed = 56781,\z
             count = 50,\z
             skip_offset = 0,\z
-            region_size = 1024,\z
+            region_size = 600 + 400 / control:ringworld_military_scrap:frequency,\z
             density = 1,\z
-            radius = 16,\z
+            radius = ringworld_spot_size * sqrt(control:ringworld_military_scrap:size),\z
             favorability = 1,\z
             max_y_bound = 34\z
         }"
+    },
+    {
+        type = "noise-expression",
+        name = "ringworld_weaponry_richness",
+        expression = "random_penalty(x, y, 9232 + (sqrt(x*x + y*y) / 10), 99, 1000) * control:ringworld_military_scrap:richness"
     },
 
     

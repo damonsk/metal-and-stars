@@ -7,7 +7,7 @@ particle_animations.get_mirandite_asteroid_particle_small_pictures = function(op
   local options = options or {}
   return {
     sheet = {
-      filename = "__planet-machina__/graphics/particle/asteroid-particle/mirandite-asteroid-particle-small.png",
+      filename = "__metal-and-stars__/graphics/particle/asteroid-particle/mirandite-asteroid-particle-small.png",
       priority = "extra-high",
       width = 14,
       height = 16,
@@ -25,7 +25,7 @@ particle_animations.get_mirandite_asteroid_particle_medium_pictures = function(o
   local options = options or {}
   return {
     sheet = {
-      filename = "__planet-machina__/graphics/particle/asteroid-particle/mirandite-asteroid-particle-medium.png",
+      filename = "__metal-and-stars__/graphics/particle/asteroid-particle/mirandite-asteroid-particle-medium.png",
       priority = "extra-high",
       width = 22,
       height = 22,
@@ -43,7 +43,7 @@ particle_animations.get_mirandite_asteroid_particle_big_pictures = function(opti
   local options = options or {}
   return {
     sheet = {
-      filename = "__planet-machina__/graphics/particle/asteroid-particle/mirandite-asteroid-particle-big.png",
+      filename = "__metal-and-stars__/graphics/particle/asteroid-particle/mirandite-asteroid-particle-big.png",
       priority = "extra-high",
       width = 36,
       height = 36,
@@ -61,7 +61,7 @@ particle_animations.get_mirandite_asteroid_particle_top_small_pictures = functio
   local options = options or {}
   return {
     sheet = {
-      filename = "__planet-machina__/graphics/particle/asteroid-particle/mirandite-asteroid-particle-top-small.png",
+      filename = "__metal-and-stars__/graphics/particle/asteroid-particle/mirandite-asteroid-particle-top-small.png",
       priority = "extra-high",
       width = 58,
       height = 56,
@@ -79,7 +79,7 @@ particle_animations.get_mirandite_asteroid_particle_top_big_pictures = function(
   local options = options or {}
   return {
     sheet = {
-      filename = "__planet-machina__/graphics/particle/asteroid-particle/mirandite-asteroid-particle-top-big.png",
+      filename = "__metal-and-stars__/graphics/particle/asteroid-particle/mirandite-asteroid-particle-top-big.png",
       priority = "extra-high",
       width = 82,
       height = 82,

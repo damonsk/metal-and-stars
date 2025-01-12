@@ -1,4 +1,4 @@
-local luxaqua_map_gen = require("__planet-machina__.prototypes.planet.luxaqua.luxaqua_map_gen")
+local luxaqua_map_gen = require("__metal-and-stars__.prototypes.planet.luxaqua.luxaqua_map_gen")
 local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-definitions")
 
 local meld = require("meld")
@@ -6,8 +6,8 @@ local meld = require("meld")
 local machina = {
     type = "planet",
     name = "luxaqua",
-    icon = "__planet-machina__/graphics/icons/luxaqua-icon.png",
-    starmap_icon = "__planet-machina__/graphics/icons/luxaqua-starmap.png",
+    icon = "__metal-and-stars__/graphics/icons/luxaqua-icon.png",
+    starmap_icon = "__metal-and-stars__/graphics/icons/luxaqua-starmap.png",
     starmap_icon_size = 512,
     map_gen_settings = meld.overwrite(luxaqua_map_gen()),
     gravity_pull = 10,

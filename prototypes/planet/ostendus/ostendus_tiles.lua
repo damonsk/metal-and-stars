@@ -282,7 +282,7 @@ data:extend({
       autoplace = {probability_expression = 'volcanic_ash_soil_range'},
       layer = 26,
       variants = tile_variations_template(
-        "__planet-machina__/graphics/terrain/grass-1.png", "__base__/graphics/terrain/masks/transition-3.png",
+        "__metal-and-stars__/graphics/terrain/grass-1.png", "__base__/graphics/terrain/masks/transition-3.png",
         {
           max_size = 4,
           [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -313,7 +313,7 @@ data:extend({
       autoplace = {probability_expression = 'volcanic_soil_light_range'},
       layer = 26,
       variants = tile_variations_template(
-        "__planet-machina__/graphics/terrain/grass-1.png", "__base__/graphics/terrain/masks/transition-3.png",
+        "__metal-and-stars__/graphics/terrain/grass-1.png", "__base__/graphics/terrain/masks/transition-3.png",
         {
           max_size = 4,
           [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -344,7 +344,7 @@ data:extend({
       autoplace = {probability_expression = 'volcanic_soil_dark_range'},
       layer = 26,
       variants = tile_variations_template(
-        "__planet-machina__/graphics/terrain/grass-1.png", "__base__/graphics/terrain/masks/transition-3.png",
+        "__metal-and-stars__/graphics/terrain/grass-1.png", "__base__/graphics/terrain/masks/transition-3.png",
         {
           max_size = 4,
           [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -378,7 +378,7 @@ data:extend({
       autoplace = {probability_expression = 'volcanic_pumice_stones_range+volcanic_cracks_cold_range'},
       layer = 29,
       variants = tile_variations_template(
-        "__planet-machina__/graphics/terrain/grass-3.png", "__base__/graphics/terrain/masks/transition-3.png",
+        "__metal-and-stars__/graphics/terrain/grass-3.png", "__base__/graphics/terrain/masks/transition-3.png",
         {
           max_size = 4,
           [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -410,7 +410,7 @@ data:extend({
       autoplace = {probability_expression = 'volcanic_smooth_stone_range'},
       layer = 29,
       variants = tile_variations_template(
-        "__planet-machina__/graphics/terrain/grass-3-dark.png", "__base__/graphics/terrain/masks/transition-3.png",
+        "__metal-and-stars__/graphics/terrain/grass-3-dark.png", "__base__/graphics/terrain/masks/transition-3.png",
         {
           max_size = 4,
           [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -442,7 +442,7 @@ data:extend({
       autoplace = {probability_expression = 'volcanic_ash_cracks_range'},
       layer = 29,
       variants = tile_variations_template(
-        "__planet-machina__/graphics/terrain/grass-3-dark.png", "__base__/graphics/terrain/masks/transition-3.png",
+        "__metal-and-stars__/graphics/terrain/grass-3-dark.png", "__base__/graphics/terrain/masks/transition-3.png",
         {
           max_size = 4,
           [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -475,7 +475,7 @@ data:extend({
       autoplace = {probability_expression = 'volcanic_folds_range'},
       layer = 30,
       variants = tile_variations_template(
-        "__planet-machina__/graphics/terrain/leaf-cover.png", "__base__/graphics/terrain/masks/transition-3.png",
+        "__metal-and-stars__/graphics/terrain/leaf-cover.png", "__base__/graphics/terrain/masks/transition-3.png",
         {
           max_size = 4,
           [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -507,7 +507,7 @@ data:extend({
       autoplace = {probability_expression = 'volcanic_jagged_ground_range'},
       layer = 30,
       variants = tile_variations_template(
-        "__planet-machina__/graphics/terrain/leaf-cover-light.png", "__base__/graphics/terrain/masks/transition-3.png",
+        "__metal-and-stars__/graphics/terrain/leaf-cover-light.png", "__base__/graphics/terrain/masks/transition-3.png",
         {
           max_size = 4,
           [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -539,7 +539,7 @@ data:extend({
       autoplace = {probability_expression = 'volcanic_folds_flat_range'},
       layer = 30,
       variants = tile_variations_template(
-        "__planet-machina__/graphics/terrain/leaf-cover-dark.png", "__base__/graphics/terrain/masks/transition-3.png",
+        "__metal-and-stars__/graphics/terrain/leaf-cover-dark.png", "__base__/graphics/terrain/masks/transition-3.png",
         {
           max_size = 4,
           [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },

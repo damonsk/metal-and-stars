@@ -1,4 +1,4 @@
-local ostendus_map_gen = require("__planet-machina__.prototypes.planet.ostendus.ostendus_map_gen")
+local ostendus_map_gen = require("__metal-and-stars__.prototypes.planet.ostendus.ostendus_map_gen")
 local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-definitions")
 
 local meld = require("meld")
@@ -6,8 +6,8 @@ local meld = require("meld")
 local machina = {
     type = "planet",
     name = "ostendus",
-    icon = "__planet-machina__/graphics/icons/ostendus-icon.png",
-    starmap_icon = "__planet-machina__/graphics/icons/ostendus-starmap.png",
+    icon = "__metal-and-stars__/graphics/icons/ostendus-icon.png",
+    starmap_icon = "__metal-and-stars__/graphics/icons/ostendus-starmap.png",
     starmap_icon_size = 512,
     map_gen_settings = meld.overwrite(ostendus_map_gen()),
     gravity_pull = 10,

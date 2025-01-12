@@ -4,10 +4,10 @@ local meld = require("meld")
 
 local item_name = "conduit"
 
-local technology_icon = "__planet-machina__/graphics/icons/conduit.png"
+local technology_icon = "__metal-and-stars__/graphics/icons/conduit.png"
 local technology_icon_size = 256
 --item
-local item_icon = "__planet-machina__/graphics/icons/conduit.png"
+local item_icon = "__metal-and-stars__/graphics/icons/conduit.png"
 local item_icon_size = 64
 
 local building_entity = 
@@ -49,7 +49,7 @@ local building_entity =
   animation = {
     layers = {
       {
-        filename = "__planet-machina__/graphics/entity/conduit/conduit-hr-shadow.png",
+        filename = "__metal-and-stars__/graphics/entity/conduit/conduit-hr-shadow.png",
         priority = "high",
         width = 600,
         height = 400,
@@ -71,7 +71,7 @@ local building_entity =
         stripes =
         {
           {
-            filename = "__planet-machina__/graphics/entity/conduit/conduit-hr-animation.png",
+            filename = "__metal-and-stars__/graphics/entity/conduit/conduit-hr-animation.png",
             width_in_frames = 8,
             height_in_frames = 8,
           }
@@ -90,7 +90,7 @@ local building_entity =
         stripes =
         {
           {
-            filename = "__planet-machina__/graphics/entity/conduit/conduit-hr-animation-emission.png",
+            filename = "__metal-and-stars__/graphics/entity/conduit/conduit-hr-animation-emission.png",
             width_in_frames = 8,
             height_in_frames = 8,
           }
@@ -102,40 +102,5 @@ local building_entity =
 }
 
 data:extend({
-  {
-    type = "technology",
-    name = item_name.."research",
-    icon = technology_icon,
-    icon_size = technology_icon_size,
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = item_name
-      }
-    },
-    prerequisites = {"rocket-silo"},
-    research_trigger = {type = "create-space-platform"}
-  },
-  {
-		type = "item",
-		name = item_name,
-		icon = technology_icon,
-		icon_size = technology_icon_size,
-		subgroup = "extraction-machine",
-		order = "d[hurricane]",
-		place_result = item_name,
-		stack_size = 10,
-	},
-  {
-		type = "recipe",
-		name = item_name,
-		enabled = false,
-    energy_required = 10,
-		ingredients = {
-      {type = "item", name = "jellynut", amount = 1},
-		},
-		results = {{type="item", name=item_name, amount=1}}
-	},
   building_entity
 })

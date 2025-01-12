@@ -26,7 +26,7 @@ local oil_driving_sound =
       {
         type = "resource",
         name = "iron-copper-ore",
-        icon = "__planet-machina__/graphics/icons/autoplace-icons/copper-iron-icon.png",
+        icon = "__metal-and-stars__/graphics/icons/autoplace-icons/copper-iron-icon.png",
         flags = {"placeable-neutral"},
         order="a-b-".."b",
         tree_removal_probability = 1,
@@ -77,7 +77,7 @@ local oil_driving_sound =
         {
           sheet =
           {
-            filename = "__planet-machina__/graphics/entity/ores/mixed-metal.png",
+            filename = "__metal-and-stars__/graphics/entity/ores/mixed-metal.png",
             priority = "extra-high",
             size = 128,
             frame_count = 8,
@@ -92,7 +92,7 @@ local oil_driving_sound =
       {
         type = "resource",
         name = "coal-stone-ore",
-        icon = "__planet-machina__/graphics/icons/autoplace-icons/coal-stone-icon.png",
+        icon = "__metal-and-stars__/graphics/icons/autoplace-icons/coal-stone-icon.png",
         flags = {"placeable-neutral"},
         order="a-b-".."b",
         tree_removal_probability = 1,
@@ -143,7 +143,7 @@ local oil_driving_sound =
         {
           sheet =
           {
-            filename = "__planet-machina__/graphics/entity/ores/mixed-mineral.png",
+            filename = "__metal-and-stars__/graphics/entity/ores/mixed-mineral.png",
             priority = "extra-high",
             size = 128,
             frame_count = 8,
@@ -158,7 +158,7 @@ local oil_driving_sound =
       {
         type = "resource",
         name = "dark-matter-vent",
-        icon = "__planet-machina__/graphics/icons/autoplace-icons/dark-matter-vent.png",
+        icon = "__metal-and-stars__/graphics/icons/autoplace-icons/dark-matter-vent.png",
         flags = {"placeable-neutral"},
         category = "basic-fluid",
         subgroup = "mineable-fluids",
@@ -188,12 +188,18 @@ local oil_driving_sound =
         walking_sound = sounds.oil,
         collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-        autoplace = {
-          control = "nix_dark_matter",
-          order="a[resources]-a[dark-matter-fluid]",
-          --default_enabled = false,
-          probability_expression = "aquilo_flourine_vent_probability",
-          richness_expression = "aquilo_flourine_vent_richness"
+        autoplace = resource_autoplace.resource_autoplace_settings
+        {
+          name = "nix_dark_matter",
+          order = "c", -- Other resources are "b"; oil won't get placed if something else is already there.
+          base_density = 8.2,
+          base_spots_per_km2 = 1.8,
+          random_probability = 1/48,
+          random_spot_size_minimum = 1,
+          random_spot_size_maximum = 1, -- don't randomize spot size
+          additional_richness = 220000, -- this increases the total everywhere, so base_density needs to be decreased to compensate
+          has_starting_area_placement = true,
+          regular_rq_factor_multiplier = 1
         },
         stage_counts = {0},
         stages =
@@ -201,7 +207,7 @@ local oil_driving_sound =
           layers =
           {
             {
-                filename = "__planet-machina__/graphics/entity/geysers/geyser-vent-snow.png",
+                filename = "__metal-and-stars__/graphics/entity/geysers/geyser-vent-snow.png",
                 priority = "extra-high",
                 frame_count = 4,
                 scale = 0.5,
@@ -211,7 +217,7 @@ local oil_driving_sound =
                 line_length = 4,  
             },
             {
-              filename = "__planet-machina__/graphics/entity/geysers/geyser-vent-emission-purple.png",
+              filename = "__metal-and-stars__/graphics/entity/geysers/geyser-vent-emission-purple.png",
               priority = "extra-high",
               frame_count = 4,
               scale = 0.5,
@@ -243,7 +249,7 @@ local oil_driving_sound =
             }
           }
         },
-        map_color = {0.0, 0.8, 1.0},
+        map_color = {28, 0, 28},
         map_grid = false,
         --created_effect = create_tiles("snow-patchy")
       },
@@ -291,7 +297,7 @@ local oil_driving_sound =
           random_spot_size_minimum = 1,
           random_spot_size_maximum = 1, -- don't randomize spot size
           additional_richness = 220000, -- this increases the total everywhere, so base_density needs to be decreased to compensate
-          has_starting_area_placement = false,
+          has_starting_area_placement = true,
           regular_rq_factor_multiplier = 1
         },
         stage_counts = {0},
@@ -305,12 +311,13 @@ local oil_driving_sound =
               variation_count = 1,
               frame_count = 4,
             }),
-            util.sprite_load("__planet-machina__/graphics/entity/geysers/crude-slush-ice",
+            util.sprite_load("__metal-and-stars__/graphics/entity/geysers/crude-slush-ice",
             {
               priority = "extra-high",
               scale = 0.5,
               variation_count = 1,
               frame_count = 4,
+              draw_as_glow = true,
             }),
           }
         },
@@ -321,11 +328,11 @@ local oil_driving_sound =
       {
         type = "resource",
         name = "heavy-water-vent",
-        icon = "__planet-machina__/graphics/icons/autoplace-icons/heavy-water-vent.png",
+        icon = "__metal-and-stars__/graphics/icons/autoplace-icons/heavy-water-vent.png",
         flags = {"placeable-neutral"},
         category = "basic-fluid",
         subgroup = "mineable-fluids",
-        order="b",
+        order="a-b-a",
         infinite = true,
         highlight = true,
         minimum = 20000,
@@ -364,7 +371,7 @@ local oil_driving_sound =
           layers =
           {
             {
-                filename = "__planet-machina__/graphics/entity/geysers/geyser-vent-sandstone.png",
+                filename = "__metal-and-stars__/graphics/entity/geysers/geyser-vent-sandstone.png",
                 priority = "extra-high",
                 frame_count = 4,
                 scale = 0.5,
@@ -381,7 +388,7 @@ local oil_driving_sound =
           {
             count = 1,
             render_layer = "decorative",
-            animation = util.sprite_load("__planet-machina__/graphics/entity/geysers/boiling-water-animation",
+            animation = util.sprite_load("__metal-and-stars__/graphics/entity/geysers/boiling-water-animation",
             {
               priority = "extra-high",
               scale = 0.5,
@@ -399,9 +406,9 @@ local oil_driving_sound =
       {
         type = "resource",
         name = "gold-sands",
-        icon = "__planet-machina__/graphics/icons/autoplace-icons/gold-sand-icon.png",
+        icon = "__metal-and-stars__/graphics/icons/autoplace-icons/gold-sand-icon.png",
         flags = {"placeable-neutral"},
-        order="a-b-".."b",
+        order="a-b-a",
         tree_removal_probability = 1,
         tree_removal_max_distance = 32 * 32,
         minable =
@@ -436,14 +443,15 @@ local oil_driving_sound =
         autoplace =
         {
           probability_expression = 'ringworld_gold',
-          tile_restriction = {"sand-1-ringworld", "sand-2-ringworld"}
+          tile_restriction = {"sand-1-ringworld", "sand-2-ringworld"},
+          richness_expression = "ringworld_gold_richness"
         },
         stage_counts = {15000, 2000},
         stages =
         {
           sheet =
           {
-            filename = "__planet-machina__/graphics/entity/ores/gold-ore.png",
+            filename = "__metal-and-stars__/graphics/entity/ores/gold-ore.png",
             priority = "extra-high",
             size = 128,
             frame_count = 8,
@@ -458,9 +466,9 @@ local oil_driving_sound =
       {
         type = "resource",
         name = "military-scrap",
-        icon = "__planet-machina__/graphics/icons/autoplace-icons/military-scrap-icon.png",
+        icon = "__metal-and-stars__/graphics/icons/autoplace-icons/military-scrap-icon.png",
         flags = {"placeable-neutral"},
-        order="a-b-".."b",
+        order="a-b-a",
         tree_removal_probability = 1,
         tree_removal_max_distance = 32 * 32,
         minable =
@@ -535,14 +543,15 @@ local oil_driving_sound =
         autoplace =
         {
           probability_expression = 'ringworld_weaponry',
-          tile_restriction = {"sand-1-ringworld", "sand-2-ringworld"}
+          tile_restriction = {"sand-1-ringworld", "sand-2-ringworld"},
+          richness_expression = "ringworld_weaponry_richness"
         },
         stage_counts = {15000, 9500, 5500, 2900, 1300, 400, 150, 80},
         stages =
         {
           sheet =
           {
-            filename = "__planet-machina__/graphics/entity/ores/military-scrap.png",
+            filename = "__metal-and-stars__/graphics/entity/ores/military-scrap.png",
             priority = "extra-high",
             size = 128,
             frame_count = 8,
@@ -557,9 +566,9 @@ local oil_driving_sound =
       {
         type = "resource",
         name = "ringworld-detritus",
-        icon = "__planet-machina__/graphics/icons/autoplace-icons/detritus-icon.png",
+        icon = "__metal-and-stars__/graphics/icons/autoplace-icons/detritus-icon.png",
         flags = {"placeable-neutral"},
-        order="a-b-".."b",
+        order="a-b-a",
         tree_removal_probability = 1,
         tree_removal_max_distance = 32 * 32,
         minable =
@@ -586,14 +595,15 @@ local oil_driving_sound =
         autoplace =
         {
           probability_expression = 'ringworld_detritus',
-          tile_restriction = {"undergrowth-thin", "undergrowth-thin-dark", "undergrowth-thick", "undergrowth-thick-dark"}
+          tile_restriction = {"undergrowth-thin", "undergrowth-thin-dark", "undergrowth-thick", "undergrowth-thick-dark"},
+          richness_expression = "ringworld_detritus_richness"
         },
         stage_counts = {15000, 9500, 5500, 2900, 1300, 400, 150, 80},
         stages =
         {
           sheet =
           {
-            filename = "__planet-machina__/graphics/entity/ores/detritus.png",
+            filename = "__metal-and-stars__/graphics/entity/ores/detritus.png",
             priority = "extra-high",
             size = 128,
             frame_count = 8,

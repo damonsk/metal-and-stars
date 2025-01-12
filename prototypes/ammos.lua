@@ -108,7 +108,7 @@ data:extend({
       {
         type = "recipe",
         name = "gauss-rocket-casting",
-        icon = "__planet-machina__/graphics/icons/molten-gold.png",
+        icon = "__metal-and-stars__/graphics/icons/molten-gold.png",
         category = "metallurgy",
         subgroup = "aquilo-processes",
         order = "c[lithium]-b[lithium-plate]",

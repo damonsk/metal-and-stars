@@ -12,7 +12,7 @@ data:extend({
               icon = "__quality__/graphics/icons/recycling.png"
             },
             {
-              icon = "__planet-machina__/graphics/icons/glass-lens.png",
+              icon = "__metal-and-stars__/graphics/icons/glass-lens.png",
               scale = 0.4
             },
             {
@@ -41,7 +41,7 @@ data:extend({
             icon = "__quality__/graphics/icons/recycling.png"
           },
           {
-            icon = "__planet-machina__/graphics/icons/glass-plate-1.png",
+            icon = "__metal-and-stars__/graphics/icons/glass-plate-1.png",
             scale = 0.4
           },
           {
@@ -71,7 +71,7 @@ data:extend({
             icon = "__quality__/graphics/icons/recycling.png"
           },
           {
-            icon = "__planet-machina__/graphics/icons/empty-fuel-cell.png",
+            icon = "__metal-and-stars__/graphics/icons/empty-fuel-cell.png",
             scale = 0.4
           },
           {

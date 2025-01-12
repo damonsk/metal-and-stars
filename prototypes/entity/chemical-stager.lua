@@ -1,6 +1,6 @@
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
-local asset_graphics = require("__planet-machina__.prototypes.entity.chemical-stager-visuals")
+local asset_graphics = require("__metal-and-stars__.prototypes.entity.chemical-stager-visuals")
 local meld = require("meld")
 
 local item_name = "barometric-vice"
@@ -105,7 +105,7 @@ local building_entity =
       animation = {
         layers = {
           {
-            filename = "__planet-machina__/graphics/entity/chemical-stager/chemical-stager-hr-shadow.png",
+            filename = "__metal-and-stars__/graphics/entity/chemical-stager/chemical-stager-hr-shadow.png",
             priority = "high",
             width = 800,
             height = 600,
@@ -127,7 +127,7 @@ local building_entity =
             stripes =
             {
               {
-                filename = "__planet-machina__/graphics/entity/chemical-stager/chemical-stager-hr-animation-1.png",
+                filename = "__metal-and-stars__/graphics/entity/chemical-stager/chemical-stager-hr-animation-1.png",
                 width_in_frames = 8,
                 height_in_frames = 8,
               },
@@ -146,7 +146,7 @@ local building_entity =
             stripes =
             {
               {
-                filename = "__planet-machina__/graphics/entity/chemical-stager/chemical-stager-hr-emission-1.png",
+                filename = "__metal-and-stars__/graphics/entity/chemical-stager/chemical-stager-hr-emission-1.png",
                 width_in_frames = 8,
                 height_in_frames = 8,
               },
@@ -174,26 +174,6 @@ data:extend({
     prerequisites = {"rocket-silo"},
     research_trigger = {type = "create-space-platform"}
   },
-  {
-		type = "item",
-		name = item_name,
-		icon = asset_graphics.icons.item_icon,
-		icon_size = asset_graphics.icons.item_icon_size,
-		subgroup = "extraction-machine",
-		order = "d[hurricane]",
-		place_result = item_name,
-		stack_size = 10,
-	},
-  {
-		type = "recipe",
-		name = item_name,
-		enabled = false,
-    energy_required = 10,
-		ingredients = {
-      {type = "item", name = "jellynut", amount = 1},
-		},
-		results = {{type="item", name=item_name, amount=1}}
-	},
   building_entity
   --meld.meld(building_entity, asset_graphics.entity_data)
 })

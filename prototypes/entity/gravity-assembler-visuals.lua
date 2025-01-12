@@ -2,10 +2,10 @@
 return {
     icons = {
         --technology
-        technology_icon = "__planet-machina__/graphics/icons/gravity-assembler.png",
+        technology_icon = "__metal-and-stars__/graphics/icons/gravity-assembler.png",
         technology_icon_size = 256,
         --item
-        item_icon = "__planet-machina__/graphics/icons/gravity-assembler.png",
+        item_icon = "__metal-and-stars__/graphics/icons/gravity-assembler.png",
         item_icon_size = 64,
     },
 
@@ -22,7 +22,7 @@ return {
             animation = {
               layers = {
                 {
-                  filename = "__planet-machina__/graphics/entity/gravity-assembler/gravity-assembler-hr-shadow.png",
+                  filename = "__metal-and-stars__/graphics/entity/gravity-assembler/gravity-assembler-hr-shadow.png",
                   priority = "high",
                   width = 520,
                   height = 500,
@@ -44,12 +44,12 @@ return {
                   stripes =
                   {
                     {
-                      filename = "__planet-machina__/graphics/entity/gravity-assembler/gravity-assembler-hr-animation-1.png",
+                      filename = "__metal-and-stars__/graphics/entity/gravity-assembler/gravity-assembler-hr-animation-1.png",
                       width_in_frames = 8,
                       height_in_frames = 8,
                     },
                     {
-                      filename = "__planet-machina__/graphics/entity/gravity-assembler/gravity-assembler-hr-animation-2.png",
+                      filename = "__metal-and-stars__/graphics/entity/gravity-assembler/gravity-assembler-hr-animation-2.png",
                       width_in_frames = 8,
                       height_in_frames = 8,
                     },
@@ -72,12 +72,12 @@ return {
                   stripes =
                   {
                     {
-                      filename = "__planet-machina__/graphics/entity/gravity-assembler/gravity-assembler-hr-animation-emission-1.png",
+                      filename = "__metal-and-stars__/graphics/entity/gravity-assembler/gravity-assembler-hr-animation-emission-1.png",
                       width_in_frames = 8,
                       height_in_frames = 8,
                     },
                     {
-                      filename = "__planet-machina__/graphics/entity/gravity-assembler/gravity-assembler-hr-animation-emission-2.png",
+                      filename = "__metal-and-stars__/graphics/entity/gravity-assembler/gravity-assembler-hr-animation-emission-2.png",
                       width_in_frames = 8,
                       height_in_frames = 8,
                     },

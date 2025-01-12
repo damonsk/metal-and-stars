@@ -47,7 +47,7 @@ shipyard = function()
           settings =
           {
             -- nauvis decoratives
-            ["v-brown-carpet-grass"] = {},
+            ["ringworld-sand-dune-decal"] = {},
           }
         },
         ["entity"] =

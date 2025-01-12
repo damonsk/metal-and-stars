@@ -374,7 +374,7 @@ data:extend({
     {
       name = "sand-1-ringworld",
       type = "tile",
-      order = "b[natural]-c[sand]-a[sand-1]",
+      order = "a[natural]-r[ring]-a[sand-1]",
       subgroup = "nauvis-tiles",
       collision_mask = tile_collision_masks.ground(),
       autoplace = {probability_expression = 'ring_sand_1'},
@@ -407,7 +407,7 @@ data:extend({
         {
           name = "sand-2-ringworld",
           type = "tile",
-          order = "b[natural]-c[sand]-b[sand-2]",
+          order = "a[natural]-r[ring]-b[sand-2]",
           subgroup = "nauvis-tiles",
           collision_mask = tile_collision_masks.ground(),
           autoplace = {probability_expression = 'ring_sand_2'},
@@ -440,13 +440,13 @@ data:extend({
     {
     name = "blue-grass-2",
     type = "tile",
-    order = "b[natural]-a[grass]-b[grass-2]",
+    order = "b[natural]-r[ring]-b[grass-2]",
     subgroup = "nauvis-tiles",
     collision_mask = tile_collision_masks.ground(),
     autoplace = {probability_expression = 'safe_grass'},
     layer = 28,
     variants = tile_variations_template(
-      "__planet-machina__/graphics/terrain/grass-2.png", "__base__/graphics/terrain/masks/transition-3.png",
+      "__metal-and-stars__/graphics/terrain/grass-2.png", "__base__/graphics/terrain/masks/transition-3.png",
       {
         max_size = 4,
         [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -473,13 +473,13 @@ data:extend({
   {
     name = "blue-grass-2-light",
     type = "tile",
-    order = "b[natural]-a[grass]-b[grass-2]",
+    order = "b[natural]-r[ring]-b[grass-2]",
     subgroup = "nauvis-tiles",
     collision_mask = tile_collision_masks.ground(),
     autoplace = {probability_expression = 'safe_grass_light'},
     layer = 28,
     variants = tile_variations_template(
-      "__planet-machina__/graphics/terrain/grass-2-light.png", "__base__/graphics/terrain/masks/transition-3.png",
+      "__metal-and-stars__/graphics/terrain/grass-2-light.png", "__base__/graphics/terrain/masks/transition-3.png",
       {
         max_size = 4,
         [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -506,13 +506,13 @@ data:extend({
   {
     name = "blue-grass-2-dark",
     type = "tile",
-    order = "b[natural]-a[grass]-b[grass-2]",
+    order = "b[natural]-r[ring]-b[grass-2]",
     subgroup = "nauvis-tiles",
     collision_mask = tile_collision_masks.ground(),
     autoplace = {probability_expression = 'safe_grass_dark'},
     layer = 28,
     variants = tile_variations_template(
-      "__planet-machina__/graphics/terrain/grass-2-dark.png", "__base__/graphics/terrain/masks/transition-3.png",
+      "__metal-and-stars__/graphics/terrain/grass-2-dark.png", "__base__/graphics/terrain/masks/transition-3.png",
       {
         max_size = 4,
         [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -541,12 +541,12 @@ data:extend({
         {
           name = "undergrowth-thin",
           type = "tile",
-          order = "b[natural]-a[grass]-a[grass-1]",
+          order = "b[natural]-r[ring]-a[grass-1]",
           collision_mask = tile_collision_masks.ground(),
           autoplace = {probability_expression = 'ring_undergrowth_thin'},
           layer = 26,
           variants = tile_variations_template(
-            "__planet-machina__/graphics/terrain/undergrowth-thin.png", "__base__/graphics/terrain/masks/transition-3.png",
+            "__metal-and-stars__/graphics/terrain/undergrowth-thin.png", "__base__/graphics/terrain/masks/transition-3.png",
             {
               max_size = 4,
               [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -572,12 +572,12 @@ data:extend({
         {
           name = "undergrowth-thin-dark",
           type = "tile",
-          order = "b[natural]-a[grass]-a[grass-1]",
+          order = "b[natural]-r[ring]-a[grass-1]",
           collision_mask = tile_collision_masks.ground(),
           autoplace = {probability_expression = 'ring_undergrowth_thin_dark'},
           layer = 26,
           variants = tile_variations_template(
-            "__planet-machina__/graphics/terrain/undergrowth-thin-dark.png", "__base__/graphics/terrain/masks/transition-3.png",
+            "__metal-and-stars__/graphics/terrain/undergrowth-thin-dark.png", "__base__/graphics/terrain/masks/transition-3.png",
             {
               max_size = 4,
               [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -603,12 +603,12 @@ data:extend({
         {
           name = "undergrowth-thick",
           type = "tile",
-          order = "b[natural]-a[grass]-a[grass-1]",
+          order = "b[natural]-r[ring]-a[grass-1]",
           collision_mask = tile_collision_masks.ground(),
           autoplace = {probability_expression = 'ring_undergrowth_thick'},
           layer = 26,
           variants = tile_variations_template(
-            "__planet-machina__/graphics/terrain/undergrowth-thick.png", "__base__/graphics/terrain/masks/transition-3.png",
+            "__metal-and-stars__/graphics/terrain/undergrowth-thick.png", "__base__/graphics/terrain/masks/transition-3.png",
             {
               max_size = 4,
               [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -634,13 +634,13 @@ data:extend({
         {
           name = "undergrowth-thick-dark",
           type = "tile",
-          order = "b[natural]-a[grass]-b[grass-2]",
+          order = "b[natural]-r[ring]-b[grass-2]",
           subgroup = "nauvis-tiles",
           collision_mask = tile_collision_masks.ground(),
           autoplace = {probability_expression = 'ring_undergrowth_thick_dark'},
           layer = 28,
           variants = tile_variations_template(
-            "__planet-machina__/graphics/terrain/undergrowth-thick-dark.png", "__base__/graphics/terrain/masks/transition-3.png",
+            "__metal-and-stars__/graphics/terrain/undergrowth-thick-dark.png", "__base__/graphics/terrain/masks/transition-3.png",
             {
               max_size = 4,
               [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },

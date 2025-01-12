@@ -1,4 +1,4 @@
-local nix_map_gen = require("__planet-machina__.prototypes.planet.nix.nix_map_gen")
+local nix_map_gen = require("__metal-and-stars__.prototypes.planet.nix.nix_map_gen")
 local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-definitions")
 
 local meld = require("meld")
@@ -6,8 +6,8 @@ local meld = require("meld")
 local machina = {
     type = "planet",
     name = "nix",
-    icon = "__planet-machina__/graphics/icons/nix-icon.png",
-    starmap_icon = "__planet-machina__/graphics/icons/nix-starmap.png",
+    icon = "__metal-and-stars__/graphics/icons/nix-icon.png",
+    starmap_icon = "__metal-and-stars__/graphics/icons/nix-starmap.png",
     starmap_icon_size = 512,
     map_gen_settings = meld.overwrite(nix_map_gen()),
     gravity_pull = 10,
@@ -35,12 +35,12 @@ local machina = {
         day_night_cycle_color_lookup = {
             {0, "identity"},
             {0.025, "__core__/graphics/color_luts/lut-sunset.png"},
-            {0.050, "__planet-machina__/graphics/lut/lut-nix-night.png"},
-            {0.35, "__planet-machina__/graphics/lut/lut-nix-night.png"},
-            {0.45, "__planet-machina__/graphics/lut/lut-dark-night.png"},
-            {0.55, "__planet-machina__/graphics/lut/lut-dark-night.png"},
-            {0.65, "__planet-machina__/graphics/lut/lut-nix-night.png"},
-            {0.950, "__planet-machina__/graphics/lut/lut-nix-night.png"},
+            {0.050, "__metal-and-stars__/graphics/lut/lut-nix-night.png"},
+            {0.35, "__metal-and-stars__/graphics/lut/lut-nix-night.png"},
+            {0.45, "__metal-and-stars__/graphics/lut/lut-dark-night.png"},
+            {0.55, "__metal-and-stars__/graphics/lut/lut-dark-night.png"},
+            {0.65, "__metal-and-stars__/graphics/lut/lut-nix-night.png"},
+            {0.950, "__metal-and-stars__/graphics/lut/lut-nix-night.png"},
             {0.975, "__core__/graphics/color_luts/lut-dawn.png"},
             
         }

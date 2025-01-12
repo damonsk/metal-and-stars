@@ -1,6 +1,6 @@
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
-local asset_graphics = require("__planet-machina__.prototypes.entity.quantum-stabilizer-visuals")
+local asset_graphics = require("__metal-and-stars__.prototypes.entity.quantum-stabilizer-visuals")
 local meld = require("meld")
 
 local item_name = "quantum-stabilizer"
@@ -65,25 +65,5 @@ data:extend({
     prerequisites = {"rocket-silo"},
     research_trigger = {type = "create-space-platform"}
   },
-  {
-		type = "item",
-		name = item_name,
-		icon = asset_graphics.icons.item_icon,
-		icon_size = asset_graphics.icons.item_icon_size,
-		subgroup = "extraction-machine",
-		order = "d[hurricane]",
-		place_result = item_name,
-		stack_size = 10,
-	},
-  {
-		type = "recipe",
-		name = item_name,
-		enabled = false,
-    energy_required = 10,
-		ingredients = {
-      {type = "item", name = "jellynut", amount = 1},
-		},
-		results = {{type="item", name=item_name, amount=1}}
-	},
   meld.meld(building_entity, asset_graphics.entity_data)
 })

@@ -82,45 +82,46 @@ data:extend({
             width = 444,
             height = 310,
             scale = 0.5,
-            shift = {0.65,-0.75},
             draw_as_glow = true,
-            tint = glowing_carbon_ice_tint
+            tint = glowing_carbon_ice_tint,
+            shift = {0.65,-0.75}
           },
           {
             filename = "__space-age__/graphics/decorative/lithium-iceberg-huge/lithium-iceberg-huge-5.png",
             width = 444,
             height = 310,
             scale = 0.5,
-            shift = {1.15,-0.75},
             draw_as_glow = true,
-            tint = glowing_carbon_ice_tint
+            tint = glowing_carbon_ice_tint,
+            shift = {1.15,-0.75}
           },
           {
             filename = "__space-age__/graphics/decorative/lithium-iceberg-huge/lithium-iceberg-huge-7.png",
             width = 444,
             height = 310,
             scale = 0.5,
-            shift = {0.95,-0.25},
             draw_as_glow = true,
-            tint = glowing_carbon_ice_tint
+            tint = glowing_carbon_ice_tint,
+            shift = {0.95,-0.25}
           },
           {
             filename = "__space-age__/graphics/decorative/lithium-iceberg-huge/lithium-iceberg-huge-11.png",
             width = 444,
             height = 310,
             scale = 0.5,
-            shift = {0.65,-0.75},
             draw_as_glow = true,
-            tint = glowing_carbon_ice_tint
+            tint = glowing_carbon_ice_tint,
+            shift = {0.65,-0.75},
+            draw_as_glow = true
           },
           {
             filename = "__space-age__/graphics/decorative/lithium-iceberg-huge/lithium-iceberg-huge-12.png",
             width = 444,
             height = 310,
             scale = 0.5,
-            shift = {0.65,-0.75},
             draw_as_glow = true,
-            tint = glowing_carbon_ice_tint
+            tint = glowing_carbon_ice_tint, 
+            shift = {0.65,-0.75}
           },
         }
       },

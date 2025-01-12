@@ -2,7 +2,7 @@ data:extend({
     {
         type = "technology",
         name = "planet-discovery-shipyard",
-        icons = util.technology_icon_constant_planet("__planet-machina__/graphics/icons/technology/shipyard-tech.png"),
+        icons = util.technology_icon_constant_planet("__metal-and-stars__/graphics/icons/technology/shipyard-tech.png"),
         icon_size = 256,
         essential = true,
         effects =
@@ -135,7 +135,7 @@ data:extend({
     {
         type = "technology",
         name = "planet-discovery-nix",
-        icons = util.technology_icon_constant_planet("__planet-machina__/graphics/icons/technology/nix-tech.png"),
+        icons = util.technology_icon_constant_planet("__metal-and-stars__/graphics/icons/technology/nix-tech.png"),
         icon_size = 256,
         essential = true,
         effects =
@@ -159,23 +159,39 @@ data:extend({
         }
     },
     {
-        type = "technology",
-        name = "dark-matter-processing",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
-        icon_size = 256,
-        effects =
+      type = "technology",
+      name = "nix-heating-tower",
+      icon = "__space-age__/graphics/technology/heating-tower.png",
+      icon_size = 256,
+      effects =
+      {
         {
-          {
-            type = "unlock-recipe",
-            recipe = "dark-matter-compression"
-          },
+          type = "unlock-recipe",
+          recipe = "dry-concrete"
         },
-        prerequisites = {"planet-discovery-nix"},
-        research_trigger =
         {
-          type = "mine-entity",
-          entity = "dark-matter-vent"
+          type = "unlock-recipe",
+          recipe = "heating-tower"
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "heat-pipe"
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "heat-exchanger"
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "steam-turbine"
         }
+      },
+      prerequisites = {"planet-discovery-nix"},
+      research_trigger =
+      {
+        type = "mine-entity",
+        entity = "coal-stone-ore"
+      }
     },
     {
         type = "technology",
@@ -197,12 +213,58 @@ data:extend({
             recipe = "liquid-fuel-heating-tower"
           },
         },
-        prerequisites = {"planet-discovery-nix"},
+        prerequisites = {"nix-heating-tower"},
         research_trigger =
         {
-          type = "mine-entity",
-          entity = "crude-slush"
+          type = "craft-item",
+          item = "heating-tower"
         }
+    },
+    {
+      type = "technology",
+      name = "high-pressure-manufacturing",
+      icon = "__space-age__/graphics/technology/calcite-processing.png",
+      icon_size = 256,
+      effects =
+      {
+        {
+          type = "unlock-recipe",
+          recipe = "barometric-vice"
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "manufactured-diamond"
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "dense-stone-brick"
+        },
+      },
+      prerequisites = {"crude-slush-processing"},
+      research_trigger =
+      {
+        type = "mine-entity",
+        entity = "crude-slush"
+      }
+    },
+    {
+      type = "technology",
+      name = "dark-matter-processing",
+      icon = "__space-age__/graphics/technology/calcite-processing.png",
+      icon_size = 256,
+      effects =
+      {
+        {
+          type = "unlock-recipe",
+          recipe = "dark-matter-compression"
+        },
+      },
+      prerequisites = {"high-pressure-manufacturing"},
+      research_trigger =
+      {
+        type = "mine-entity",
+        entity = "dark-matter-vent"
+      }
     },
     {
         type = "technology",
@@ -224,6 +286,25 @@ data:extend({
         }
     },
     {
+      type = "technology",
+      name = "dark-matter-crystal",
+      icon = "__space-age__/graphics/technology/calcite-processing.png",
+      icon_size = 256,
+      effects =
+      {
+        {
+          type = "unlock-recipe",
+          recipe = "dark-matter-crystal"
+        },
+      },
+      prerequisites = {"dark-matter-processing", "high-pressure-manufacturing"},
+      research_trigger =
+      {
+        type = "craft-item",
+        item = "diamond"
+      }
+    },
+    {
         type = "technology",
         name = "anomaly-science-pack",
         icon = "__space-age__/graphics/technology/calcite-processing.png",
@@ -235,18 +316,23 @@ data:extend({
             recipe = "anomaly-science-pack"
           },
         },
-        prerequisites = {"crude-slush-processing"},
-        research_trigger =
+        prerequisites = {"crude-slush-processing", "dark-matter-crystal"},
+        unit =
         {
-          type = "craft-item",
-          item = "ice-xv"
+            count = 10,
+            ingredients =
+            {
+                {"space-science-pack", 1},
+                {"nanite-science-pack", 1},
+            },
+            time = 60
         }
     },
     --//////////////////////////// ringworld
     {
         type = "technology",
         name = "planet-discovery-ringworld",
-        icons = util.technology_icon_constant_planet("__planet-machina__/graphics/icons/technology/ringworld-tech.png"),
+        icons = util.technology_icon_constant_planet("__metal-and-stars__/graphics/icons/technology/ringworld-tech.png"),
         icon_size = 256,
         essential = true,
         effects =
@@ -445,10 +531,15 @@ data:extend({
           },
         },
         prerequisites = {"advanced-insulative-material", "lenscrafting", "heavy-water-processing"},
-        research_trigger =
+        unit =
         {
-            type = "craft-item",
-            item = "multilayer-insulation"
+            count = 10,
+            ingredients =
+            {
+                {"space-science-pack", 1},
+                {"nanite-science-pack", 1},
+            },
+            time = 60
         }
     },
     {
@@ -496,7 +587,7 @@ data:extend({
     {
         type = "technology",
         name = "planet-discovery-mirandus",
-        icons = util.technology_icon_constant_planet("__planet-machina__/graphics/icons/technology/mirandus-tech.png"),
+        icons = util.technology_icon_constant_planet("__metal-and-stars__/graphics/icons/technology/mirandus-tech.png"),
         icon_size = 256,
         essential = true,
         effects =
@@ -563,11 +654,15 @@ data:extend({
     },
     {
         type = "technology",
-        name = "quantum-refinement",
+        name = "quantum-stabilization",
         icon = "__space-age__/graphics/technology/calcite-processing.png",
         icon_size = 256,
         effects =
         {
+          {
+            type = "unlock-recipe",
+            recipe = "quantum-stabilizer"
+          },
           {
             type = "unlock-recipe",
             recipe = "quantum-shard-a"
@@ -608,11 +703,16 @@ data:extend({
             recipe = "inert-science-pack-salvage"
           },
         },
-        prerequisites = {"quantum-refinement"},
-        research_trigger =
+        prerequisites = {"quantum-stabilization"},
+        unit =
         {
-          type = "craft-item",
-          item = "quantum-shard-b"
+            count = 10,
+            ingredients =
+            {
+                {"space-science-pack", 1},
+                {"nanite-science-pack", 1},
+            },
+            time = 60
         }
     },
     
