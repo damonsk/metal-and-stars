@@ -2,7 +2,7 @@ data:extend({
   {
     type = "technology",
     name = "space-fuel-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__space-age__/graphics/technology/plastics-productivity.png"),
+    icons = util.technology_icon_constant_recipe_productivity("__metal-and-stars__/graphics/technology/space-fuel-productivity.png"),
     icon_size = 256,
     effects =
     {
@@ -101,7 +101,7 @@ data:extend({
   {
     type = "technology",
     name = "bullet-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__space-age__/graphics/technology/plastics-productivity.png"),
+    icons = util.technology_icon_constant_recipe_productivity("__metal-and-stars__/graphics/technology/bullet-productivity.png"),
     icon_size = 256,
     effects =
     {
@@ -134,7 +134,7 @@ data:extend({
   {
     type = "technology",
     name = "rocket-ammo-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__space-age__/graphics/technology/plastics-productivity.png"),
+    icons = util.technology_icon_constant_recipe_productivity("__metal-and-stars__/graphics/technology/rocket-productivity.png"),
     icon_size = 256,
     effects =
     {
@@ -167,7 +167,7 @@ data:extend({
   {
     type = "technology",
     name = "railgun-ammo-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__space-age__/graphics/technology/plastics-productivity.png"),
+    icons = util.technology_icon_constant_recipe_productivity("__metal-and-stars__/graphics/technology/railgun-productivity.png"),
     icon_size = 256,
     effects =
     {

@@ -2,7 +2,7 @@ data:extend({
     {
         type = "technology",
         name = "nanite-rocket-construction",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/nanite-rocket-construction.png",
         icon_size = 256,
         effects =
         {
@@ -26,7 +26,7 @@ data:extend({
     {
         type = "technology",
         name = "insulated-rocket-body",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/insulated-rocket-body.png",
         icon_size = 256,
         effects =
         {
@@ -51,7 +51,7 @@ data:extend({
     {
         type = "technology",
         name = "superdense-rocket-fuel",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/superdense-rocket-fuel.png",
         icon_size = 256,
         effects =
         {
@@ -76,7 +76,7 @@ data:extend({
     {
         type = "technology",
         name = "pyrolysis",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/pyrolysis.png",
         icon_size = 256,
         effects =
         {
@@ -101,7 +101,7 @@ data:extend({
   {
     type = "technology",
     name = "alternative-asteroid-processing",
-    icon = "__space-age__/graphics/technology/calcite-processing.png",
+    icon = "__metal-and-stars__/graphics/technology/alternative-asteroid-processing.png",
     icon_size = 256,
     effects =
     {
@@ -130,7 +130,7 @@ data:extend({
  {
     type = "technology",
     name = "precursor-machines",
-    icon = "__space-age__/graphics/technology/calcite-processing.png",
+    icon = "__metal-and-stars__/graphics/technology/precursor-machines.png",
     icon_size = 256,
     effects =
     {
@@ -161,7 +161,7 @@ data:extend({
  {
     type = "technology",
     name = "high-speed-processor",
-    icon = "__space-age__/graphics/technology/calcite-processing.png",
+    icon = "__metal-and-stars__/graphics/technology/high-speed-processor.png",
     icon_size = 256,
     effects =
     {
@@ -187,7 +187,7 @@ data:extend({
  {
     type = "technology",
     name = "quantum-ore-conversion-1",
-    icon = "__space-age__/graphics/technology/calcite-processing.png",
+    icon = "__metal-and-stars__/graphics/technology/quantum-ore-conversion-1.png",
     icon_size = 256,
     effects =
     {
@@ -220,7 +220,7 @@ data:extend({
  {
     type = "technology",
     name = "dark-matter-fuel",
-    icon = "__space-age__/graphics/technology/calcite-processing.png",
+    icon = "__metal-and-stars__/graphics/technology/dark-matter-fuel.png",
     icon_size = 256,
     effects =
     {
@@ -245,7 +245,7 @@ data:extend({
  {
     type = "technology",
     name = "dark-matter-reactor-fuel",
-    icon = "__space-age__/graphics/technology/calcite-processing.png",
+    icon = "__metal-and-stars__/graphics/technology/dark-matter-fuel-cell.png",
     icon_size = 256,
     effects =
     {
