@@ -349,8 +349,8 @@ local oil_driving_sound =
             {
               type = "fluid",
               name = "heavy-water",
-              amount_min = 1,
-              amount_max = 1,
+              amount_min = 10,
+              amount_max = 10,
               probability = 1
             }
           }

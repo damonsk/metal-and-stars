@@ -1,16 +1,10 @@
 data:extend({
-    {
-        type = "item-subgroup",
-        name = "resource-conversion",
-        group = "intermediate-products",
-        order = "p"
-      },
     --///////////////// basic ores
     {
       type = "recipe",
       name = "iron-ore-from-stone",
       category = "quantum",
-      subgroup = "resource-conversion",
+      subgroup = "quantum-conversion",
       order = "c[conversion]-b[iron-ore]",
       energy_required = 6.4,
       ingredients = {
@@ -26,7 +20,7 @@ data:extend({
         type = "recipe",
         name = "copper-ore-from-iron-ore",
         category = "quantum",
-        subgroup = "resource-conversion",
+        subgroup = "quantum-conversion",
         order = "c[conversion]-b[copper-ore]",
         energy_required = 6.4,
         ingredients = {
@@ -42,7 +36,7 @@ data:extend({
         type = "recipe",
         name = "stone-from-copper-ore",
         category = "quantum",
-        subgroup = "resource-conversion",
+        subgroup = "quantum-conversion",
         order = "c[conversion]-b[stone]",
         energy_required = 6.4,
         ingredients = {

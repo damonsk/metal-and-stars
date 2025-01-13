@@ -52,7 +52,7 @@ data:extend({
     {
         type = "noise-expression",
         name = "ringworld_heavy_water_richness",
-        expression = "random_penalty(x, y, 9232 + (sqrt(x*x + y*y) / 10), 99, 1000) * control:ringworld_heavy_water:richness"
+        expression = "random_penalty(x, y, 9232 + (sqrt(x*x + y*y) / 10), 99, 1000) * control:ringworld_heavy_water:richness * 10"
     },
     {
         type = "noise-expression",

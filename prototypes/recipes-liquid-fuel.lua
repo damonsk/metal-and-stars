@@ -7,6 +7,7 @@ data:extend({
     energy_required = 5,
     enabled = false,
     category = "chemistry",
+    subgroup = "liquid-fuel",
     ingredients =
     {
       {type = "item", name = "solid-fuel", amount = 10},
@@ -27,6 +28,7 @@ data:extend({
     energy_required = 5,
     enabled = false,
     category = "chemistry",
+    subgroup = "liquid-fuel",
     ingredients =
     {
       {type = "item", name = "uranium-235", amount = 1},
@@ -47,6 +49,7 @@ data:extend({
     energy_required = 5,
     enabled = false,
     category = "compression",
+    subgroup = "liquid-fuel",
     ingredients =
     {
       {type = "fluid", name = "dark-matter-fluid", amount = 5},
