@@ -3,7 +3,7 @@ data:extend({
   {
     type = "recipe",
     name = "liquid-rocket-fuel",
-    icon = "__metal-and-stars__/graphics/icons/molten-glass.png",
+    icon = "__metal-and-stars__/graphics/icons/liquid-rocket-fuel.png",
     energy_required = 5,
     enabled = false,
     category = "chemistry",
@@ -24,7 +24,7 @@ data:extend({
   {
     type = "recipe",
     name = "liquid-nuclear-fuel",
-    icon = "__metal-and-stars__/graphics/icons/molten-glass.png",
+    icon = "__metal-and-stars__/graphics/icons/liquid-nuclear-fuel.png",
     energy_required = 5,
     enabled = false,
     category = "chemistry",
@@ -45,7 +45,7 @@ data:extend({
   {
     type = "recipe",
     name = "liquid-dark-matter-fuel",
-    icon = "__metal-and-stars__/graphics/icons/molten-glass.png",
+    icon = "__metal-and-stars__/graphics/icons/liquid-dark-matter-fuel.png",
     energy_required = 5,
     enabled = false,
     category = "compression",

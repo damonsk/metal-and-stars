@@ -562,8 +562,8 @@ data:extend({
     type = "recipe",
     name = "nanocrusher",
     icon = "__space-age__/graphics/icons/crusher.png",
-    category = "space-nanites",
-    subgroup = "space-platform",
+    category = "nanotech",
+    subgroup = "space-nanites",
     order = "c[lithium]-b[lithium-plate]",
     energy_required = 6.4,
     ingredients = {
@@ -975,6 +975,66 @@ data:extend({
     results = {{type="item", name="high-speed-processor", amount=1}},
     allow_productivity = true,
     enabled = false
+  },
+  {
+    type = "recipe",
+    name = "overclock-module",
+    enabled = false,
+    icon = "__metal-and-stars__/graphics/icons/pollution-module-1.png",
+    ingredients =
+    {
+      {type = "item", name = "advanced-circuit", amount = 5},
+      {type = "item", name = "electronic-circuit", amount = 5}
+    },
+    energy_required = 15,
+    results = {{type="item", name="overclock-module", amount=1}}
+  },
+  {
+    type = "recipe",
+    name = "overclock-module-2",
+    enabled = false,
+    icon = "__metal-and-stars__/graphics/icons/pollution-module-2.png",
+    ingredients =
+    {
+      {type = "item", name = "overclock-module", amount = 4},
+      {type = "item", name = "advanced-circuit", amount = 5},
+      {type = "item", name = "processing-unit", amount = 5}
+    },
+    energy_required = 30,
+    results = {{type="item", name="overclock-module-2", amount=1}}
+  },
+  {
+    type = "recipe",
+    name = "overclock-module-3",
+    enabled = false,
+    icon = "__metal-and-stars__/graphics/icons/pollution-module-3.png",
+    ingredients =
+    {
+      {type = "item", name = "overclock-module-2", amount = 4},
+      {type = "item", name = "advanced-circuit", amount = 5},
+      {type = "item", name = "processing-unit", amount = 5},
+      {type = "item", name = "dark-matter-crystal", amount = 1}
+    },
+    energy_required = 60,
+    results = {{type="item", name="overclock-module-3", amount=1}}
+  },
+  {
+    type = "recipe",
+    name = "prototype-mech-armor",
+    category = "crafting-with-fluid",
+    icon = "__metal-and-stars__/graphics/icons/prototype-mech-armor.png",
+    enabled = false,
+    energy_required = 60,
+    ingredients =
+    {
+      {type = "item", name = "productivity-module-2", amount = 25},
+      {type = "item", name = "overclock-module-2", amount = 25},
+      {type = "item", name = "processing-unit", amount = 60},
+      {type = "item", name = "low-density-structure", amount = 30},
+      {type = "fluid", name = "liquid-rocket-fuel", amount = 400}
+    },
+    results = {{type="item", name="prototype-mech-armor", amount=1}},
+    requester_paste_multiplier = 1
   },
   --//////////////machines
   {

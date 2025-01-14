@@ -1,5 +1,9 @@
 data:extend({
     {
+      type = "module-category",
+      name = "overclock"
+    },
+    {
         type = "recipe-category",
         name = "nanotech"
     },

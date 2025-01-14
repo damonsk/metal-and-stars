@@ -13,6 +13,69 @@ end
 
 data:extend({
     {
+      type = "module",
+      name = "overclock-module",
+      localised_description = {"item-description.overclock-module"},
+      icon = "__metal-and-stars__/graphics/icons/pollution-module-1.png",
+      subgroup = "module",
+      color_hint = { text = "P" },
+      category = "overclock",
+      tier = 1,
+      order = "c[overclock]-a[overclock-module-1]",
+      inventory_move_sound = item_sounds.module_inventory_move,
+      pick_sound = item_sounds.module_inventory_pickup,
+      drop_sound = item_sounds.module_inventory_move,
+      stack_size = 50,
+      weight = 20 * kg,
+      effect =
+      {
+        productivity = 0.04,
+        consumption = 0.8,
+      }
+    },
+    {
+      type = "module",
+      name = "overclock-module-2",
+      localised_description = {"item-description.overclock-module"},
+      icon = "__metal-and-stars__/graphics/icons/pollution-module-2.png",
+      subgroup = "module",
+      color_hint = { text = "P" },
+      category = "overclock",
+      tier = 2,
+      order = "c[overclock]-b[overclock-module-2]",
+      inventory_move_sound = item_sounds.module_inventory_move,
+      pick_sound = item_sounds.module_inventory_pickup,
+      drop_sound = item_sounds.module_inventory_move,
+      stack_size = 50,
+      weight = 20 * kg,
+      effect =
+      {
+        productivity = 0.06,
+        consumption = 1.2,
+      }
+    },
+    {
+      type = "module",
+      name = "overclock-module-3",
+      localised_description = {"item-description.overclock-module"},
+      icon = "__metal-and-stars__/graphics/icons/pollution-module-3.png",
+      subgroup = "module",
+      color_hint = { text = "P" },
+      category = "overclock",
+      tier = 3,
+      order = "c[overclock]-c[overclock-module-3]",
+      inventory_move_sound = item_sounds.module_inventory_move,
+      pick_sound = item_sounds.module_inventory_pickup,
+      drop_sound = item_sounds.module_inventory_move,
+      stack_size = 50,
+      weight = 20 * kg,
+      effect =
+      {
+        productivity = 0.1,
+        consumption = 1.6,
+      }
+    },
+    {
       type = "item",
       name = "mirandite-asteroid-chunk",
       icon = "__metal-and-stars__/graphics/icons/mirandite-asteroid-chunk.png",

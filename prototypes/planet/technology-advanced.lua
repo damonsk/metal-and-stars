@@ -1,6 +1,111 @@
 data:extend({
     {
         type = "technology",
+        name = "overclock-module",
+        icon = "__metal-and-stars__/graphics/technology/pollution-module-1.png",
+        icon_size = 256,
+        effects =
+        {
+          {
+            type = "unlock-recipe",
+            recipe = "overclock-module"
+          }
+        },
+        prerequisites = {"modules"},
+        unit =
+        {
+          count = 50,
+          ingredients =
+          {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1}
+          },
+          time = 30
+        },
+        upgrade = true
+      },
+      {
+        type = "technology",
+        name = "overclock-module-2",
+        icon = "__metal-and-stars__/graphics/technology/pollution-module-2.png",
+        icon_size = 256,
+        effects =
+        {
+          {
+            type = "unlock-recipe",
+            recipe = "overclock-module-2"
+          }
+        },
+        prerequisites = {"overclock-module", "processing-unit"},
+        unit =
+        {
+          count = 200,
+          ingredients =
+          {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"space-science-pack", 1}
+          },
+          time = 30
+        },
+        upgrade = true
+      },
+      {
+        type = "technology",
+        name = "overclock-module-3",
+        icon = "__metal-and-stars__/graphics/technology/pollution-module-3.png",
+        icon_size = 256,
+        effects =
+        {
+          {
+            type = "unlock-recipe",
+            recipe = "overclock-module-3"
+          }
+        },
+        prerequisites = {"overclock-module-2", "anomaly-science-pack"},
+        unit =
+        {
+          count = 300,
+          ingredients =
+          {
+            {"space-science-pack", 1},
+            {"nanite-science-pack", 1},
+            {"anomaly-science-pack", 1}
+          },
+          time = 60
+        },
+        upgrade = true
+    },
+    {
+        type = "technology",
+        name = "prototype-mech-armor",
+        icon = "__metal-and-stars__/graphics/technology/prototype-mech-armor.png",
+        icon_size = 256,
+        effects =
+        {
+          {
+            type = "unlock-recipe",
+            recipe = "prototype-mech-armor"
+          }
+        },
+        prerequisites = {"power-armor", "rocket-fuel", "overclock-module-2", "productivity-module-2"},
+        unit =
+        {
+          count = 500,
+          ingredients =
+          {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"military-science-pack", 1},
+            {"utility-science-pack", 1}
+          },
+          time = 30
+        }
+    },
+    {
+        type = "technology",
         name = "nanite-rocket-construction",
         icon = "__metal-and-stars__/graphics/technology/nanite-rocket-construction.png",
         icon_size = 256,

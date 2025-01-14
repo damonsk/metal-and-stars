@@ -96,7 +96,7 @@ data:extend(
   {
     type = "fluid",
     name = "liquid-rocket-fuel",
-    icon = "__metal-and-stars__/graphics/icons/molten-glass.png",
+    icon = "__metal-and-stars__/graphics/icons/liquid-rocket-fuel.png",
     subgroup = "fluid",
     order = "a[fluid]-b[refined-fuel]-c[rocket-fuel]",
     default_temperature = 15,
@@ -110,7 +110,7 @@ data:extend(
   {
     type = "fluid",
     name = "liquid-nuclear-fuel",
-    icon = "__metal-and-stars__/graphics/icons/molten-glass.png",
+    icon = "__metal-and-stars__/graphics/icons/liquid-nuclear-fuel.png",
     subgroup = "fluid",
     order = "a[fluid]-b[refined-fuel]-c[nuclear-fuel]",
     default_temperature = 15,
@@ -124,7 +124,7 @@ data:extend(
   {
     type = "fluid",
     name = "liquid-dark-matter-fuel",
-    icon = "__metal-and-stars__/graphics/icons/molten-glass.png",
+    icon = "__metal-and-stars__/graphics/icons/liquid-dark-matter-fuel.png",
     subgroup = "fluid",
     order = "a[fluid]-b[refined-fuel]-c[dark-matter-fuel]",
     default_temperature = 15,

@@ -16,3 +16,9 @@
 - **Creators**: [Hornwitser](https://mods.factorio.com/user/Hornwitser)
 - **Source**: [Factorio Mod Portal](https://mods.factorio.com/mod/quality_glassware)
 - **License**: [CC BY-SA 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+#### Pollution Module
+
+- **Creators**: [cackling.fiend](https://mods.factorio.com/user/cackling.fiend)
+- **Source**: [Factorio Mod Portal](https://mods.factorio.com/mod/pollution-module)
+- **License**: [GNU GPLv3](https://opensource.org/license/gpl-3.0)
