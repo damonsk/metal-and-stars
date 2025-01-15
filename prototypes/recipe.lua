@@ -945,8 +945,7 @@ data:extend({
     name = "ring-science-pack",
     category = "crafting-with-fluid",
     icon = "__metal-and-stars__/graphics/icons/ring-science-pack.png",
-    order = "c[lithium]-b[lithium-plate]",
-    energy_required = 6.4,
+    energy_required = 5,
     ingredients = {
       {type = "item", name = "aspheric-lens", amount = 10},
       {type = "item", name = "multilayer-insulation", amount = 10},
@@ -954,8 +953,9 @@ data:extend({
     },
     results = {
       {type="item", name="ring-science-pack", amount=1},
-      {type="fluid", name="water", amount=10},
+      {type="fluid", name="water", amount=10, ignored_by_productivity = 10},
     },
+    main_product = "ring-science-pack",
     allow_productivity = true,
     enabled = false
   },

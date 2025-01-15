@@ -67,7 +67,7 @@ data:extend({
   {
     type = "recipe",
     name = "empty-liquid-rocket-fuel",
-    icon = "__metal-and-stars__/graphics/icons/molten-glass.png",
+    icon = "__metal-and-stars__/graphics/icons/liquid-rocket-fuel.png",
     energy_required = .04,
     enabled = false,
     category = "crafting-with-fluid",
@@ -87,7 +87,7 @@ data:extend({
   {
     type = "recipe",
     name = "empty-liquid-nuclear-fuel",
-    icon = "__metal-and-stars__/graphics/icons/molten-glass.png",
+    icon = "__metal-and-stars__/graphics/icons/liquid-nuclear-fuel.png",
     energy_required = .04,
     enabled = false,
     category = "crafting-with-fluid",
@@ -107,7 +107,7 @@ data:extend({
   {
     type = "recipe",
     name = "empty-liquid-dark-matter-fuel",
-    icon = "__metal-and-stars__/graphics/icons/molten-glass.png",
+    icon = "__metal-and-stars__/graphics/icons/liquid-dark-matter-fuel.png",
     energy_required = .04,
     enabled = false,
     category = "crafting-with-fluid",
@@ -128,7 +128,7 @@ data:extend({
     {
       type = "recipe",
       name = "canister-liquid-rocket-fuel",
-      icon = "__metal-and-stars__/graphics/icons/molten-glass.png",
+      icon = "__metal-and-stars__/graphics/icons/liquid-rocket-fuel.png",
       energy_required = .04,
       enabled = false,
       category = "crafting-with-fluid",
@@ -148,7 +148,7 @@ data:extend({
     {
       type = "recipe",
       name = "canister-liquid-nuclear-fuel",
-      icon = "__metal-and-stars__/graphics/icons/molten-glass.png",
+      icon = "__metal-and-stars__/graphics/icons/liquid-nuclear-fuel.png",
       energy_required = .04,
       enabled = false,
       category = "crafting-with-fluid",
@@ -168,7 +168,7 @@ data:extend({
     {
       type = "recipe",
       name = "canister-liquid-dark-matter-fuel",
-      icon = "__metal-and-stars__/graphics/icons/molten-glass.png",
+      icon = "__metal-and-stars__/graphics/icons/liquid-dark-matter-fuel.png",
       energy_required = .04,
       enabled = false,
       category = "crafting-with-fluid",

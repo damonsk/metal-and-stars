@@ -1075,7 +1075,7 @@ data:extend({
         icon = "__metal-and-stars__/graphics/icons/ring-science-pack.png",
         subgroup = "science-pack",
         color_hint = { text = "L" },
-        order = "b[quantum-science-pack]",
+        order = "b[ring-science-pack]",
         inventory_move_sound = item_sounds.science_inventory_move,
         pick_sound = item_sounds.science_inventory_pickup,
         drop_sound = item_sounds.science_inventory_move,

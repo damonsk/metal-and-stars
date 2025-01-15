@@ -113,7 +113,7 @@ table.insert(data.raw.character.character.animations,
     {
       name = "mech-armor-smoke",
       deviation = {0.2, 0.2},
-      frequency = 5,
+      frequency = 20,
       position = {0.25, 1.0},
       has_8_directions = true,
       north_position = {0, 1.0 + 0.15},

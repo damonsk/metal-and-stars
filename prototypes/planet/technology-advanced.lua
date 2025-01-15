@@ -333,6 +333,18 @@ data:extend({
             type = "unlock-recipe",
             recipe = "dark-matter-fuel"
         },
+        {
+          type = "unlock-recipe",
+          recipe = "liquid-dark-matter-fuel"
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "empty-liquid-dark-matter-fuel"
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "canister-liquid-dark-matter-fuel"
+        },
     },
     prerequisites = {"anomaly-science-pack"},
     unit =

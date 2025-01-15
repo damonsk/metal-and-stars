@@ -41,52 +41,98 @@ data:extend({
         damaged_trigger_effect = hit_effects.entity(),
         on_animation = {
           layers = {
-            util.sprite_load("__space-age__/graphics/entity/biolab/biolab-anim",{
-              frame_count = 32,
+            {
+              filename = "__metal-and-stars__/graphics/entity/particle-accelerator/particle-accelerator-hr-shadow.png",
+              priority = "high",
+              width = 700,
+              height = 600,
+              frame_count = 1,
+              repeat_count = 60,
+              animation_speed = 0.5,
+              --shift = {2 + 3/32, 1 + 22/32},
+              draw_as_shadow = true,
               scale = 0.5,
-              animation_speed = 0.2,
-            }),
-            util.sprite_load("__space-age__/graphics/entity/biolab/biolab-lights",{
-              frame_count = 32,
+            },
+            {
+              priority = "high",
+              width = 400,
+              height = 400,
+              frame_count = 60,
+              animation_speed = 0.5,
+              --shift = {0, -8/32},
+              scale = 0.5,
+              stripes =
+              {
+                {
+                  filename = "__metal-and-stars__/graphics/entity/particle-accelerator/particle-accelerator-hr-animation.png",
+                  width_in_frames = 8,
+                  height_in_frames = 8,
+                }
+              },
+            },
+            {
+              priority = "high",
+              width = 400,
+              height = 400,
+              frame_count = 60,
+              animation_speed = 0.5,
+              --shift = {0, -8/32},
+              scale = 0.5,
               draw_as_glow = true,
               blend_mode = "additive",
-              scale = 0.5,
-              animation_speed = 0.2,
-            }),
-            util.sprite_load("__space-age__/graphics/entity/biolab/biolab-shadow",{
-              frame_count = 32,
-              scale = 0.5,
-              animation_speed = 0.2,
-              draw_as_shadow = true,
-            })
+              stripes =
+              {
+                {
+                  filename = "__metal-and-stars__/graphics/entity/particle-accelerator/particle-accelerator-hr-animation-emission.png",
+                  width_in_frames = 8,
+                  height_in_frames = 8,
+                }
+              },
+            },
           }
         },
         off_animation = {
           layers = {
-            util.sprite_load("__space-age__/graphics/entity/biolab/biolab-anim",{
-              frame_count = 32,
-              scale = 0.5,
-              animation_speed = 0.2,
-            }),
-            util.sprite_load("__space-age__/graphics/entity/biolab/biolab-shadow",{
-              frame_count = 32,
-              scale = 0.5,
-              animation_speed = 0.2,
+            {
+              filename = "__metal-and-stars__/graphics/entity/particle-accelerator/particle-accelerator-hr-shadow.png",
+              priority = "high",
+              width = 700,
+              height = 600,
+              frame_count = 1,
+              repeat_count = 60,
+              animation_speed = 0.5,
+              --shift = {2 + 3/32, 1 + 22/32},
               draw_as_shadow = true,
-            })
+              scale = 0.5,
+            },
+            {
+              priority = "high",
+              width = 400,
+              height = 400,
+              frame_count = 60,
+              animation_speed = 0.5,
+              --shift = {0, -8/32},
+              scale = 0.5,
+              stripes =
+              {
+                {
+                  filename = "__metal-and-stars__/graphics/entity/particle-accelerator/particle-accelerator-hr-animation.png",
+                  width_in_frames = 8,
+                  height_in_frames = 8,
+                }
+              },
+            },
           }
         },
         open_sound = sounds.machine_open,
         close_sound = sounds.machine_close,
         working_sound =
         {
-          sound = {filename = "__space-age__/sound/entity/biolab/biolab-loop.ogg", volume = 0.7},
+          sound = {filename = "__base__/sound/lab.ogg", volume = 0.7},
           sound_accents =
           {
-            {sound = {variations = sound_variations("__space-age__/sound/entity/spawner/spawner-respirator-push", 3, 0.3)}, frame = 1, audible_distance_modifier = 0.6},
             {sound = {variations = sound_variations("__space-age__/sound/entity/biolab/biolab-beaker", 7, 0.8)}, frame = 1, audible_distance_modifier = 0.4},
             {sound = {variations = sound_variations("__space-age__/sound/entity/biolab/biolab-centrifuge", 4, 0.7)}, frame = 14, audible_distance_modifier = 0.3},
-            {sound = {variations = sound_variations("__space-age__/sound/entity/spawner/spawner-respirator-pull", 3, 0.3)}, frame = 17, audible_distance_modifier = 0.6},
           },
           max_sounds_per_type = 2,
         },
