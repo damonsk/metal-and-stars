@@ -169,8 +169,10 @@ data:extend({
             priority = "high",
             frame_count = 1,
             repeat_count = 1,
-            width = 162,
-            height = 130,
+            width = 536,
+            height = 497,
+            scale = 0.5,
+            shift = util.by_pixel( 42, -30),
           }
         },
       }

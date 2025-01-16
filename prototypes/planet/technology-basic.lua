@@ -114,7 +114,7 @@ data:extend({
     {
         type = "technology",
         name = "nanite-science-pack",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/nanite-science-pack.png",
         icon_size = 256,
         effects =
         {
@@ -311,7 +311,7 @@ data:extend({
     {
         type = "technology",
         name = "anomaly-science-pack",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/anomaly-science-pack.png",
         icon_size = 256,
         effects =
         {
@@ -678,7 +678,7 @@ data:extend({
     {
         type = "technology",
         name = "quantum-science-pack",
-        icon = "__space-age__/graphics/technology/calcite-processing.png",
+        icon = "__metal-and-stars__/graphics/technology/quantum-science-pack.png",
         icon_size = 256,
         effects =
         {

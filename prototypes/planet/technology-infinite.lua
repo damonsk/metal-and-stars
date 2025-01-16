@@ -35,7 +35,7 @@ data:extend({
   {
     type = "technology",
     name = "dark-matter-refinement-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__space-age__/graphics/technology/plastics-productivity.png"),
+    icons = util.technology_icon_constant_recipe_productivity("__metal-and-stars__/graphics/technology/dark-matter-processing.png"),
     icon_size = 256,
     effects =
     {
@@ -68,7 +68,7 @@ data:extend({
   {
     type = "technology",
     name = "gold-refinement-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__space-age__/graphics/technology/plastics-productivity.png"),
+    icons = util.technology_icon_constant_recipe_productivity("__metal-and-stars__/graphics/technology/gold-processing.png"),
     icon_size = 256,
     effects =
     {

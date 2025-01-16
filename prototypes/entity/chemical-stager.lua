@@ -159,21 +159,5 @@ local building_entity =
 }
 
 data:extend({
-  {
-    type = "technology",
-    name = item_name.."research",
-    icon = asset_graphics.icons.technology_icon,
-    icon_size = asset_graphics.icons.technology_icon_size,
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = item_name
-      }
-    },
-    prerequisites = {"rocket-silo"},
-    research_trigger = {type = "create-space-platform"}
-  },
   building_entity
-  --meld.meld(building_entity, asset_graphics.entity_data)
 })

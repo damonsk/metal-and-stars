@@ -399,7 +399,6 @@ data:extend({
       {
         type = "item",
         name = "volatile-quantum-science-pack",
-        localised_description = {"item-description.science-pack"},
         icon = "__metal-and-stars__/graphics/icons/volatile-quantum-science.png",
         subgroup = "quantum-processing",
         color_hint = { text = "L" },
@@ -417,7 +416,6 @@ data:extend({
       {
         type = "item",
         name = "unstable-quantum-science-pack",
-        localised_description = {"item-description.science-pack"},
         icon = "__metal-and-stars__/graphics/icons/unstable-quantum-science.png",
         subgroup = "quantum-processing",
         color_hint = { text = "L" },
@@ -435,7 +433,6 @@ data:extend({
       {
         type = "item",
         name = "inert-quantum-science-pack",
-        localised_description = {"item-description.science-pack"},
         icon = "__metal-and-stars__/graphics/icons/inert-quantum-science.png",
         subgroup = "quantum-processing",
         color_hint = { text = "L" },
