@@ -28,7 +28,7 @@ data:extend({
           }
         },
         subgroup = "ammo",
-        order = "d[rocket-launcher]-a[basic]",
+        order = "d[rocket-launcher]-a[gauss]",
         inventory_move_sound = item_sounds.ammo_large_inventory_move,
         pick_sound = item_sounds.ammo_large_inventory_pickup,
         drop_sound = item_sounds.ammo_large_inventory_move,
@@ -120,8 +120,8 @@ data:extend({
         name = "gauss-rocket-casting",
         icon = "__metal-and-stars__/graphics/icons/gauss-rocket.png",
         category = "metallurgy",
-        subgroup = "aquilo-processes",
-        order = "c[lithium]-b[lithium-plate]",
+        subgroup = "ammo",
+        order = "d[rocket-launcher]-a[gauss]",
         auto_recycle = false,
         energy_required = 6.4,
         ingredients = {
