@@ -29,7 +29,6 @@ local machina = {
     },
     surface_render_parameters =
     {
-        shadow_opacity = 0.0,
         -- day_night_cycle_color_lookup = {
         --     {0, "identity"},
         -- }

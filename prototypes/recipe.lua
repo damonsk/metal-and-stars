@@ -1040,7 +1040,7 @@ data:extend({
     type = "recipe",
     name = "antimatter-construction-robot",
     icon = "__metal-and-stars__/graphics/icons/antimatter-construction-robot.png",
-    -- enabled = false,
+    enabled = false,
     ingredients =
     {
         {type="item", name="construction-robot", amount=1},
@@ -1052,7 +1052,7 @@ data:extend({
       type = "recipe",
       name = "antimatter-logistic-robot",
       icon = "__metal-and-stars__/graphics/icons/antimatter-logistic-robot.png",
-      -- enabled = false,
+      enabled = false,
       ingredients =
       {
           {type="item", name="logistic-robot", amount=1},

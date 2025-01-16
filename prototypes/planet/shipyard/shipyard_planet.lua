@@ -29,7 +29,6 @@ local machina = {
     },
     surface_render_parameters =
     {
-        shadow_opacity = 0.0,
     },
     ticks_between_player_effects = 2
 }

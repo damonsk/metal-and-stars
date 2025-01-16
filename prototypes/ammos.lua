@@ -7,7 +7,7 @@ data:extend({
     {
         type = "ammo",
         name = "gauss-rocket",
-        icon = "__base__/graphics/icons/rocket.png",
+        icon = "__metal-and-stars__/graphics/icons/gauss-rocket.png",
         ammo_category = "rocket",
         ammo_type =
         {
@@ -38,6 +38,7 @@ data:extend({
     {
         type = "recipe",
         name = "gauss-rocket",
+        icon = "__metal-and-stars__/graphics/icons/gauss-rocket.png",
         enabled = false,
         energy_required = 40,
         ingredients =
@@ -77,7 +78,16 @@ data:extend({
           }
         },
         --light = {intensity = 0.5, size = 4},
-        animation = require("__base__.prototypes.entity.rocket-projectile-pictures").animation({1, 0.8, 0.3}),
+        animation = 
+        {
+          util.sprite_load("__base__/graphics/entity/rocket/rocket", {
+            scale = 0.5,
+            repeat_count = 8,
+            frame_count = 1,
+            rotate_shift = true,
+            priority = "high"
+          })
+        },
         shadow = require("__base__.prototypes.entity.rocket-projectile-pictures").shadow,
         -- smoke = require("__base__.prototypes.entity.rocket-projectile-pictures").smoke,
       },
@@ -108,17 +118,17 @@ data:extend({
       {
         type = "recipe",
         name = "gauss-rocket-casting",
-        icon = "__metal-and-stars__/graphics/icons/molten-gold.png",
+        icon = "__metal-and-stars__/graphics/icons/gauss-rocket.png",
         category = "metallurgy",
         subgroup = "aquilo-processes",
         order = "c[lithium]-b[lithium-plate]",
         auto_recycle = false,
         energy_required = 6.4,
         ingredients = {
-          {type = "item", name = "gold-ore", amount = 50},
-          {type = "item", name = "calcite", amount = 1},
+          {type = "fluid", name = "molten-iron", amount = 100},
+          {type = "item", name = "neodymium-plate", amount = 1},
         },
-        results = {{type="fluid", name="molten-gold", amount=500}},
+        results = {{type="item", name="gauss-rocket", amount=10}},
         allow_productivity = true,
         enabled = false
       },

@@ -19,6 +19,7 @@ shipyard = function()
         ["ringworld_detritus"] = {},
         ["ringworld_military_scrap"] = {},
         ["ringworld_snapper_enemy_base"] = {},
+        ["ringworld_robot_enemy_base"] = {},
       },
       autoplace_settings =
       {
@@ -59,6 +60,7 @@ shipyard = function()
             ["military-scrap"] = {},
             ["ringworld-detritus"] = {},
             ["armoured-biter-spawner"] = {},
+            ["robot-spawner"] = {},
           }
         }
       }

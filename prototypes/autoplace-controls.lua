@@ -10,6 +10,14 @@ data:extend(
   },
   {
     type = "autoplace-control",
+    name = "ringworld_robot_enemy_base",
+    richness = false,
+    order = "z-m-n",
+    category = "enemy",
+    can_be_disabled = true
+  },
+  {
+    type = "autoplace-control",
     name = "nix_copper_iron_ore",
     localised_name = {"", "[entity=iron-copper-ore]", {"entity-name.iron-copper-ore"}},
     richness = true,

@@ -113,5 +113,26 @@ data:extend({
         expression = "random_penalty(x, y, 9232 + (sqrt(x*x + y*y) / 10), 99, 1000) * control:ringworld_military_scrap:richness"
     },
 
+    {
+        type = "noise-expression",
+        name = "ringworld_robot_enemy_base_spots",
+        expression = "ringworld_right_mask * ringworld_spot_noise{\z
+            seed = 83749,\z
+            count = 50,\z
+            skip_offset = 0,\z
+            region_size = 600 + 400 / control:ringworld_robot_enemy_base:frequency,\z
+            density = 1,\z
+            radius = ringworld_spot_size * sqrt(control:ringworld_robot_enemy_base:size),\z
+            favorability = 1,\z
+            max_y_bound = 34\z
+        }"
+    },
+    {
+        type = "noise-expression",
+        name = "ringworld_robot_enemy_base_probability",
+        expression = "(control:ringworld_robot_enemy_base:size > 0) * \z
+                                min(aquilo_starting_mask, ringworld_robot_enemy_base_spots) * 0.015"
+    },
+
     
 })

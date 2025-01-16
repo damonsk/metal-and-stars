@@ -1,3 +1,6 @@
+local logistic_robot_emission_tint = {r = 153, g = 0, b = 255}
+local construction_robot_emission_tint = {r = 153, g = 0, b = 255}
+
 data:extend{
     {
       type = "logistic-robot",
@@ -46,6 +49,7 @@ data:extend{
                 direction_count = 16,
                 draw_as_glow = true,
                 blend_mode = "additive",
+                tint = logistic_robot_emission_tint,
                 y = 128
             },
         }
@@ -77,6 +81,7 @@ data:extend{
                 direction_count = 16,
                 draw_as_glow = true,
                 blend_mode = "additive",
+                tint = logistic_robot_emission_tint,
                 y = 128
             },
         }
@@ -108,6 +113,7 @@ data:extend{
                 direction_count = 16,
                 draw_as_glow = true,
                 blend_mode = "additive",
+                tint = logistic_robot_emission_tint,
                 y = 128
             },
         }
@@ -139,6 +145,7 @@ data:extend{
                 direction_count = 16,
                 draw_as_glow = true,
                 blend_mode = "additive",
+                tint = logistic_robot_emission_tint,
                 y = 128
             },
         }
@@ -242,6 +249,7 @@ data:extend{
                 direction_count = 16,
                 draw_as_glow = true,
                 blend_mode = "additive",
+                tint = construction_robot_emission_tint,
                 y = 128
             },
         }
@@ -273,6 +281,7 @@ data:extend{
                 direction_count = 16,
                 draw_as_glow = true,
                 blend_mode = "additive",
+                tint = construction_robot_emission_tint,
                 y = 128
             },
         }
@@ -329,6 +338,7 @@ data:extend{
                 animation_speed = 0.3,
                 draw_as_glow = true,
                 blend_mode = "additive",
+                tint = construction_robot_emission_tint,
             },
         }
       },

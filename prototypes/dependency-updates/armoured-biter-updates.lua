@@ -10,7 +10,7 @@ data:extend({
     {
         type = "noise-expression",
         name = "ringworld_snapper_enemy_base_spots",
-        expression = "ringworld_danger_mask * ringworld_spot_noise{\z
+        expression = "ringworld_left_mask * ringworld_spot_noise{\z
             seed = 83749,\z
             count = 50,\z
             skip_offset = 0,\z
@@ -29,4 +29,4 @@ data:extend({
     },
 })
 
-data.raw["unit-spawner"]["armoured-biter-spawner"].autoplace = {probability_expression = "ringworld_snapper_enemy_base_probability"}
+data.raw["unit-spawner"]["armoured-biter-spawner"].autoplace = {probability_expression = "ringworld_snapper_enemy_base_probability", force = "ringworld_snappers"}

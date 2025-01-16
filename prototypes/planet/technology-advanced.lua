@@ -384,5 +384,118 @@ data:extend({
         time = 60
     }
  },
+ --scaffold
+ {
+  type = "technology",
+  name = "gauss-rockets",
+  icon = "__metal-and-stars__/graphics/technology/gauss-rockets.png",
+  icon_size = 256,
+  effects =
+  {
+      {
+          type = "unlock-recipe",
+          recipe = "gauss-rocket"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "gauss-rocket-casting"
+    },
+  },
+  prerequisites = {"quantum-science-pack", "rocketry", "neodymium-processing"},
+  unit =
+  {
+      count = 1000,
+      ingredients =
+      {
+        {"space-science-pack", 1},
+        {"nanite-science-pack", 1},
+        {"quantum-science-pack", 1},
+      },
+      time = 60
+  }
+},
+{
+  type = "technology",
+  name = "antimatter-robots",
+  icon = "__metal-and-stars__/graphics/technology/antimatter-robots.png",
+  icon_size = 256,
+  effects =
+  {
+      {
+          type = "unlock-recipe",
+          recipe = "antimatter-construction-robot"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "antimatter-logistic-robot"
+    },
+  },
+  prerequisites = {"anomaly-science-pack", "antimatter-catalyst", "robotics"},
+  unit =
+  {
+      count = 1000,
+      ingredients =
+      {
+        {"space-science-pack", 1},
+        {"nanite-science-pack", 1},
+        {"anomaly-science-pack", 1},
+      },
+      time = 60
+  }
+},
+{
+  type = "technology",
+  name = "thorium-ammo",
+  icon = "__metal-and-stars__/graphics/technology/thorium-ammo.png",
+  icon_size = 256,
+  effects =
+  {
+      {
+          type = "unlock-recipe",
+          recipe = "thorium-rounds-magazine"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "thorium-cannon-shell"
+    },
+  },
+  prerequisites = {"quantum-science-pack", "uranium-ammo"},
+  unit =
+  {
+      count = 1000,
+      ingredients =
+      {
+        {"space-science-pack", 1},
+        {"nanite-science-pack", 1},
+        {"quantum-science-pack", 1},
+      },
+      time = 60
+  }
+},
+{
+  type = "technology",
+  name = "thorium-enrichment",
+  icon = "__metal-and-stars__/graphics/technology/thorium-enrichment.png",
+  icon_size = 256,
+  effects =
+  {
+      {
+          type = "unlock-recipe",
+          recipe = "thorium-enrichment-process"
+      },
+  },
+  prerequisites = {"quantum-science-pack", "uranium-processing"},
+  unit =
+  {
+      count = 1000,
+      ingredients =
+      {
+        {"space-science-pack", 1},
+        {"nanite-science-pack", 1},
+        {"quantum-science-pack", 1},
+      },
+      time = 60
+  }
+},
     
 })
