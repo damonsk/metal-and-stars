@@ -25,7 +25,7 @@ local machina = {
         ["magnetic-field"] = meld.delete(),
         pressure = 3000,
         ["solar-power"] = 40000,
-        gravity = 30
+        gravity = 0
     },
     surface_render_parameters =
     {

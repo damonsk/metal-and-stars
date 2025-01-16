@@ -7,7 +7,8 @@
     "factorio_version": "2.0",
     "dependencies": [
         "space-age >= 2.0.28",
-        "base >= 2.0.28"
+        "base >= 2.0.28",
+        "ArmouredBiters <= 1.2.1"
     ],
     "space_travel_required": true,
     "spoiling_required": true,

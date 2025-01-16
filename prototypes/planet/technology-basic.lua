@@ -122,6 +122,10 @@ data:extend({
             type = "unlock-recipe",
             recipe = "nanite-science-pack"
           },
+          {
+            type = "unlock-recipe",
+            recipe = "microgravity-lab"
+          },
         },
         prerequisites = {"nanite-platform-assembly"},
         research_trigger =

@@ -18,7 +18,7 @@ shipyard = function()
         ["ringworld_gold_sand"] = {},
         ["ringworld_detritus"] = {},
         ["ringworld_military_scrap"] = {},
-        --["rocks"] = {}, -- can't add the rocks control otherwise nauvis rocks spawn
+        ["ringworld_snapper_enemy_base"] = {},
       },
       autoplace_settings =
       {
@@ -58,6 +58,7 @@ shipyard = function()
             ["gold-sands"] = {},
             ["military-scrap"] = {},
             ["ringworld-detritus"] = {},
+            ["armoured-biter-spawner"] = {},
           }
         }
       }

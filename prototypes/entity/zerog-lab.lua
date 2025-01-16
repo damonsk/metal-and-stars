@@ -11,14 +11,14 @@ data:extend({
         type = "lab",
         name = "microgravity-lab",
         icon = "__space-age__/graphics/icons/biolab.png",
-        minable = {mining_time = 0.5, result = "biolab"},
+        minable = {mining_time = 0.5, result = "microgravity-lab"},
         subgroup = "production-machine",
         order = "z-z[z-lab]",
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
         selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
         max_health = 350,
-        impact_category = "organic",
+        impact_category = "metal",
         alert_icon_shift = util.by_pixel(0, -12),
         icon_draw_specification = {shift = {0, -0.3}},
         corpse = "biolab-remnants",
@@ -33,9 +33,9 @@ data:extend({
         surface_conditions =
         {
           {
-            property = "pressure",
-            min = 1000,
-            max = 1000
+            property = "gravity",
+            min = 0,
+            max = 0
           }
         },
         damaged_trigger_effect = hit_effects.entity(),
@@ -51,7 +51,7 @@ data:extend({
               animation_speed = 0.5,
               --shift = {2 + 3/32, 1 + 22/32},
               draw_as_shadow = true,
-              scale = 0.5,
+              scale = 0.4,
             },
             {
               priority = "high",
@@ -60,7 +60,7 @@ data:extend({
               frame_count = 60,
               animation_speed = 0.5,
               --shift = {0, -8/32},
-              scale = 0.5,
+              scale = 0.4,
               stripes =
               {
                 {
@@ -77,7 +77,7 @@ data:extend({
               frame_count = 60,
               animation_speed = 0.5,
               --shift = {0, -8/32},
-              scale = 0.5,
+              scale = 0.4,
               draw_as_glow = true,
               blend_mode = "additive",
               stripes =
@@ -103,7 +103,7 @@ data:extend({
               animation_speed = 0.5,
               --shift = {2 + 3/32, 1 + 22/32},
               draw_as_shadow = true,
-              scale = 0.5,
+              scale = 0.4,
             },
             {
               priority = "high",
@@ -112,7 +112,7 @@ data:extend({
               frame_count = 60,
               animation_speed = 0.5,
               --shift = {0, -8/32},
-              scale = 0.5,
+              scale = 0.4,
               stripes =
               {
                 {
@@ -167,20 +167,9 @@ data:extend({
         }
       },
       {
-        type = "recipe",
-        name = "microgravity-lab",
-        energy_required = 10,
-        ingredients =
-        {
-          {type = "item", name = "lab", amount = 1},
-        },
-        results = {{type="item", name="microgravity-lab", amount=1}},
-        enabled = false
-      },
-      {
         type = "item",
         name = "microgravity-lab",
-        icon = "__space-age__/graphics/icons/biolab.png",
+        icon = "__metal-and-stars__/graphics/icons/particle-accelerator.png",
         subgroup = "production-machine",
         order = "z[z-microgravity-lab]",
         inventory_move_sound = item_sounds.mechanical_inventory_move,

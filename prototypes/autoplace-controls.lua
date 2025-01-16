@@ -6,7 +6,7 @@ data:extend(
     richness = false,
     order = "z-m-n",
     category = "enemy",
-    can_be_disabled = false
+    can_be_disabled = true
   },
   {
     type = "autoplace-control",

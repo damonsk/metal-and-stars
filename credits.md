@@ -22,3 +22,9 @@
 - **Creators**: [cackling.fiend](https://mods.factorio.com/user/cackling.fiend)
 - **Source**: [Factorio Mod Portal](https://mods.factorio.com/mod/pollution-module)
 - **License**: [GNU GPLv3](https://opensource.org/license/gpl-3.0)
+
+#### Atomic Robots
+
+- **Creators**: [CaitSith2](https://mods.factorio.com/user/CaitSith2), sprites by [Arch666Angel](https://mods.factorio.com/user/Arch666Angel)
+- **Source**: [Factorio Mod Portal](https://mods.factorio.com/mod/AtomicRobotsFix2Boost)
+- **License**: [MIT](https://opensource.org/license/MIT)

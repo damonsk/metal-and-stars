@@ -1089,6 +1089,26 @@ data:extend({
       },
       {
         type = "item",
+        name = "antimatter-construction-robot",
+        icon = "__metal-and-stars__/graphics/icons/antimatter-construction-robot.png",
+        subgroup = "logistic-network",
+        order = "a[robot]-c[construction-robot]-c[uranium]",
+        place_result = "antimatter-construction-robot",
+        icon_size = 64,
+        stack_size = 50
+    },
+    {
+          type = "item",
+          name = "antimatter-logistic-robot",
+          icon = "__metal-and-stars__/graphics/icons/antimatter-logistic-robot.png",
+          subgroup = "logistic-network",
+          order = "a[robot]-c[logistic-robot]-c[uranium]",
+          place_result = "antimatter-logistic-robot",
+          icon_size = 64,
+          stack_size = 50
+      },
+      {
+        type = "item",
         name = "barometric-vice",
         icon = "__metal-and-stars__/graphics/icons/chemical-stager.png",
         icon_size = 64,

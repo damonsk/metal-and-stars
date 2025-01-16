@@ -1036,6 +1036,30 @@ data:extend({
     results = {{type="item", name="prototype-mech-armor", amount=1}},
     requester_paste_multiplier = 1
   },
+  {
+    type = "recipe",
+    name = "antimatter-construction-robot",
+    icon = "__metal-and-stars__/graphics/icons/antimatter-construction-robot.png",
+    -- enabled = false,
+    ingredients =
+    {
+        {type="item", name="construction-robot", amount=1},
+        {type="item", name="antimatter", amount=1},
+    },
+    results = {{type="item", name="antimatter-construction-robot", amount=1}}
+  },
+  {
+      type = "recipe",
+      name = "antimatter-logistic-robot",
+      icon = "__metal-and-stars__/graphics/icons/antimatter-logistic-robot.png",
+      -- enabled = false,
+      ingredients =
+      {
+          {type="item", name="logistic-robot", amount=1},
+          {type="item", name="antimatter", amount=1},
+      },
+      results = {{type="item", name="antimatter-logistic-robot", amount=1}}
+  },
   --//////////////machines
   {
     type = "recipe",
@@ -1111,4 +1135,15 @@ data:extend({
     allow_productivity = true,
 		results = {{type="item", name="conduit", amount=1}}
 	},
+  {
+    type = "recipe",
+    name = "microgravity-lab",
+    energy_required = 10,
+    ingredients = 
+    {
+      {type = "item", name = "nanites", amount = 1000},
+    },
+    results = {{type="item", name="microgravity-lab", amount=1}},
+    enabled = false
+  },
 })
