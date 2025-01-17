@@ -8,12 +8,12 @@ data:extend({
     {
       {
         type = "change-recipe-productivity",
-        recipe = "plastic-bar",
+        recipe = "thruster-fuel",
         change = 0.1
       },
       {
         type = "change-recipe-productivity",
-        recipe = "bioplastic",
+        recipe = "thruster-oxidizer",
         change = 0.1
       },
     },
@@ -41,12 +41,7 @@ data:extend({
     {
       {
         type = "change-recipe-productivity",
-        recipe = "plastic-bar",
-        change = 0.1
-      },
-      {
-        type = "change-recipe-productivity",
-        recipe = "bioplastic",
+        recipe = "dark-matter-compression",
         change = 0.1
       },
     },
@@ -74,12 +69,12 @@ data:extend({
     {
       {
         type = "change-recipe-productivity",
-        recipe = "plastic-bar",
+        recipe = "gold-plate",
         change = 0.1
       },
       {
         type = "change-recipe-productivity",
-        recipe = "bioplastic",
+        recipe = "molten-gold",
         change = 0.1
       },
     },
@@ -107,12 +102,17 @@ data:extend({
     {
       {
         type = "change-recipe-productivity",
-        recipe = "plastic-bar",
+        recipe = "piercing-rounds-magazine",
         change = 0.1
       },
       {
         type = "change-recipe-productivity",
-        recipe = "bioplastic",
+        recipe = "uranium-rounds-magazine",
+        change = 0.1
+      },
+      {
+        type = "change-recipe-productivity",
+        recipe = "thorium-rounds-magazine",
         change = 0.1
       },
     },
@@ -140,12 +140,22 @@ data:extend({
     {
       {
         type = "change-recipe-productivity",
-        recipe = "plastic-bar",
+        recipe = "rocket",
         change = 0.1
       },
       {
         type = "change-recipe-productivity",
-        recipe = "bioplastic",
+        recipe = "explosive-rocket",
+        change = 0.1
+      },
+      {
+        type = "change-recipe-productivity",
+        recipe = "gauss-rocket",
+        change = 0.1
+      },
+      {
+        type = "change-recipe-productivity",
+        recipe = "gauss-rocket-casting",
         change = 0.1
       },
     },
@@ -173,12 +183,12 @@ data:extend({
     {
       {
         type = "change-recipe-productivity",
-        recipe = "plastic-bar",
+        recipe = "railgun-ammo",
         change = 0.1
       },
       {
         type = "change-recipe-productivity",
-        recipe = "bioplastic",
+        recipe = "rail",
         change = 0.1
       },
     },
