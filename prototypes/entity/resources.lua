@@ -85,7 +85,7 @@ local oil_driving_sound =
             scale = 0.5
           }
         },
-        map_color = {0.715, 0.725, 0.780},
+        map_color = {0.803, 0.388, 0.215},
         mining_visualisation_tint = {r = 0.895, g = 0.965, b = 1.000, a = 1.000}, -- #e4f6ffff
         -- factoriopedia_simulation = resource_parameters.factoriopedia_simulation
       },
@@ -151,7 +151,7 @@ local oil_driving_sound =
             scale = 0.5
           }
         },
-        map_color = {0.715, 0.725, 0.780},
+        map_color = {0.690, 0.611, 0.427},
         mining_visualisation_tint = {r = 0.895, g = 0.965, b = 1.000, a = 1.000}, -- #e4f6ffff
         -- factoriopedia_simulation = resource_parameters.factoriopedia_simulation
       },
@@ -278,7 +278,7 @@ local oil_driving_sound =
               type = "fluid",
               name = "crude-slush",
               amount_min = 10,
-              amount_max = 10,
+              amount_max = 50,
               probability = 1
             }
           }

@@ -24,7 +24,7 @@ local machina = {
         ["day-night-cycle"] = 20 * hour,
         ["magnetic-field"] = meld.delete(),
         pressure = 3000,
-        ["solar-power"] = 40000,
+        ["solar-power"] = 50,
         gravity = 0
     },
     surface_render_parameters =

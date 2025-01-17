@@ -768,7 +768,7 @@ data:extend({
         inventory_move_sound = item_sounds.fuel_cell_inventory_move,
         pick_sound = item_sounds.fuel_cell_inventory_pickup,
         drop_sound = item_sounds.fuel_cell_inventory_move,
-        stack_size = 1,
+        stack_size = 20,
         weight = 100*kg
       },
       -- RINGWORLD ITEMS

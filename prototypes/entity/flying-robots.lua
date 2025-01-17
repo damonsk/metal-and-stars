@@ -221,7 +221,7 @@ data:extend{
       min_to_charge = 0,
       max_to_charge = 0,
       icon_size = 32,
-      working_light = {intensity = 0.8, size = 3, color = {r = 0.0, g = 1, b = 0.0}},
+      working_light = {intensity = 0.8, size = 3, color = construction_robot_emission_tint},
       idle =
       {
         layers = {
