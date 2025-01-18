@@ -75,9 +75,9 @@ data:extend({
     {
         type = "space-location",
         name = "mirandus-a",
-        starmap_icon = "__metal-and-stars__/graphics/icons/starmap-mirandus.png",
+        starmap_icon = "__metal-and-stars-graphics__/graphics/icons/starmap-mirandus.png",
         starmap_icon_size = 512,
-        icon = "__metal-and-stars__/graphics/icons/mirandus.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/mirandus.png",
         order = "f[solar-system-edge]",
         subgroup = "planets",
         gravity_pull = -10,

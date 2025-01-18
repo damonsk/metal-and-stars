@@ -347,7 +347,7 @@ data:extend
     particle_tints = tile_graphics.fulgora_oil_ocean_particle_tints,
     sprite_usage_surface = "fulgora",
     variants = tile_variations_template_with_transitions(
-      "__metal-and-stars__/graphics/terrain/gray-goo-ocean.png",
+      "__metal-and-stars-graphics__/graphics/terrain/gray-goo-ocean.png",
       {
         max_size = 4,
         [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -399,13 +399,13 @@ data:extend
         },
         --gradient map for thin film effect
         {
-          filename = "__metal-and-stars__/graphics/terrain/gray-goo-gradient.png",
+          filename = "__metal-and-stars-graphics__/graphics/terrain/gray-goo-gradient.png",
           width = 512,
           height = 32
         },
         --specular highligts
         {
-          filename = "__metal-and-stars__/graphics/terrain/gray-goo-spec.png",
+          filename = "__metal-and-stars-graphics__/graphics/terrain/gray-goo-spec.png",
           width = 512 * 4,
           height = 512 * 2
         },

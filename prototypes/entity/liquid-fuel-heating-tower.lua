@@ -10,7 +10,7 @@ data:extend({
 {
     type = "reactor",
     name = "liquid-fuel-heating-tower",
-    icon  = "__metal-and-stars__/graphics/icons/liquid-fuel-heating-tower.png",
+    icon  = "__metal-and-stars-graphics__/graphics/icons/liquid-fuel-heating-tower.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "liquid-fuel-heating-tower"},
     max_health = 500,
@@ -72,14 +72,14 @@ data:extend({
     working_light_picture =
     {
       layers = {
-        util.sprite_load("__metal-and-stars__/graphics/entity/heating-tower/heating-tower-working-fire", {
+        util.sprite_load("__metal-and-stars-graphics__/graphics/entity/heating-tower/heating-tower-working-fire", {
           frame_count = 24,
           scale = 0.5,
           blend_mode = "additive",
           draw_as_glow = true,
           animation_speed = 0.333
         }),
-        util.sprite_load("__metal-and-stars__/graphics/entity/heating-tower/heating-tower-working-light", {
+        util.sprite_load("__metal-and-stars-graphics__/graphics/entity/heating-tower/heating-tower-working-light", {
           frame_count = 1,
           repeat_count = 24,
           scale = 0.5,

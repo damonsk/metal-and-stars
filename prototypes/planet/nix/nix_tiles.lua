@@ -169,7 +169,7 @@ data:extend({
     collision_mask = tile_collision_masks.ground(),
     autoplace = {probability_expression = "snow_patchy"},
     layer = aquilo_tile_offset_frozen + 5,
-    variants = material_background("__metal-and-stars__/graphics/terrain/snow-patchy-grass-8x.png", 8),
+    variants = material_background("__metal-and-stars-graphics__/graphics/terrain/snow-patchy-grass-8x.png", 8),
 
     transitions = ice_transitions,
     transitions_between_transitions = ice_transitions_between_transitions,

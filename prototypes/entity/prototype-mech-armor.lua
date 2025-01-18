@@ -5,7 +5,7 @@ data:extend({
   {
     type = "armor",
     name = "prototype-mech-armor",
-    icon = "__metal-and-stars__/graphics/icons/prototype-mech-armor.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/prototype-mech-armor.png",
     resistances =
     {
       {

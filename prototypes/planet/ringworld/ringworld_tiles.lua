@@ -446,7 +446,7 @@ data:extend({
     autoplace = {probability_expression = 'safe_grass'},
     layer = 28,
     variants = tile_variations_template(
-      "__metal-and-stars__/graphics/terrain/grass-2.png", "__base__/graphics/terrain/masks/transition-3.png",
+      "__metal-and-stars-graphics__/graphics/terrain/grass-2.png", "__base__/graphics/terrain/masks/transition-3.png",
       {
         max_size = 4,
         [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -479,7 +479,7 @@ data:extend({
     autoplace = {probability_expression = 'safe_grass_light'},
     layer = 28,
     variants = tile_variations_template(
-      "__metal-and-stars__/graphics/terrain/grass-2-light.png", "__base__/graphics/terrain/masks/transition-3.png",
+      "__metal-and-stars-graphics__/graphics/terrain/grass-2-light.png", "__base__/graphics/terrain/masks/transition-3.png",
       {
         max_size = 4,
         [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -512,7 +512,7 @@ data:extend({
     autoplace = {probability_expression = 'safe_grass_dark'},
     layer = 28,
     variants = tile_variations_template(
-      "__metal-and-stars__/graphics/terrain/grass-2-dark.png", "__base__/graphics/terrain/masks/transition-3.png",
+      "__metal-and-stars-graphics__/graphics/terrain/grass-2-dark.png", "__base__/graphics/terrain/masks/transition-3.png",
       {
         max_size = 4,
         [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -546,7 +546,7 @@ data:extend({
           autoplace = {probability_expression = 'ring_undergrowth_thin'},
           layer = 26,
           variants = tile_variations_template(
-            "__metal-and-stars__/graphics/terrain/undergrowth-thin.png", "__base__/graphics/terrain/masks/transition-3.png",
+            "__metal-and-stars-graphics__/graphics/terrain/undergrowth-thin.png", "__base__/graphics/terrain/masks/transition-3.png",
             {
               max_size = 4,
               [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -577,7 +577,7 @@ data:extend({
           autoplace = {probability_expression = 'ring_undergrowth_thin_dark'},
           layer = 26,
           variants = tile_variations_template(
-            "__metal-and-stars__/graphics/terrain/undergrowth-thin-dark.png", "__base__/graphics/terrain/masks/transition-3.png",
+            "__metal-and-stars-graphics__/graphics/terrain/undergrowth-thin-dark.png", "__base__/graphics/terrain/masks/transition-3.png",
             {
               max_size = 4,
               [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -608,7 +608,7 @@ data:extend({
           autoplace = {probability_expression = 'ring_undergrowth_thick'},
           layer = 26,
           variants = tile_variations_template(
-            "__metal-and-stars__/graphics/terrain/undergrowth-thick.png", "__base__/graphics/terrain/masks/transition-3.png",
+            "__metal-and-stars-graphics__/graphics/terrain/undergrowth-thick.png", "__base__/graphics/terrain/masks/transition-3.png",
             {
               max_size = 4,
               [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
@@ -640,7 +640,7 @@ data:extend({
           autoplace = {probability_expression = 'ring_undergrowth_thick_dark'},
           layer = 28,
           variants = tile_variations_template(
-            "__metal-and-stars__/graphics/terrain/undergrowth-thick-dark.png", "__base__/graphics/terrain/masks/transition-3.png",
+            "__metal-and-stars-graphics__/graphics/terrain/undergrowth-thick-dark.png", "__base__/graphics/terrain/masks/transition-3.png",
             {
               max_size = 4,
               [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },

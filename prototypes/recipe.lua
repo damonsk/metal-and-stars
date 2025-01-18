@@ -109,7 +109,7 @@ data:extend({
           icon = "__quality__/graphics/icons/recycling.png"
         },
         {
-          icon = "__metal-and-stars__/graphics/icons/inert-quantum-science.png",
+          icon = "__metal-and-stars-graphics__/graphics/icons/inert-quantum-science.png",
           scale = 0.4
         },
         {
@@ -153,7 +153,7 @@ data:extend({
     energy_required = 60,
     enabled = false,
     category = "centrifuging",
-    icon = "__metal-and-stars__/graphics/icons/thorium-enrichment-process.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/thorium-enrichment-process.png",
     subgroup = "uranium-processing",
     order = "b[uranium-products]-c[thorium-enrichment-process]",
     ingredients =
@@ -178,7 +178,7 @@ data:extend({
     energy_required = 3,
     enabled = false,
     category = "chemistry",
-    icon = "__metal-and-stars__/graphics/icons/mirandite-sludge.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/mirandite-sludge.png",
     subgroup = "mirandus-processes",
     order = "b[uranium-products]-c[thorium-enrichment-process]",
     ingredients =
@@ -203,7 +203,7 @@ data:extend({
     category = "crafting-with-fluid-or-metallurgy",
     ingredients = {{type = "fluid", name = "mirandite-sludge", amount = 100}},
     
-    icon = "__metal-and-stars__/graphics/icons/mirandite-asteroid-chunk.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/mirandite-asteroid-chunk.png",
     subgroup = "mirandus-processes",
     order = "a[uranium-processing]-a[uranium-processing]",
     results =
@@ -284,7 +284,7 @@ data:extend({
   {
     type = "recipe",
     name = "crude-slush-processing",
-    icon = "__metal-and-stars__/graphics/icons/crude-slush.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/crude-slush.png",
     category = "oil-processing",
     subgroup = "nix-processes",
     order = "c[lithium]-b[lithium-plate]",
@@ -303,7 +303,7 @@ data:extend({
   {
     type = "recipe",
     name = "dark-matter-compression",
-    icon = "__metal-and-stars__/graphics/icons/dark-matter-chunk-1.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/dark-matter-chunk-1.png",
     category = "compression",
     subgroup = "nix-processes",
     order = "c[lithium]-b[lithium-plate]",
@@ -322,7 +322,7 @@ data:extend({
   {
     type = "recipe",
     name = "dark-matter-crystal",
-    icon = "__metal-and-stars__/graphics/icons/dark-matter-crystal.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/dark-matter-crystal.png",
     category = "compression",
     subgroup = "nix-processes",
     order = "c[lithium]-b[lithium-plate]",
@@ -354,7 +354,7 @@ data:extend({
   {
     type = "recipe",
     name = "dark-matter-fuel",
-    icon = "__metal-and-stars__/graphics/icons/dark-matter-fuel.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/dark-matter-fuel.png",
     category = "chemistry",
     subgroup = "nix-processes",
     order = "c[lithium]-b[lithium-plate]",
@@ -371,7 +371,7 @@ data:extend({
   {
     type = "recipe",
     name = "dark-matter-fuel-cell",
-    icon = "__metal-and-stars__/graphics/icons/dark-matter-fuel-cell.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/dark-matter-fuel-cell.png",
     category = "chemistry",
     subgroup = "nix-processes",
     order = "c[lithium]-b[lithium-plate]",
@@ -404,7 +404,7 @@ data:extend({
   {
     type = "recipe",
     name = "manufactured-diamond",
-    icon = "__metal-and-stars__/graphics/icons/diamond.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/diamond.png",
     category = "compression",
     subgroup = "nix-processes",
     order = "c[lithium]-b[lithium-plate]",
@@ -420,7 +420,7 @@ data:extend({
   {
     type = "recipe",
     name = "ice-compression",
-    icon = "__metal-and-stars__/graphics/icons/dense-ice-cube.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/dense-ice-cube.png",
     category = "compression",
     subgroup = "nix-processes",
     order = "c[lithium]-b[lithium-plate]",
@@ -437,7 +437,7 @@ data:extend({
   {
     type = "recipe",
     name = "dense-stone-brick",
-    icon = "__metal-and-stars__/graphics/icons/dense-stone-brick.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/dense-stone-brick.png",
     category = "compression",
     subgroup = "nix-processes",
     order = "c[lithium]-b[lithium-plate]",
@@ -454,7 +454,7 @@ data:extend({
   {
     type = "recipe",
     name = "anomaly-science-pack",
-    icon = "__metal-and-stars__/graphics/icons/anomaly-science-pack.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/anomaly-science-pack.png",
     enabled = false,
     category = "compression",
     energy_required = 15,
@@ -478,7 +478,7 @@ data:extend({
   {
     type = "recipe",
     name = "catalyzed-anomaly-science-pack",
-    icon = "__metal-and-stars__/graphics/icons/anomaly-science-pack.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/anomaly-science-pack.png",
     enabled = false,
     category = "compression",
     energy_required = 5,
@@ -506,7 +506,7 @@ data:extend({
   {
     type = "recipe",
     name = "nanites",
-    icon = "__metal-and-stars__/graphics/icons/nanites.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/nanites.png",
     category = "nanotech",
     subgroup = "shipyard-processes",
     order = "c[lithium]-b[lithium-plate]",
@@ -685,7 +685,7 @@ data:extend({
   {
     type = "recipe",
     name = "heavy-water-processing",
-    icon = "__metal-and-stars__/graphics/icons/heavy-water.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/heavy-water.png",
     category = "chemistry",
     subgroup = "ringworld-processes",
     order = "b-a-a",
@@ -708,7 +708,7 @@ data:extend({
   {
     type = "recipe",
     name = "gold-plate",
-    icon = "__metal-and-stars__/graphics/icons/gold-ingot.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/gold-ingot.png",
     category = "smelting",
     subgroup = "ringworld-processes",
     order = "c[lithium]-b[lithium-plate]",
@@ -724,7 +724,7 @@ data:extend({
   {
     type = "recipe",
     name = "molten-gold",
-    icon = "__metal-and-stars__/graphics/icons/molten-gold.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/molten-gold.png",
     category = "metallurgy",
     subgroup = "ringworld-processes",
     order = "c[lithium]-b[lithium-plate]",
@@ -741,7 +741,7 @@ data:extend({
   {
     type = "recipe",
     name = "gold-cable",
-    icon = "__metal-and-stars__/graphics/icons/gold-wire.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/gold-wire.png",
     category = "electronics",
     subgroup = "ringworld-processes",
     order = "c[lithium]-b[lithium-plate]",
@@ -759,7 +759,7 @@ data:extend({
     category = "metallurgy",
     subgroup = "ringworld-processes",
     order = "b[casting]-h[casting-copper-cable]",
-    icon = "__metal-and-stars__/graphics/icons/casting-gold-cable.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/casting-gold-cable.png",
     enabled = false,
     ingredients =
     {
@@ -776,7 +776,7 @@ data:extend({
     category = "metallurgy",
     subgroup = "ringworld-processes",
     order = "b[casting]-h[casting-copper-cable]",
-    icon = "__metal-and-stars__/graphics/icons/casting-gold-plate.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/casting-gold-plate.png",
     enabled = false,
     ingredients =
     {
@@ -790,7 +790,7 @@ data:extend({
   {
     type = "recipe",
     name = "gold-foil",
-    icon = "__metal-and-stars__/graphics/icons/gold-foil-1.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/gold-foil-1.png",
     subgroup = "ringworld-processes",
     order = "c[lithium]-b[lithium-plate]",
     energy_required = 6.4,
@@ -804,7 +804,7 @@ data:extend({
   {
     type = "recipe",
     name = "multilayer-insulation",
-    icon = "__metal-and-stars__/graphics/icons/multilayer-insulation.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/multilayer-insulation.png",
     subgroup = "ringworld-processes",
     order = "c[lithium]-b[lithium-plate]",
     energy_required = 6.4,
@@ -819,7 +819,7 @@ data:extend({
   {
     type = "recipe",
     name = "glass-plate",
-    icon = "__metal-and-stars__/graphics/icons/glass-plate-1.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/glass-plate-1.png",
     category = "smelting",
     subgroup = "ringworld-processes",
     order = "c[lithium]-b[lithium-plate]",
@@ -835,7 +835,7 @@ data:extend({
   {
     type = "recipe",
     name = "glass-billet-reuse",
-    icon = "__metal-and-stars__/graphics/icons/glass-plate-1.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/glass-plate-1.png",
     category = "smelting",
     subgroup = "ringworld-processes",
     order = "c[lithium]-b[lithium-plate]",
@@ -851,7 +851,7 @@ data:extend({
   {
     type = "recipe",
     name = "molten-glass",
-    icon = "__metal-and-stars__/graphics/icons/molten-glass.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/molten-glass.png",
     category = "metallurgy",
     subgroup = "ringworld-processes",
     order = "c[lithium]-b[lithium-plate]",
@@ -871,7 +871,7 @@ data:extend({
     category = "metallurgy",
     subgroup = "ringworld-processes",
     order = "b[casting]-h[casting-copper-cable]",
-    icon = "__metal-and-stars__/graphics/icons/casting-glass-plate.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/casting-glass-plate.png",
     enabled = false,
     ingredients =
     {
@@ -886,7 +886,7 @@ data:extend({
     type = "recipe",
     name = "aspheric-lens",
     category = "crafting-with-fluid",
-    icon = "__metal-and-stars__/graphics/icons/glass-lens.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/glass-lens.png",
     subgroup = "ringworld-processes",
     order = "c[lithium]-b[lithium-plate]",
     energy_required = 6.4,
@@ -907,7 +907,7 @@ data:extend({
     type = "recipe",
     name = "process-bitumen",
     category = "oil-processing",
-    icon = "__metal-and-stars__/graphics/icons/tar-1.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/tar-1.png",
     subgroup = "ringworld-processes",
     order = "c[lithium]-b[lithium-plate]",
     energy_required = 6.4,
@@ -928,7 +928,7 @@ data:extend({
     type = "recipe",
     name = "bone-to-calcite",
     category = "smelting",
-    icon = "__metal-and-stars__/graphics/icons/bone-fragments-1.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/bone-fragments-1.png",
     subgroup = "ringworld-processes",
     order = "c[lithium]-b[lithium-plate]",
     energy_required = 6.4,
@@ -944,7 +944,7 @@ data:extend({
     type = "recipe",
     name = "ring-science-pack",
     category = "crafting-with-fluid",
-    icon = "__metal-and-stars__/graphics/icons/ring-science-pack.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/ring-science-pack.png",
     energy_required = 5,
     ingredients = {
       {type = "item", name = "aspheric-lens", amount = 10},
@@ -963,7 +963,7 @@ data:extend({
     type = "recipe",
     name = "high-speed-processor",
     category = "electronics-or-assembling",
-    icon = "__metal-and-stars__/graphics/icons/high-speed-processor.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/high-speed-processor.png",
     subgroup = "ringworld-processes",
     order = "c[lithium]-b[lithium-plate]",
     energy_required = 6.4,
@@ -980,7 +980,7 @@ data:extend({
     type = "recipe",
     name = "overclock-module",
     enabled = false,
-    icon = "__metal-and-stars__/graphics/icons/pollution-module-1.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/pollution-module-1.png",
     ingredients =
     {
       {type = "item", name = "advanced-circuit", amount = 5},
@@ -993,7 +993,7 @@ data:extend({
     type = "recipe",
     name = "overclock-module-2",
     enabled = false,
-    icon = "__metal-and-stars__/graphics/icons/pollution-module-2.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/pollution-module-2.png",
     ingredients =
     {
       {type = "item", name = "overclock-module", amount = 4},
@@ -1007,7 +1007,7 @@ data:extend({
     type = "recipe",
     name = "overclock-module-3",
     enabled = false,
-    icon = "__metal-and-stars__/graphics/icons/pollution-module-3.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/pollution-module-3.png",
     ingredients =
     {
       {type = "item", name = "overclock-module-2", amount = 4},
@@ -1022,7 +1022,7 @@ data:extend({
     type = "recipe",
     name = "prototype-mech-armor",
     category = "crafting-with-fluid",
-    icon = "__metal-and-stars__/graphics/icons/prototype-mech-armor.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/prototype-mech-armor.png",
     enabled = false,
     energy_required = 60,
     ingredients =
@@ -1039,7 +1039,7 @@ data:extend({
   {
     type = "recipe",
     name = "antimatter-construction-robot",
-    icon = "__metal-and-stars__/graphics/icons/antimatter-construction-robot.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/antimatter-construction-robot.png",
     enabled = false,
     ingredients =
     {
@@ -1051,7 +1051,7 @@ data:extend({
   {
       type = "recipe",
       name = "antimatter-logistic-robot",
-      icon = "__metal-and-stars__/graphics/icons/antimatter-logistic-robot.png",
+      icon = "__metal-and-stars-graphics__/graphics/icons/antimatter-logistic-robot.png",
       enabled = false,
       ingredients =
       {
@@ -1081,7 +1081,7 @@ data:extend({
 		name = "barometric-vice",
 		enabled = false,
     category = "crafting-with-fluid",
-    icon = "__metal-and-stars__/graphics/icons/chemical-stager.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/chemical-stager.png",
     energy_required = 10,
 		ingredients = {
       {type = "item", name = "stone-brick", amount = 20},
@@ -1095,7 +1095,7 @@ data:extend({
   {
 		type = "recipe",
 		name = "quantum-stabilizer",
-    icon = "__metal-and-stars__/graphics/icons/quantum-stabilizer.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/quantum-stabilizer.png",
 		enabled = false,
     category = "nanotech",
     energy_required = 10,
@@ -1110,7 +1110,7 @@ data:extend({
   {
 		type = "recipe",
 		name = "gravity-assembler",
-    icon = "__metal-and-stars__/graphics/icons/gravity-assembler.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/gravity-assembler.png",
 		enabled = false,
     energy_required = 10,
 		ingredients = {
@@ -1125,7 +1125,7 @@ data:extend({
 		type = "recipe",
 		name = "conduit",
     subgroup = "shipyard-processes",
-    icon = "__metal-and-stars__/graphics/icons/conduit.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/conduit.png",
 		enabled = false,
     energy_required = 10,
 		ingredients = {

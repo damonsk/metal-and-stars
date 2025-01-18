@@ -9,7 +9,7 @@ data:extend({
   {
     type = "explosion",
     name = "mirandite-asteroid-explosion-1",
-    icon = "__metal-and-stars__/graphics/icons/mirandite-asteroid-chunk.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/mirandite-asteroid-chunk.png",
     flags = {"not-on-map"},
     hidden = true,
     height = 0,
@@ -64,7 +64,7 @@ data:extend({
   {
     type = "explosion",
     name = "mirandite-asteroid-explosion-2",
-    icon = "__metal-and-stars__/graphics/icons/small-mirandite-asteroid.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/small-mirandite-asteroid.png",
     flags = {"not-on-map"},
     hidden = true,
     height = 0,
@@ -162,7 +162,7 @@ data:extend({
   {
     type = "explosion",
     name = "mirandite-asteroid-explosion-3",
-    icon = "__metal-and-stars__/graphics/icons/medium-mirandite-asteroid.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/medium-mirandite-asteroid.png",
     flags = {"not-on-map"},
     hidden = true,
     height = 0,
@@ -260,7 +260,7 @@ data:extend({
   {
     type = "explosion",
     name = "mirandite-asteroid-explosion-4",
-    icon = "__metal-and-stars__/graphics/icons/big-mirandite-asteroid.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/big-mirandite-asteroid.png",
     flags = {"not-on-map"},
     hidden = true,
     height = 0,
@@ -367,7 +367,7 @@ data:extend({
   {
     type = "explosion",
     name = "mirandite-asteroid-explosion-5",
-    icon = "__metal-and-stars__/graphics/icons/huge-mirandite-asteroid.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/huge-mirandite-asteroid.png",
     flags = {"not-on-map"},
     hidden = true,
     height = 0,

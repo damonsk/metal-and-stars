@@ -26,7 +26,7 @@ local oil_driving_sound =
       {
         type = "resource",
         name = "iron-copper-ore",
-        icon = "__metal-and-stars__/graphics/icons/autoplace-icons/copper-iron-icon.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/autoplace-icons/copper-iron-icon.png",
         flags = {"placeable-neutral"},
         order="a-b-".."b",
         tree_removal_probability = 1,
@@ -77,7 +77,7 @@ local oil_driving_sound =
         {
           sheet =
           {
-            filename = "__metal-and-stars__/graphics/entity/ores/mixed-metal.png",
+            filename = "__metal-and-stars-graphics__/graphics/entity/ores/mixed-metal.png",
             priority = "extra-high",
             size = 128,
             frame_count = 8,
@@ -92,7 +92,7 @@ local oil_driving_sound =
       {
         type = "resource",
         name = "coal-stone-ore",
-        icon = "__metal-and-stars__/graphics/icons/autoplace-icons/coal-stone-icon.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/autoplace-icons/coal-stone-icon.png",
         flags = {"placeable-neutral"},
         order="a-b-".."b",
         tree_removal_probability = 1,
@@ -143,7 +143,7 @@ local oil_driving_sound =
         {
           sheet =
           {
-            filename = "__metal-and-stars__/graphics/entity/ores/mixed-mineral.png",
+            filename = "__metal-and-stars-graphics__/graphics/entity/ores/mixed-mineral.png",
             priority = "extra-high",
             size = 128,
             frame_count = 8,
@@ -158,7 +158,7 @@ local oil_driving_sound =
       {
         type = "resource",
         name = "dark-matter-vent",
-        icon = "__metal-and-stars__/graphics/icons/autoplace-icons/dark-matter-vent.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/autoplace-icons/dark-matter-vent.png",
         flags = {"placeable-neutral"},
         category = "basic-fluid",
         subgroup = "mineable-fluids",
@@ -207,7 +207,7 @@ local oil_driving_sound =
           layers =
           {
             {
-                filename = "__metal-and-stars__/graphics/entity/geysers/geyser-vent-snow.png",
+                filename = "__metal-and-stars-graphics__/graphics/entity/geysers/geyser-vent-snow.png",
                 priority = "extra-high",
                 frame_count = 4,
                 scale = 0.5,
@@ -217,7 +217,7 @@ local oil_driving_sound =
                 line_length = 4,  
             },
             {
-              filename = "__metal-and-stars__/graphics/entity/geysers/geyser-vent-emission-purple.png",
+              filename = "__metal-and-stars-graphics__/graphics/entity/geysers/geyser-vent-emission-purple.png",
               priority = "extra-high",
               frame_count = 4,
               scale = 0.5,
@@ -311,7 +311,7 @@ local oil_driving_sound =
               variation_count = 1,
               frame_count = 4,
             }),
-            util.sprite_load("__metal-and-stars__/graphics/entity/geysers/crude-slush-ice",
+            util.sprite_load("__metal-and-stars-graphics__/graphics/entity/geysers/crude-slush-ice",
             {
               priority = "extra-high",
               scale = 0.5,
@@ -328,7 +328,7 @@ local oil_driving_sound =
       {
         type = "resource",
         name = "heavy-water-vent",
-        icon = "__metal-and-stars__/graphics/icons/autoplace-icons/heavy-water-vent.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/autoplace-icons/heavy-water-vent.png",
         flags = {"placeable-neutral"},
         category = "basic-fluid",
         subgroup = "mineable-fluids",
@@ -371,7 +371,7 @@ local oil_driving_sound =
           layers =
           {
             {
-                filename = "__metal-and-stars__/graphics/entity/geysers/geyser-vent-sandstone.png",
+                filename = "__metal-and-stars-graphics__/graphics/entity/geysers/geyser-vent-sandstone.png",
                 priority = "extra-high",
                 frame_count = 4,
                 scale = 0.5,
@@ -388,7 +388,7 @@ local oil_driving_sound =
           {
             count = 1,
             render_layer = "decorative",
-            animation = util.sprite_load("__metal-and-stars__/graphics/entity/geysers/boiling-water-animation",
+            animation = util.sprite_load("__metal-and-stars-graphics__/graphics/entity/geysers/boiling-water-animation",
             {
               priority = "extra-high",
               scale = 0.5,
@@ -406,7 +406,7 @@ local oil_driving_sound =
       {
         type = "resource",
         name = "gold-sands",
-        icon = "__metal-and-stars__/graphics/icons/autoplace-icons/gold-sand-icon.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/autoplace-icons/gold-sand-icon.png",
         flags = {"placeable-neutral"},
         order="a-b-a",
         tree_removal_probability = 1,
@@ -451,7 +451,7 @@ local oil_driving_sound =
         {
           sheet =
           {
-            filename = "__metal-and-stars__/graphics/entity/ores/gold-ore.png",
+            filename = "__metal-and-stars-graphics__/graphics/entity/ores/gold-ore.png",
             priority = "extra-high",
             size = 128,
             frame_count = 8,
@@ -466,7 +466,7 @@ local oil_driving_sound =
       {
         type = "resource",
         name = "military-scrap",
-        icon = "__metal-and-stars__/graphics/icons/autoplace-icons/military-scrap-icon.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/autoplace-icons/military-scrap-icon.png",
         flags = {"placeable-neutral"},
         order="a-b-a",
         tree_removal_probability = 1,
@@ -551,7 +551,7 @@ local oil_driving_sound =
         {
           sheet =
           {
-            filename = "__metal-and-stars__/graphics/entity/ores/military-scrap.png",
+            filename = "__metal-and-stars-graphics__/graphics/entity/ores/military-scrap.png",
             priority = "extra-high",
             size = 128,
             frame_count = 8,
@@ -566,7 +566,7 @@ local oil_driving_sound =
       {
         type = "resource",
         name = "ringworld-detritus",
-        icon = "__metal-and-stars__/graphics/icons/autoplace-icons/detritus-icon.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/autoplace-icons/detritus-icon.png",
         flags = {"placeable-neutral"},
         order="a-b-a",
         tree_removal_probability = 1,
@@ -603,7 +603,7 @@ local oil_driving_sound =
         {
           sheet =
           {
-            filename = "__metal-and-stars__/graphics/entity/ores/detritus.png",
+            filename = "__metal-and-stars-graphics__/graphics/entity/ores/detritus.png",
             priority = "extra-high",
             size = 128,
             frame_count = 8,

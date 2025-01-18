@@ -2,7 +2,7 @@ data:extend({
   {
     type = "technology",
     name = "space-fuel-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__metal-and-stars__/graphics/technology/space-fuel-productivity.png"),
+    icons = util.technology_icon_constant_recipe_productivity("__metal-and-stars-graphics__/graphics/technology/space-fuel-productivity.png"),
     icon_size = 256,
     effects =
     {
@@ -35,7 +35,7 @@ data:extend({
   {
     type = "technology",
     name = "dark-matter-refinement-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__metal-and-stars__/graphics/technology/dark-matter-processing.png"),
+    icons = util.technology_icon_constant_recipe_productivity("__metal-and-stars-graphics__/graphics/technology/dark-matter-processing.png"),
     icon_size = 256,
     effects =
     {
@@ -63,7 +63,7 @@ data:extend({
   {
     type = "technology",
     name = "gold-refinement-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__metal-and-stars__/graphics/technology/gold-processing.png"),
+    icons = util.technology_icon_constant_recipe_productivity("__metal-and-stars-graphics__/graphics/technology/gold-processing.png"),
     icon_size = 256,
     effects =
     {
@@ -96,7 +96,7 @@ data:extend({
   {
     type = "technology",
     name = "bullet-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__metal-and-stars__/graphics/technology/bullet-productivity.png"),
+    icons = util.technology_icon_constant_recipe_productivity("__metal-and-stars-graphics__/graphics/technology/bullet-productivity.png"),
     icon_size = 256,
     effects =
     {
@@ -134,7 +134,7 @@ data:extend({
   {
     type = "technology",
     name = "rocket-ammo-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__metal-and-stars__/graphics/technology/rocket-productivity.png"),
+    icons = util.technology_icon_constant_recipe_productivity("__metal-and-stars-graphics__/graphics/technology/rocket-productivity.png"),
     icon_size = 256,
     effects =
     {
@@ -177,7 +177,7 @@ data:extend({
   {
     type = "technology",
     name = "railgun-ammo-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__metal-and-stars__/graphics/technology/railgun-productivity.png"),
+    icons = util.technology_icon_constant_recipe_productivity("__metal-and-stars-graphics__/graphics/technology/railgun-productivity.png"),
     icon_size = 256,
     effects =
     {

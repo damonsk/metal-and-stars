@@ -5,10 +5,10 @@ local sounds = require("__base__.prototypes.entity.sounds")
 local item_name = "microgravity-lab"
 
 --technology
-local technology_icon = "__metal-and-stars__/graphics/icons/particle-accelerator.png"
+local technology_icon = "__metal-and-stars-graphics__/graphics/icons/particle-accelerator.png"
 local technology_icon_size = 256
 --item
-local item_icon = "__metal-and-stars__/graphics/icons/particle-accelerator.png"
+local item_icon = "__metal-and-stars-graphics__/graphics/icons/particle-accelerator.png"
 local item_icon_size = 64
 
 local building_entity = 
@@ -60,7 +60,7 @@ local building_entity =
   on_animation = {
     layers = {
       {
-        filename = "__metal-and-stars__/graphics/entity/particle-accelerator/particle-accelerator-hr-shadow.png",
+        filename = "__metal-and-stars-graphics__/graphics/entity/particle-accelerator/particle-accelerator-hr-shadow.png",
         priority = "high",
         width = 700,
         height = 600,
@@ -82,7 +82,7 @@ local building_entity =
         stripes =
         {
           {
-            filename = "__metal-and-stars__/graphics/entity/particle-accelerator/particle-accelerator-hr-animation.png",
+            filename = "__metal-and-stars-graphics__/graphics/entity/particle-accelerator/particle-accelerator-hr-animation.png",
             width_in_frames = 8,
             height_in_frames = 8,
           }
@@ -101,7 +101,7 @@ local building_entity =
         stripes =
         {
           {
-            filename = "__metal-and-stars__/graphics/entity/particle-accelerator/particle-accelerator-hr-animation-emission.png",
+            filename = "__metal-and-stars-graphics__/graphics/entity/particle-accelerator/particle-accelerator-hr-animation-emission.png",
             width_in_frames = 8,
             height_in_frames = 8,
           }
@@ -112,7 +112,7 @@ local building_entity =
   off_animation = {
     layers = {
       {
-        filename = "__metal-and-stars__/graphics/entity/particle-accelerator/particle-accelerator-hr-shadow.png",
+        filename = "__metal-and-stars-graphics__/graphics/entity/particle-accelerator/particle-accelerator-hr-shadow.png",
         priority = "high",
         width = 700,
         height = 600,
@@ -134,7 +134,7 @@ local building_entity =
         stripes =
         {
           {
-            filename = "__metal-and-stars__/graphics/entity/particle-accelerator/particle-accelerator-hr-animation.png",
+            filename = "__metal-and-stars-graphics__/graphics/entity/particle-accelerator/particle-accelerator-hr-animation.png",
             width_in_frames = 8,
             height_in_frames = 8,
           }

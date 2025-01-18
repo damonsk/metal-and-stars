@@ -22,7 +22,7 @@ local function jellyfish_animation(tint1)
     {
       layers = {
           {
-              filename = "__metal-and-stars__/graphics/entity/robot-enemies/construction-bot_animation.png",
+              filename = "__metal-and-stars-graphics__/graphics/entity/robot-enemies/construction-bot_animation.png",
               priority = "high",
               line_length = 16,
               width = 256,
@@ -33,7 +33,7 @@ local function jellyfish_animation(tint1)
               direction_count = 16,
           },
           {
-              filename = "__metal-and-stars__/graphics/entity/robot-enemies/construction-bot_emission.png",
+              filename = "__metal-and-stars-graphics__/graphics/entity/robot-enemies/construction-bot_emission.png",
               priority = "high",
               line_length = 16,
               width = 256,
@@ -46,7 +46,7 @@ local function jellyfish_animation(tint1)
               blend_mode = "additive",
           },
           {
-            filename = "__metal-and-stars__/graphics/entity/robot-enemies/construction-bot_shadows.png",
+            filename = "__metal-and-stars-graphics__/graphics/entity/robot-enemies/construction-bot_shadows.png",
             priority = "high",
             line_length = 16,
             width = 256,
@@ -165,7 +165,7 @@ data:extend({
       {
         layers = {
           {
-            filename = "__metal-and-stars__/graphics/entity/robot-enemies/spawner.png",
+            filename = "__metal-and-stars-graphics__/graphics/entity/robot-enemies/spawner.png",
             priority = "high",
             frame_count = 1,
             repeat_count = 1,

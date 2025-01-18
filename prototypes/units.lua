@@ -31,7 +31,7 @@ end
 local function jellyfish_animation(tint1)
   return
   {
-    filename = "__metal-and-stars__/graphics/entity/jellyfish-small/jellyfish-1.png",
+    filename = "__metal-and-stars-graphics__/graphics/entity/jellyfish-small/jellyfish-1.png",
     priority = "high",
     width = 128,
     height = 128,
@@ -132,7 +132,7 @@ data:extend({
       {
         layers = {
           {
-            filename = "__metal-and-stars__/graphics/entity/jellyfish-small/spawner/jelly-grape-emission.png",
+            filename = "__metal-and-stars-graphics__/graphics/entity/jellyfish-small/spawner/jelly-grape-emission.png",
             priority = "high",
             frame_count = 1,
             repeat_count = 1,
@@ -302,7 +302,7 @@ data:extend({
     animations =   
     {
       {
-        filename = "__metal-and-stars__/graphics/entity/jellyfish-small/void-explosion.png",
+        filename = "__metal-and-stars-graphics__/graphics/entity/jellyfish-small/void-explosion.png",
         draw_as_glow = true,
         blend_mode = "additive",
         priority = "high",

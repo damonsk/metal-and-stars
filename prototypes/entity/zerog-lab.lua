@@ -42,7 +42,7 @@ data:extend({
         on_animation = {
           layers = {
             {
-              filename = "__metal-and-stars__/graphics/entity/particle-accelerator/particle-accelerator-hr-shadow.png",
+              filename = "__metal-and-stars-graphics__/graphics/entity/particle-accelerator/particle-accelerator-hr-shadow.png",
               priority = "high",
               width = 700,
               height = 600,
@@ -64,7 +64,7 @@ data:extend({
               stripes =
               {
                 {
-                  filename = "__metal-and-stars__/graphics/entity/particle-accelerator/particle-accelerator-hr-animation.png",
+                  filename = "__metal-and-stars-graphics__/graphics/entity/particle-accelerator/particle-accelerator-hr-animation.png",
                   width_in_frames = 8,
                   height_in_frames = 8,
                 }
@@ -83,7 +83,7 @@ data:extend({
               stripes =
               {
                 {
-                  filename = "__metal-and-stars__/graphics/entity/particle-accelerator/particle-accelerator-hr-animation-emission.png",
+                  filename = "__metal-and-stars-graphics__/graphics/entity/particle-accelerator/particle-accelerator-hr-animation-emission.png",
                   width_in_frames = 8,
                   height_in_frames = 8,
                 }
@@ -94,7 +94,7 @@ data:extend({
         off_animation = {
           layers = {
             {
-              filename = "__metal-and-stars__/graphics/entity/particle-accelerator/particle-accelerator-hr-shadow.png",
+              filename = "__metal-and-stars-graphics__/graphics/entity/particle-accelerator/particle-accelerator-hr-shadow.png",
               priority = "high",
               width = 700,
               height = 600,
@@ -116,7 +116,7 @@ data:extend({
               stripes =
               {
                 {
-                  filename = "__metal-and-stars__/graphics/entity/particle-accelerator/particle-accelerator-hr-animation.png",
+                  filename = "__metal-and-stars-graphics__/graphics/entity/particle-accelerator/particle-accelerator-hr-animation.png",
                   width_in_frames = 8,
                   height_in_frames = 8,
                 }
@@ -169,7 +169,7 @@ data:extend({
       {
         type = "item",
         name = "microgravity-lab",
-        icon = "__metal-and-stars__/graphics/icons/particle-accelerator.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/particle-accelerator.png",
         subgroup = "production-machine",
         order = "z[z-microgravity-lab]",
         inventory_move_sound = item_sounds.mechanical_inventory_move,

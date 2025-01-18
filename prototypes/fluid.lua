@@ -3,7 +3,7 @@ data:extend(
   {
     type = "fluid",
     name = "gray-goo",
-    icon = "__metal-and-stars__/graphics/icons/gray-goo.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/gray-goo.png",
     subgroup = "fluid",
     order = "b[new-fluid]-e[shipyard]-a[grey-goo]",
     default_temperature = -50,
@@ -16,7 +16,7 @@ data:extend(
   {
     type = "fluid",
     name = "mirandite-sludge",
-    icon = "__metal-and-stars__/graphics/icons/mirandite-sludge.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/mirandite-sludge.png",
     subgroup = "fluid",
     order = "b[new-fluid]-e[shipyard]-a[mirandite-sludge]",
     default_temperature = 15,
@@ -29,7 +29,7 @@ data:extend(
   {
     type = "fluid",
     name = "dark-matter-fluid",
-    icon = "__metal-and-stars__/graphics/icons/dark-matter-gas.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/dark-matter-gas.png",
     subgroup = "fluid",
     order = "b[new-fluid]-e[shipyard]-a[dark-matter-fluid]",
     default_temperature = 15,
@@ -43,7 +43,7 @@ data:extend(
   {
     type = "fluid",
     name = "crude-slush",
-    icon = "__metal-and-stars__/graphics/icons/crude-slush.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/crude-slush.png",
     subgroup = "fluid",
     order = "b[new-fluid]-e[shipyard]-a[crude-slush]",
     default_temperature = 15,
@@ -56,7 +56,7 @@ data:extend(
   {
     type = "fluid",
     name = "heavy-water",
-    icon = "__metal-and-stars__/graphics/icons/heavy-water.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/heavy-water.png",
     subgroup = "fluid",
     order = "b[new-fluid]-e[shipyard]-a[heavy-water]",
     default_temperature = 15,
@@ -69,7 +69,7 @@ data:extend(
   {
     type = "fluid",
     name = "molten-gold",
-    icon = "__metal-and-stars__/graphics/icons/molten-gold.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/molten-gold.png",
     subgroup = "fluid",
     order = "b[new-fluid]-e[shipyard]-a[heavy-water]",
     default_temperature = 15,
@@ -82,7 +82,7 @@ data:extend(
   {
     type = "fluid",
     name = "molten-glass",
-    icon = "__metal-and-stars__/graphics/icons/molten-glass.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/molten-glass.png",
     subgroup = "fluid",
     order = "b[new-fluid]-e[shipyard]-a[heavy-water]",
     default_temperature = 15,
@@ -96,7 +96,7 @@ data:extend(
   {
     type = "fluid",
     name = "liquid-rocket-fuel",
-    icon = "__metal-and-stars__/graphics/icons/liquid-rocket-fuel.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/liquid-rocket-fuel.png",
     subgroup = "fluid",
     order = "a[fluid]-b[refined-fuel]-c[rocket-fuel]",
     default_temperature = 15,
@@ -110,7 +110,7 @@ data:extend(
   {
     type = "fluid",
     name = "liquid-nuclear-fuel",
-    icon = "__metal-and-stars__/graphics/icons/liquid-nuclear-fuel.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/liquid-nuclear-fuel.png",
     subgroup = "fluid",
     order = "a[fluid]-b[refined-fuel]-c[nuclear-fuel]",
     default_temperature = 15,
@@ -124,7 +124,7 @@ data:extend(
   {
     type = "fluid",
     name = "liquid-dark-matter-fuel",
-    icon = "__metal-and-stars__/graphics/icons/liquid-dark-matter-fuel.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/liquid-dark-matter-fuel.png",
     subgroup = "fluid",
     order = "a[fluid]-b[refined-fuel]-c[dark-matter-fuel]",
     default_temperature = 15,

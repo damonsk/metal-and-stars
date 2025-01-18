@@ -5,7 +5,7 @@ data:extend{
     {
       type = "logistic-robot",
       name = "antimatter-logistic-robot",
-      icon = "__metal-and-stars__/graphics/icons/antimatter-logistic-robot.png",
+      icon = "__metal-and-stars-graphics__/graphics/icons/antimatter-logistic-robot.png",
       flags = {"placeable-player", "player-creation", "placeable-off-grid", "not-on-map"},
       minable = {hardness = 0.1, mining_time = 0.1, result = "antimatter-logistic-robot"},
       resistances = { { type = "fire", percent = 85 } },
@@ -26,7 +26,7 @@ data:extend{
       {
         layers = {
             {
-                filename = "__metal-and-stars__/graphics/entity/logistic-robot/logistic-bot.png",
+                filename = "__metal-and-stars-graphics__/graphics/entity/logistic-robot/logistic-bot.png",
                 priority = "high",
                 line_length = 16,
                 width = 128,
@@ -38,7 +38,7 @@ data:extend{
                 y = 128
             },
             {
-                filename = "__metal-and-stars__/graphics/entity/logistic-robot/logistic-bot-emission.png",
+                filename = "__metal-and-stars-graphics__/graphics/entity/logistic-robot/logistic-bot-emission.png",
                 priority = "high",
                 line_length = 16,
                 width = 128,
@@ -58,7 +58,7 @@ data:extend{
       {
         layers = {
             {
-                filename = "__metal-and-stars__/graphics/entity/logistic-robot/logistic-bot.png",
+                filename = "__metal-and-stars-graphics__/graphics/entity/logistic-robot/logistic-bot.png",
                 priority = "high",
                 line_length = 16,
                 width = 128,
@@ -70,7 +70,7 @@ data:extend{
                 y = 128
             },
             {
-                filename = "__metal-and-stars__/graphics/entity/logistic-robot/logistic-bot-emission.png",
+                filename = "__metal-and-stars-graphics__/graphics/entity/logistic-robot/logistic-bot-emission.png",
                 priority = "high",
                 line_length = 16,
                 width = 128,
@@ -90,7 +90,7 @@ data:extend{
       {
         layers = {
             {
-                filename = "__metal-and-stars__/graphics/entity/logistic-robot/logistic-bot.png",
+                filename = "__metal-and-stars-graphics__/graphics/entity/logistic-robot/logistic-bot.png",
                 priority = "high",
                 line_length = 16,
                 width = 128,
@@ -102,7 +102,7 @@ data:extend{
                 y = 128
             },
             {
-                filename = "__metal-and-stars__/graphics/entity/logistic-robot/logistic-bot-emission.png",
+                filename = "__metal-and-stars-graphics__/graphics/entity/logistic-robot/logistic-bot-emission.png",
                 priority = "high",
                 line_length = 16,
                 width = 128,
@@ -122,7 +122,7 @@ data:extend{
       {
         layers = {
             {
-                filename = "__metal-and-stars__/graphics/entity/logistic-robot/logistic-bot.png",
+                filename = "__metal-and-stars-graphics__/graphics/entity/logistic-robot/logistic-bot.png",
                 priority = "high",
                 line_length = 16,
                 width = 128,
@@ -134,7 +134,7 @@ data:extend{
                 y = 128
             },
             {
-                filename = "__metal-and-stars__/graphics/entity/logistic-robot/logistic-bot-emission.png",
+                filename = "__metal-and-stars-graphics__/graphics/entity/logistic-robot/logistic-bot-emission.png",
                 priority = "high",
                 line_length = 16,
                 width = 128,
@@ -152,7 +152,7 @@ data:extend{
       },
       shadow_idle =
       {
-        filename = "__metal-and-stars__/graphics/entity/logistic-robot/logistic-bot-shadow.png",
+        filename = "__metal-and-stars-graphics__/graphics/entity/logistic-robot/logistic-bot-shadow.png",
         priority = "high",
         line_length = 16,
         width = 128,
@@ -164,7 +164,7 @@ data:extend{
       },
       shadow_idle_with_cargo =
       {
-        filename = "__metal-and-stars__/graphics/entity/logistic-robot/logistic-bot-shadow.png",
+        filename = "__metal-and-stars-graphics__/graphics/entity/logistic-robot/logistic-bot-shadow.png",
         priority = "high",
         line_length = 16,
         width = 128,
@@ -176,7 +176,7 @@ data:extend{
       },
       shadow_in_motion =
       {
-        filename = "__metal-and-stars__/graphics/entity/logistic-robot/logistic-bot-shadow.png",
+        filename = "__metal-and-stars-graphics__/graphics/entity/logistic-robot/logistic-bot-shadow.png",
         priority = "high",
         line_length = 16,
         width = 128,
@@ -188,7 +188,7 @@ data:extend{
       },
       shadow_in_motion_with_cargo =
       {
-        filename = "__metal-and-stars__/graphics/entity/logistic-robot/logistic-bot-shadow.png",
+        filename = "__metal-and-stars-graphics__/graphics/entity/logistic-robot/logistic-bot-shadow.png",
         priority = "high",
         line_length = 16,
         width = 128,
@@ -204,7 +204,7 @@ data:extend{
     {
       type = "construction-robot",
       name = "antimatter-construction-robot",
-      icon = "__metal-and-stars__/graphics/icons/antimatter-construction-robot.png",
+      icon = "__metal-and-stars-graphics__/graphics/icons/antimatter-construction-robot.png",
       flags = {"placeable-player", "player-creation", "placeable-off-grid", "not-on-map"},
       minable = {hardness = 0.1, mining_time = 0.1, result = "antimatter-construction-robot"},
       resistances = { { type = "fire", percent = 85 } },
@@ -226,7 +226,7 @@ data:extend{
       {
         layers = {
             {
-                filename = "__metal-and-stars__/graphics/entity/construction-robot/construction-bot.png",
+                filename = "__metal-and-stars-graphics__/graphics/entity/construction-robot/construction-bot.png",
                 priority = "high",
                 line_length = 16,
                 width = 128,
@@ -238,7 +238,7 @@ data:extend{
                 y = 128
             },
             {
-                filename = "__metal-and-stars__/graphics/entity/construction-robot/construction-bot-emission.png",
+                filename = "__metal-and-stars-graphics__/graphics/entity/construction-robot/construction-bot-emission.png",
                 priority = "high",
                 line_length = 16,
                 width = 128,
@@ -258,7 +258,7 @@ data:extend{
       {
         layers = {
             {
-                filename = "__metal-and-stars__/graphics/entity/construction-robot/construction-bot.png",
+                filename = "__metal-and-stars-graphics__/graphics/entity/construction-robot/construction-bot.png",
                 priority = "high",
                 line_length = 16,
                 width = 128,
@@ -270,7 +270,7 @@ data:extend{
                 y = 128
             },
             {
-                filename = "__metal-and-stars__/graphics/entity/construction-robot/construction-bot-emission.png",
+                filename = "__metal-and-stars-graphics__/graphics/entity/construction-robot/construction-bot-emission.png",
                 priority = "high",
                 line_length = 16,
                 width = 128,
@@ -288,7 +288,7 @@ data:extend{
       },
       shadow_idle =
       {
-        filename = "__metal-and-stars__/graphics/entity/construction-robot/construction-bot-shadow.png",
+        filename = "__metal-and-stars-graphics__/graphics/entity/construction-robot/construction-bot-shadow.png",
         priority = "high",
         line_length = 16,
         width = 128,
@@ -300,7 +300,7 @@ data:extend{
       },
       shadow_in_motion =
       {
-        filename = "__metal-and-stars__/graphics/entity/construction-robot/construction-bot-shadow.png",
+        filename = "__metal-and-stars-graphics__/graphics/entity/construction-robot/construction-bot-shadow.png",
         priority = "high",
         line_length = 16,
         width = 128,
@@ -314,7 +314,7 @@ data:extend{
       {
         layers = {
             {
-                filename = "__metal-and-stars__/graphics/entity/construction-robot/construction-bot-working.png",
+                filename = "__metal-and-stars-graphics__/graphics/entity/construction-robot/construction-bot-working.png",
                 priority = "high",
                 line_length = 2,
                 width = 128,
@@ -326,7 +326,7 @@ data:extend{
                 animation_speed = 0.3,
             },
             {
-                filename = "__metal-and-stars__/graphics/entity/construction-robot/construction-bot-working-emission.png",
+                filename = "__metal-and-stars-graphics__/graphics/entity/construction-robot/construction-bot-working-emission.png",
                 priority = "high",
                 line_length = 2,
                 width = 128,
@@ -347,7 +347,7 @@ data:extend{
         stripes = util.multiplystripes(2,
         {
           {
-            filename = "__metal-and-stars__/graphics/entity/construction-robot/construction-bot-shadow.png",
+            filename = "__metal-and-stars-graphics__/graphics/entity/construction-robot/construction-bot-shadow.png",
             width_in_frames = 16,
             height_in_frames = 1,
           }

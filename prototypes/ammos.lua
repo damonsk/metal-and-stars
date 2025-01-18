@@ -7,7 +7,7 @@ data:extend({
     {
         type = "ammo",
         name = "gauss-rocket",
-        icon = "__metal-and-stars__/graphics/icons/gauss-rocket.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/gauss-rocket.png",
         ammo_category = "rocket",
         ammo_type =
         {
@@ -38,7 +38,7 @@ data:extend({
     {
         type = "recipe",
         name = "gauss-rocket",
-        icon = "__metal-and-stars__/graphics/icons/gauss-rocket.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/gauss-rocket.png",
         enabled = false,
         energy_required = 40,
         ingredients =
@@ -118,7 +118,7 @@ data:extend({
       {
         type = "recipe",
         name = "gauss-rocket-casting",
-        icon = "__metal-and-stars__/graphics/icons/gauss-rocket.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/gauss-rocket.png",
         category = "metallurgy",
         subgroup = "ammo",
         order = "d[rocket-launcher]-a[gauss]",

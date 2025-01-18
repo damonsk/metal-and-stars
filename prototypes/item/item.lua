@@ -16,7 +16,7 @@ data:extend({
       type = "module",
       name = "overclock-module",
       localised_description = {"item-description.overclock-module"},
-      icon = "__metal-and-stars__/graphics/icons/pollution-module-1.png",
+      icon = "__metal-and-stars-graphics__/graphics/icons/pollution-module-1.png",
       subgroup = "module",
       color_hint = { text = "P" },
       category = "overclock",
@@ -37,7 +37,7 @@ data:extend({
       type = "module",
       name = "overclock-module-2",
       localised_description = {"item-description.overclock-module"},
-      icon = "__metal-and-stars__/graphics/icons/pollution-module-2.png",
+      icon = "__metal-and-stars-graphics__/graphics/icons/pollution-module-2.png",
       subgroup = "module",
       color_hint = { text = "P" },
       category = "overclock",
@@ -58,7 +58,7 @@ data:extend({
       type = "module",
       name = "overclock-module-3",
       localised_description = {"item-description.overclock-module"},
-      icon = "__metal-and-stars__/graphics/icons/pollution-module-3.png",
+      icon = "__metal-and-stars-graphics__/graphics/icons/pollution-module-3.png",
       subgroup = "module",
       color_hint = { text = "P" },
       category = "overclock",
@@ -78,7 +78,7 @@ data:extend({
     {
       type = "item",
       name = "mirandite-asteroid-chunk",
-      icon = "__metal-and-stars__/graphics/icons/mirandite-asteroid-chunk.png",
+      icon = "__metal-and-stars-graphics__/graphics/icons/mirandite-asteroid-chunk.png",
       subgroup = "space-material",
       order = "b[mirandite]-e[chunk]",
       inventory_move_sound = item_sounds.resource_inventory_move,
@@ -90,13 +90,13 @@ data:extend({
     {
       type = "item",
       name = "neodymium-ore",
-      icon = "__metal-and-stars__/graphics/icons/neodymium-ore.png",
+      icon = "__metal-and-stars-graphics__/graphics/icons/neodymium-ore.png",
       pictures =
       {
-        {size = 64, filename = "__metal-and-stars__/graphics/icons/neodymium-ore.png", scale = 0.5, mipmap_count = 4},
-        {size = 64, filename = "__metal-and-stars__/graphics/icons/neodymium-ore-1.png", scale = 0.5, mipmap_count = 4},
-        {size = 64, filename = "__metal-and-stars__/graphics/icons/neodymium-ore-2.png", scale = 0.5, mipmap_count = 4},
-        {size = 64, filename = "__metal-and-stars__/graphics/icons/neodymium-ore-3.png", scale = 0.5, mipmap_count = 4}
+        {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/neodymium-ore.png", scale = 0.5, mipmap_count = 4},
+        {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/neodymium-ore-1.png", scale = 0.5, mipmap_count = 4},
+        {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/neodymium-ore-2.png", scale = 0.5, mipmap_count = 4},
+        {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/neodymium-ore-3.png", scale = 0.5, mipmap_count = 4}
       },
       subgroup = "mirandus-processes",
       order = "d[neodymium]",
@@ -109,7 +109,7 @@ data:extend({
     {
       type = "item",
       name = "thorium",
-      icon = "__metal-and-stars__/graphics/icons/thorium.png",
+      icon = "__metal-and-stars-graphics__/graphics/icons/thorium.png",
       subgroup = "uranium-processing",
       order = "a[uranium-processing]-c[uranium-238]",
       inventory_move_sound = item_sounds.nuclear_inventory_move,
@@ -121,14 +121,14 @@ data:extend({
     {
       type = "item",
       name = "uranium-233",
-      icon = "__metal-and-stars__/graphics/icons/uranium-233.png",
+      icon = "__metal-and-stars-graphics__/graphics/icons/uranium-233.png",
       pictures =
       {
         layers =
         {
           {
             size = 64,
-            filename = "__metal-and-stars__/graphics/icons/uranium-233.png",
+            filename = "__metal-and-stars-graphics__/graphics/icons/uranium-233.png",
             scale = 0.5,
             mipmap_count = 4
           },
@@ -136,7 +136,7 @@ data:extend({
             draw_as_light = true,
             blend_mode = "additive",
             size = 64,
-            filename = "__metal-and-stars__/graphics/icons/uranium-233.png",
+            filename = "__metal-and-stars-graphics__/graphics/icons/uranium-233.png",
             scale = 0.5,
             tint = {0.3, 0.3, 0.3, 0.3}
           }
@@ -153,7 +153,7 @@ data:extend({
     {
       type = "item",
       name = "neodymium-plate",
-      icon = "__metal-and-stars__/graphics/icons/neodymium-plate.png",
+      icon = "__metal-and-stars-graphics__/graphics/icons/neodymium-plate.png",
       subgroup = "mirandus-processes",
       order = "d[stone]",
       inventory_move_sound = item_sounds.resource_inventory_move,
@@ -165,12 +165,12 @@ data:extend({
     {
       type = "item",
       name = "gold-ore",
-      icon = "__metal-and-stars__/graphics/icons/gold-ore-1.png",
+      icon = "__metal-and-stars-graphics__/graphics/icons/gold-ore-1.png",
       pictures =
       {
-        {size = 64, filename = "__metal-and-stars__/graphics/icons/gold-ore-1.png", scale = 0.5, mipmap_count = 4},
-        {size = 64, filename = "__metal-and-stars__/graphics/icons/gold-ore-2.png", scale = 0.5, mipmap_count = 4},
-        {size = 64, filename = "__metal-and-stars__/graphics/icons/gold-ore-3.png", scale = 0.5, mipmap_count = 4},
+        {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/gold-ore-1.png", scale = 0.5, mipmap_count = 4},
+        {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/gold-ore-2.png", scale = 0.5, mipmap_count = 4},
+        {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/gold-ore-3.png", scale = 0.5, mipmap_count = 4},
       },
       subgroup = "ringworld-processes",
       order = "d[stone]",
@@ -183,7 +183,7 @@ data:extend({
     {
       type = "item",
       name = "gold-plate",
-      icon = "__metal-and-stars__/graphics/icons/gold-ingot.png",
+      icon = "__metal-and-stars-graphics__/graphics/icons/gold-ingot.png",
       subgroup = "ringworld-processes",
       order = "d[stone]d",
       inventory_move_sound = item_sounds.resource_inventory_move,
@@ -195,7 +195,7 @@ data:extend({
     {
       type = "item",
       name = "empty-fuel-canister",
-      icon = "__metal-and-stars__/graphics/icons/empty-fuel-canister.png",
+      icon = "__metal-and-stars-graphics__/graphics/icons/empty-fuel-canister.png",
       subgroup = "nix-processes",
       order = "j[ice]",
       inventory_move_sound = space_age_item_sounds.ice_inventory_move,
@@ -209,13 +209,13 @@ data:extend({
     {
         type = "item",
         name = "quantite-a",
-        icon = "__metal-and-stars__/graphics/icons/quantite.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/quantite.png",
         pictures =
         {
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/quantite.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/quantite-1.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/quantite-2.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/quantite-3.png", scale = 0.5, mipmap_count = 4}
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/quantite.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/quantite-1.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/quantite-2.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/quantite-3.png", scale = 0.5, mipmap_count = 4}
         },
         subgroup = "quantum-processing",
         order = "d[quantum]-a",
@@ -230,13 +230,13 @@ data:extend({
       {
         type = "item",
         name = "quantite-b",
-        icon = "__metal-and-stars__/graphics/icons/quantite.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/quantite.png",
         pictures =
         {
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/quantite.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/quantite-1.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/quantite-2.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/quantite-3.png", scale = 0.5, mipmap_count = 4}
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/quantite.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/quantite-1.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/quantite-2.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/quantite-3.png", scale = 0.5, mipmap_count = 4}
         },
         subgroup = "quantum-processing",
         order = "d[quantum]-a",
@@ -251,13 +251,13 @@ data:extend({
       {
         type = "item",
         name = "quantite-c",
-        icon = "__metal-and-stars__/graphics/icons/quantite.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/quantite.png",
         pictures =
         {
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/quantite.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/quantite-1.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/quantite-2.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/quantite-3.png", scale = 0.5, mipmap_count = 4}
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/quantite.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/quantite-1.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/quantite-2.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/quantite-3.png", scale = 0.5, mipmap_count = 4}
         },
         subgroup = "quantum-processing",
         order = "d[quantum]-a",
@@ -274,14 +274,14 @@ data:extend({
       {
         type = "item",
         name = "quantum-shard-a",
-        icon = "__metal-and-stars__/graphics/icons/material-crystal.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/material-crystal.png",
         pictures =
         {
           layers =
           {
             {
               size = 64,
-              filename = "__metal-and-stars__/graphics/icons/material-crystal.png",
+              filename = "__metal-and-stars-graphics__/graphics/icons/material-crystal.png",
               scale = 0.5,
               mipmap_count = 4
             },
@@ -289,7 +289,7 @@ data:extend({
               draw_as_light = true,
               blend_mode = "additive",
               size = 64,
-              filename = "__metal-and-stars__/graphics/icons/material-crystal-glow.png",
+              filename = "__metal-and-stars-graphics__/graphics/icons/material-crystal-glow.png",
               scale = 0.5,
               tint = {0.3, 0.0, 0.0, .3}
             }
@@ -308,14 +308,14 @@ data:extend({
       {
         type = "item",
         name = "quantum-shard-b",
-        icon = "__metal-and-stars__/graphics/icons/material-crystal-1.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/material-crystal-1.png",
         pictures =
         {
           layers =
           {
             {
               size = 64,
-              filename = "__metal-and-stars__/graphics/icons/material-crystal-1.png",
+              filename = "__metal-and-stars-graphics__/graphics/icons/material-crystal-1.png",
               scale = 0.5,
               mipmap_count = 4
             },
@@ -323,7 +323,7 @@ data:extend({
               draw_as_light = true,
               blend_mode = "additive",
               size = 64,
-              filename = "__metal-and-stars__/graphics/icons/material-crystal-1-glow.png",
+              filename = "__metal-and-stars-graphics__/graphics/icons/material-crystal-1-glow.png",
               scale = 0.5,
               tint = {0.3, 0.0, 0.3, .3}
             }
@@ -342,14 +342,14 @@ data:extend({
       {
         type = "item",
         name = "quantum-shard-c",
-        icon = "__metal-and-stars__/graphics/icons/material-crystal-2.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/material-crystal-2.png",
         pictures =
         {
           layers =
           {
             {
               size = 64,
-              filename = "__metal-and-stars__/graphics/icons/material-crystal-2.png",
+              filename = "__metal-and-stars-graphics__/graphics/icons/material-crystal-2.png",
               scale = 0.5,
               mipmap_count = 4
             },
@@ -357,7 +357,7 @@ data:extend({
               draw_as_light = true,
               blend_mode = "additive",
               size = 64,
-              filename = "__metal-and-stars__/graphics/icons/material-crystal-2-glow.png",
+              filename = "__metal-and-stars-graphics__/graphics/icons/material-crystal-2-glow.png",
               scale = 0.5,
               tint = {0, 0, 0.3, .3}
             }
@@ -378,7 +378,7 @@ data:extend({
         type = "tool",
         name = "quantum-science-pack",
         localised_description = {"item-description.science-pack"},
-        icon = "__metal-and-stars__/graphics/icons/quantum-science-pack.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/quantum-science-pack.png",
         subgroup = "science-pack",
         color_hint = { text = "L" },
         order = "b[quantum-science-pack]",
@@ -399,7 +399,7 @@ data:extend({
       {
         type = "item",
         name = "volatile-quantum-science-pack",
-        icon = "__metal-and-stars__/graphics/icons/volatile-quantum-science.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/volatile-quantum-science.png",
         subgroup = "quantum-processing",
         color_hint = { text = "L" },
         order = "b[quantum-science-pack]",
@@ -416,7 +416,7 @@ data:extend({
       {
         type = "item",
         name = "unstable-quantum-science-pack",
-        icon = "__metal-and-stars__/graphics/icons/unstable-quantum-science.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/unstable-quantum-science.png",
         subgroup = "quantum-processing",
         color_hint = { text = "L" },
         order = "b[quantum-science-pack]",
@@ -433,7 +433,7 @@ data:extend({
       {
         type = "item",
         name = "inert-quantum-science-pack",
-        icon = "__metal-and-stars__/graphics/icons/inert-quantum-science.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/inert-quantum-science.png",
         subgroup = "quantum-processing",
         color_hint = { text = "L" },
         order = "b[quantum-science-pack]",
@@ -449,7 +449,7 @@ data:extend({
       {
         type = "item",
         name = "ice-xv",
-        icon = "__metal-and-stars__/graphics/icons/dense-ice-cube.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/dense-ice-cube.png",
         subgroup = "nix-processes",
         order = "j[ice]",
         inventory_move_sound = space_age_item_sounds.ice_inventory_move,
@@ -464,7 +464,7 @@ data:extend({
       {
         type = "item",
         name = "dense-stone-brick",
-        icon = "__metal-and-stars__/graphics/icons/dense-stone-brick.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/dense-stone-brick.png",
         subgroup = "nix-processes",
         order = "j[ice]",
         inventory_move_sound = space_age_item_sounds.ice_inventory_move,
@@ -477,7 +477,7 @@ data:extend({
       {
         type = "item",
         name = "antimatter",
-        icon = "__metal-and-stars__/graphics/icons/antimatter.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/antimatter.png",
         subgroup = "nix-processes",
         order = "j[ice]",
         inventory_move_sound = space_age_item_sounds.ice_inventory_move,
@@ -490,7 +490,7 @@ data:extend({
       {
         type = "item",
         name = "dark-matter-chunk",
-        icon = "__metal-and-stars__/graphics/icons/dark-matter-chunk-1.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/dark-matter-chunk-1.png",
         pictures =
         {
           {
@@ -498,7 +498,7 @@ data:extend({
             {
               {
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/dark-matter-chunk-1.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/dark-matter-chunk-1.png",
                 scale = 0.5,
                 mipmap_count = 4
               },
@@ -506,7 +506,7 @@ data:extend({
                 draw_as_light = true,
                 blend_mode = "additive",
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/dark-matter-chunk-1-emission.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/dark-matter-chunk-1-emission.png",
                 scale = 0.5,
                 tint = {0.3, 0.0, 0.0, .3}
               }
@@ -517,7 +517,7 @@ data:extend({
             {
               {
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/dark-matter-chunk-2.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/dark-matter-chunk-2.png",
                 scale = 0.5,
                 mipmap_count = 4
               },
@@ -525,7 +525,7 @@ data:extend({
                 draw_as_light = true,
                 blend_mode = "additive",
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/dark-matter-chunk-2-emission.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/dark-matter-chunk-2-emission.png",
                 scale = 0.5,
                 tint = {0.3, 0.0, 0.0, .3}
               }
@@ -536,7 +536,7 @@ data:extend({
             {
               {
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/dark-matter-chunk-3.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/dark-matter-chunk-3.png",
                 scale = 0.5,
                 mipmap_count = 4
               },
@@ -544,7 +544,7 @@ data:extend({
                 draw_as_light = true,
                 blend_mode = "additive",
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/dark-matter-chunk-3-emission.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/dark-matter-chunk-3-emission.png",
                 scale = 0.5,
                 tint = {0.3, 0.0, 0.0, .3}
               }
@@ -563,7 +563,7 @@ data:extend({
       {
         type = "item",
         name = "dark-matter-compressed",
-        icon = "__metal-and-stars__/graphics/icons/dark-matter-compressed-1.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/dark-matter-compressed-1.png",
         pictures =
         {
           {
@@ -571,7 +571,7 @@ data:extend({
             {
               {
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/dark-matter-compressed-1.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/dark-matter-compressed-1.png",
                 scale = 0.5,
                 mipmap_count = 4
               },
@@ -579,7 +579,7 @@ data:extend({
                 draw_as_light = true,
                 blend_mode = "additive",
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/dark-matter-compressed-1-emission.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/dark-matter-compressed-1-emission.png",
                 scale = 0.5,
                 tint = {0.3, 0.0, 0.0, .3}
               }
@@ -590,7 +590,7 @@ data:extend({
             {
               {
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/dark-matter-compressed-2.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/dark-matter-compressed-2.png",
                 scale = 0.5,
                 mipmap_count = 4
               },
@@ -598,7 +598,7 @@ data:extend({
                 draw_as_light = true,
                 blend_mode = "additive",
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/dark-matter-compressed-2-emission.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/dark-matter-compressed-2-emission.png",
                 scale = 0.5,
                 tint = {0.3, 0.0, 0.0, .3}
               }
@@ -609,7 +609,7 @@ data:extend({
             {
               {
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/dark-matter-compressed-3.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/dark-matter-compressed-3.png",
                 scale = 0.5,
                 mipmap_count = 4
               },
@@ -617,7 +617,7 @@ data:extend({
                 draw_as_light = true,
                 blend_mode = "additive",
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/dark-matter-compressed-3-emission.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/dark-matter-compressed-3-emission.png",
                 scale = 0.5,
                 tint = {0.3, 0.0, 0.0, .3}
               }
@@ -636,7 +636,7 @@ data:extend({
       {
         type = "item",
         name = "diamond",
-        icon = "__metal-and-stars__/graphics/icons/diamond.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/diamond.png",
         subgroup = "nix-processes",
         order = "j[ice]",
         inventory_move_sound = space_age_item_sounds.ice_inventory_move,
@@ -649,7 +649,7 @@ data:extend({
       {
         type = "item",
         name = "dark-matter-crystal",
-        icon = "__metal-and-stars__/graphics/icons/dark-matter-crystal.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/dark-matter-crystal.png",
         subgroup = "nix-processes",
         order = "j[ice]",
         inventory_move_sound = space_age_item_sounds.ice_inventory_move,
@@ -662,7 +662,7 @@ data:extend({
       {
         type = "item",
         name = "liquid-fuel-heating-tower",
-        icon = "__metal-and-stars__/graphics/icons/liquid-fuel-heating-tower.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/liquid-fuel-heating-tower.png",
         subgroup = "environmental-protection",
         order = "c[liquid-fuel-heating-tower]",
         inventory_move_sound = item_sounds.steam_inventory_move,
@@ -676,7 +676,7 @@ data:extend({
         type = "tool",
         name = "anomaly-science-pack",
         localised_description = {"item-description.science-pack"},
-        icon = "__metal-and-stars__/graphics/icons/anomaly-science-pack.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/anomaly-science-pack.png",
         subgroup = "science-pack",
         color_hint = { text = "L" },
         order = "b[quantum-science-pack]",
@@ -694,14 +694,14 @@ data:extend({
       {
         type = "item",
         name = "dark-matter-fuel-cell",
-        icon = "__metal-and-stars__/graphics/icons/dark-matter-fuel-cell.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/dark-matter-fuel-cell.png",
         pictures =
         {
           layers =
           {
             {
               size = 64,
-              filename = "__metal-and-stars__/graphics/icons/dark-matter-fuel-cell.png",
+              filename = "__metal-and-stars-graphics__/graphics/icons/dark-matter-fuel-cell.png",
               scale = 0.5,
               mipmap_count = 4
             },
@@ -727,7 +727,7 @@ data:extend({
       {
         type = "item",
         name = "depleted-fuel-cell",
-        icon = "__metal-and-stars__/graphics/icons/empty-fuel-cell.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/empty-fuel-cell.png",
         subgroup = "nix-processes",
         order = "b[uranium-products]-b[depleted-uranium-fuel-cell]",
         inventory_move_sound = item_sounds.nuclear_inventory_move,
@@ -739,14 +739,14 @@ data:extend({
       {
         type = "item",
         name = "dark-matter-fuel",
-        icon = "__metal-and-stars__/graphics/icons/dark-matter-fuel.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/dark-matter-fuel.png",
         pictures =
         {
           layers =
           {
             {
               size = 64,
-              filename = "__metal-and-stars__/graphics/icons/dark-matter-fuel.png",
+              filename = "__metal-and-stars-graphics__/graphics/icons/dark-matter-fuel.png",
               scale = 0.5,
               mipmap_count = 4
             },
@@ -775,7 +775,7 @@ data:extend({
       {
         type = "item",
         name = "nanites",
-        icon = "__metal-and-stars__/graphics/icons/nanites.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/nanites.png",
         pictures =
         {
           {
@@ -783,7 +783,7 @@ data:extend({
             {
               {
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/nanites.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/nanites.png",
                 scale = 0.5,
                 mipmap_count = 4
               },
@@ -791,7 +791,7 @@ data:extend({
                 draw_as_light = true,
                 blend_mode = "additive",
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/nanites-glow.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/nanites-glow.png",
                 scale = 0.5,
                 tint = {0.3, 0.0, 0.0, .3}
               }
@@ -802,7 +802,7 @@ data:extend({
             {
               {
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/nanites-2.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/nanites-2.png",
                 scale = 0.5,
                 mipmap_count = 4
               },
@@ -810,7 +810,7 @@ data:extend({
                 draw_as_light = true,
                 blend_mode = "additive",
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/nanites-2-glow.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/nanites-2-glow.png",
                 scale = 0.5,
                 tint = {0.3, 0.0, 0.0, .3}
               }
@@ -821,7 +821,7 @@ data:extend({
             {
               {
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/nanites-3.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/nanites-3.png",
                 scale = 0.5,
                 mipmap_count = 4
               },
@@ -829,7 +829,7 @@ data:extend({
                 draw_as_light = true,
                 blend_mode = "additive",
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/nanites-3-glow.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/nanites-3-glow.png",
                 scale = 0.5,
                 tint = {0.3, 0.0, 0.0, .3}
               }
@@ -848,7 +848,7 @@ data:extend({
         type = "tool",
         name = "nanite-science-pack",
         localised_description = {"item-description.science-pack"},
-        icon = "__metal-and-stars__/graphics/icons/nanite-science-pack.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/nanite-science-pack.png",
         pictures =
         {
           {
@@ -856,7 +856,7 @@ data:extend({
             {
               {
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/nanite-science-pack.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/nanite-science-pack.png",
                 scale = 0.5,
                 mipmap_count = 4
               },
@@ -864,7 +864,7 @@ data:extend({
                 draw_as_light = true,
                 blend_mode = "additive",
                 size = 64,
-                filename = "__metal-and-stars__/graphics/icons/nanite-science-emission.png",
+                filename = "__metal-and-stars-graphics__/graphics/icons/nanite-science-emission.png",
                 scale = 0.5,
                 tint = {0.3, 0.0, 0.0, .3}
               }
@@ -889,7 +889,7 @@ data:extend({
       {
         type = "item",
         name = "gold-cable",
-        icon = "__metal-and-stars__/graphics/icons/gold-wire.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/gold-wire.png",
         subgroup = "ringworld-processes",
         order = "a[basic-intermediates]-c[gold-cable]",
         inventory_move_sound = item_sounds.wire_inventory_move,
@@ -902,7 +902,7 @@ data:extend({
       {
         type = "item",
         name = "multilayer-insulation",
-        icon = "__metal-and-stars__/graphics/icons/multilayer-insulation.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/multilayer-insulation.png",
         subgroup = "ringworld-processes",
         order = "a[basic-intermediates]-c[gold-cable]",
         inventory_move_sound = item_sounds.wire_inventory_move,
@@ -915,12 +915,12 @@ data:extend({
       {
         type = "item",
         name = "gold-foil",
-        icon = "__metal-and-stars__/graphics/icons/gold-foil-1.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/gold-foil-1.png",
         pictures =
         {
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/gold-foil-1.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/gold-foil-2.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/gold-foil-3.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/gold-foil-1.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/gold-foil-2.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/gold-foil-3.png", scale = 0.5, mipmap_count = 4},
         },
         subgroup = "ringworld-processes",
         order = "a[basic-intermediates]-c[gold-cable]",
@@ -934,12 +934,12 @@ data:extend({
       {
         type = "item",
         name = "silica-sand",
-        icon = "__metal-and-stars__/graphics/icons/silica-sand-1.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/silica-sand-1.png",
         pictures =
         {
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/silica-sand-1.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/silica-sand-2.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/silica-sand-3.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/silica-sand-1.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/silica-sand-2.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/silica-sand-3.png", scale = 0.5, mipmap_count = 4},
         },
         subgroup = "ringworld-processes",
         order = "a[basic-intermediates]-c[gold-cable]",
@@ -953,12 +953,12 @@ data:extend({
       {
         type = "item",
         name = "glass-plate",
-        icon = "__metal-and-stars__/graphics/icons/glass-plate-1.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/glass-plate-1.png",
         pictures =
         {
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/glass-plate-1.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/glass-plate-2.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/glass-plate-3.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/glass-plate-1.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/glass-plate-2.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/glass-plate-3.png", scale = 0.5, mipmap_count = 4},
         },
         subgroup = "ringworld-processes",
         order = "a[basic-intermediates]-c[gold-cable]",
@@ -972,12 +972,12 @@ data:extend({
       {
         type = "item",
         name = "glass-billet",
-        icon = "__metal-and-stars__/graphics/icons/glass-billet-1.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/glass-billet-1.png",
         pictures =
         {
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/glass-billet-1.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/glass-billet-2.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/glass-billet-3.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/glass-billet-1.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/glass-billet-2.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/glass-billet-3.png", scale = 0.5, mipmap_count = 4},
         },
         subgroup = "ringworld-processes",
         order = "a[basic-intermediates]-c[gold-cable]",
@@ -991,7 +991,7 @@ data:extend({
       {
         type = "item",
         name = "aspheric-lens",
-        icon = "__metal-and-stars__/graphics/icons/glass-lens.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/glass-lens.png",
         subgroup = "ringworld-processes",
         order = "a[basic-intermediates]-c[gold-cable]",
         inventory_move_sound = item_sounds.wire_inventory_move,
@@ -1004,7 +1004,7 @@ data:extend({
       {
         type = "item",
         name = "high-speed-processor",
-        icon = "__metal-and-stars__/graphics/icons/high-speed-processor.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/high-speed-processor.png",
         subgroup = "ringworld-processes",
         order = "a[basic-intermediates]-c[gold-cable]",
         inventory_move_sound = item_sounds.wire_inventory_move,
@@ -1017,7 +1017,7 @@ data:extend({
       {
         type = "item",
         name = "optical-resonator",
-        icon = "__metal-and-stars__/graphics/icons/optical-resonator.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/optical-resonator.png",
         subgroup = "ringworld-processes",
         order = "a[basic-intermediates]-c[gold-cable]",
         inventory_move_sound = item_sounds.wire_inventory_move,
@@ -1030,12 +1030,12 @@ data:extend({
       {
         type = "item",
         name = "bone-fragments",
-        icon = "__metal-and-stars__/graphics/icons/bone-fragments-1.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/bone-fragments-1.png",
         pictures =
         {
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/bone-fragments-1.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/bone-fragments-2.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/bone-fragments-3.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/bone-fragments-1.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/bone-fragments-2.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/bone-fragments-3.png", scale = 0.5, mipmap_count = 4},
         },
         subgroup = "ringworld-processes",
         order = "a[basic-intermediates]-c[gold-cable]",
@@ -1049,12 +1049,12 @@ data:extend({
       {
         type = "item",
         name = "bitumen",
-        icon = "__metal-and-stars__/graphics/icons/tar-1.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/tar-1.png",
         pictures =
         {
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/tar-1.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/tar-2.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars__/graphics/icons/tar-3.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/tar-1.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/tar-2.png", scale = 0.5, mipmap_count = 4},
+          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/tar-3.png", scale = 0.5, mipmap_count = 4},
         },
         subgroup = "ringworld-processes",
         order = "a[basic-intermediates]-c[gold-cable]",
@@ -1069,7 +1069,7 @@ data:extend({
         type = "tool",
         name = "ring-science-pack",
         localised_description = {"item-description.science-pack"},
-        icon = "__metal-and-stars__/graphics/icons/ring-science-pack.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/ring-science-pack.png",
         subgroup = "science-pack",
         color_hint = { text = "L" },
         order = "b[ring-science-pack]",
@@ -1087,7 +1087,7 @@ data:extend({
       {
         type = "item",
         name = "antimatter-construction-robot",
-        icon = "__metal-and-stars__/graphics/icons/antimatter-construction-robot.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/antimatter-construction-robot.png",
         subgroup = "logistic-network",
         order = "a[robot]-c[construction-robot]-c[uranium]",
         place_result = "antimatter-construction-robot",
@@ -1097,7 +1097,7 @@ data:extend({
     {
           type = "item",
           name = "antimatter-logistic-robot",
-          icon = "__metal-and-stars__/graphics/icons/antimatter-logistic-robot.png",
+          icon = "__metal-and-stars-graphics__/graphics/icons/antimatter-logistic-robot.png",
           subgroup = "logistic-network",
           order = "a[robot]-c[logistic-robot]-c[uranium]",
           place_result = "antimatter-logistic-robot",
@@ -1107,7 +1107,7 @@ data:extend({
       {
         type = "item",
         name = "barometric-vice",
-        icon = "__metal-and-stars__/graphics/icons/chemical-stager.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/chemical-stager.png",
         icon_size = 64,
         subgroup = "production-machine",
         order = "d[hurricane]",
@@ -1117,7 +1117,7 @@ data:extend({
       {
         type = "item",
         name = "quantum-stabilizer",
-        icon = "__metal-and-stars__/graphics/icons/quantum-stabilizer.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/quantum-stabilizer.png",
         icon_size = 64,
         subgroup = "production-machine",
         order = "d[hurricane]",
@@ -1127,7 +1127,7 @@ data:extend({
       {
         type = "item",
         name = "gravity-assembler",
-        icon = "__metal-and-stars__/graphics/icons/gravity-assembler.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/gravity-assembler.png",
         icon_size = 64,
         subgroup = "production-machine",
         order = "d[hurricane]",
@@ -1137,7 +1137,7 @@ data:extend({
       {
         type = "item",
         name = "conduit",
-        icon = "__metal-and-stars__/graphics/icons/conduit.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/conduit.png",
         icon_size = 64,
         subgroup = "energy",
         order = "d[hurricane]",

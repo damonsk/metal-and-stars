@@ -2,10 +2,10 @@
 return {
     icons = {
         --technology
-        technology_icon = "__metal-and-stars__/graphics/icons/quantum-stabilizer.png",
+        technology_icon = "__metal-and-stars-graphics__/graphics/icons/quantum-stabilizer.png",
         technology_icon_size = 256,
         --item
-        item_icon = "__metal-and-stars__/graphics/icons/quantum-stabilizer.png",
+        item_icon = "__metal-and-stars-graphics__/graphics/icons/quantum-stabilizer.png",
         item_icon_size = 64,
     },
 
@@ -63,7 +63,7 @@ return {
             animation = {
               layers = {
                 {
-                  filename = "__metal-and-stars__/graphics/entity/quantum-stabilizer/quantum-stabilizer-hr-shadow.png",
+                  filename = "__metal-and-stars-graphics__/graphics/entity/quantum-stabilizer/quantum-stabilizer-hr-shadow.png",
                   priority = "high",
                   width = 900,
                   height = 420,
@@ -85,12 +85,12 @@ return {
                   stripes =
                   {
                     {
-                      filename = "__metal-and-stars__/graphics/entity/quantum-stabilizer/quantum-stabilizer-hr-animation-1.png",
+                      filename = "__metal-and-stars-graphics__/graphics/entity/quantum-stabilizer/quantum-stabilizer-hr-animation-1.png",
                       width_in_frames = 8,
                       height_in_frames = 8,
                     },
                     {
-                      filename = "__metal-and-stars__/graphics/entity/quantum-stabilizer/quantum-stabilizer-hr-animation-2.png",
+                      filename = "__metal-and-stars-graphics__/graphics/entity/quantum-stabilizer/quantum-stabilizer-hr-animation-2.png",
                       width_in_frames = 8,
                       height_in_frames = 8,
                     },
@@ -116,12 +116,12 @@ return {
                       stripes =
                       {
                         {
-                          filename = "__metal-and-stars__/graphics/entity/quantum-stabilizer/quantum-stabilizer-hr-animation-emission-1.png",
+                          filename = "__metal-and-stars-graphics__/graphics/entity/quantum-stabilizer/quantum-stabilizer-hr-animation-emission-1.png",
                           width_in_frames = 8,
                           height_in_frames = 8,
                         },
                         {
-                          filename = "__metal-and-stars__/graphics/entity/quantum-stabilizer/quantum-stabilizer-hr-animation-emission-2.png",
+                          filename = "__metal-and-stars-graphics__/graphics/entity/quantum-stabilizer/quantum-stabilizer-hr-animation-emission-2.png",
                           width_in_frames = 8,
                           height_in_frames = 8,
                         },
