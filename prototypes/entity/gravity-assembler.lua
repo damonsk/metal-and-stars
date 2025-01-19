@@ -16,6 +16,7 @@ local building_entity =
   corpse = "assembling-machine-1-remnants",
   dying_explosion = "assembling-machine-1-explosion",
   icon_draw_specification = {shift = {0, -0.3}},
+  module_slots = 3,
   resistances =
   {
     {

@@ -4,8 +4,11 @@ Date: 01.18.2025
   Changes:
     - added some spaceroutes that made sense
     - added compatibility with maraxsis and tenebris
+    - added module slots to barometric vice, gravity assembler
   Bugfixes:
     - fixed bug caused when Enemy Race Manager is present
+    - added some more localized strings. Better descriptions coming soon.
+    - nanite rocket parts should only be buildable on Neumann
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.2
 Date: 01.18.2025
