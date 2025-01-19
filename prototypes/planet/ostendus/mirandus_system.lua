@@ -16,7 +16,7 @@ local mirandus_aseroids =
   }
 }
 
-local mirandus_nix =
+mirandus_nix =
 {
     {
         asteroid = "medium-oxide-asteroid",
