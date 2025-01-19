@@ -32,4 +32,24 @@ data:extend({
         length = 5000,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_gleba)
     },
+    {
+        type = "space-connection",
+        name = "shipyard-fulgora",
+        subgroup = "planet-connections",
+        from = "shipyard",
+        to = "fulgora",
+        order = "b",
+        length = 5000,
+        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_fulgora)
+    },
+    {
+        type = "space-connection",
+        name = "fulgora-nix",
+        subgroup = "planet-connections",
+        from = "fulgora",
+        to = "nix",
+        order = "b",
+        length = 7000,
+        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_fulgora)
+    },
 })

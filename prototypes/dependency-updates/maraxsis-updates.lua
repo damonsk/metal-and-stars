@@ -6,6 +6,18 @@ if mods.maraxsis then
         data.raw["space-connection"]["fulgora-maraxsis"] = nil
     end
 
+    if data.raw["space-connection"]["maraxsis-tenebris"] ~= nil then
+        data.raw["space-connection"]["maraxsis-tenebris"] = nil
+    end
+
+    if data.raw["space-connection"]["vulcanus-maraxsis"] ~= nil then
+        data.raw["space-connection"]["vulcanus-maraxsis"] = nil
+    end
+
+    
+    data.raw["planet"]["maraxsis"].orientation = .615
+    data.raw["planet"]["maraxsis-trench"].orientation = .6
+
     data:extend {{
         type = "space-connection",
         name = "maraxsis-ringworld",
