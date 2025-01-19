@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 01.18.2025
+  Changes:
+    - added some spaceroutes that made sense
+    - added compatibility with maraxsis and tenebris
+  Bugfixes:
+    - fixed bug caused when Enemy Race Manager is present
+---------------------------------------------------------------------------------------------------
 Version: 0.0.2
 Date: 01.18.2025
   Bugfixes:
