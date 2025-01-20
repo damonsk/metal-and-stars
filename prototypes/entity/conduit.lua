@@ -33,8 +33,7 @@ local building_entity =
   {
     {
       property = "local-electricity-grid",
-      min = 1,
-      max = 0
+      min = 1
     }
   },
   energy_production = "150kW",

@@ -1,6 +1,6 @@
 {
     "name": "metal-and-stars",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "title": "Metal and Stars",
     "author": "5forSilver",
     "description": "It's a big universe out there, and there are other ways to leave the solar system. Several new destinations with new machines, technologies, and unique processes",
@@ -10,8 +10,12 @@
         "base >= 2.0.28",
         "ArmouredBiters <= 1.2.1",
         "metal-and-stars-graphics >= 0.0.2",
-        "(?) tenebris",
+        "? atan-nuclear-science",
+        "? visible-planets",
         "(?) maraxsis",
+        "(?) tenebris",
+        "(?) Cerys-Moon-of-Fulgora",
+        "(?) PlanetsLib",
         "(?) enemyracemanager"
     ],
     "space_travel_required": true,

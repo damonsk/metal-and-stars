@@ -2,6 +2,7 @@ require("__metal-and-stars__.prototypes.dependency-updates.armoured-biter-update
 require("__metal-and-stars__.prototypes.dependency-updates.tenebris-updates")
 require("__metal-and-stars__.prototypes.dependency-updates.maraxsis-updates")
 
+
 require("__metal-and-stars__.prototypes.planet.routes")
 require("__metal-and-stars__.prototypes.planet.shipyard.shipyard_planet")
 require("__metal-and-stars__.prototypes.planet.shipyard.shipyard_tiles")
@@ -50,4 +51,6 @@ require("__metal-and-stars__.prototypes.entity.asteroids.explosions")
 require("__metal-and-stars__.prototypes.entity.asteroids.particles")
 require("__metal-and-stars__.prototypes.entity.asteroids.particle-animations")
 require("__metal-and-stars__.prototypes.entity.asteroids.factoriopedia-simulations")
+
+require("__metal-and-stars__.prototypes.dependency-updates.lab-science-updates")
 

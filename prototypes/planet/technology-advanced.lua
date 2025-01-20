@@ -375,7 +375,7 @@ data:extend({
             recipe = "dark-matter-fuel-cell"
         },
     },
-    prerequisites = {"dark-matter-fuel"},
+    prerequisites = {"dark-matter-fuel", "nuclear-power"},
     unit =
     {
         count = 1000,
@@ -487,8 +487,12 @@ data:extend({
           type = "unlock-recipe",
           recipe = "thorium-enrichment-process"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "uranium-fuel-cell-233"
+    },
   },
-  prerequisites = {"quantum-science-pack", "uranium-processing"},
+  prerequisites = {"quantum-science-pack", "kovarex-enrichment-process", "nuclear-power"},
   unit =
   {
       count = 1000,

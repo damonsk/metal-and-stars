@@ -174,6 +174,27 @@ data:extend({
 
   {
     type = "recipe",
+    name = "uranium-fuel-cell-233",
+    energy_required = 60,
+    enabled = false,
+    category = "centrifuging",
+    icon = "__base__/graphics/icons/uranium-fuel-cell.png",
+    subgroup = "uranium-processing",
+    order = "b[uranium-products]-c[thorium-enrichment-process]",
+    ingredients =
+    {
+      {type = "item", name = "iron-plate", amount = 1},
+      {type = "item", name = "uranium-233", amount = 5}
+    },
+    results =
+    {
+      {type = "item", name = "uranium-fuel-cell", amount = 1}
+    },
+    allow_productivity = true,
+  },
+
+  {
+    type = "recipe",
     name = "mirandite-sludge",
     energy_required = 3,
     enabled = false,

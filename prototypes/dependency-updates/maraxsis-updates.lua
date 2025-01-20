@@ -18,7 +18,10 @@ if mods.maraxsis then
         data.raw["space-connection"]["vulcanus-maraxsis"] = nil
     end
 
-    
+    if data.raw["recipe"]["maraxsis-rocket-part"] ~= nil then
+        data.raw["recipe"]["maraxsis-rocket-part"].localised_name = nil
+    end
+
     data.raw["planet"]["maraxsis"].orientation = .615
     data.raw["planet"]["maraxsis-trench"].orientation = .6
 

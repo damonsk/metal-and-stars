@@ -144,7 +144,6 @@ data:extend({
           "agricultural-science-pack",
           "electromagnetic-science-pack",
           "cryogenic-science-pack",
-          "promethium-science-pack",
           "nanite-science-pack",
           "ring-science-pack",
           "anomaly-science-pack",

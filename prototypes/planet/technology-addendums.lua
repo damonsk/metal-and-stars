@@ -5,6 +5,9 @@ if data.raw["technology"]["rocket-fuel"] ~= nil then
     table.insert(data.raw["technology"]["rocket-fuel"].effects,   {type = "unlock-recipe", recipe = "canister-liquid-rocket-fuel"})
     table.insert(data.raw["technology"]["rocket-fuel"].effects,   {type = "unlock-recipe", recipe = "empty-liquid-rocket-fuel"})
 end
+if data.raw["technology"]["rocket-fuel-productivity"] then
+    table.insert(data.raw.technology["rocket-fuel-productivity"].effects, { type = "change-recipe-productivity", recipe = "liquid-rocket-fuel", change = 0.1 })
+end
 
 if data.raw["technology"]["kovarex-enrichment-process"] ~= nil then
     table.insert(data.raw["technology"]["kovarex-enrichment-process"].effects,   {type = "unlock-recipe", recipe = "liquid-nuclear-fuel"})
