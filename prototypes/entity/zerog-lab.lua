@@ -35,7 +35,7 @@ data:extend({
           {
             property = "gravity",
             min = 0,
-            max = 0
+            max = 2
           }
         },
         damaged_trigger_effect = hit_effects.entity(),

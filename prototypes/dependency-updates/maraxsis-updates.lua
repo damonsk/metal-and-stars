@@ -2,6 +2,10 @@ local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-de
 
 if mods.maraxsis then
 
+    if data.raw["rocket-silo"]["rocket-silo"] ~= nil then
+        data.raw["rocket-silo"]["rocket-silo"].fixed_recipe = nil
+    end
+
     if data.raw["space-connection"]["fulgora-maraxsis"] ~= nil then
         data.raw["space-connection"]["fulgora-maraxsis"] = nil
     end

@@ -25,4 +25,6 @@ if data.raw["fluid"]["heavy-oil"] ~= nil then
     data.raw["fluid"]["heavy-oil"].fuel_value = "400kJ"
 end
 
-
+if data.raw["assembling-machine"]["crusher"] ~= nil then
+    data.raw["assembling-machine"]["crusher"].surface_conditions = {{ property = "gravity", min = 0, max = 2 }}
+end

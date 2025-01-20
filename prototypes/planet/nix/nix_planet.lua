@@ -25,7 +25,7 @@ local machina = {
     {
         ["day-night-cycle"] = 2*hour,
         ["magnetic-field"] = 15,
-        pressure = 3000,
+        pressure = 900,
         ["solar-power"] = 10,
         gravity = 15
     },

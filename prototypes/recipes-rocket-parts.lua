@@ -1,5 +1,6 @@
 
 data.raw["rocket-silo"]["rocket-silo"].fixed_recipe = nil
+data.raw.recipe["rocket-part"].order = "b[rocket-part]-a[vanilla]"
 
 data:extend({
     {
@@ -9,6 +10,7 @@ data:extend({
         enabled = false,
         hide_from_player_crafting = true,
         category = "rocket-building",
+        order = "b[rocket-part]-ab[nano]",
         ingredients =
         {
             {type = "item", name = "nanites", amount = 10},
@@ -19,9 +21,9 @@ data:extend({
         surface_conditions =
         {
           {
-            property = "pressure",
-            min = 0,
-            max = 0
+            property = "gravity",
+            min = 1,
+            max = 2
           }
         },
     },
@@ -32,6 +34,7 @@ data:extend({
         enabled = false,
         hide_from_player_crafting = true,
         category = "rocket-building",
+        order = "b[rocket-part]-ac[ring]",
         ingredients =
         {
             {type = "item", name = "nanites", amount = 1},
@@ -50,6 +53,7 @@ data:extend({
         enabled = false,
         hide_from_player_crafting = true,
         category = "rocket-building",
+        order = "b[rocket-part]-ac[anomalous]",
         ingredients =
         {
             {type = "item", name = "nanites", amount = 1},

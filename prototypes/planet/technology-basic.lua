@@ -103,6 +103,10 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "nanite-platform-starter-pack"
             },
+            {
+              type = "unlock-recipe",
+              recipe = "space-chest"
+            },
         },
         prerequisites = {"nanite-extraction"},
         research_trigger =

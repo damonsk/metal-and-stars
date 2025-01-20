@@ -3,9 +3,10 @@ Version: 0.0.4
 Date: 01.19.2025
   Changes:
     - antimatter statistic increased by 10x to .001
-    - adding a (small) fuel value to light oil and heavy oil
-    - adding mirandite sludge to asteroid productivity
+    - added a (small) fuel value to light oil and heavy oil
+    - added mirandite sludge to asteroid productivity
     - added recipe for wood to carbon in pyrolysis tech
+    - added a chest usable in space conditions, attached to the nanite milestone track
   Bugfixes:
     - research prerequisite changes that make sense for certain recipes
     - mirandite changed to use dramatically less material

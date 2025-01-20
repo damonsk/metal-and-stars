@@ -19,9 +19,9 @@ local building_entity =
   surface_conditions =
   {
     {
-      property = "pressure",
+      property = "gravity",
       min = 0,
-      max = 0
+      max = 2
     }
   },
   module_slots = 3,

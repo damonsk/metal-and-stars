@@ -31,7 +31,7 @@ end
 local function jellyfish_animation(tint1)
   return
   {
-    filename = "__metal-and-stars-graphics__/graphics/entity/jellyfish-small/jellyfish-1.png",
+    filename = "__metal-and-stars-graphics__/graphics/entity/jellyfish-small/jellyfish-4.png",
     priority = "high",
     width = 128,
     height = 128,
@@ -293,7 +293,6 @@ data:extend({
     icons =
     {
       {icon = "__base__/graphics/icons/explosion.png"},
-      {icon = "__base__/graphics/icons/cannon-shell.png"}
     },
     order = "a-a-a",
     flags = {"not-on-map"},

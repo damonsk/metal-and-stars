@@ -594,6 +594,20 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "space-chest",
+    enabled = false,
+    category = "nanotech",
+    subgroup = "space-nanites",
+    order = "c[lithium]-bz[lithium-plate]",
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "nanites", amount = 20},
+      {type = "item", name = "iron-chest", amount = 1},
+    },
+    results = {{type="item", name="space-chest", amount=1}}
+  },
+  {
+    type = "recipe",
     name = "nanite-science-pack",
     enabled = false,
     category = "nanotech",
@@ -624,6 +638,21 @@ data:extend({
       {type = "fluid", name = "gray-goo", amount = 50},
     },
     results = {{type="item", name="space-platform-foundation", amount=1}},
+    auto_recycle = false,
+    allow_productivity = true
+  },
+  {
+    type = "recipe",
+    name = "nanite-cargo-bay",
+    category = "nanotech",
+    subgroup = "space-nanites",
+    energy_required = 5,
+    enabled = false,
+    ingredients =
+    {
+      {type = "fluid", name = "gray-goo", amount = 100},
+    },
+    results = {{type="item", name="cargo-bay", amount=1}},
     auto_recycle = false,
     allow_productivity = true
   },

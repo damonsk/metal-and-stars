@@ -9,7 +9,7 @@
         "space-age >= 2.0.28",
         "base >= 2.0.28",
         "ArmouredBiters <= 1.2.1",
-        "metal-and-stars-graphics >= 0.0.1",
+        "metal-and-stars-graphics >= 0.0.2",
         "(?) tenebris",
         "(?) maraxsis",
         "(?) enemyracemanager"

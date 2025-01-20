@@ -1144,4 +1144,16 @@ data:extend({
         place_result = "conduit",
         stack_size = 10,
       },
+      {
+        type = "item",
+        name = "space-chest",
+        icon = "__metal-and-stars-graphics__/graphics/icons/space-chest.png",
+        subgroup = "storage",
+        order = "a[items]-bc[space-chest]",
+        inventory_move_sound = item_sounds.metal_chest_inventory_move,
+        pick_sound = item_sounds.metal_chest_inventory_pickup,
+        drop_sound = item_sounds.metal_chest_inventory_move,
+        place_result = "space-chest",
+        stack_size = 50,
+      },
 })
