@@ -217,5 +217,123 @@ data:extend({
     max_level = "infinite",
     upgrade = true
   },
+  {
+    type = "technology",
+    name = "module-productivity-basic",
+    icons = util.technology_icon_constant_recipe_productivity("__base__/graphics/technology/module.png"),
+    icon_size = 256,
+    order="a[inf]-ba[modules]",
+    effects =
+    {
+        {
+          type = "change-recipe-productivity",
+          recipe = "productivity-module",
+          change = 0.1
+        },
+        {
+          type = "change-recipe-productivity",
+          recipe = "speed-module",
+          change = 0.1
+        },
+        {
+          type = "change-recipe-productivity",
+          recipe = "overclock-module",
+          change = 0.1
+        },
+    },
+    prerequisites = {"modules", "nanite-science-pack"},
+    unit =
+    {
+      count_formula = "1.5^L*1000",
+      ingredients =
+      {
+        {"space-science-pack", 1},
+        {"nanite-science-pack", 1},
+      },
+      time = 60
+    },
+    max_level = "infinite",
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "module-productivity-intermediate",
+    icons = util.technology_icon_constant_recipe_productivity("__base__/graphics/technology/module.png"),
+    icon_size = 256,
+    order="a[inf]-bb[modules]",
+    effects =
+    {
+        {
+          type = "change-recipe-productivity",
+          recipe = "productivity-module-2",
+          change = 0.1
+        },
+        {
+          type = "change-recipe-productivity",
+          recipe = "speed-module-2",
+          change = 0.1
+        },
+        {
+          type = "change-recipe-productivity",
+          recipe = "overclock-module-2",
+          change = 0.1
+        },
+    },
+    prerequisites = {"modules", "anomaly-science-pack"},
+    unit =
+    {
+      count_formula = "1.5^L*1000",
+      ingredients =
+      {
+        {"space-science-pack", 1},
+        {"nanite-science-pack", 1},
+        {"anomaly-science-pack", 1}
+      },
+      time = 60
+    },
+    max_level = "infinite",
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "module-productivity-advanced",
+    icons = util.technology_icon_constant_recipe_productivity("__base__/graphics/technology/module.png"),
+    icon_size = 256,
+    order="a[inf]-bc[modules]",
+    effects =
+    {
+        {
+          type = "change-recipe-productivity",
+          recipe = "productivity-module-3",
+          change = 0.1
+        },
+        {
+          type = "change-recipe-productivity",
+          recipe = "speed-module-3",
+          change = 0.1
+        },
+        {
+          type = "change-recipe-productivity",
+          recipe = "overclock-module-3",
+          change = 0.1
+        },
+    },
+    prerequisites = {"modules", "anomaly-science-pack", "ring-science-pack"},
+    unit =
+    {
+      count_formula = "1.5^L*1000",
+      ingredients =
+      {
+        {"space-science-pack", 1},
+        {"nanite-science-pack", 1},
+        {"ring-science-pack", 1},
+        {"anomaly-science-pack", 1}
+      },
+      time = 60
+    },
+    max_level = "infinite",
+    upgrade = true
+  },
+  
     
 })

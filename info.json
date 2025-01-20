@@ -10,10 +10,12 @@
         "base >= 2.0.28",
         "ArmouredBiters <= 1.2.1",
         "metal-and-stars-graphics >= 0.0.2",
+        "? quality",
         "? atan-nuclear-science",
         "? visible-planets",
         "(?) maraxsis",
         "(?) tenebris",
+        "(?) planet-muluna",
         "(?) Cerys-Moon-of-Fulgora",
         "(?) PlanetsLib",
         "(?) enemyracemanager"

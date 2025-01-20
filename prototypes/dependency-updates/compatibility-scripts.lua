@@ -10,7 +10,6 @@ script.on_event(defines.events.on_built_entity, function(event)
 
     --if entity.get_recipe() or mods["maraxsis"] then return end
     if entity.surface.name == "maraxsis" then return end
-    if entity.surface.name == "muluna" then return end
-    entity.recipe_locked = false        
+    entity.recipe_locked = false
     
 end)

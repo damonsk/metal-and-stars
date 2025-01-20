@@ -4,7 +4,7 @@ Date: 01.20.2025
   Changes:
     - added support for nuclear science mod
     - quantum science pack no longer spoils. It was a nice idea, but unoptimizable with how spoilage works
-
+    - added repeatable research for module creation productivity
   Bugfixes:
     - conduit can be built on Neumann again
     - added liquid rocket fuel to rocket fuel productivity research
