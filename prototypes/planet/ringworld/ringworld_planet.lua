@@ -18,14 +18,14 @@ local machina = {
     order = "e[machina]",
     subgroup = "planets",
     pollutant_type = nil,
-    solar_power_in_space = 60,
+    solar_power_in_space = 120,
     surface_properties =
     {
         ["day-night-cycle"] = 0,
-        ["magnetic-field"] = meld.delete(),
+        ["magnetic-field"] = 0,
         pressure = 3000,
         ["solar-power"] = 300,
-        gravity = 30
+        gravity = 10
     },
     surface_render_parameters =
     {

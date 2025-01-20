@@ -132,7 +132,7 @@ data:extend({
         {
             type = "craft-item",
             item = "nanites",
-            count = 1000
+            count = 100
         }
     },
     --////////////////////////////////////////////// nix

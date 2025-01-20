@@ -18,13 +18,14 @@ local machina = {
     order = "e[machina]",
     subgroup = "planets",
     pollutant_type = nil,
-    solar_power_in_space = 60,
+    solar_power_in_space = 200,
     surface_properties =
     {
-        ["day-night-cycle"] = 20 * hour,
-        ["magnetic-field"] = meld.delete(),
-        pressure = 3000,
-        ["solar-power"] = 50,
+        ["day-night-cycle"] = 0,
+        ["magnetic-field"] = 0,
+        pressure = 0,
+        ["solar-power"] = 200,
+        ["local-electricity-grid"] = 30,
         gravity = 0
     },
     surface_render_parameters =
@@ -36,5 +37,10 @@ local machina = {
 machina = meld(table.deepcopy(data.raw["planet"]["nauvis"]), machina)
 
 data:extend({
+    {
+        type = "surface-property",
+        name = "local-electricity-grid",
+        default_value = 0
+    },
     machina,
 })

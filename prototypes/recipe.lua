@@ -183,7 +183,7 @@ data:extend({
     order = "b[uranium-products]-c[thorium-enrichment-process]",
     ingredients =
     {
-      {type = "item", name = "mirandite-asteroid-chunk", amount = 120},
+      {type = "item", name = "mirandite-asteroid-chunk", amount = 2},
       {type = "fluid", name = "water", amount = 90, ignored_by_stats = 90}
     },
     results =
@@ -314,7 +314,7 @@ data:extend({
     },
     results = {
       {type="item", name="dark-matter-chunk", amount=1},
-      {type="item", name="antimatter", amount=1, probability=.0001}
+      {type="item", name="antimatter", amount=1, probability=.001}
     },
     allow_productivity = true,
     enabled = false

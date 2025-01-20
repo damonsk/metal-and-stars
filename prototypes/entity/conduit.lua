@@ -29,6 +29,14 @@ local building_entity =
     order = "a[landscape]-c[rock]-a[huge]",
     probability_expression = "shipyard_conduit_noise"
   },
+  surface_conditions =
+  {
+    {
+      property = "local-electricity-grid",
+      min = 1,
+      max = 0
+    }
+  },
   energy_production = "150kW",
   energy_usage = "0kW",
   enable_inventory_bar = false,

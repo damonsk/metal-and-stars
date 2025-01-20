@@ -16,6 +16,16 @@ data:extend({
         recipe = "thruster-oxidizer",
         change = 0.1
       },
+      {
+        type = "change-recipe-productivity",
+        recipe = "advanced-thruster-oxidizer",
+        change = 0.1
+      },
+      {
+        type = "change-recipe-productivity",
+        recipe = "advanced-thruster-fuel",
+        change = 0.1
+      },
     },
     prerequisites = {"quantum-science-pack"},
     unit =
@@ -192,7 +202,7 @@ data:extend({
         change = 0.1
       },
     },
-    prerequisites = {"railgun"},
+    prerequisites = {"railgun", "nanite-science-pack"},
     unit =
     {
       count_formula = "1.5^L*1000",

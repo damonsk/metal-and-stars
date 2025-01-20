@@ -248,7 +248,7 @@ data:extend({
             recipe = "conduit"
         },
     },
-    prerequisites = {"anomaly-science-pack", "ring-science-pack", "quantum-science-pack"},
+    prerequisites = {"anomaly-science-pack", "ring-science-pack", "quantum-science-pack", "high-speed-processor"},
     unit =
     {
         count = 1000,

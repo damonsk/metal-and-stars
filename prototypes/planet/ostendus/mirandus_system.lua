@@ -86,6 +86,7 @@ data:extend({
         magnitude = 1.0,
         label_orientation = 0.15,
         asteroid_spawn_influence = 1,
+        solar_power_in_space = 60,
         asteroid_spawn_definitions = mirandus_aseroids
     },
     {
