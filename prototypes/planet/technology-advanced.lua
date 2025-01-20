@@ -189,6 +189,10 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "charcoal"
             },
+            {
+              type = "unlock-recipe",
+              recipe = "pyrolytic-carbon"
+            },
         },
         prerequisites = {"anomaly-science-pack"},
         unit =

@@ -391,12 +391,28 @@ data:extend({
     icon = "__base__/graphics/icons/coal-1.png",
     category = "chemistry",
     subgroup = "nix-processes",
-    order = "c[lithium]-b[lithium-plate]",
+    order = "c[pyrolysis]-b[coal]",
     energy_required = 6.4,
     ingredients = {
       {type = "item", name = "wood", amount = 1},
     },
-    results = {{type="item", name="coal", amount=1}},
+    results = {{type="item", name="coal", amount=2}},
+    allow_productivity = true,
+    auto_recycle = false,
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "pyrolytic-carbon",
+    icon = "__space-age__/graphics/icons/carbon.png",
+    category = "chemistry",
+    subgroup = "nix-processes",
+    order = "c[pyrolysis]-b[carbon]",
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "wood", amount = 1},
+    },
+    results = {{type="item", name="carbon", amount=1}},
     allow_productivity = true,
     auto_recycle = false,
     enabled = false
