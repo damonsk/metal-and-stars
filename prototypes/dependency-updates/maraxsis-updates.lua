@@ -6,18 +6,6 @@ if mods.maraxsis then
         data.raw["rocket-silo"]["rocket-silo"].fixed_recipe = nil
     end
 
-    if data.raw["space-connection"]["fulgora-maraxsis"] ~= nil then
-        data.raw["space-connection"]["fulgora-maraxsis"] = nil
-    end
-
-    if data.raw["space-connection"]["maraxsis-tenebris"] ~= nil then
-        data.raw["space-connection"]["maraxsis-tenebris"] = nil
-    end
-
-    if data.raw["space-connection"]["vulcanus-maraxsis"] ~= nil then
-        data.raw["space-connection"]["vulcanus-maraxsis"] = nil
-    end
-
     if data.raw["recipe"]["maraxsis-rocket-part"] ~= nil then
         data.raw["recipe"]["maraxsis-rocket-part"].localised_name = nil
     end

@@ -19,10 +19,6 @@ local mirandus_tenebris =
 }
 
 if mods.tenebris then
-
-    if data.raw["space-connection"]["fulgora-tenebris"] ~= nil then
-        data.raw["space-connection"]["fulgora-tenebris"] = nil
-    end
     
     data.raw["planet"]["tenebris"].distance = 35
     data.raw["planet"]["tenebris"].orientation = .40
