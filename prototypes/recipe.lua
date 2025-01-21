@@ -102,6 +102,7 @@ data:extend({
   {
     type = "recipe",
     name = "inert-science-pack-salvage",
+    enabled = false,
     category = "quantum",
     subgroup = "quantum-processing",
     icons = {
