@@ -43,7 +43,7 @@ data:extend({
         research_trigger =
         {
           type = "mine-entity",
-          entity = "gravity-assembler"
+          entity = "microgravity-assembler"
         }
     },
     {
@@ -62,7 +62,7 @@ data:extend({
         research_trigger =
         {
           type = "mine-entity",
-          entity = "conduit"
+          entity = "neumann-conduit"
         }
     },
     {

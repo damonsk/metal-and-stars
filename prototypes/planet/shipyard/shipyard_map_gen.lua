@@ -35,8 +35,8 @@ shipyard = function()
             {
                 settings =
                 {
-                    ["gravity-assembler"] = {},
-                    ["conduit"] = {}
+                    ["microgravity-assembler"] = {},
+                    ["neumann-conduit"] = {}
                 }
             }
         }

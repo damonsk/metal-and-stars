@@ -409,7 +409,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "charcoal",
+    name = "pyrolytic-charcoal",
     icon = "__base__/graphics/icons/coal-1.png",
     category = "chemistry",
     subgroup = "nix-processes",
@@ -1169,14 +1169,14 @@ data:extend({
 		ingredients = {
       {type = "item", name = "mirandite-asteroid-chunk", amount = 3},
       {type = "item", name = "nanites", amount = 100},
-      {type = "item", name = "conduit", amount = 1},
+      {type = "item", name = "neumann-conduit", amount = 1},
 		},
     allow_productivity = true,
 		results = {{type="item", name="quantum-stabilizer", amount=1}}
 	},
   {
 		type = "recipe",
-		name = "gravity-assembler",
+		name = "microgravity-assembler",
     icon = "__metal-and-stars-graphics__/graphics/icons/gravity-assembler.png",
 		enabled = false,
     energy_required = 10,
@@ -1186,11 +1186,11 @@ data:extend({
       {type = "item", name = "logistic-robot", amount = 5},
 		},
     allow_productivity = true,
-		results = {{type="item", name="gravity-assembler", amount=1}}
+		results = {{type="item", name="microgravity-assembler", amount=1}}
 	},
   {
 		type = "recipe",
-		name = "conduit",
+		name = "neumann-conduit",
     subgroup = "shipyard-processes",
     icon = "__metal-and-stars-graphics__/graphics/icons/conduit.png",
 		enabled = false,
@@ -1200,7 +1200,7 @@ data:extend({
       {type = "item", name = "quantum-shard-c", amount = 20},
 		},
     allow_productivity = true,
-		results = {{type="item", name="conduit", amount=1}}
+		results = {{type="item", name="neumann-conduit", amount=1}}
 	},
   {
     type = "recipe",

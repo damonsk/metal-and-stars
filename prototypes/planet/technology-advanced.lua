@@ -187,7 +187,7 @@ data:extend({
         {
             {
                 type = "unlock-recipe",
-                recipe = "charcoal"
+                recipe = "pyrolytic-charcoal"
             },
             {
               type = "unlock-recipe",
@@ -245,11 +245,11 @@ data:extend({
     {
         {
             type = "unlock-recipe",
-            recipe = "gravity-assembler"
+            recipe = "microgravity-assembler"
         },
         {
             type = "unlock-recipe",
-            recipe = "conduit"
+            recipe = "neumann-conduit"
         },
     },
     prerequisites = {"anomaly-science-pack", "ring-science-pack", "quantum-science-pack", "high-speed-processor"},

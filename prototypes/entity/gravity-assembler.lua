@@ -3,7 +3,7 @@ local sounds = require("__base__.prototypes.entity.sounds")
 local asset_graphics = require("__metal-and-stars__.prototypes.entity.gravity-assembler-visuals")
 local meld = require("meld")
 
-local item_name = "gravity-assembler"
+local item_name = "microgravity-assembler"
 
 local building_entity = 
 {

@@ -2,7 +2,7 @@ local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
 local meld = require("meld")
 
-local item_name = "conduit"
+local item_name = "neumann-conduit"
 
 local technology_icon = "__metal-and-stars-graphics__/graphics/icons/conduit.png"
 local technology_icon_size = 256
@@ -13,7 +13,7 @@ local item_icon_size = 64
 local building_entity = 
 {
   type = "electric-energy-interface",
-  name = "conduit",
+  name = "neumann-conduit",
   icon = item_icon,
   icon_size = item_icon_size,
   flags = {"placeable-neutral", "player-creation"},
@@ -39,7 +39,7 @@ local building_entity =
   energy_production = "150kW",
   energy_usage = "0kW",
   enable_inventory_bar = false,
-  minable = {mining_time = 0.1, result = "conduit"},
+  minable = {mining_time = 0.1, result = "neumann-conduit"},
   max_health = 150,
   corpse = "medium-remnants",
   subgroup = "other",

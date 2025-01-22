@@ -42,7 +42,30 @@ Circa is a ringworld, a constructed satellite halo built to rotate around a cool
 ## Mirandus
 Mirandus is a shattered astral body with no surface. Instead, it's surrounded by asteroids made of the planet's old mineral, mirandite. You turn this into a sludge to extract trace minerals including quantite. Quantite phase shifts (spoils), looping through 3 states. After researching it, you can also use quantite to turn certain resources into others, among other uses.
 
+-------
 
 ### Mod compatibility
-No explicit compatibility has been added, but I'm happy to work with anyone who's interested.
-This mod modifies very little from vanilla, removes nothing, and depends on several graphics and entities from both the base game and space_age.
+I've added a handful of compatibility fixes as people mention them. If you've got a compatibility that's important to you, feel free to mention it.
+
+
+### User Feedback
+I'd love to hear your thoughts on the mod design-wise. What works, what doesn't, what's annoying, what's too easy? it's really helpful to hear what you all think.  
+I check the [discussions tab](https://mods.factorio.com/mod/metal-and-stars/discussion) fairly regularly, so that's usually the best way to reach me.
+
+
+### What's next?
+I'm going to continue working during this early-access period. I'm hoping to add 1-2 more planets and 1-2 more complex processes seperate from that.
+In addition, I'm trying to be aggressive on bugs, and handle compatibility as it causes people trouble.
+
+
+### Localization
+If you'd like to do a simple localization in your language, I'm happy to include it
+When I give my locale file to a translation machine, I can't verify that it was translated correctly (because I don't speak that language)
+also bear in mind that things will continue to change throughout the mod's beta, and I can't maintain those localizations very effectively.
+
+
+### Contribute
+I do this because I want to, and I want people to enjoy what I make,  
+but if you'd like to buy me a coffee, you can do so below.  
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O5O619DUV0)
