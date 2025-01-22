@@ -51,6 +51,5 @@ require("__metal-and-stars__.prototypes.entity.asteroids.particles")
 require("__metal-and-stars__.prototypes.entity.asteroids.particle-animations")
 require("__metal-and-stars__.prototypes.entity.asteroids.factoriopedia-simulations")
 
-require("__metal-and-stars__.prototypes.dependency-updates.lab-science-updates")
 require("__metal-and-stars__.prototypes.dependency-updates.quality-updates")
 

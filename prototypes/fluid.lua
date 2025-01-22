@@ -66,32 +66,6 @@ data:extend(
     flow_color = {0.36, 0.54, 0.66},
     auto_barrel = false
   },
-  {
-    type = "fluid",
-    name = "molten-gold",
-    icon = "__metal-and-stars-graphics__/graphics/icons/molten-gold.png",
-    subgroup = "fluid",
-    order = "b[new-fluid]-e[shipyard]-a[heavy-water]",
-    default_temperature = 15,
-    max_temperature = 100,
-    heat_capacity = "0.2kJ",
-    base_color = {189, 180, 64},
-    flow_color = {189, 180, 64},
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
-    name = "molten-glass",
-    icon = "__metal-and-stars-graphics__/graphics/icons/molten-glass.png",
-    subgroup = "fluid",
-    order = "b[new-fluid]-e[shipyard]-a[heavy-water]",
-    default_temperature = 15,
-    max_temperature = 100,
-    heat_capacity = "0.2kJ",
-    base_color = {123, 209, 188},
-    flow_color = {123, 209, 188},
-    auto_barrel = false
-  },
   --/////refined liquid fuels
   {
     type = "fluid",

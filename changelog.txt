@@ -1,6 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.8
+Date: 01.22.2025
+  Changes:
+    - moved several items to `common-prototypes`
+  Bugfixes:
+    - other mods that add science packs should no longer cause conflicts
+---------------------------------------------------------------------------------------------------
 Version: 0.0.7
-Date: 01.20.2025
+Date: 01.21.2025
   Bugfixes:
     - disabled quantum science salvage by default
     - renamed some prototypes and recipes to avoid common conflicts with other mods

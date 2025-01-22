@@ -139,15 +139,7 @@ data:extend({
         researching_speed = 2,
         inputs =
         {
-          "space-science-pack",
-          "metallurgic-science-pack",
-          "agricultural-science-pack",
-          "electromagnetic-science-pack",
-          "cryogenic-science-pack",
-          "nanite-science-pack",
-          "ring-science-pack",
-          "anomaly-science-pack",
-          "quantum-science-pack",
+
         },
         science_pack_drain_rate_percent = 50,
         energy_source =

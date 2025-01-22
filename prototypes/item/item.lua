@@ -164,36 +164,6 @@ data:extend({
     },
     {
       type = "item",
-      name = "gold-ore",
-      icon = "__metal-and-stars-graphics__/graphics/icons/gold-ore-1.png",
-      pictures =
-      {
-        {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/gold-ore-1.png", scale = 0.5, mipmap_count = 4},
-        {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/gold-ore-2.png", scale = 0.5, mipmap_count = 4},
-        {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/gold-ore-3.png", scale = 0.5, mipmap_count = 4},
-      },
-      subgroup = "ringworld-processes",
-      order = "d[stone]",
-      inventory_move_sound = item_sounds.resource_inventory_move,
-      pick_sound = item_sounds.resource_inventory_pickup,
-      drop_sound = item_sounds.resource_inventory_move,
-      stack_size = 50,
-      weight = 2 * kg
-    },
-    {
-      type = "item",
-      name = "gold-plate",
-      icon = "__metal-and-stars-graphics__/graphics/icons/gold-ingot.png",
-      subgroup = "ringworld-processes",
-      order = "d[stone]d",
-      inventory_move_sound = item_sounds.resource_inventory_move,
-      pick_sound = item_sounds.resource_inventory_pickup,
-      drop_sound = item_sounds.resource_inventory_move,
-      stack_size = 50,
-      weight = 2 * kg
-    },
-    {
-      type = "item",
       name = "empty-fuel-canister",
       icon = "__metal-and-stars-graphics__/graphics/icons/empty-fuel-canister.png",
       subgroup = "nix-processes",
@@ -886,19 +856,6 @@ data:extend({
       --ringworld items
       {
         type = "item",
-        name = "gold-cable",
-        icon = "__metal-and-stars-graphics__/graphics/icons/gold-wire.png",
-        subgroup = "ringworld-processes",
-        order = "a[basic-intermediates]-c[gold-cable]",
-        inventory_move_sound = item_sounds.wire_inventory_move,
-        pick_sound = item_sounds.wire_inventory_pickup,
-        drop_sound = item_sounds.wire_inventory_move,
-        stack_size = 200,
-        weight = 0.25 * kg,
-        ingredient_to_weight_coefficient = 0.25
-      },
-      {
-        type = "item",
         name = "multilayer-insulation",
         icon = "__metal-and-stars-graphics__/graphics/icons/multilayer-insulation.png",
         subgroup = "ringworld-processes",
@@ -919,63 +876,6 @@ data:extend({
           {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/gold-foil-1.png", scale = 0.5, mipmap_count = 4},
           {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/gold-foil-2.png", scale = 0.5, mipmap_count = 4},
           {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/gold-foil-3.png", scale = 0.5, mipmap_count = 4},
-        },
-        subgroup = "ringworld-processes",
-        order = "a[basic-intermediates]-c[gold-cable]",
-        inventory_move_sound = item_sounds.wire_inventory_move,
-        pick_sound = item_sounds.wire_inventory_pickup,
-        drop_sound = item_sounds.wire_inventory_move,
-        stack_size = 200,
-        weight = 0.25 * kg,
-        ingredient_to_weight_coefficient = 0.25
-      },
-      {
-        type = "item",
-        name = "silica-sand",
-        icon = "__metal-and-stars-graphics__/graphics/icons/silica-sand-1.png",
-        pictures =
-        {
-          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/silica-sand-1.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/silica-sand-2.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/silica-sand-3.png", scale = 0.5, mipmap_count = 4},
-        },
-        subgroup = "ringworld-processes",
-        order = "a[basic-intermediates]-c[gold-cable]",
-        inventory_move_sound = item_sounds.wire_inventory_move,
-        pick_sound = item_sounds.wire_inventory_pickup,
-        drop_sound = item_sounds.wire_inventory_move,
-        stack_size = 200,
-        weight = 0.25 * kg,
-        ingredient_to_weight_coefficient = 0.25
-      },
-      {
-        type = "item",
-        name = "glass-plate",
-        icon = "__metal-and-stars-graphics__/graphics/icons/glass-plate-1.png",
-        pictures =
-        {
-          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/glass-plate-1.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/glass-plate-2.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/glass-plate-3.png", scale = 0.5, mipmap_count = 4},
-        },
-        subgroup = "ringworld-processes",
-        order = "a[basic-intermediates]-c[gold-cable]",
-        inventory_move_sound = item_sounds.wire_inventory_move,
-        pick_sound = item_sounds.wire_inventory_pickup,
-        drop_sound = item_sounds.wire_inventory_move,
-        stack_size = 200,
-        weight = 0.25 * kg,
-        ingredient_to_weight_coefficient = 0.25
-      },
-      {
-        type = "item",
-        name = "glass-billet",
-        icon = "__metal-and-stars-graphics__/graphics/icons/glass-billet-1.png",
-        pictures =
-        {
-          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/glass-billet-1.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/glass-billet-2.png", scale = 0.5, mipmap_count = 4},
-          {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/glass-billet-3.png", scale = 0.5, mipmap_count = 4},
         },
         subgroup = "ringworld-processes",
         order = "a[basic-intermediates]-c[gold-cable]",
