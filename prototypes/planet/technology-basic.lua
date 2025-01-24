@@ -9,6 +9,16 @@ data:extend({
         {
             {
                 type = "unlock-space-location",
+                space_location = "calidus-senestella-gate-calidus",
+                use_icon_overlay_constant = true
+            },
+            {
+                type = "unlock-space-location",
+                space_location = "calidus-senestella-gate-senestella",
+                use_icon_overlay_constant = true
+            },
+            {
+                type = "unlock-space-location",
                 space_location = "shipyard",
                 use_icon_overlay_constant = true
             },
