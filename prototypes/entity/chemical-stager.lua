@@ -84,8 +84,8 @@ local building_entity =
   forced_symmetry = "horizontal",
   open_sound = sounds.machine_open,
   close_sound = sounds.machine_close,
-  allowed_effects = {"speed", "consumption", "pollution"},
-  effect_receiver = {uses_module_effects = false, uses_beacon_effects = false, uses_surface_effects = true},
+  allowed_effects = {"speed", "consumption", "pollution", "productivity", "quality"},
+  effect_receiver = {uses_module_effects = true, uses_beacon_effects = true, uses_surface_effects = true},
   impact_category = "metal",
   working_sound =
   {
