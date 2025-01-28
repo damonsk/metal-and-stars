@@ -899,6 +899,7 @@ data:extend({
     type = "recipe",
     name = "overclock-module",
     enabled = false,
+    category = "electronics",
     icon = "__metal-and-stars-graphics__/graphics/icons/pollution-module-1.png",
     ingredients =
     {
@@ -912,6 +913,7 @@ data:extend({
     type = "recipe",
     name = "overclock-module-2",
     enabled = false,
+    category = "electronics",
     icon = "__metal-and-stars-graphics__/graphics/icons/pollution-module-2.png",
     ingredients =
     {
@@ -926,6 +928,7 @@ data:extend({
     type = "recipe",
     name = "overclock-module-3",
     enabled = false,
+    category = "electronics",
     icon = "__metal-and-stars-graphics__/graphics/icons/pollution-module-3.png",
     ingredients =
     {
