@@ -33,3 +33,13 @@
 #### Neumann high-quality graphic
 - **Creators**: Tserup啊
 
+
+
+
+
+
+#### Much of the code was inspired or copied from the following mods
+- **Maraxsis**
+- **Tenebris**
+- **Cerys**
+
