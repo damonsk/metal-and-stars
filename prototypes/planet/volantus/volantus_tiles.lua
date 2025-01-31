@@ -26,22 +26,20 @@ data:extend({
         name = "clouds-lumpy",
         subgroup = "aquilo-tiles",
         order = "b[natural]-i[ice]-a[snow]",
-        collision_mask = tile_collision_masks.ground(),
+        collision_mask = tile_collision_masks.water(),
         autoplace = {probability_expression = .5},
         tint = {255, 182, 182},
         layer =  4,
-        variants = tile_variations_template(
-          "__metal-and-stars-graphics-2__/graphics/terrain/clouds-crests.png", "__base__/graphics/terrain/masks/transition-4.png",
+        variants = 
+        {
+          transition = data.raw.tile["concrete"].variants.transition,
+          material_background =
           {
-            max_size = 4,
-            [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
-            [2] = { probability = 1, weights = {0.018, 0.020, 0.015, 0.025, 0.015, 0.020, 0.025, 0.015, 0.025, 0.025, 0.010, 0.025, 0.020, 0.025, 0.025, 0.010 }, },
-            [4] = { probability = 0.1, weights = {0.018, 0.020, 0.015, 0.025, 0.015 }, },
-            --[8] = { probability = 1.00, weights = {0.090, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.025, 0.125, 0.005, 0.010, 0.100, 0.100, 0.010, 0.020, 0.020} }
-          }
-        ),
-
-    
+              picture = "__metal-and-stars-graphics-2__/graphics/terrain/volantus-surface.png",
+              count = 8,
+              scale = 0.5
+          },
+        },    
         walking_sound = snow_sounds,
         landing_steps_sound = tile_sounds.landing.snow,
         map_color = {255, 182, 182},
@@ -58,7 +56,7 @@ data:extend({
         collision_mask = tile_collision_masks.ground(),
         autoplace = {probability_expression = "volantus_center_ship"},
         tint = {5, 5, 5},
-        layer =  4,
+        layer =  5,
         variants = tile_variations_template(
           "__metal-and-stars-graphics-2__/graphics/terrain/clouds-crests.png", "__base__/graphics/terrain/masks/transition-4.png",
           {

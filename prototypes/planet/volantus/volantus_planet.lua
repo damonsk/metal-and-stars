@@ -1,4 +1,5 @@
 local volantus_map_gen = require("__metal-and-stars__.prototypes.planet.volantus.volantus_map_gen")
+local effects = require("__core__/lualib/surface-render-parameter-effects")
 local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-definitions")
 
 local meld = require("meld")
@@ -28,7 +29,8 @@ local machina = {
     },
     surface_render_parameters =
     {
-
+        clouds = effects.default_clouds_effect_properties(),
+        -- shadow_opacity = 0.0,
     },
     ticks_between_player_effects = 2
 }

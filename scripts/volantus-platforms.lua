@@ -259,14 +259,40 @@ script.on_event(defines.events.on_script_trigger_effect, function(event)
         return
     end
 
+
+    local position1 = {x = position.x, y = position.y + 17.5}
+    local position2 = {x = position.x + 11.5 , y = position.y + 11.5}
+    local position3 = {x = position.x + -12.5 , y = position.y + 11.5}
+    local shadowPosition = {x = position.x, y = position.y + 37.5}
+
     local health = entity.health
     entity.destroy()
-    entity = rendering.draw_sprite {
-        sprite = "vol-sprite",
-        render_layer = "higher-object-above",
-        target = position,
+    entity = rendering.draw_animation {
+        animation = "vol-sprite",
+        render_layer = "4",
+        target = position1,
         surface = surface,
     }
+    rendering.draw_animation {
+        animation = "vol-sprite",
+        render_layer = "4",
+        target = position2,
+        surface = surface,
+    }
+    rendering.draw_animation {
+        animation = "vol-sprite",
+        render_layer = "4",
+        target = position3,
+        surface = surface,
+    }
+    rendering.draw_sprite {
+        sprite = "vol-shadow-sprite",
+        render_layer = "3",
+        target = shadowPosition,
+        surface = surface,
+    }
+
+   
 
     local pressure_dome_data = {
         entity = entity,

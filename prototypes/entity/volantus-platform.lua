@@ -23,16 +23,52 @@ local tile = maraxsis.merge(data.raw.tile["concrete"], {
 })
 data:extend {tile}
 
+local platform_thruster = {
+    filename = "__metal-and-stars-graphics-2__/graphics/entity/volantus-platform/platform-thruster.png",
+    width = 149,
+    height = 105,
+    frame_count = 1,
+    repeat_count = 8,
+}
+
+local platform_thruster_emission = {
+    filename = "__metal-and-stars-graphics-2__/graphics/entity/volantus-platform/platform-thruster-emission.png",
+    width = 149,
+    height = 105,
+    draw_as_glow = true,
+    blend_mode = "additive",
+    frame_count = 1,
+    repeat_count = 8,
+}
+
+local platform_thruster_flame = {
+  filename = "__base__/graphics/entity/rocket-silo/10-jet-flame.png",
+  width = 172,
+  height = 256,
+  draw_as_glow = true,
+  blend_mode = "additive",
+  frame_count = 8,
+  animation_speed = 0.5,
+  shift = {.2, 3.75}
+}
+
+local platform_shadow = {
+    filename = "__metal-and-stars-graphics-2__/graphics/entity/volantus-platform/platform-shadow.png",
+    width = 1344,
+    height = 1344,
+  }
+
+
 data:extend ({
     {
-        type = "sprite",
+        type = "animation",
         name = "vol-sprite",
-        filename = "__maraxsis__/graphics/entity/pressure-dome/cage-shadow.png",
-        width = 1344,
-        height = 1344,
-        scale = 0.935,
-        shift = {0, -1.25},
-        flags = {"no-scale"},
+        layers = {platform_thruster_flame, platform_thruster, platform_thruster_emission},
+    },
+    {
+        type = "sprite",
+        name = "vol-shadow-sprite",
+        layers = {platform_shadow},
     },
     {
         type = "recipe",
