@@ -232,6 +232,11 @@ data:extend({
         },
         {
           type = "change-recipe-productivity",
+          recipe = "efficiency-module",
+          change = 0.1
+        },
+        {
+          type = "change-recipe-productivity",
           recipe = "speed-module",
           change = 0.1
         },
@@ -266,6 +271,11 @@ data:extend({
         {
           type = "change-recipe-productivity",
           recipe = "productivity-module-2",
+          change = 0.1
+        },
+        {
+          type = "change-recipe-productivity",
+          recipe = "efficiency-module-2",
           change = 0.1
         },
         {
@@ -305,6 +315,11 @@ data:extend({
         {
           type = "change-recipe-productivity",
           recipe = "productivity-module-3",
+          change = 0.1
+        },
+        {
+          type = "change-recipe-productivity",
+          recipe = "efficiency-module-3",
           change = 0.1
         },
         {
