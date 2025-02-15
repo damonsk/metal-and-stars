@@ -1,6 +1,6 @@
+local meld = require("__core__.lualib.meld")
 
-
-local tile = maraxsis.merge(data.raw.tile["concrete"], {
+local tile = meld(table.deepcopy(data.raw.tile["concrete"]), {
     name = "volantus-platform-tile",
     is_foundation = true,
     minable = {
@@ -86,7 +86,7 @@ data:extend ({
     {
         type = "item",
         name = "volantus-platform-small",
-        icon = "__maraxsis__/graphics/icons/pressure-dome.png",
+        icon = "__space-age__/graphics/icons/jellynut.png",
         icon_size = 64,
         place_result = "volantus-platform-small",
         stack_size = 10,
@@ -96,7 +96,7 @@ data:extend ({
         name = "volantus-platform-small",
         factoriopedia_alternative = "volantus-platform-small",
         localised_name = {"entity-name.volantus-platform-small"},
-        icon = "__maraxsis__/graphics/icons/pressure-dome.png",
+        icon = "__space-age__/graphics/icons/jellynut.png",
         quality_indicator_scale = 0,
         icon_size = 64,
         hidden = true,
@@ -140,7 +140,7 @@ data:extend ({
         name = "volantus-platform-small-collision",
         factoriopedia_alternative = "volantus-platform-small",
         localised_name = {"entity-name.volantus-platform-small"},
-        icon = "__maraxsis__/graphics/icons/pressure-dome.png",
+        icon = "__space-age__/graphics/icons/jellynut.png",
         quality_indicator_scale = 0,
         icon_size = 64,
         hidden = true,

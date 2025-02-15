@@ -18,6 +18,16 @@ local ice_sounds = sound_variations("__space-age__/sound/walking/ice", 10, 0.8, 
 local smooth_ice_sounds = sound_variations("__space-age__/sound/walking/smooth-ice", 9, 0.8)
 local frozen_concrete_sounds = sound_variations("__space-age__/sound/walking/frozen-concrete", 11, 0.8)
 
+local floating_cloud_variants = tile_variations_template(
+  "__metal-and-stars-graphics-2__/graphics/terrain/clouds-floating.png", "__base__/graphics/terrain/masks/transition-4.png",
+  {
+    max_size = 4,
+    [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
+    [2] = { probability = 1, weights = {0.018, 0.020, 0.015, 0.025, 0.015, 0.020, 0.025, 0.015, 0.025, 0.025, 0.010, 0.025, 0.020, 0.025, 0.025, 0.010 }, },
+    [4] = { probability = 0.1, weights = {0.018, 0.020, 0.015, 0.025, 0.015 }, },
+  }
+)
+floating_cloud_variants.draw_background_layer_under_tiles = true
 
 
 data:extend({
@@ -29,17 +39,16 @@ data:extend({
         collision_mask = tile_collision_masks.water(),
         autoplace = {probability_expression = .5},
         tint = {255, 182, 182},
-        layer =  4,
-        variants = 
-        {
-          transition = data.raw.tile["concrete"].variants.transition,
-          material_background =
+        layer =  0,
+        variants = tile_variations_template(
+          "__metal-and-stars-graphics-2__/graphics/terrain/volantus-surface.png", "__base__/graphics/terrain/masks/transition-4.png",
           {
-              picture = "__metal-and-stars-graphics-2__/graphics/terrain/volantus-surface.png",
-              count = 8,
-              scale = 0.5
-          },
-        },    
+            max_size = 4,
+            [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
+            [2] = { probability = 1, weights = {0.018, 0.020, 0.015, 0.025, 0.015, 0.020, 0.025, 0.015, 0.025, 0.025, 0.010, 0.025, 0.020, 0.025, 0.025, 0.010 }, },
+            [4] = { probability = 0.1, weights = {0.018, 0.020, 0.015, 0.025, 0.015 }, },
+          }
+        ),
         walking_sound = snow_sounds,
         landing_steps_sound = tile_sounds.landing.snow,
         map_color = {255, 182, 182},
