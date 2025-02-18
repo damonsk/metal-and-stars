@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 02.18.2025
+  Bugfixes:
+    - stargate routes should no longer have huge asteroids
+    - file size of senestella has been reduced
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 02.18.2025
   Changes:

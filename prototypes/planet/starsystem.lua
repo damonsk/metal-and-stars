@@ -5,7 +5,7 @@ PlanetsLib:extend({
       type = "space-location",
       name = "redstar",
       starmap_icon = "__metal-and-stars-graphics-2__/graphics/starmap/senestella-ring.png",
-      starmap_icon_size = 4096,
+      starmap_icon_size = 919,
       orbit = {
           parent = {
               type = "space-location",
@@ -15,7 +15,7 @@ PlanetsLib:extend({
           orientation = 0.35,
       },
       sprite_only = true,
-      magnitude = 128,
+      magnitude = 29,
   },
 })  
 
