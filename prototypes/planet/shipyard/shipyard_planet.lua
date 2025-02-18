@@ -23,10 +23,11 @@ local machina = {
     {
         ["day-night-cycle"] = 0,
         ["magnetic-field"] = 0,
-        pressure = 2,
+        pressure = 200,
         ["solar-power"] = 200,
         ["local-electricity-grid"] = 30,
-        gravity = 1
+        temperature = 268,
+        gravity = 2
     },
     surface_render_parameters =
     {

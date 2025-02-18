@@ -535,7 +535,7 @@ data:extend({
   {
     type = "technology",
     name = "advanced-bioculture",
-    icon = "__metal-and-stars-graphics__/graphics/technology/quantum-science-pack.png",
+    icon = "__metal-and-stars-graphics-2__/graphics/technology/bacteria-cultivation.png",
     icon_size = 256,
     effects =
     {

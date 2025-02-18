@@ -25,6 +25,7 @@ local machina = {
         ["magnetic-field"] = 0,
         pressure = 1000,
         ["solar-power"] = 300,
+        temperature = 293,
         gravity = 10
     },
     surface_render_parameters =

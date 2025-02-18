@@ -171,6 +171,13 @@ data:extend({
     result_is_always_fresh = true,
     allow_decomposition = false,
     energy_required = 4,
+    surface_conditions =
+    {
+      {
+        property = "temperature",
+        min = 330
+      }
+    },
     ingredients =
     {
       {type = "item", name = "thermo-bacteria", amount = 3},
@@ -264,6 +271,13 @@ data:extend({
     result_is_always_fresh = true,
     allow_decomposition = false,
     energy_required = 4,
+    surface_conditions =
+    {
+      {
+        property = "temperature",
+        min = 265
+      }
+    },
     ingredients =
     {
       {type = "item", name = "ammoniac-bacteria", amount = 14},
@@ -294,6 +308,14 @@ data:extend({
     result_is_always_fresh = true,
     allow_decomposition = false,
     energy_required = 4,
+    surface_conditions =
+    {
+      {
+        property = "temperature",
+        min = 260,
+        max = 300
+      }
+    },
     ingredients =
     {
       {type = "item", name = "algae-bacteria", amount = 14},

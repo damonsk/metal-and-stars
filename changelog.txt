@@ -1,13 +1,16 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
-Date: 02.15.2025
+Date: 02.18.2025
   Changes:
     - added new bacteria processes
     - moved planets to a dedicated star-system
     - added some enhanced assets for visible planets mod
+    - added mod setting to toggle freezing mechanic on Nix
+    - antimatter bots are now immune to electric damage
   Bugfixes:
     - several machines should now correctly accept and apply module effects
     - corrected 'dark matter crystal' recipe, it now takes 1 additional diamond
+    - removed incorrect bot penalty from Nix and Neumann V
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.8
 Date: 01.22.2025
