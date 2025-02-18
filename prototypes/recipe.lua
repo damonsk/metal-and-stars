@@ -338,6 +338,11 @@ data:extend({
       {type="item", name="dark-matter-chunk", amount=1},
       {type="item", name="antimatter", amount=1, probability=.001}
     },
+    crafting_machine_tint =
+    {
+      primary = {r = 222, g = 0, b = 255, a = 1.000},
+      secondary = {r = 143, g = 0, b = 255, a = 1.000},
+    },
     allow_productivity = true,
     enabled = false
   },
@@ -352,9 +357,15 @@ data:extend({
     energy_required = 6.4,
     ingredients = {
       {type = "item", name = "dark-matter-chunk", amount = 30},
+      {type = "item", name = "diamond", amount = 1},
     },
     results = {{type="item", name="dark-matter-crystal", amount=1}},
     allow_productivity = true,
+    crafting_machine_tint =
+    {
+      primary = {r = 222, g = 0, b = 255, a = 1.000},
+      secondary = {r = 143, g = 0, b = 255, a = 1.000},
+    },
     enabled = false
   },
   {
@@ -386,6 +397,11 @@ data:extend({
       {type = "item", name = "dark-matter-chunk", amount = 1},
       {type = "item", name = "rocket-fuel", amount = 1},
     },
+    crafting_machine_tint =
+    {
+      primary = {r = 222, g = 0, b = 255, a = 1.000},
+      secondary = {r = 143, g = 0, b = 255, a = 1.000},
+    },
     results = {{type="item", name="dark-matter-fuel", amount=1}},
     allow_productivity = true,
     enabled = false
@@ -402,6 +418,11 @@ data:extend({
     ingredients = {
       {type = "item", name = "dark-matter-chunk", amount = 5},
       {type = "item", name = "iron-plate", amount = 10},
+    },
+    crafting_machine_tint =
+    {
+      primary = {r = 222, g = 0, b = 255, a = 1.000},
+      secondary = {r = 143, g = 0, b = 255, a = 1.000},
     },
     results = {{type="item", name="dark-matter-fuel-cell", amount=1}},
     allow_productivity = true,
@@ -467,6 +488,11 @@ data:extend({
       {type = "fluid", name = "dark-matter-fluid", amount = 5},
       {type = "item", name = "ice", amount = 50},
     },
+    crafting_machine_tint =
+    {
+      primary = {r = 0, g = 242, b = 255, a = 1.000},
+      secondary = {r = 0, g = 175, b = 255, a = 1.000},
+    },
     results = {{type="item", name="ice-xv", amount=1}},
     allow_productivity = true,
     auto_recycle = false,
@@ -507,8 +533,8 @@ data:extend({
     },
     crafting_machine_tint =
     {
-      primary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
-      secondary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
+      primary = {r = 222, g = 0, b = 255, a = 1.000},
+      secondary = {r = 143, g = 0, b = 255, a = 1.000},
     },
     auto_recycle = false,
     allow_productivity = true
@@ -1013,6 +1039,22 @@ data:extend({
 		},
     allow_productivity = true,
 		results = {{type="item", name="barometric-vice", amount=1}}
+	},
+  {
+		type = "recipe",
+		name = "microculture-vat",
+		enabled = false,
+    category = "crafting-with-fluid",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/pathogen-lab.png",
+    energy_required = 10,
+		ingredients = {
+      {type = "item", name = "glass-plate", amount = 24},
+      {type = "item", name = "bone-fragments", amount = 8},
+      {type = "item", name = "steel-plate", amount = 65},
+      {type = "fluid", name = "water", amount = 5000},
+		},
+    allow_productivity = true,
+		results = {{type="item", name="microculture-vat", amount=1}}
 	},
   {
 		type = "recipe",

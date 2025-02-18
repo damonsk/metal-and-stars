@@ -58,8 +58,8 @@ data:extend({
     results = {{type="fluid", name="liquid-dark-matter-fuel", amount=10}},
     crafting_machine_tint =
     {
-      primary = {r = 1.0, g = 0.7, b = 0.0, a = 1.000},
-      secondary = {r = 1.0, g = 0.7, b = 0.0, a = 1.000},
+      primary = {r = 222, g = 0, b = 255, a = 1.000},
+      secondary = {r = 143, g = 0, b = 255, a = 1.000},
     },
     allow_productivity = true
   },

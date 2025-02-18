@@ -115,13 +115,14 @@ data:extend({
   {
     type = "recipe",
     name = "thermo-bacteria-cultivation",
-    icon = "__space-age__/graphics/icons/thermo-bacteria-cultivation.png",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/thermo-bacteria-cultivation.png",
     category = "organic",
     subgroup = "agriculture-processes",
-    order = "e[bacteria]-b[cultivation]-a[thermo]",
+    order = "e[bacteria]-b[cultivation]-b[thermo]",
     enabled = false,
     allow_productivity = true,
     result_is_always_fresh = true,
+    allow_decomposition = false,
     energy_required = 4,
     ingredients =
     {
@@ -152,8 +153,8 @@ data:extend({
     },
     crafting_machine_tint =
     {
-      primary = {r = 0.000, g = 0.500, b = 1.000, a = 1.000}, -- #007fffff 
-      secondary = {r = 0.095, g = 0.412, b = 0.822, a = 1.000}, -- #1868d1ff
+      primary = {r = 255, g = 94, b = 0, a = 1.000},
+      secondary = {r = 255, g = 94, b = 0, a = 1.000},
     },
     show_amount_in_title = false
   },
@@ -161,13 +162,14 @@ data:extend({
   {
     type = "recipe",
     name = "thermo-bacteria-fermentation",
-    icon = "__space-age__/graphics/icons/thermo-bacteria-cultivation.png",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/thermo-bacteria-cultivation.png",
     category = "organic",
     subgroup = "agriculture-processes",
-    order = "e[bacteria]-b[cultivation]-a[thermo]",
+    order = "e[bacteria]-b[cultivation]-b[thermo]",
     enabled = false,
     allow_productivity = true,
     result_is_always_fresh = true,
+    allow_decomposition = false,
     energy_required = 4,
     ingredients =
     {
@@ -182,8 +184,8 @@ data:extend({
     },
     crafting_machine_tint =
     {
-      primary = {r = 0.000, g = 0.500, b = 1.000, a = 1.000}, -- #007fffff 
-      secondary = {r = 0.095, g = 0.412, b = 0.822, a = 1.000}, -- #1868d1ff
+      primary = {r = 255, g = 56, b = 0, a = 1.000},
+      secondary = {r = 255, g = 56, b = 0, a = 1.000},
     },
     show_amount_in_title = false
   },
@@ -191,13 +193,14 @@ data:extend({
   {
     type = "recipe",
     name = "radio-bacteria-cultivation",
-    icon = "__space-age__/graphics/icons/radio-bacteria-cultivation.png",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/radio-bacteria-cultivation.png",
     category = "organic",
     subgroup = "agriculture-processes",
-    order = "e[bacteria]-b[cultivation]-a[radio]",
+    order = "e[bacteria]-b[cultivation]-b[radio]",
     enabled = false,
     allow_productivity = true,
     result_is_always_fresh = true,
+    allow_decomposition = false,
     energy_required = 4,
     ingredients =
     {
@@ -211,8 +214,8 @@ data:extend({
     },
     crafting_machine_tint =
     {
-      primary = {r = 0.000, g = 0.500, b = 1.000, a = 1.000}, -- #007fffff 
-      secondary = {r = 0.095, g = 0.412, b = 0.822, a = 1.000}, -- #1868d1ff
+      primary = {r = 106, g = 255, b = 0, a = 1.000},
+      secondary = {r = 143, g = 0, b = 255, a = 1.000},
     },
     show_amount_in_title = false
   },
@@ -220,13 +223,14 @@ data:extend({
   {
     type = "recipe",
     name = "petro-bacteria-cultivation",
-    icon = "__space-age__/graphics/icons/petro-bacteria-cultivation.png",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/petro-bacteria-cultivation.png",
     category = "organic",
     subgroup = "agriculture-processes",
-    order = "e[bacteria]-b[cultivation]-a[petro]",
+    order = "e[bacteria]-b[cultivation]-b[petro]",
     enabled = false,
     allow_productivity = true,
     result_is_always_fresh = true,
+    allow_decomposition = false,
     energy_required = 4,
     ingredients =
     {
@@ -242,8 +246,8 @@ data:extend({
     },
     crafting_machine_tint =
     {
-      primary = {r = 0.000, g = 0.500, b = 1.000, a = 1.000}, -- #007fffff 
-      secondary = {r = 0.095, g = 0.412, b = 0.822, a = 1.000}, -- #1868d1ff
+      primary = {r = 255, g = 221, b = 0, a = 1.000},
+      secondary = {r = 255, g = 221, b = 0, a = 1.000},
     },
     show_amount_in_title = false
   },
@@ -251,13 +255,14 @@ data:extend({
   {
     type = "recipe",
     name = "ammoniac-bacteria-cultivation",
-    icon = "__space-age__/graphics/icons/ammoniac-bacteria-cultivation.png",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/ammoniac-bacteria-cultivation.png",
     category = "organic",
     subgroup = "agriculture-processes",
-    order = "e[bacteria]-b[cultivation]-a[ammoniac]",
+    order = "e[bacteria]-b[cultivation]-b[ammoniac]",
     enabled = false,
     allow_productivity = true,
     result_is_always_fresh = true,
+    allow_decomposition = false,
     energy_required = 4,
     ingredients =
     {
@@ -271,8 +276,8 @@ data:extend({
     },
     crafting_machine_tint =
     {
-      primary = {r = 0.000, g = 0.500, b = 1.000, a = 1.000}, -- #007fffff 
-      secondary = {r = 0.095, g = 0.412, b = 0.822, a = 1.000}, -- #1868d1ff
+      primary = {r = 0, g = 255, b = 255, a = 1.000},
+      secondary = {r = 0, g = 255, b = 255, a = 1.000},
     },
     show_amount_in_title = false
   },
@@ -280,18 +285,19 @@ data:extend({
   {
     type = "recipe",
     name = "algae-bacteria-cultivation",
-    icon = "__space-age__/graphics/icons/algae-bacteria-cultivation.png",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/algae-bacteria-cultivation.png",
     category = "organic",
     subgroup = "agriculture-processes",
-    order = "e[bacteria]-b[cultivation]-a[algae]",
+    order = "e[bacteria]-b[cultivation]-b[algae]",
     enabled = false,
     allow_productivity = true,
     result_is_always_fresh = true,
+    allow_decomposition = false,
     energy_required = 4,
     ingredients =
     {
       {type = "item", name = "algae-bacteria", amount = 14},
-      {type = "item", name = "nutrient", amount = 4},
+      {type = "item", name = "nutrients", amount = 4},
     },
     results =
     {
@@ -300,8 +306,8 @@ data:extend({
     },
     crafting_machine_tint =
     {
-      primary = {r = 0.000, g = 0.500, b = 1.000, a = 1.000}, -- #007fffff 
-      secondary = {r = 0.095, g = 0.412, b = 0.822, a = 1.000}, -- #1868d1ff
+      primary = {r = 3, g = 168, b = 0, a = 1.000},
+      secondary = {r = 3, g = 168, b = 0, a = 1.000},
     },
     show_amount_in_title = false
   },

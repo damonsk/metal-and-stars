@@ -1014,6 +1014,16 @@ data:extend({
       },
       {
         type = "item",
+        name = "microculture-vat",
+        icon = "__metal-and-stars-graphics-2__/graphics/icons/pathogen-lab.png",
+        icon_size = 64,
+        subgroup = "agriculture",
+        order = "d[hurricane]",
+        place_result = "microculture-vat",
+        stack_size = 10,
+      },
+      {
+        type = "item",
         name = "quantum-stabilizer",
         icon = "__metal-and-stars-graphics__/graphics/icons/quantum-stabilizer.png",
         icon_size = 64,

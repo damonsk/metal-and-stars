@@ -54,14 +54,12 @@ I check the [discussions tab](https://mods.factorio.com/mod/metal-and-stars/disc
 
 
 ### What's next?
-I'm going to continue working during this early-access period. I'm hoping to add 1-2 more planets and 1-2 more complex processes seperate from that.
-In addition, I'm trying to be aggressive on bugs, and handle compatibility as it causes people trouble.
+I'm going to continue working during this early-access period. I'll continue squashing bugs and doing minor balance. It's likely that this is all the content you can expect from this mod, at least for a while.
 
 
 ### Localization
 If you'd like to do a simple localization in your language, I'm happy to include it
 When I give my locale file to a translation machine, I can't verify that it was translated correctly (because I don't speak that language)
-also bear in mind that things will continue to change throughout the mod's beta, and I can't maintain those localizations very effectively.
 
 
 ### Contribute

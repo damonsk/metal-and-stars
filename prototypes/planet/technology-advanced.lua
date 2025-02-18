@@ -505,5 +505,78 @@ data:extend({
       time = 60
   }
 },
+
+  --Bioculture
+  {
+    type = "technology",
+    name = "mechanical-bioculture",
+    icon = "__metal-and-stars-graphics-2__/graphics/technology/pathogen-lab-icon-big.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "microculture-vat"
+      },
+    },
+    prerequisites = {"ring-science-pack"},
+    unit =
+    {
+        count = 250,
+        ingredients =
+        {
+            {"space-science-pack", 1},
+            {"nanite-science-pack", 1},
+            {"ring-science-pack", 1},
+        },
+        time = 60
+    }
+  },
+  {
+    type = "technology",
+    name = "advanced-bioculture",
+    icon = "__metal-and-stars-graphics__/graphics/technology/quantum-science-pack.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "algae-bacteria-cultivation"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "ammoniac-bacteria-cultivation"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "petro-bacteria-cultivation"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "radio-bacteria-cultivation"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "thermo-bacteria-cultivation"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "thermo-bacteria-fermentation"
+      },
+    },
+    prerequisites = {"mechanical-bioculture", "agricultural-science-pack"},
+    unit =
+    {
+        count = 500,
+        ingredients =
+        {
+            {"space-science-pack", 1},
+            {"nanite-science-pack", 1},
+            {"ring-science-pack", 1},
+            {"agricultural-science-pack", 1},
+        },
+        time = 60
+    }
+  },
     
 })
