@@ -16,8 +16,8 @@ data:extend({
         label_orientation = 0.15,
         asteroid_spawn_influence = 1,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(
-            asteroid_util.aquilo_solar_system_edge,
-            0.9
+            asteroid_util.nauvis_vulcanus,
+            0.1 
         )
     },
     {
@@ -34,8 +34,8 @@ data:extend({
         label_orientation = 0.15,     
         asteroid_spawn_influence = 1,      
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(
-            asteroid_util.aquilo_solar_system_edge,
-            0.9 
+            asteroid_util.nauvis_vulcanus,
+            0.1 
         )
     },
 
@@ -50,7 +50,7 @@ data:extend({
         to = "calidus-senestella-gate-calidus",  
         order = "h",  
         length = 500,  
-        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.gleba_aquilo)
+        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_vulcanus)
     },
     {
         type = "space-connection",  
