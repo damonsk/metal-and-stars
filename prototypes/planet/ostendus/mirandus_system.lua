@@ -96,7 +96,7 @@ data:extend({
         from = "shipyard",
         to = "mirandus-a",
         order = "b",
-        length = 5000,
+        length = 20000,
         asteroid_spawn_definitions = mirandus_shipyard
     },
     {
@@ -106,7 +106,7 @@ data:extend({
         from = "ringworld",
         to = "mirandus-a",
         order = "b",
-        length = 5000,
+        length = 10000,
         asteroid_spawn_definitions = mirandus_ringworld
     },
     {
@@ -116,7 +116,7 @@ data:extend({
         from = "nix",
         to = "mirandus-a",
         order = "b",
-        length = 5000,
+        length = 10000,
         asteroid_spawn_definitions = mirandus_nix
     },
 })

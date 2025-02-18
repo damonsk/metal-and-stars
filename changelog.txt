@@ -2,7 +2,7 @@
 Version: 0.1.0
 Date: 02.15.2025
   Changes:
-    - added new planet Volantus
+    - added new bacteria processes
     - moved planets to a dedicated star-system
     - added some enhanced assets for visible planets mod
   Bugfixes:

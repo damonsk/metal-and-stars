@@ -21,6 +21,7 @@ local machina = {
     enemy_base_radius = "nix_enemy_base_radius",
     enemy_base_frequency = "nix_enemy_base_frequency",
     solar_power_in_space = 60,
+    entities_require_heating = settings.startup["is-nix-frozen-enabled"].value,
     surface_properties =
     {
         ["day-night-cycle"] = 2*hour,

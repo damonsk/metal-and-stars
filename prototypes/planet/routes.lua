@@ -83,7 +83,7 @@ data:extend({
         from = "calidus-senestella-gate-senestella",
         to = "shipyard",
         order = "b",
-        length = 5000,
+        length = 15000,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_gleba)
     },
     {
@@ -93,7 +93,7 @@ data:extend({
         from = "shipyard",
         to = "ringworld",
         order = "b",
-        length = 5000,
+        length = 15000,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_gleba)
     },
     {
@@ -103,7 +103,7 @@ data:extend({
         from = "shipyard",
         to = "nix",
         order = "b",
-        length = 5000,
+        length = 15000,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_gleba)
     },
 })
