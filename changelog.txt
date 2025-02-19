@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 02.18.2025
+  Changes:
+    - significantly reduced lubricant produced by Nanite Extraction
+    - several new fluids can now be barreled
+  Bugfixes:
+    - recycling uranium ammo should correctly yield uranium-238
+    - new rocket parts should now be affected by rocket part productivity research
+    - added a default import location for most items
+    - catalyzed anomaly science should be correctly stored with the rest of the compression products
+    - added ways to actually aquire the new bacteria processes
+---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 Date: 02.18.2025
   Bugfixes:

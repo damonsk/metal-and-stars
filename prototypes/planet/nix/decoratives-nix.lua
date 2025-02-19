@@ -41,7 +41,8 @@ data:extend({
           results =
           {
             {type = "item", name = "ice", amount_min = 6, amount_max = 10},
-            {type = "item", name = "coal", amount_min = 2, amount_max = 5}
+            {type = "item", name = "coal", amount_min = 2, amount_max = 5},
+            {type = "item", name = "ammoniac-bacteria", amount_min = 0, amount_max = 3}
           },
           mining_trigger =
           {

@@ -69,6 +69,7 @@ data:extend({
       drop_sound = item_sounds.module_inventory_move,
       stack_size = 50,
       weight = 20 * kg,
+      default_import_location = "nix",
       effect =
       {
         productivity = 0.1,
@@ -427,6 +428,7 @@ data:extend({
         spoil_ticks = 7 * second,
         spoil_result = "ice",
         weight = 1 * kg,
+        default_import_location = "nix",
         random_tint_color = item_tints.ice_blue
       },
       {
@@ -440,6 +442,7 @@ data:extend({
         drop_sound = space_age_item_sounds.ice_inventory_move,
         stack_size = 50,
         weight = 1 * kg,
+        default_import_location = "nix",
         random_tint_color = item_tints.ice_blue
       },
       {
@@ -453,6 +456,7 @@ data:extend({
         drop_sound = space_age_item_sounds.ice_inventory_move,
         stack_size = 50,
         weight = 1 * kg,
+        default_import_location = "nix",
         random_tint_color = item_tints.ice_blue
       },
       {
@@ -526,6 +530,7 @@ data:extend({
         drop_sound = space_age_item_sounds.ice_inventory_move,
         stack_size = 50,
         weight = 1 * kg,
+        default_import_location = "nix",
         random_tint_color = item_tints.ice_blue
       },
       {
@@ -599,6 +604,7 @@ data:extend({
         drop_sound = space_age_item_sounds.ice_inventory_move,
         stack_size = 50,
         weight = 1 * kg,
+        default_import_location = "nix",
         random_tint_color = item_tints.ice_blue
       },
       {
@@ -612,6 +618,7 @@ data:extend({
         drop_sound = space_age_item_sounds.ice_inventory_move,
         stack_size = 50,
         weight = 1 * kg,
+        default_import_location = "nix",
         random_tint_color = item_tints.ice_blue
       },
       {
@@ -625,6 +632,7 @@ data:extend({
         drop_sound = space_age_item_sounds.ice_inventory_move,
         stack_size = 50,
         weight = 1 * kg,
+        default_import_location = "nix",
         random_tint_color = item_tints.ice_blue
       },
       {
@@ -638,6 +646,7 @@ data:extend({
         drop_sound = item_sounds.steam_inventory_move,
         place_result = "liquid-fuel-heating-tower",
         stack_size = 20,
+        default_import_location = "nix",
         weight = 100*kg
       },
       {
@@ -653,6 +662,7 @@ data:extend({
         drop_sound = item_sounds.science_inventory_move,
         stack_size = 200,
         weight = 1 * kg,
+        default_import_location = "nix",
         durability = 1,
         durability_description_key = "description.science-pack-remaining-amount-key",
         factoriopedia_durability_description_key = "description.factoriopedia-science-pack-remaining-amount-key",
@@ -690,6 +700,7 @@ data:extend({
         burnt_result = "depleted-fuel-cell",
         fuel_value = "4GJ",
         stack_size = 50,
+        default_import_location = "nix",
         weight = 100*kg
       },
       {
@@ -702,6 +713,7 @@ data:extend({
         pick_sound = item_sounds.nuclear_inventory_pickup,
         drop_sound = item_sounds.nuclear_inventory_move,
         stack_size = 50,
+        default_import_location = "nix",
         weight = 100*kg
       },
       {
@@ -737,9 +749,10 @@ data:extend({
         pick_sound = item_sounds.fuel_cell_inventory_pickup,
         drop_sound = item_sounds.fuel_cell_inventory_move,
         stack_size = 20,
+        default_import_location = "nix",
         weight = 100*kg
       },
-      -- RINGWORLD ITEMS
+      -- SHIPYARD ITEMS
       {
         type = "item",
         name = "nanites",
@@ -810,6 +823,7 @@ data:extend({
         pick_sound = instrument_sound("celesta-30"),
         drop_sound = instrument_sound("celesta-28"),
         stack_size = 50,
+        default_import_location = "shipyard",
         weight = 2 * kg
       },
       {
@@ -847,6 +861,7 @@ data:extend({
         drop_sound = item_sounds.science_inventory_move,
         stack_size = 200,
         weight = 1 * kg,
+        default_import_location = "shipyard",
         durability = 1,
         durability_description_key = "description.science-pack-remaining-amount-key",
         factoriopedia_durability_description_key = "description.factoriopedia-science-pack-remaining-amount-key",
@@ -865,6 +880,7 @@ data:extend({
         drop_sound = item_sounds.wire_inventory_move,
         stack_size = 200,
         weight = 0.25 * kg,
+        default_import_location = "ringworld",
         ingredient_to_weight_coefficient = 0.25
       },
       {
@@ -884,6 +900,7 @@ data:extend({
         drop_sound = item_sounds.wire_inventory_move,
         stack_size = 200,
         weight = 0.25 * kg,
+        default_import_location = "ringworld",
         ingredient_to_weight_coefficient = 0.25
       },
       {
@@ -897,6 +914,7 @@ data:extend({
         drop_sound = item_sounds.wire_inventory_move,
         stack_size = 200,
         weight = 0.25 * kg,
+        default_import_location = "ringworld",
         ingredient_to_weight_coefficient = 0.25
       },
       {
@@ -910,6 +928,7 @@ data:extend({
         drop_sound = item_sounds.wire_inventory_move,
         stack_size = 200,
         weight = 0.25 * kg,
+        default_import_location = "ringworld",
         ingredient_to_weight_coefficient = 0.25
       },
       {
@@ -923,6 +942,7 @@ data:extend({
         drop_sound = item_sounds.wire_inventory_move,
         stack_size = 200,
         weight = 0.25 * kg,
+        default_import_location = "ringworld",
         ingredient_to_weight_coefficient = 0.25
       },
       {
@@ -942,6 +962,7 @@ data:extend({
         drop_sound = item_sounds.wire_inventory_move,
         stack_size = 200,
         weight = 0.25 * kg,
+        default_import_location = "ringworld",
         ingredient_to_weight_coefficient = 0.25
       },
       {
@@ -961,6 +982,7 @@ data:extend({
         drop_sound = item_sounds.wire_inventory_move,
         stack_size = 200,
         weight = 0.25 * kg,
+        default_import_location = "ringworld",
         ingredient_to_weight_coefficient = 0.25
       },
       {
@@ -976,6 +998,7 @@ data:extend({
         drop_sound = item_sounds.science_inventory_move,
         stack_size = 200,
         weight = 1 * kg,
+        default_import_location = "ringworld",
         durability = 1,
         durability_description_key = "description.science-pack-remaining-amount-key",
         factoriopedia_durability_description_key = "description.factoriopedia-science-pack-remaining-amount-key",
@@ -990,6 +1013,7 @@ data:extend({
         order = "a[robot]-c[construction-robot]-c[uranium]",
         place_result = "antimatter-construction-robot",
         icon_size = 64,
+        default_import_location = "nix",
         stack_size = 50
     },
     {
@@ -1000,6 +1024,7 @@ data:extend({
           order = "a[robot]-c[logistic-robot]-c[uranium]",
           place_result = "antimatter-logistic-robot",
           icon_size = 64,
+          default_import_location = "nix",
           stack_size = 50
       },
       {
@@ -1010,6 +1035,7 @@ data:extend({
         subgroup = "production-machine",
         order = "d[hurricane]",
         place_result = "barometric-vice",
+        default_import_location = "nix",
         stack_size = 10,
       },
       {
@@ -1020,6 +1046,7 @@ data:extend({
         subgroup = "agriculture",
         order = "d[hurricane]",
         place_result = "microculture-vat",
+        default_import_location = "ringworld",
         stack_size = 10,
       },
       {
@@ -1040,6 +1067,7 @@ data:extend({
         subgroup = "production-machine",
         order = "d[hurricane]",
         place_result = "microgravity-assembler",
+        default_import_location = "shipyard",
         stack_size = 10,
       },
       {
@@ -1050,6 +1078,7 @@ data:extend({
         subgroup = "energy",
         order = "d[hurricane]",
         place_result = "neumann-conduit",
+        default_import_location = "ringworld",
         stack_size = 10,
       },
       {
@@ -1062,6 +1091,7 @@ data:extend({
         pick_sound = item_sounds.metal_chest_inventory_pickup,
         drop_sound = item_sounds.metal_chest_inventory_move,
         place_result = "space-chest",
+        default_import_location = "shipyard",
         stack_size = 50,
       },
 })

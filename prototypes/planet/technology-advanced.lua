@@ -541,6 +541,22 @@ data:extend({
     {
       {
         type = "unlock-recipe",
+        recipe = "algae-bacteria"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "radio-bacteria"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "thermo-bacteria"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "petro-bacteria"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "algae-bacteria-cultivation"
       },
       {

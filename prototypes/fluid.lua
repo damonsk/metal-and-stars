@@ -11,7 +11,7 @@ data:extend(
     heat_capacity = "0.2kJ",
     base_color = {125, 125, 125},
     flow_color = {125, 125, 125},
-    auto_barrel = false
+    auto_barrel = true
   },
   {
     type = "fluid",
@@ -24,7 +24,7 @@ data:extend(
     heat_capacity = "0.2kJ",
     base_color = {61, 37, 61},
     flow_color = {61, 37, 61},
-    auto_barrel = false
+    auto_barrel = true
   },
   {
     type = "fluid",
@@ -51,7 +51,7 @@ data:extend(
     heat_capacity = "0.2kJ",
     base_color = {54, 63, 64},
     flow_color = {54, 63, 64},
-    auto_barrel = false
+    auto_barrel = true
   },
   {
     type = "fluid",
@@ -64,7 +64,7 @@ data:extend(
     heat_capacity = "0.2kJ",
     base_color = {0.36, 0.54, 0.66},
     flow_color = {0.36, 0.54, 0.66},
-    auto_barrel = false
+    auto_barrel = true
   },
   --/////refined liquid fuels
   {

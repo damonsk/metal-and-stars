@@ -118,7 +118,7 @@ data:extend({
     icon = "__metal-and-stars-graphics-2__/graphics/icons/thermo-bacteria-cultivation.png",
     category = "organic",
     subgroup = "agriculture-processes",
-    order = "e[bacteria]-b[cultivation]-b[thermo]",
+    order = "e[bacteria]-b[cultivation]-c[thermo]",
     enabled = false,
     allow_productivity = true,
     result_is_always_fresh = true,
@@ -165,7 +165,7 @@ data:extend({
     icon = "__metal-and-stars-graphics-2__/graphics/icons/thermo-bacteria-cultivation.png",
     category = "organic",
     subgroup = "agriculture-processes",
-    order = "e[bacteria]-b[cultivation]-b[thermo]",
+    order = "e[bacteria]-b[cultivation]-c[thermo]",
     enabled = false,
     allow_productivity = true,
     result_is_always_fresh = true,
@@ -203,7 +203,7 @@ data:extend({
     icon = "__metal-and-stars-graphics-2__/graphics/icons/radio-bacteria-cultivation.png",
     category = "organic",
     subgroup = "agriculture-processes",
-    order = "e[bacteria]-b[cultivation]-b[radio]",
+    order = "e[bacteria]-b[cultivation]-c[radio]",
     enabled = false,
     allow_productivity = true,
     result_is_always_fresh = true,
@@ -233,7 +233,7 @@ data:extend({
     icon = "__metal-and-stars-graphics-2__/graphics/icons/petro-bacteria-cultivation.png",
     category = "organic",
     subgroup = "agriculture-processes",
-    order = "e[bacteria]-b[cultivation]-b[petro]",
+    order = "e[bacteria]-b[cultivation]-c[petro]",
     enabled = false,
     allow_productivity = true,
     result_is_always_fresh = true,
@@ -265,7 +265,7 @@ data:extend({
     icon = "__metal-and-stars-graphics-2__/graphics/icons/ammoniac-bacteria-cultivation.png",
     category = "organic",
     subgroup = "agriculture-processes",
-    order = "e[bacteria]-b[cultivation]-b[ammoniac]",
+    order = "e[bacteria]-b[cultivation]-c[ammoniac]",
     enabled = false,
     allow_productivity = true,
     result_is_always_fresh = true,
@@ -302,7 +302,7 @@ data:extend({
     icon = "__metal-and-stars-graphics-2__/graphics/icons/algae-bacteria-cultivation.png",
     category = "organic",
     subgroup = "agriculture-processes",
-    order = "e[bacteria]-b[cultivation]-b[algae]",
+    order = "e[bacteria]-b[cultivation]-c[algae]",
     enabled = false,
     allow_productivity = true,
     result_is_always_fresh = true,
@@ -334,6 +334,113 @@ data:extend({
     show_amount_in_title = false
   },
 
+--Initial bootstrapping
 
+  {
+    type = "recipe",
+    name = "algae-bacteria",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/algae-bacteria.png",
+    category = "organic-or-hand-crafting",
+    subgroup = "agriculture-processes",
+    order = "e[bacteria]-a[bacteria]-c[algae]",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1,
+    ingredients =
+    {
+      {type = "item", name = "raw-fish", amount = 1},
+    },
+    results =
+    {
+      {type = "item", name = "algae-bacteria", amount = 1},
+    },
+    crafting_machine_tint =
+    {
+      primary = {r = 3, g = 168, b = 0, a = 1.000},
+      secondary = {r = 3, g = 168, b = 0, a = 1.000},
+    },
+  },
+
+  {
+    type = "recipe",
+    name = "petro-bacteria",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/petro-bacteria.png",
+    category = "organic-or-hand-crafting",
+    subgroup = "agriculture-processes",
+    order = "e[bacteria]-a[bacteria]-c[petro]",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1,
+    ingredients =
+    {
+      {type = "item", name = "bitumen", amount = 1},
+    },
+    results =
+    {
+      {type = "item", name = "petro-bacteria", amount = 1},
+    },
+    crafting_machine_tint =
+    {
+      primary = {r = 255, g = 221, b = 0, a = 1.000},
+      secondary = {r = 255, g = 221, b = 0, a = 1.000},
+    },
+  },
+
+  {
+    type = "recipe",
+    name = "thermo-bacteria",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/thermo-bacteria.png",
+    category = "organic-or-hand-crafting",
+    subgroup = "agriculture-processes",
+    order = "e[bacteria]-a[bacteria]-c[thermo]",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1,
+    surface_conditions =
+    {
+      {
+        property = "temperature",
+        min = 330
+      }
+    },
+    ingredients =
+    {
+      {type = "item", name = "carbon", amount = 1},
+    },
+    results =
+    {
+      {type = "item", name = "thermo-bacteria", amount = 1},
+    },
+    crafting_machine_tint =
+    {
+      primary = {r = 255, g = 56, b = 0, a = 1.000},
+      secondary = {r = 255, g = 56, b = 0, a = 1.000},
+    },
+  },
+
+  {
+    type = "recipe",
+    name = "radio-bacteria",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/radio-bacteria.png",
+    category = "organic-or-hand-crafting",
+    subgroup = "agriculture-processes",
+    order = "e[bacteria]-a[bacteria]-c[radio]",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1,
+    ingredients =
+    {
+      {type = "item", name = "uranium-235", amount = 1},
+    },
+    results =
+    {
+      {type = "item", name = "radio-bacteria", amount = 1},
+    },
+    crafting_machine_tint =
+    {
+      primary = {r = 106, g = 255, b = 0, a = 1.000},
+      secondary = {r = 143, g = 0, b = 255, a = 1.000},
+    },
+  },
 
 })

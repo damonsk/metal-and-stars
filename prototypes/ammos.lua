@@ -96,6 +96,7 @@ data:extend({
         name = "thorium-rounds-magazine",
         enabled = false,
         energy_required = 10,
+        auto_recycle = false,
         ingredients =
         {
           {type = "item", name = "piercing-rounds-magazine", amount = 1},
@@ -106,6 +107,7 @@ data:extend({
       {
         type = "recipe",
         name = "thorium-cannon-shell",
+        auto_recycle = false,
         enabled = false,
         energy_required = 12,
         ingredients =

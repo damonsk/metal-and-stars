@@ -542,7 +542,7 @@ data:extend({
   {
     type = "recipe",
     name = "catalyzed-anomaly-science-pack",
-    icon = "__metal-and-stars-graphics__/graphics/icons/anomaly-science-pack.png",
+    icon = "__metal-and-stars-graphics__/graphics/icons/anomaly-science-pack-catalyzed.png",
     enabled = false,
     category = "compression",
     energy_required = 5,
@@ -562,6 +562,7 @@ data:extend({
       primary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
       secondary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
     },
+    main_product = "anomaly-science-pack",
     auto_recycle = false,
     allow_productivity = true,
     allow_quality = false -- catalyst would be also bumped on quality
@@ -580,7 +581,7 @@ data:extend({
     },
     results = {
       {type="item", name="nanites", amount=50},
-      {type="fluid", name="lubricant", amount=5}
+      {type="fluid", name="lubricant", amount=1}
     },
     auto_recycle = false,
     allow_productivity = true,
