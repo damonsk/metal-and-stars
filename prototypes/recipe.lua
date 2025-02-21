@@ -643,7 +643,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "space-chest",
+    name = "space-chest-ms",
     enabled = false,
     category = "nanotech",
     subgroup = "space-nanites",
@@ -653,7 +653,7 @@ data:extend({
       {type = "item", name = "nanites", amount = 20},
       {type = "item", name = "iron-chest", amount = 1},
     },
-    results = {{type="item", name="space-chest", amount=1}}
+    results = {{type="item", name="space-chest-ms", amount=1}}
   },
   {
     type = "recipe",

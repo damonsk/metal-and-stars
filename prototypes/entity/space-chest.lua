@@ -4,12 +4,12 @@ data:extend({
 
     {
         type = "container",
-        name = "space-chest",
+        name = "space-chest-ms",
         icon = "__metal-and-stars-graphics__/graphics/icons/space-chest.png",
         flags = {"placeable-neutral", "player-creation"},
-        minable = {mining_time = 0.2, result = "space-chest"},
+        minable = {mining_time = 0.2, result = "space-chest-ms"},
         max_health = 350,
-        corpse = "space-chest-remnants",
+        corpse = "space-chest-ms-remnants",
         open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.23 },
         close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.23 },
         resistances =
@@ -59,7 +59,7 @@ data:extend({
 
       {
         type = "corpse",
-        name = "space-chest-remnants",
+        name = "space-chest-ms-remnants",
         icon = "__metal-and-stars-graphics__/graphics/icons/space-chest.png",
         flags = {"placeable-neutral", "building-direction-8-way", "not-on-map"},
         hidden_in_factoriopedia = true,

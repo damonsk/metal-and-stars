@@ -115,7 +115,7 @@ data:extend({
             },
             {
               type = "unlock-recipe",
-              recipe = "space-chest"
+              recipe = "space-chest-ms"
             },
         },
         prerequisites = {"nanite-extraction"},
