@@ -59,4 +59,5 @@ require("__metal-and-stars__.prototypes.planet.starsystem")
 -- require("__metal-and-stars__.prototypes.entity.volantus-platform")
 
 require("__metal-and-stars__.prototypes.dependency-updates.quality-updates")
+require("__metal-and-stars__.prototypes.dependency-updates.redrawn-space-connections-updates")
 
