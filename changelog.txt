@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 02.20.2025
+  Bugfixes:
+    - added increased compatibility with Muluna mod
+    - added increased compatibility with Redrawn Space Connections mod
+---------------------------------------------------------------------------------------------------
 Version: 0.1.2
 Date: 02.18.2025
   Changes:
