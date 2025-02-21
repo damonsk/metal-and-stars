@@ -280,12 +280,12 @@ data:extend({
     },
     ingredients =
     {
-      {type = "item", name = "ammoniac-bacteria", amount = 14},
+      {type = "item", name = "ammoniac-bacteria", amount = 9},
       {type = "fluid", name = "water", amount = 100}
     },
     results =
     {
-      {type = "item", name = "ammoniac-bacteria", amount = 9},
+      {type = "item", name = "ammoniac-bacteria", amount = 14},
       {type = "fluid", name = "fluoroketone-cold", amount = 100}
     },
     crafting_machine_tint =
