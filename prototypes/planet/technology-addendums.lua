@@ -35,5 +35,5 @@ if data.raw["fluid"]["heavy-oil"] ~= nil then
 end
 
 if data.raw["assembling-machine"]["crusher"] ~= nil then
-    data.raw["assembling-machine"]["crusher"].surface_conditions = {{ property = "gravity", min = 0, max = 2 }}
+    PlanetsLib.relax_surface_conditions(data.raw["assembling-machine"]["crusher"], {property = "gravity", max = 2})
 end
