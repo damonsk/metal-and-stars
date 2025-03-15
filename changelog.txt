@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.7
+Date: 03.15.2025
+  Bugfixes:
+    - fixed bug with armoured biter's default settings disabling snapper nests
+    - fixed misalignment of microculture vat fluid box (this may require you to re-place any pipes that became misaligned)
+---------------------------------------------------------------------------------------------------
 Version: 0.1.6
 Date: 02.20.2025
   Changes:
