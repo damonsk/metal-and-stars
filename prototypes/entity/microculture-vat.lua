@@ -33,7 +33,7 @@ local building_entity =
       pipe_covers = pipecoverspictures(),
       volume = 200,
       secondary_draw_orders = { north = -1 },
-      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.west, position = {-2.5, .5} }}
+      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.west, position = {-3, 1} }}
     },
     {
       production_type = "input",
@@ -42,7 +42,7 @@ local building_entity =
       pipe_covers = pipecoverspictures(),
       volume = 200,
       secondary_draw_orders = { north = -1 },
-      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.east, position = {2.5, -.5} }}
+      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.east, position = {3, -1} }}
     },
     {
       production_type = "output",
@@ -51,7 +51,7 @@ local building_entity =
       pipe_covers = pipecoverspictures(),
       volume = 100,
       secondary_draw_orders = { north = -1 },
-      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.south, position = {.5, 2.5} }}
+      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.south, position = {1, 3} }}
     },
     {
       production_type = "output",
@@ -60,7 +60,7 @@ local building_entity =
       pipe_covers = pipecoverspictures(),
       volume = 100,
       secondary_draw_orders = { north = -1 },
-      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.north, position = {-.5, -2.5} }}
+      pipe_connections = {{ flow_direction="input-output", direction = defines.direction.north, position = {-1, -3} }}
     }
   },
   damaged_trigger_effect = hit_effects.entity(),
