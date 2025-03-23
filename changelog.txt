@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.8
+Date: 03.22.2025
+  Bugfixes:
+    - Robots on Circa should no longer scale their laser damage with the player's laser research level (Thank you very much isd-1)
+    - Refining translations, much appreciated to contributors
+---------------------------------------------------------------------------------------------------
 Version: 0.1.7
 Date: 03.15.2025
   Bugfixes:

@@ -54,16 +54,15 @@ I check the [discussions tab](https://mods.factorio.com/mod/metal-and-stars/disc
 
 
 ### What's next?
-I'm going to continue working during this early-access period. I'll continue squashing bugs and doing minor balance. It's likely that this is all the content you can expect from this mod, at least for a while.
+I'll continue squashing bugs and doing minor balance, but It's likely that this is all the content you can expect from this mod, at least for a while. I'd like to come back and refine the visuals a bit someday.
 
 
 ### Localization
-If you'd like to do a simple localization in your language, I'm happy to include it
-When I give my locale file to a translation machine, I can't verify that it was translated correctly (because I don't speak that language)
+If you'd like to do a simple localization in your language, I'm happy to include it. Make a PR on the Github page.
 
 
 ### Contribute
-I do this because I want to, and I want people to enjoy what I make,  
+I do this because I want to, and I want people to enjoy what I make, 
 but if you'd like to buy me a coffee, you can do so below.  
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O5O619DUV0)
