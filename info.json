@@ -14,6 +14,7 @@
         "metal-and-stars-graphics-2 >= 0.0.2",
         "ArmouredBiters <= 1.2.1",
         "PlanetsLib >= 1.2.8",
+        "! Alchemistry",
         "? Starmap_Nexuz >= 1.0.0",
         "? Better_Starmap_Background >= 1.1.0",
         "? atan-nuclear-science",
