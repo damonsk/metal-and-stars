@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.9
+Date: 03.22.2025
+  Bugfixes:
+    - Changed stargate english naming to be more consistent with ship messages
+    - Added missing recipe for nanite cargo bay 
+    - Added unique icons for several recipes, and included them in circuit processing
+---------------------------------------------------------------------------------------------------
 Version: 0.1.8
 Date: 03.22.2025
   Bugfixes:

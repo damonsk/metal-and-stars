@@ -115,6 +115,10 @@ data:extend({
             },
             {
               type = "unlock-recipe",
+              recipe = "nanite-cargo-bay"
+          },
+            {
+              type = "unlock-recipe",
               recipe = "space-chest-ms"
             },
         },

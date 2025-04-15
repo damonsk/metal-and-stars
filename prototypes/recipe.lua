@@ -590,7 +590,7 @@ data:extend({
   {
     type = "recipe",
     name = "nanothruster",
-    icon = "__space-age__/graphics/icons/thruster.png",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/nano-thruster.png",
     category = "nanotech",
     subgroup = "space-nanites",
     order = "c[lithium]-b[lithium-plate]",
@@ -608,7 +608,7 @@ data:extend({
   {
     type = "recipe",
     name = "nanograbber",
-    icon = "__space-age__/graphics/icons/asteroid-collector.png",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/nano-asteroid-collector.png",
     category = "nanotech",
     subgroup = "space-nanites",
     order = "c[lithium]-b[lithium-plate]",
@@ -626,7 +626,7 @@ data:extend({
   {
     type = "recipe",
     name = "nanocrusher",
-    icon = "__space-age__/graphics/icons/crusher.png",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/nano-crusher.png",
     category = "nanotech",
     subgroup = "space-nanites",
     order = "c[lithium]-b[lithium-plate]",
@@ -678,6 +678,7 @@ data:extend({
   {
     type = "recipe",
     name = "nanite-platform-foundation",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/nano-space-platform-foundation.png",
     category = "nanotech",
     subgroup = "space-nanites",
     energy_required = 5,
@@ -693,6 +694,7 @@ data:extend({
   {
     type = "recipe",
     name = "nanite-cargo-bay",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/nano-cargo-bay.png",
     category = "nanotech",
     subgroup = "space-nanites",
     energy_required = 5,
@@ -708,6 +710,7 @@ data:extend({
   {
     type = "recipe",
     name = "nanite-platform-starter-pack",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/nano-space-platform-hub.png",
     energy_required = 20,
     category = "nanotech",
     subgroup = "space-nanites",
@@ -724,7 +727,7 @@ data:extend({
   {
     type = "recipe",
     name = "carbonic-asteroid-refined-crushing",
-    icon = "__space-age__/graphics/icons/carbonic-asteroid-crushing.png",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/carbonic-asteroid-refined-crushing.png",
     category = "crushing",
     subgroup="space-crushing",
     order = "b-a-b",
@@ -747,7 +750,7 @@ data:extend({
   {
     type = "recipe",
     name = "sloppy-asteroid-smelting",
-    icon = "__space-age__/graphics/icons/metallic-asteroid-crushing.png",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/sloppy-asteroid-smelting.png",
     category = "metallurgy",
     subgroup= "space-crushing",
     order = "b-a-a",

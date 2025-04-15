@@ -11,7 +11,7 @@
         "? quality",
         "common-prototypes >= 0.0.1",
         "metal-and-stars-graphics >= 0.0.4",
-        "metal-and-stars-graphics-2 >= 0.0.2",
+        "metal-and-stars-graphics-2 >= 0.0.3",
         "ArmouredBiters <= 1.2.1",
         "PlanetsLib >= 1.2.8",
         "! Alchemistry",
