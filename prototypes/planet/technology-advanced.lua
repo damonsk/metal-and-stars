@@ -279,7 +279,7 @@ data:extend({
             recipe = "high-speed-processor"
         },
     },
-    prerequisites = {"ring-science-pack", "quantum-science-pack"},
+    prerequisites = {"ring-science-pack", "quantum-science-pack", "gold-wired-electronics"},
     unit =
     {
         count = 1000,

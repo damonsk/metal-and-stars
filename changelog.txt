@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.10
+Date: 04.24.2025
+  Changes:
+    - rebalanced multilayer insulation recipe, should now require less plastic. Recommended to check your machines as the recipe was changed
+    - added a mod option (off by default) to allow microgravity labs to process basic science packs
+  Bugfixes:
+    - gray goo can now be correctly filled with foundation (thanks TVoidS & Richdarin)
+    - High-Speed Processor research now correctly requires Gold wired electronics research
+---------------------------------------------------------------------------------------------------
 Version: 0.1.9
 Date: 03.22.2025
   Bugfixes:

@@ -20,12 +20,14 @@ end
 
 if data.raw["lab"]["microgravity-lab"] and data.raw["lab"]["lab"] then
     data.raw["lab"]["microgravity-lab"].inputs = meld(data.raw["lab"]["microgravity-lab"].inputs, data.raw["lab"]["lab"].inputs)
-    tableRemoveValue(data.raw["lab"]["microgravity-lab"].inputs, "automation-science-pack")
-    tableRemoveValue(data.raw["lab"]["microgravity-lab"].inputs, "logistic-science-pack")
-    tableRemoveValue(data.raw["lab"]["microgravity-lab"].inputs, "military-science-pack")
-    tableRemoveValue(data.raw["lab"]["microgravity-lab"].inputs, "chemical-science-pack")
-    tableRemoveValue(data.raw["lab"]["microgravity-lab"].inputs, "production-science-pack")
-    tableRemoveValue(data.raw["lab"]["microgravity-lab"].inputs, "utility-science-pack")
+    if settings.startup["is-micro-gravity-lab-all-science-enabled"].value == false then
+        tableRemoveValue(data.raw["lab"]["microgravity-lab"].inputs, "automation-science-pack")
+        tableRemoveValue(data.raw["lab"]["microgravity-lab"].inputs, "logistic-science-pack")
+        tableRemoveValue(data.raw["lab"]["microgravity-lab"].inputs, "military-science-pack")
+        tableRemoveValue(data.raw["lab"]["microgravity-lab"].inputs, "chemical-science-pack")
+        tableRemoveValue(data.raw["lab"]["microgravity-lab"].inputs, "production-science-pack")
+        tableRemoveValue(data.raw["lab"]["microgravity-lab"].inputs, "utility-science-pack")
+    end
 
     table.insert(data.raw["lab"]["microgravity-lab"].inputs, "nanite-science-pack")
     table.insert(data.raw["lab"]["microgravity-lab"].inputs, "ring-science-pack")

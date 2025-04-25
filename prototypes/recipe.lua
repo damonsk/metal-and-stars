@@ -824,10 +824,10 @@ data:extend({
     order = "c[lithium]-b[lithium-plate]",
     energy_required = 6.4,
     ingredients = {
-      {type = "item", name = "gold-foil", amount = 6},
-      {type = "item", name = "plastic-bar", amount = 4},
+      {type = "item", name = "gold-foil", amount = 18},
+      {type = "item", name = "plastic-bar", amount = 1},
     },
-    results = {{type="item", name="multilayer-insulation", amount=1}},
+    results = {{type="item", name="multilayer-insulation", amount=3}},
     allow_productivity = true,
     enabled = false
   },
