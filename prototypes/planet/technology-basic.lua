@@ -635,6 +635,10 @@ data:extend({
             type = "unlock-recipe",
             recipe = "mirandite-processing"
           },
+          {
+            type = "unlock-recipe",
+            recipe = "lithium-plate",
+          },
         },
         prerequisites = {"planet-discovery-mirandus"},
         research_trigger =
@@ -653,6 +657,10 @@ data:extend({
           {
             type = "unlock-recipe",
             recipe = "neodymium-plate"
+          },
+          {
+            type = "unlock-recipe",
+            recipe = "neodymium-alloy-plate"
           },
         },
         prerequisites = {"mirandite-processing"},

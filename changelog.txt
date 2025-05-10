@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.11
+Date: 05.09.2025
+  Changes:
+    - moved neodymium to a common prototype, allowing more compatibility with other mods
+  Bugfixes:
+    - Neodymium Alloy Plate recipe should now correctly unlock with the neodymium research
+    - Lithium Plate recipe should now correctly unlock with the mirandite research
+    - Ammoniac Cultivation is now correctly only possible on cold planets (Nix, Aquilo, etc). This may break some existing setups.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.10
 Date: 04.24.2025
   Changes:

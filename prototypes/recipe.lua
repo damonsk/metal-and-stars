@@ -1,37 +1,6 @@
 data:extend({
   {
     type = "recipe",
-    name = "neodymium-plate",
-    category = "smelting",
-    subgroup = "mirandus-processes",
-    order = "c[lithium]-b[lithium-plate]",
-    auto_recycle = false,
-    energy_required = 6.4,
-    ingredients = {
-      {type = "item", name = "neodymium-ore", amount = 1},
-    },
-    results = {{type="item", name="neodymium-plate", amount=1}},
-    allow_productivity = true,
-    enabled = false
-  },
-  {
-    type = "recipe",
-    name = "neodymium-alloy-plate",
-    category = "metallurgy",
-    subgroup = "mirandus-processes",
-    order = "c[lithium]-b[lithium-plate]",
-    auto_recycle = false,
-    energy_required = 6.4,
-    ingredients = {
-      {type = "item", name = "neodymium-ore", amount = 1},
-      {type = "fluid", name = "molten-iron", amount = 20}
-    },
-    results = {{type="item", name="neodymium-plate", amount=2}},
-    allow_productivity = true,
-    enabled = false
-  },
-  {
-    type = "recipe",
     name = "quantum-shard-a",
     category = "quantum",
     subgroup = "quantum-processing",
@@ -191,6 +160,7 @@ data:extend({
     {
       {type = "item", name = "uranium-fuel-cell", amount = 1}
     },
+    auto_recycle = false,
     allow_productivity = true,
   },
 

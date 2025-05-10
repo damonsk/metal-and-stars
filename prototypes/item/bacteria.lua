@@ -275,7 +275,7 @@ data:extend({
     {
       {
         property = "temperature",
-        min = 265
+        max = 265
       }
     },
     ingredients =
