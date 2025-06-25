@@ -13,7 +13,7 @@
         "metal-and-stars-graphics >= 0.0.4",
         "metal-and-stars-graphics-2 >= 0.0.3",
         "ArmouredBiters <= 1.2.1",
-        "PlanetsLib >= 1.2.8",
+        "PlanetsLib >= 1.6.2",
         "? Starmap_Nexuz >= 1.0.0",
         "? Better_Starmap_Background >= 1.1.0",
         "? atan-nuclear-science",
