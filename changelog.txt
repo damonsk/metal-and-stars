@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.13
+Date: 06.25.2025
+  Changes:
+    - Alchemistry now noted as compatible
+    - added option to disable Nix enemies
+  Bugfixes:
+    - added PlanetsLib tiers to all space locations. This should help with several other planet mod compatibility issues
+    - antimatter bots should now correctly benefit from bot speed bonuses
+    - added productivity restriction to bottling/unbottling recipes
+---------------------------------------------------------------------------------------------------
 Version: 0.1.12
 Date: 05.09.2025
   Changes:
